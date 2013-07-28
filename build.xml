@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+build.xml: template for Apache Ant to develop Google Apps Script.
+version 0.7.0
+built 2013.07.17
+Copyright (c) 2013 Tsuyoshi Kodama
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<project name="ant-template-for-GAS" default="usage" basedir=".">
+	<description>ant template for GAS</description>
+
+	<!-- package information -->
+	<property name="package.name"		value="getGasExternFiles"/>
+	<property name="package.description"	value="parse GAS reference web pages and create extern files for google closure compiler."/>
+	<property name="package.website"	value="https://github.com/tyskdm/"/>
+	<property name="package.version"	value="0.2.0"/>
+
+	<property name="package.author.name"	value="Tsuyoshi Kodama"/>
+	<property name="package.author.email"	value="tsuyoshi.kodama@gmail.com"/>
+
+	<property name="package.licenses.year"	value="2013"/>
+	<property name="package.licenses.type"	value="MIT"/>
+	<property name="package.licenses.file"	value="MIT.LICENSE"/>
+
+
+	<!-- directories -->
+	<property name="spec_dir"	location="${basedir}/spec"/>
+	<property name="src_dir"	location="${basedir}/src"/>
+
+	<property name="lib_dir"	location="${basedir}/lib"/>
+	<property name="ext_dir"	location="${basedir}/ext"/>
+
+	<property name="err_dir"	location="${basedir}/err"/>
+	<property name="tmp_dir"	location="${basedir}/tmp"/>
+
+	<property name="out_dir"	location="${basedir}/out"/>
+	<property name="dist_dir"	location="${basedir}/dist"/>
+
+	<property name="jsdoc_dir"	location="${basedir}/jsdoc"/>
+	<property name="jsdoc2_dir"	location="${jsdoc_dir}/jsdoc2"/>
+	<property name="jsdoc3_dir"	location="${jsdoc_dir}/jsdoc3"/>
+	<property name="yuidoc_dir"	location="${jsdoc_dir}/yuidoc"/>
+
+
+	<!-- fileset: source files list -->
+	<fileset id="spec.1st" dir="${spec_dir}">
+		<!-- include name="rajah.init.js"/ -->
+		<exclude name="rajah.init.js"/>
+	</fileset>
+
+	<fileset id="spec.2nd" dir="${spec_dir}">
+		<exclude name="rajah.init.js"/>
+	</fileset>
+
+	<fileset id="src" dir="${src_dir}">
+		<include name="main.js"/>
+	</fileset>
+
+	<fileset id="lib" dir="${lib_dir}">
+	</fileset>
+
+	<fileset id="lib_ext" dir="${lib_dir}">
+		<!-- using lib file that doesn't have ext file, instead of ext file. -->
+	</fileset>
+
+	<fileset id="ext" dir="${ext_dir}">
+		<include name="rajah.ext.js"/>
+		<include name="jasmine.js"/>
+	</fileset>
+
+
+	<!-- path: group of fileset -->
+	<path id="out.audit.sources">
+		<fileset refid="src"/>
+	</path>
+
+	<path id="out.audit.externs">
+		<fileset refid="lib_ext"/>
+		<fileset refid="ext"/>
+	</path>
+
+	<path id="out.compress.sources">
+		<fileset refid="src"/>
+		<fileset refid="lib"/>
+	</path>
+
+	<path id="out.compress.externs">
+		<fileset refid="ext"/>
+	</path>
+
+
+	<path id="utest.audit.sources">
+		<fileset refid="spec.1st"/>
+		<fileset refid="spec.2nd"/>
+		<fileset refid="src"/>
+	</path>
+
+	<path id="utest.audit.externs">
+		<fileset refid="lib_ext"/>
+		<fileset refid="ext"/>
+	</path>
+
+	<path id="utest.compress.sources">
+		<fileset refid="spec.1st"/>
+		<fileset refid="spec.2nd"/>
+		<fileset refid="src"/>
+		<fileset refid="lib"/>
+	</path>
+
+	<path id="utest.compress.externs">
+		<fileset refid="ext"/>
+	</path>
+
+
+	<!-- Tools definitions -->
+	<property name="closure-compiler.jar-path" location="/usr/local/closure-compiler/compiler.jar"/>
+
+	<taskdef name="jscomp"
+		classname="com.google.javascript.jscomp.ant.CompileTask"
+		classpath="${closure-compiler.jar-path}" />
+
+	<property name="gas-manager.config" location="${basedir}/.gas-config.json"/>
+
+
+	<!-- Macro and Sub targets definitions -->
+
+	<!-- init -->
+	<macrodef name="init">
+		<sequential>
+			<delete dir="${err_dir}/**/*"/>
+			<delete dir="${tmp_dir}/**/*"/>
+
+			<tstamp>
+				<format property="TIMESTAMP"  pattern="yyyy/MM/dd HH:mm:ss"/>
+			</tstamp>
+			<buildnumber/>
+
+			<!-- Create timestamp file -->
+			<echo output="${tmp_dir}/tstamp.js" append="no"  message="// ${package.name}"/>
+			<echo output="${tmp_dir}/tstamp.js" append="yes" message=""/>
+			<echo output="${tmp_dir}/tstamp.js" append="yes" message="// build ${build.number} - ${TIMESTAMP}"/>
+			<echo output="${tmp_dir}/tstamp.js" append="yes" message=""/>
+
+			<!-- Create header file -->
+			<echo output="${tmp_dir}/header.js" append="no"  message="/*"/>
+			<echo output="${tmp_dir}/header.js" append="yes" message=""/>
+
+			<echo output="${tmp_dir}/header.js" append="yes" message="${package.name}:"/>
+			<echo output="${tmp_dir}/header.js" append="yes" message=""/>
+			<echo output="${tmp_dir}/header.js" append="yes" message="version ${package.version}"/>
+			<echo output="${tmp_dir}/header.js" append="yes" message=""/>
+			<echo output="${tmp_dir}/header.js" append="yes" message="build ${build.number} - ${TIMESTAMP}"/>
+			<echo output="${tmp_dir}/header.js" append="yes" message=""/>
+			<echo output="${tmp_dir}/header.js" append="yes" message="Copyright (c) ${package.licenses.year} ${package.author.name}"/>
+			<echo output="${tmp_dir}/header.js" append="yes" message=""/>
+
+			<concat destfile="${tmp_dir}/header.js" append="yes">
+				<path path="${basedir}/${package.licenses.file}"/>
+			</concat>
+
+			<echo output="${tmp_dir}/header.js" append="yes" message="*/"/>
+			<echo output="${tmp_dir}/header.js" append="yes" message=""/>
+		</sequential>
+	</macrodef>
+
+
+	<!-- lint
+		source files: path refid = lint.sources
+		warning file: filename = lint.warning
+	-->
+	<target name="lint">
+		<mkdir dir="${err_dir}"/>
+
+		<pathconvert property="lint.files" refid="${lint.sources}" pathsep=" "/>
+
+		<exec executable="gjslint" failonerror="true" output="${err_dir}/${lint.warning}">
+			<arg value="--max_line_length=100"/>
+
+			<arg line="${lint.files}"/>
+		</exec>
+	</target>
+
+
+	<!-- audit
+		source files: path refid = audit.sources
+		extern files: path refid = audit.externs
+		output file:  fileneme = audit.outfile
+		warning file: filename = audit.warning
+	-->
+	<target name="audit">
+		<mkdir dir="${err_dir}"/>
+		<mkdir dir="${out_dir}"/>
+
+		<pathconvert property="audit.src.files" refid="${audit.sources}" pathsep=" "/>
+		<pathconvert property="audit.ext.files" refid="${audit.externs}" pathsep=" "/>
+
+		<java jar="${closure-compiler.jar-path}"
+			output="${tmp_dir}/${audit.outfile}"
+			error="${err_dir}/${audit.warning}"
+			failonerror="true"
+			fork="true" >
+
+			<!-- compilation_level
+				[ WHITESPACE_ONLY | SIMPLE_OPTIMIZATIONS | ADVANCED_OPTIMIZATIONS ]
+			-->
+			<arg value="--compilation_level=SIMPLE_OPTIMIZATIONS"/>
+
+			<!-- warning_level
+				[ QUIET | DEFAULT | VERBOSE ]
+			-->
+			<arg value="--warning_level=DEFAULT"/>
+
+			<!-- options:
+				https://code.google.com/p/closure-compiler/wiki/Warnings
+				[ jscomp_off | jscomp_warning | jscomp_error ]
+			-->
+			<arg value="=accessControls"		prefix="--jscomp_warning"/>
+			<arg value="=ambiguousFunctionDecl"	prefix="--jscomp_warning"/>
+			<arg value="=checkDebuggerStatement"	prefix="--jscomp_warning"/>
+			<arg value="=checkRegExp"		prefix="--jscomp_warning"/>
+			<arg value="=checkTypes"		prefix="--jscomp_warning"/>
+			<arg value="=checkVars"			prefix="--jscomp_warning"/>
+			<arg value="=const"			prefix="--jscomp_warning"/>
+			<arg value="=constantProperty"		prefix="--jscomp_warning"/>
+			<arg value="=deprecated"		prefix="--jscomp_warning"/>
+			<arg value="=duplicate"			prefix="--jscomp_warning"/>
+			<arg value="=es5Strict"			prefix="--jscomp_warning"/>
+			<arg value="=externsValidation"		prefix="--jscomp_warning"/>
+			<arg value="=fileoverviewTags"		prefix="--jscomp_warning"/>
+			<arg value="=globalThis"		prefix="--jscomp_warning"/>
+			<arg value="=internetExplorerChecks"	prefix="--jscomp_off"/>
+			<arg value="=invalidCasts"		prefix="--jscomp_warning"/>
+			<arg value="=missingProperties"		prefix="--jscomp_warning"/>
+			<arg value="=nonStandardJsDocs"		prefix="--jscomp_warning"/>
+			<arg value="=strictModuleDepCheck"	prefix="--jscomp_off"/>
+			<arg value="=suspiciousCode"		prefix="--jscomp_warning"/>
+			<arg value="=undefinedNames"		prefix="--jscomp_warning"/>
+			<arg value="=undefinedVars"		prefix="--jscomp_warning"/>
+			<arg value="=unknownDefines"		prefix="--jscomp_warning"/>
+			<arg value="=uselessCode"		prefix="--jscomp_warning"/>
+			<arg value="=visibility"		prefix="--jscomp_warning"/>
+
+
+			<arg line="${audit.src.files}" prefix="--js="/>
+			<arg line="${audit.ext.files}" prefix="--externs="/>
+		</java>
+	</target>
+
+
+	<!-- Concat
+		source files: path refid = concat.sources
+		header file:  filename = concat.header
+		output file:  filename = concat.outfile
+	-->
+	<target name="concat">
+		<mkdir  dir="${out_dir}"/>
+
+		<concat destfile="${out_dir}/${concat.outfile}">
+			<path path="${tmp_dir}/${concat.header}"/>
+			<path refid="${concat.sources}"/>
+		</concat>
+	</target>
+
+
+	<!-- Compress
+		source files: path refid = compress.sources
+		header file:  filename = compress.header
+		output file:  filename = compress.outfile
+	-->
+	<target name="compress">
+		<mkdir  dir="${out_dir}"/>
+
+		<jscomp compilationLevel="simple" warning="quiet"
+			debug="false" output="${tmp_dir}/${compress.outfile}">
+
+			<path refid="${compress.sources}"/>
+		</jscomp>
+
+		<concat destfile="${out_dir}/${compress.outfile}">
+			<path path="${tmp_dir}/${compress.header}"/>
+			<path path="${tmp_dir}/${compress.outfile}"/>
+		</concat>
+	</target>
+
+
+	<!-- GAS-Uploader
+		config file: filename = gas.config
+		error file: filename = gas.error
+		target environment: gas.environment
+	-->
+	<target name="gas-upload">
+		<mkdir dir="${err_dir}"/>
+
+		<exec executable="gas" failonerror="true" output="${err_dir}/${gas.error}">
+			<arg line="-c ${gas.config}"/>
+			<arg line="-e ${gas.environment}"/>
+			<arg line="upload"/>
+		</exec>
+	</target>
+
+
+	<!-- Targets -->
+
+	<!-- clean up project directories -->
+	<target name="clean" description="Clean up project directries.">
+		<delete dir="${err_dir}"/>
+		<delete dir="${tmp_dir}"/>
+		<delete dir="${out_dir}"/>
+		<delete dir="${jsdoc_dir}"/>
+	</target>
+
+
+	<!-- Compile -->
+	<target name="compile" description="Lint, Audit and then Compile.">
+		<init/>
+
+		<antcall target="lint">
+			<param name="lint.sources" value="out.audit.sources"/>
+			<param name="lint.warning" value="out.lint_warnings.txt"/>
+		</antcall>
+
+		<antcall target="audit">
+			<param name="audit.sources" value="out.audit.sources"/>
+			<param name="audit.externs" value="out.audit.externs"/>
+			<param name="audit.outfile" value="out.audit.js"/>
+			<param name="audit.warning" value="out.closure_warnings.txt"/>
+		</antcall>
+
+		<antcall target="concat">
+			<param name="concat.sources" value="out.compress.sources"/>
+			<param name="concat.header"  value="header.js"/>
+			<param name="concat.outfile" value="out.js"/>
+		</antcall>
+
+		<antcall target="compress">
+			<param name="compress.sources" value="out.compress.sources"/>
+			<param name="compress.header"  value="header.js"/>
+			<param name="compress.outfile" value="out.mini.js"/>
+		</antcall>
+	</target>
+
+
+	<!-- Unit Test -->
+	<target name="utest" description="Check and Compile with specfiles for unit testing.">
+		<init/>
+
+		<antcall target="lint">
+			<param name="lint.sources" value="utest.audit.sources"/>
+			<param name="lint.warning" value="utest.lint_warnings.txt"/>
+		</antcall>
+
+		<antcall target="audit">
+			<param name="audit.sources" value="utest.audit.sources"/>
+			<param name="audit.externs" value="utest.audit.externs"/>
+			<param name="audit.outfile" value="utest.audit.js"/>
+			<param name="audit.warning" value="utest.closure_warnings.txt"/>
+		</antcall>
+
+		<antcall target="concat">
+			<param name="concat.sources" value="utest.compress.sources"/>
+			<param name="concat.header"  value="tstamp.js"/>
+			<param name="concat.outfile" value="utest.js"/>
+		</antcall>
+
+		<antcall target="compress">
+			<param name="compress.sources" value="utest.compress.sources"/>
+			<param name="compress.header"  value="tstamp.js"/>
+			<param name="compress.outfile" value="utest.mini.js"/>
+		</antcall>
+
+		<antcall target="gas-upload">
+			<param name="gas.config" value="${gas-manager.config}"/>
+			<param name="gas.error" value="utest.gas.txt"/>
+			<param name="gas.environment" value="utest"/>
+		</antcall>
+	</target>
+
+
+	<!-- Building release package -->
+	<target name="release" description="building release package into dist directry."
+		depends="compile">
+
+		<mkdir  dir="${dist_dir}/${package.version}"/>
+		<delete dir="${dist_dir}/${package.version}/**/*"/>
+		<!-- delete task should be replaced with dependset -->
+
+		<copy file="${out_dir}/out.js"
+			tofile="${dist_dir}/${package.version}/${package.name}.js"/>
+
+		<copy file="${out_dir}/out.mini.js"
+			tofile="${dist_dir}/${package.version}/${package.name}.mini.js"/>
+	</target>
+
+
+	<!-- JsDoc commands -->
+
+	<target name="jsdoc2" description="JSDoc: jsdoc-toolkit -- not avarable yet">
+		<delete dir="${jsdoc2_dir}/*"/>
+
+		<exec executable="jsdoc" failonerror="true" output="${err_dir}/jsdoc2_error">
+			<arg line="${src_dir} -d=${jsdoc2_dir}"/>
+		</exec>
+	</target>
+
+	<target name="jsdoc3" description="JSDoc: jsdoc3 -- not avarable yet">
+		<delete dir="${jsdoc3_dir}/*"/>
+
+		<exec executable="jsdoc" failonerror="true" output="${err_dir}/jsdoc3_error">
+			<arg line="${src_dir} -d ${jsdoc3_dir}"/>
+		</exec>
+	</target>
+
+	<target name="yuidoc" description="JSDoc: yuidoc -- not avarable yet">
+		<delete dir="${yuidoc_dir}/*"/>
+
+		<exec executable="yuidoc" failonerror="true" output="${err_dir}/yuidoc_error">
+			<arg line="${src_dir} -o ${yuidoc_dir}"/>
+		</exec>
+	</target>
+
+
+	<!-- List targets -->
+	<target name="usage">
+		<echo message="ant -projecthelp"/>
+		<echo message=""/>
+		<exec executable="ant">
+			<arg line="-projecthelp"/>
+		</exec>
+	</target>
+</project>
