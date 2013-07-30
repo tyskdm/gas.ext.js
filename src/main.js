@@ -17,3 +17,12 @@ function main() {
   Logger.log(c);
 }
 
+
+function getClassList() {
+  var url = 'https://developers.google.com/apps-script/';
+  var classList = parseClassList(url);
+
+  return classList;
+}
+
+
