@@ -71,6 +71,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	</fileset>
 
 	<fileset id="src" dir="${src_dir}">
+		<include name="classList.js"/>
+		<include name="classInfo.js"/>
+		<include name="SourceText.js"/>
 		<include name="main.js"/>
 	</fileset>
 
