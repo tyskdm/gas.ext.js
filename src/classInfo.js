@@ -3,6 +3,7 @@
  */
 function ClassInfo() {
   this.name = '';
+  this.type = '';
   this.description = '';
   this.properties = [];
   this.methods = [];
@@ -45,19 +46,51 @@ function Parameter() {
 function parseMethod(html) {
   var method = new Method();
 
-  // Method name and description
+  // Method name
   html.moveAfter('<h3 class="showalways">');
   method.name = html.getBetween('<code>', '</code>');
-  method.description = html.getBetween('<p>', '<h4>');
-  html.moveAfter('<h4>');
 
-  // ignore Sample code.
-  if (html.indexOf('<pre class="prettyprint">') === 0) {
+  // Method description
+  var next_p = html.indexOf('</p>');
+  var next_pre = html.indexOf('<pre');
+  var next_h4 = html.indexOf('<h4');
+  var last = html.indexOf('</div>');
+  var term = '</div>';
+
+  if ((next_h4 >= 0) && (next_h4 < last)) {
+    last = next_h4;
+    term = '<h4';
+  }
+  if ((next_pre >= 0) && (next_pre < last)) {
+    last = next_pre;
+    term = '<pre';
+  }
+  if ((next_p >= 0) && (next_p < last)) {
+    last = next_p;
+    term = '</p>';
+  }
+  method.description = html.getBetween('<p>', term);
+
+  if (term === '</p>') {
+    html.moveAfter('</p>');
+  }
+  if (term === '<pre') {
+    html.moveAfter('</pre>');
+  }
+  if (term === '<h4') {
+    html.moveBefore('<h4');
+  }
+  if (term === '</div') {
+    html.moveBefore('</div');
+  }
+
+  // IF sample code
+  if (html.indexOf('<pre') === 0) {
     html.moveAfter('</pre>');
   }
 
   // IF 'Parameters'
-  if (html.indexOf('Parameters</h4>') === 0) {
+  if (html.indexOf('<h4>Parameters</h4>') === 0) {
     html.moveAfter('<table class="function param">');
     html.moveAfter('<tr>');     // skip header row
     html.moveAfter('</tr>');
@@ -77,14 +110,24 @@ function parseMethod(html) {
     html.moveAfter('</table>');
   }
 
+  // IF 'Advanced parameters', skip it.
+  if (html.indexOf('<h4>Advanced parameters</h4>') === 0) {
+    html.moveAfter('</table>');
+  }
+
   // Return value
   if (html.indexOf('<h4>Return</h4>') === 0) {
     html.moveAfter('<h4>Return</h4>');
 
-    method.returnValue.description = html.getBetween('<p><code>', '</div>');
+    if ((html.indexOf('</p>') >= 0) && (html.indexOf('</p>') < html.indexOf('</div>'))) {
+      method.returnValue.description = html.getBetween('<p>', '</p>');
+    } else {
+      method.returnValue.description = html.getBetween('<p>', '</div>');
+    }
   }
 
   // ignore 'See also'
+  // move to block-end
   html.moveAfter('</div>');
 
   return method;
@@ -102,14 +145,16 @@ function parseClassPage(src) {
 
   html.moveAfter('<div id="gc-content"');
   classInfo.name = html.getBetween('<h1 itemprop="name" class="page-title" >', '</h1>');
+  classInfo.type = classInfo.name.substring(0, classInfo.name.indexOf(' '));
+  classInfo.name = classInfo.name.substring(classInfo.name.indexOf(' ') + ' '.length);
 
   html.moveAfter('<div itemprop="articleBody"');
   classInfo.description = html.getBetween('<div class="type doc"><p>', '</div>');
 
-  html.moveAfter('<div class="type toc"><section >');
+  html.moveAfter('<div class="type toc">');
 
   // IF 'Properties'
-  if (html.indexOf('<h3 class="showalways">Properties</h3>') === 0) {
+  if (html.indexOf('<section ><h3 class="showalways">Properties</h3>') === 0) {
     html.moveAfter('<table');
     html.moveAfter('<tr>');
     html.moveAfter('</tr>');
@@ -127,11 +172,11 @@ function parseClassPage(src) {
       classInfo.properties.push(property);
     }
 
-    html.moveAfter('</table></section><section >');
+    html.moveAfter('</table></section>');
   }
 
   // IF 'Methods'
-  if (html.indexOf('<h3 class="showalways">Methods</h3>') === 0) {
+  if (html.indexOf('<section ><h3 class="showalways">Methods</h3>') === 0) {
 
     // TODO: get Reterned Value Information from methods table.
     var returnValues = [];

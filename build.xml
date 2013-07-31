@@ -64,6 +64,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	<fileset id="spec.1st" dir="${spec_dir}">
 		<!-- include name="rajah.init.js"/ -->
 		<exclude name="rajah.init.js"/>
+		<include name="debugMain.js"/>
 	</fileset>
 
 	<fileset id="spec.2nd" dir="${spec_dir}">
@@ -73,6 +74,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	<fileset id="src" dir="${src_dir}">
 		<include name="classList.js"/>
 		<include name="classInfo.js"/>
+		<include name="externCode.js"/>
 		<include name="SourceText.js"/>
 		<include name="spreadsheetMain.js"/>
 	</fileset>

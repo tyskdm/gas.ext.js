@@ -10,6 +10,14 @@ SourceText.prototype = {
   /**
    * @param {string} str
    */
+  moveBefore: function(str) {
+    var index = this.text.indexOf(str);
+    this.text = index < 0 ? '' : this.text.substring(index);
+  },
+
+  /**
+   * @param {string} str
+   */
   moveAfter: function(str) {
     var index = this.text.indexOf(str);
     this.text = index < 0 ? '' : this.text.substring(index + str.length);

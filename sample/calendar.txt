@@ -1,0 +1,139 @@
+
+
+
+		<section >
+			<h3 class="showalways">Methods</h3>
+			
+			<table class="members function">
+				<tr><th>Method</th><th>Return type</th><th>Brief description</th></tr>
+			</table>
+		</section>
+	</div>
+
+	<h2>Detailed documentation</h2>
+	
+	<div id="createAllDayEvent(String,Date)" class="function doc ">
+	
+		<h3 class="showalways"><code>createAllDayEvent(title, date)</code></h3>
+	
+		<p>Creates a new all-day event.</p>
+	
+		<pre class="prettyprint"><span class="pln">&nbsp;</span><code><span class="com">// Creates an all-day event for the moon landing and logs the ID.</span><span class="pln"><br>&nbsp;</span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">event</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="pln">getDefaultCalendar</span><span class="pun">().</span><span class="pln">createAllDayEvent</span><span class="pun">(</span><span class="str">'Apollo 11 Landing'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="str">'July 20, 1969'</span><span class="pun">));</span><span class="pln"><br>&nbsp;</span><span class="typ">Logger</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Event ID: '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="kwd">event</span><span class="pun">.</span><span class="pln">getId</span><span class="pun">());</span><span class="pln"><br>&nbsp;</span></code></pre>
+	
+		<h4>Parameters</h4>
+		<table class="function param">
+			<tbody>
+				<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+				<tr><td><code>title</code></td><td><code>String</code></td><td>the title of the event</td></tr>
+				<tr><td><code>date</code></td><td><code>Date</code></td><td>the date of the event (only the day is used; the time is ignored)</td></tr>
+			</tbody>
+		</table>
+		
+		<h4>Return</h4>
+		<p><code><a href="calendar-event.html">CalendarEvent</a></code> — the created event</p>
+	</div>
+	
+	<hr>
+	
+	<div id="createAllDayEvent(String,Date,Object)" class="function doc ">
+	
+		<h3 class="showalways"><code>createAllDayEvent(title, date, options)</code></h3>
+		
+		<p>Creates a new all-day event.</p>
+		
+		<pre class="prettyprint"><span class="pln">&nbsp;</span><code><span class="com">// Creates an all-day event for the moon landing and logs the ID.</span><span class="pln"><br>&nbsp;</span><span class="kwd">var</span><span class="pln"> </span><span class="kwd">event</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="pln">getDefaultCalendar</span><span class="pun">().</span><span class="pln">createAllDayEvent</span><span class="pun">(</span><span class="str">'Apollo 11 Landing'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="str">'July 20, 1969'</span><span class="pun">),</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">{</span><span class="pln">location</span><span class="pun">:</span><span class="pln"> </span><span class="str">'The Moon'</span><span class="pun">});</span><span class="pln"><br>&nbsp;</span><span class="typ">Logger</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Event ID: '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="kwd">event</span><span class="pun">.</span><span class="pln">getId</span><span class="pun">());</span><span class="pln"><br>&nbsp;</span></code></pre>
+	
+		<h4>Parameters</h4>
+		<table class="function param">
+			<tbody>
+				<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+				<tr><td><code>title</code></td><td><code>String</code></td><td>the title of the event</td></tr>
+				<tr><td><code>date</code></td><td><code>Date</code></td><td>the date of the event (only the day is used; the time is ignored)</td></tr>
+				<tr><td><code>options</code></td><td><code>Object</code></td><td>a JavaScript object that specifies advanced parameters, as listed below</td></tr>
+			</tbody>
+		</table>
+		
+		<h4>Advanced parameters</h4>
+		<table class="function advancedparam">
+			<tbody>
+				<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+				<tr><td><code>description</code></td><td><code>String</code></td><td>the description of the event</td></tr>
+				<tr><td><code>location</code></td><td><code>String</code></td><td>the location of the event</td></tr>
+				<tr><td><code>guests</code></td><td><code>String</code></td><td>a comma-separated list of email addresses that should be added     as guests</td></tr>
+				<tr><td><code>sendInvites</code></td><td><code>Boolean</code></td><td>whether to send invitation emails     (default: <code>false</code>)</td></tr>
+			</tbody>
+		</table>
+		
+		<h4>Return</h4>
+		<p><code><a href="calendar-event.html">CalendarEvent</a></code> — the created event</p>
+	</div>
+	
+	<hr>
+	
+	<div id="createAllDayEventSeries(String,Date,EventRecurrence)" class="function doc ">
+	
+		<h3 class="showalways"><code>createAllDayEventSeries(title, startDate, recurrence)</code></h3>
+		
+		<p>Creates a new all-day event series.</p>
+		
+		<pre class="prettyprint"><span class="pln">&nbsp;</span><code><span class="com">// Creates an event series for a no-meetings day, taking place every Wednesday in 2013.</span><span class="pln"><br>&nbsp;</span><span class="kwd">var</span><span class="pln"> eventSeries </span><span class="pun">=</span><span class="pln"> </span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="pln">getDefaultCalendar</span><span class="pun">().</span><span class="pln">createAllDayEventSeries</span><span class="pun">(</span><span class="str">'No Meetings'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="str">'January 2, 2013 03:00:00 PM EST'</span><span class="pun">),</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="pln">newRecurrence</span><span class="pun">().</span><span class="pln">addWeeklyRule</span><span class="pun">()</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">.</span><span class="pln">onlyOnWeekday</span><span class="pun">(</span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="typ">Weekday</span><span class="pun">.</span><span class="pln">WEDNESDAY</span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">.</span><span class="kwd">until</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="str">'January 1, 2014'</span><span class="pun">)));</span><span class="pln"><br>&nbsp;</span><span class="typ">Logger</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Event Series ID: '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> eventSeries</span><span class="pun">.</span><span class="pln">getId</span><span class="pun">());</span><span class="pln"><br>&nbsp;</span></code></pre>
+		
+		<h4>Parameters</h4>
+		<table class="function param">
+			<tbody>
+				<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+				<tr><td><code>title</code></td><td><code>String</code></td><td>the title of the events in the series</td></tr>
+				<tr><td><code>startDate</code></td><td><code>Date</code></td><td>the date of the first event in the series (only the day is used; the time is     ignored)</td></tr>
+				<tr><td><code>recurrence</code></td><td><code><a href="event-recurrence.html">EventRecurrence</a></code></td><td>the recurrence settings of the event series</td></tr>
+			</tbody>
+		</table>
+			
+		<h4>Return</h4>
+		<p><code><a href="calendar-event-series.html">CalendarEventSeries</a></code> — the created event series</p>
+	</div>
+	
+	<hr>
+	
+	<div id="createAllDayEventSeries(String,Date,EventRecurrence,Object)" class="function doc ">
+	
+		<h3 class="showalways"><code>createAllDayEventSeries(title, startDate, recurrence, options)</code></h3>
+		
+		<p>Creates a new all-day event series. </p>
+		
+		<pre class="prettyprint"><span class="pln">&nbsp;</span><code><span class="com">// Creates an event series for a no-meetings day, taking place every Wednesday in 2013.</span><span class="pln"><br>&nbsp;</span><span class="kwd">var</span><span class="pln"> eventSeries </span><span class="pun">=</span><span class="pln"> </span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="pln">getDefaultCalendar</span><span class="pun">().</span><span class="pln">createAllDayEventSeries</span><span class="pun">(</span><span class="str">'No Meetings'</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="str">'January 2, 2013 03:00:00 PM EST'</span><span class="pun">),</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="pln">newRecurrence</span><span class="pun">().</span><span class="pln">addWeeklyRule</span><span class="pun">()</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">.</span><span class="pln">onlyOnWeekday</span><span class="pun">(</span><span class="typ">CalendarApp</span><span class="pun">.</span><span class="typ">Weekday</span><span class="pun">.</span><span class="pln">WEDNESDAY</span><span class="pun">)</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">.</span><span class="kwd">until</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="str">'January 1, 2014'</span><span class="pun">)),</span><span class="pln"><br>&nbsp; &nbsp; &nbsp;</span><span class="pun">{</span><span class="pln">guests</span><span class="pun">:</span><span class="pln"> </span><span class="str">'everyone@example.com'</span><span class="pun">});</span><span class="pln"><br>&nbsp;</span><span class="typ">Logger</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">'Event Series ID: '</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> eventSeries</span><span class="pun">.</span><span class="pln">getId</span><span class="pun">());</span><span class="pln"><br>&nbsp;</span></code></pre>
+		
+		<h4>Parameters</h4>
+		<table class="function param">
+			<tbody>
+				<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+				<tr><td><code>title</code></td><td><code>String</code></td><td>the title of the events in the series</td></tr>
+				<tr><td><code>startDate</code></td><td><code>Date</code></td><td>the date of the first event in the series (only the day is used; the time is     ignored)</td></tr>
+				<tr><td><code>recurrence</code></td><td><code><a href="event-recurrence.html">EventRecurrence</a></code></td><td>the recurrence settings of the event series</td></tr>
+				<tr><td><code>options</code></td><td><code>Object</code></td><td>a JavaScript object that specifies advanced parameters, as listed below</td></tr>
+			</tbody>
+		</table>
+		
+		<h4>Advanced parameters</h4>
+		<table class="function advancedparam">
+			<tbody>
+				<tr><th>Name</th><th>Type</th><th>Description</th></tr>
+				<tr><td><code>description</code></td><td><code>String</code></td><td>the description of the events in the series</td></tr>
+				<tr><td><code>location</code></td><td><code>String</code></td><td>the location of the events in the series</td></tr>
+				<tr><td><code>guests</code></td><td><code>String</code></td><td>a comma-separated list of email addresses that should be added     as guests to the events in the series</td></tr>
+				<tr><td><code>sendInvites</code></td><td><code>Boolean</code></td><td>whether to send invitation emails     (default: <code>false</code>)</td></tr>
+			</tbody>
+		</table>
+		
+		<h4>Return</h4>
+		<p><code><a href="calendar-event-series.html">CalendarEventSeries</a></code> — the created event series</p>
+	</div>
+	
+	<hr>
+	
+	<div id="unsubscribeFromCalendar()" class="function doc ">
+		<h3 class="showalways"><code>unsubscribeFromCalendar()</code></h3>
+		
+		<p>Unsubscribes the user from the calendar. A user cannot unsubscribe from a calendar they own.</p>
+		
+	</div>
+</div>
