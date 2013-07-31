@@ -74,10 +74,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<include name="classList.js"/>
 		<include name="classInfo.js"/>
 		<include name="SourceText.js"/>
-		<include name="main.js"/>
+		<include name="spreadsheetMain.js"/>
 	</fileset>
 
 	<fileset id="lib" dir="${lib_dir}">
+		<include name="WIL.js"/>
 	</fileset>
 
 	<fileset id="lib_ext" dir="${lib_dir}">
