@@ -2,8 +2,9 @@
  * @constructor
  */
 function ClassInfo() {
-  this.name = '';
   this.type = '';
+  this.name = '';
+  this.path = '';
   this.description = '';
   this.properties = [];
   this.methods = [];
@@ -17,6 +18,7 @@ function ClassInfo() {
 function Property() {
   this.name = '';
   this.type = '';
+  this.path = '';
   this.description = '';
 }
 
@@ -29,6 +31,7 @@ function Method() {
   this.parameters = [];
   this.returnValue = {
       type: '',
+      path: '',
       description: ''
   };
 }
@@ -39,6 +42,7 @@ function Method() {
 function Parameter() {
   this.name = '';
   this.type = '';
+  this.path = '';
   this.description = '';
 }
 
