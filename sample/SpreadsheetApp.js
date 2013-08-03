@@ -1,90 +1,291 @@
 /**
- * Class SpreadsheetApp
- * This class allows users to open Google Spreadsheets files and to create new ones. This class is the parent class for the Spreadsheet Service.
+ * Class CalendarApp
  * Last updated June 27, 2013.
  * @constructor
  */
-var SpreadsheetApp = function() {};
+Calendar.CalendarApp = function() {};
 
 /**
- * Creates a new spreadsheet with the given name.
- * @return {Spreadsheet}
+ * @type {Calendar.Color}
  */
-SpreadsheetApp.prototype.create = function(name) {};
+Calendar.CalendarApp.prototype.Color;
 
 /**
- * Creates a new spreadsheet with the given name and the specified number of rows and columns.
+ * @type {Calendar.GuestStatus}
+ */
+Calendar.CalendarApp.prototype.GuestStatus;
+
+/**
+ * @type {Base.Month}
+ */
+Calendar.CalendarApp.prototype.Month;
+
+/**
+ * @type {Calendar.Visibility}
+ */
+Calendar.CalendarApp.prototype.Visibility;
+
+/**
+ * @type {Base.Weekday}
+ */
+Calendar.CalendarApp.prototype.Weekday;
+
+/**
+ * @param {string} title
+ * @param {Date} date
+ * @return {Calendar.CalendarEvent}
+ */
+Calendar.CalendarApp.prototype.createAllDayEvent = function(title, date) {};
+
+/**
+ * @param {string} title
+ * @param {Date} date
+ * @param {Object} options
+ * @return {Calendar.CalendarEvent}
+ */
+Calendar.CalendarApp.prototype.createAllDayEvent = function(title, date, options) {};
+
+/**
+ * @param {string} title
+ * @param {Date} startDate
+ * @param {Calendar.EventRecurrence} recurrence
+ * @return {Calendar.CalendarEventSeries}
+ */
+Calendar.CalendarApp.prototype.createAllDayEventSeries = function(title, startDate, recurrence) {};
+
+/**
+ * @param {string} title
+ * @param {Date} startDate
+ * @param {Calendar.EventRecurrence} recurrence
+ * @param {Object} options
+ * @return {Calendar.CalendarEventSeries}
+ */
+Calendar.CalendarApp.prototype.createAllDayEventSeries = function(title, startDate, recurrence, options) {};
+
+/**
  * @param {string} name
- * @param {number} rows
- * @param {number} columns
- * @return {Spreadsheet}
+ * @return {Calendar.Calendar}
  */
-SpreadsheetApp.prototype.create = function(name, rows, columns) {};
+Calendar.CalendarApp.prototype.createCalendar = function(name) {};
 
 /**
- * Applies all pending Spreadsheet changes.
+ * @param {string} name
+ * @param {Object} options
+ * @return {Calendar.Calendar}
  */
-SpreadsheetApp.prototype.flush = function() {};
+Calendar.CalendarApp.prototype.createCalendar = function(name, options) {};
 
 /**
- * Returns the currently active spreadsheet, or null if there is none.
- * @return {Spreadsheet}
+ * @param {string} title
+ * @param {Date} startTime
+ * @param {Date} endTime
+ * @return {Calendar.CalendarEvent}
  */
-SpreadsheetApp.prototype.getActive = function() {};
+Calendar.CalendarApp.prototype.createEvent = function(title, startTime, endTime) {};
 
 /**
- * Returns the range of cells that is currently considered active.
- * @return {Range}
+ * @param {string} title
+ * @param {Date} startTime
+ * @param {Date} endTime
+ * @param {Object} options
+ * @return {Calendar.CalendarEvent}
  */
-SpreadsheetApp.prototype.getActiveRange = function() {};
+Calendar.CalendarApp.prototype.createEvent = function(title, startTime, endTime, options) {};
 
 /**
- * Gets the active sheet in a spreadsheet.
- * @return {Sheet}
+ * @param {string} description
+ * @return {Calendar.CalendarEvent}
  */
-SpreadsheetApp.prototype.getActiveSheet = function() {};
+Calendar.CalendarApp.prototype.createEventFromDescription = function(description) {};
 
 /**
- * Returns the currently active spreadsheet, or null if there is none.
- * @return {Spreadsheet}
+ * @param {string} title
+ * @param {Date} startTime
+ * @param {Date} endTime
+ * @param {Calendar.EventRecurrence} recurrence
+ * @return {Calendar.CalendarEventSeries}
  */
-SpreadsheetApp.prototype.getActiveSpreadsheet = function() {};
+Calendar.CalendarApp.prototype.createEventSeries = function(title, startTime, endTime, recurrence) {};
 
 /**
- * Opens the spreadsheet that corresponds to the given File object.
- * @return {Spreadsheet}
+ * @param {string} title
+ * @param {Date} startTime
+ * @param {Date} endTime
+ * @param {Calendar.EventRecurrence} recurrence
+ * @param {Object} options
+ * @return {Calendar.CalendarEventSeries}
  */
-SpreadsheetApp.prototype.open = function(file) {};
+Calendar.CalendarApp.prototype.createEventSeries = function(title, startTime, endTime, recurrence, options) {};
 
 /**
- * Opens the spreadsheet with the given id.
- * @return {Spreadsheet}
+ * @return {Calendar.Calendar[]}
  */
-SpreadsheetApp.prototype.openById = function(id) {};
+Calendar.CalendarApp.prototype.getAllCalendars = function() {};
 
 /**
- * Opens the spreadsheet with the given url.
- * @return {Spreadsheet}
+ * @return {Calendar.Calendar[]}
  */
-SpreadsheetApp.prototype.openByUrl = function(url) {};
+Calendar.CalendarApp.prototype.getAllOwnedCalendars = function() {};
 
 /**
- * Sets the active range for the application.
- * @return {Range}
+ * @param {string} id
+ * @return {Calendar.Calendar}
  */
-SpreadsheetApp.prototype.setActiveRange = function(range) {};
+Calendar.CalendarApp.prototype.getCalendarById = function(id) {};
 
 /**
- * Sets the active sheet in a spreadsheet.
- * @return {Sheet}
+ * @param {string} name
+ * @return {Calendar.Calendar[]}
  */
-SpreadsheetApp.prototype.setActiveSheet = function(sheet) {};
+Calendar.CalendarApp.prototype.getCalendarsByName = function(name) {};
 
 /**
- * Sets the active spreadsheet.
- * @return {void}
+ * @return {string}
  */
-SpreadsheetApp.prototype.setActiveSpreadsheet = function(newActiveSpreadsheet) {};
+Calendar.CalendarApp.prototype.getColor = function() {};
 
+/**
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.getDefaultCalendar = function() {};
 
+/**
+ * @return {string}
+ */
+Calendar.CalendarApp.prototype.getDescription = function() {};
+
+/**
+ * @param {string} iCalId
+ * @return {Calendar.CalendarEventSeries}
+ */
+Calendar.CalendarApp.prototype.getEventSeriesById = function(iCalId) {};
+
+/**
+ * @param {Date} startTime
+ * @param {Date} endTime
+ * @return {Calendar.CalendarEvent[]}
+ */
+Calendar.CalendarApp.prototype.getEvents = function(startTime, endTime) {};
+
+/**
+ * @param {Date} startTime
+ * @param {Date} endTime
+ * @param {Object} options
+ * @return {Calendar.CalendarEvent[]}
+ */
+Calendar.CalendarApp.prototype.getEvents = function(startTime, endTime, options) {};
+
+/**
+ * @param {Date} date
+ * @return {Calendar.CalendarEvent[]}
+ */
+Calendar.CalendarApp.prototype.getEventsForDay = function(date) {};
+
+/**
+ * @param {Date} date
+ * @param {Object} options
+ * @return {Calendar.CalendarEvent[]}
+ */
+Calendar.CalendarApp.prototype.getEventsForDay = function(date, options) {};
+
+/**
+ * @return {string}
+ */
+Calendar.CalendarApp.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+Calendar.CalendarApp.prototype.getName = function() {};
+
+/**
+ * @param {string} id
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.getOwnedCalendarById = function(id) {};
+
+/**
+ * @param {string} name
+ * @return {Calendar.Calendar[]}
+ */
+Calendar.CalendarApp.prototype.getOwnedCalendarsByName = function(name) {};
+
+/**
+ * @return {string}
+ */
+Calendar.CalendarApp.prototype.getTimeZone = function() {};
+
+/**
+ * @return {boolean}
+ */
+Calendar.CalendarApp.prototype.isHidden = function() {};
+
+/**
+ * @return {boolean}
+ */
+Calendar.CalendarApp.prototype.isMyPrimaryCalendar = function() {};
+
+/**
+ * @return {boolean}
+ */
+Calendar.CalendarApp.prototype.isOwnedByMe = function() {};
+
+/**
+ * @return {boolean}
+ */
+Calendar.CalendarApp.prototype.isSelected = function() {};
+
+/**
+ * @return {Calendar.EventRecurrence}
+ */
+Calendar.CalendarApp.prototype.newRecurrence = function() {};
+
+/**
+ * @param {string} color
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.setColor = function(color) {};
+
+/**
+ * @param {string} description
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.setDescription = function(description) {};
+
+/**
+ * @param {boolean} hidden
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.setHidden = function(hidden) {};
+
+/**
+ * @param {string} name
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.setName = function(name) {};
+
+/**
+ * @param {boolean} selected
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.setSelected = function(selected) {};
+
+/**
+ * @param {string} timeZone
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.setTimeZone = function(timeZone) {};
+
+/**
+ * @param {string} id
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.subscribeToCalendar = function(id) {};
+
+/**
+ * @param {string} id
+ * @param {Object} options
+ * @return {Calendar.Calendar}
+ */
+Calendar.CalendarApp.prototype.subscribeToCalendar = function(id, options) {};
 

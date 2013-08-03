@@ -85,11 +85,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 	<fileset id="lib_ext" dir="${lib_dir}">
 		<!-- using lib file that doesn't have ext file, instead of ext file. -->
+		<exclude name="WIL.js"/>
 	</fileset>
 
 	<fileset id="ext" dir="${ext_dir}">
 		<include name="rajah.ext.js"/>
 		<include name="jasmine.js"/>
+		<include name="gas.ext.js"/>
 	</fileset>
 
 

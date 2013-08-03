@@ -18,7 +18,6 @@ function ClassInfo() {
 function Property() {
   this.name = '';
   this.type = '';
-  this.path = '';
   this.description = '';
 }
 
@@ -31,7 +30,6 @@ function Method() {
   this.parameters = [];
   this.returnValue = {
       type: '',
-      path: '',
       description: ''
   };
 }
@@ -42,12 +40,52 @@ function Method() {
 function Parameter() {
   this.name = '';
   this.type = '';
-  this.path = '';
   this.description = '';
 }
 
 
-function parseMethod(html) {
+
+function getClassType(classPath, currentPath) {
+  var type = classPath;
+  var path = '';
+
+  if (classPath.indexOf('<a') === 0) {
+    // classPath = ex. '<a href="../awesome-calendar/color.htm">Color</a>'
+
+    type = classPath.substring(                     // 'Color'
+        (classPath.indexOf('">') + '">'.length),
+        classPath.indexOf('</a>')
+    );
+
+    path = classPath.substring(
+        (classPath.indexOf('href="') + 'href="'.length),
+        classPath.indexOf('">')
+    );                                              // '../awesome-calendar/color.htm'
+
+    if (path.indexOf('../') !== 0) {
+      type = currentPath + '.' + type;              // currentPath.Color
+
+    } else {
+      path = path.substring('../'.length);          // 'awesome-carendar/color.htm'
+      path = path.substring(0, path.indexOf('/'));  // 'awesome-carendar'
+
+      var part, parts = path.split('-');            // [ 'awesome', 'carendar' ]
+
+      path = '';
+      while (parts.length) {                        // += 'Awesome' += 'Carendar'
+        part = parts.shift();
+        var charCode = part.charCodeAt(0) + ('A'.charCodeAt(0) - 'a'.charCodeAt(0));
+        path += String.fromCharCode(charCode) + part.substring(1);
+      }
+      type = path + '.' + type;                     // 'AwesomeCarendar.Color'
+    }
+  }
+
+  return type;
+}
+
+
+function parseMethod(html, currentPath) {
   var method = new Method();
 
   // Method name
@@ -101,11 +139,16 @@ function parseMethod(html) {
 
     while (html.indexOf('<tr>') === 0) {
       var parameter = new Parameter();
+      var classType;
 
       parameter.name = html.getBetween('<td><code>', '</code></td>');
       html.moveAfter('</td>');
-      parameter.type = html.getBetween('<td><code>', '</code></td>');
+
+      classType = html.getBetween('<td><code>', '</code></td>');
+      classType = getClassType(classType, currentPath);
+      parameter.type = classType;
       html.moveAfter('</td>');
+
       parameter.description = html.getBetween('<td>', '</td>');
       html.moveAfter('</tr>');
 
@@ -140,17 +183,31 @@ function parseMethod(html) {
 
 /**
  * @param {string} src
+ * @param {string} path
  * @return {Object}
  */
-function parseClassPage(src) {
+function parseClassPage(src, path) {
 
   var html = new SourceText(src);
   var classInfo = new ClassInfo();
+  var classType;
+  var className;
+
+  classInfo.path = path;
+  if (path.indexOf('<sup>') >= 0) {
+    classInfo.path = path.substring(0, path.indexOf('<sup>'));
+  }
 
   html.moveAfter('<div id="gc-content"');
-  classInfo.name = html.getBetween('<h1 itemprop="name" class="page-title" >', '</h1>');
-  classInfo.type = classInfo.name.substring(0, classInfo.name.indexOf(' '));
-  classInfo.name = classInfo.name.substring(classInfo.name.indexOf(' ') + ' '.length);
+
+  className = html.getBetween('<h1 itemprop="name" class="page-title" >', '</h1>');
+  classInfo.type = className.substring(0, className.indexOf(' '));
+
+  className = className.substring(className.indexOf(' ') + ' '.length);
+  if (className.indexOf('<sup>') >= 0) {
+    className = className.substring(0, className.indexOf('<sup>'));
+  }
+  classInfo.name = className;
 
   html.moveAfter('<div itemprop="articleBody"');
   classInfo.description = html.getBetween('<div class="type doc"><p>', '</div>');
@@ -168,7 +225,11 @@ function parseClassPage(src) {
 
       property.name = html.getBetween('<td><code>', '</code></td>');
       html.moveAfter('</td>');
-      property.type = html.getBetween('<td><code>', '</code></td>');
+
+      classType = html.getBetween('<td><code>', '</code></td>');
+      classType = getClassType(classType, classInfo.path);
+      property.type = classType;
+
       html.moveAfter('</td>');
       property.description = html.getBetween('<td>', '</td>');
       html.moveAfter('</tr>');
@@ -182,52 +243,55 @@ function parseClassPage(src) {
   // IF 'Methods'
   if (html.indexOf('<section ><h3 class="showalways">Methods</h3>') === 0) {
 
-    // TODO: get Reterned Value Information from methods table.
+    // Create list of Return Value from methods.
+
     var returnValues = [];
 
     html.moveAfter('<table');
     html.moveAfter('</tr>');
 
-    while (html.indexOf('<tr>') === 0) {
-      var ret = new Method();
+    while (html.indexOf('<tr>') === 0) {        // Methods list
+      var tempMethod = new Method();
 
       html.moveAfter('<td><code><a href=');
-      ret.name = html.getBetween('>', '</a></code></td>');
+      tempMethod.name = html.getBetween('>', '</a></code></td>');  // method name
       html.moveAfter('</td>');
-      ret.returnValue.type = html.getBetween('<td><code>', '</code></td>');
+      tempMethod.returnValue.type = html.getBetween('<td><code>', '</code></td>');
       html.moveAfter('</td>');
-      ret.returnValue.description = html.getBetween('<td>', '</td>');
+      tempMethod.description = html.getBetween('<td>', '</td>');
       html.moveAfter('</tr>');
 
-      returnValues.push(ret);
+      returnValues.push(tempMethod);
     }
     html.moveAfter('</section>');
 
-    if (html.indexOf('<section') === 0) {
+    if (html.indexOf('<section') === 0) {       // Deprecated methods
       html.moveAfter('<table');
       html.moveAfter('</tr>');
 
       while (html.indexOf('<tr>') === 0) {
-        var ret = new Method();
+        var tempMethod = new Method();
 
         html.moveAfter('<td><code><s><a href=');
-        ret.name = html.getBetween('>', '</a></s></code></td>');
+        tempMethod.name = html.getBetween('>', '</a></s></code></td>');    // method name
         html.moveAfter('</td>');
-        ret.returnValue.type = html.getBetween('<td><code>', '</code></td>');
+        tempMethod.returnValue.type = html.getBetween('<td><code>', '</code></td>');
         html.moveAfter('</td>');
-        ret.returnValue.description = html.getBetween('<td>', '</td>');
+        tempMethod.description = html.getBetween('<td>', '</td>');
         html.moveAfter('</tr>');
 
-        returnValues.push(ret);
+        returnValues.push(tempMethod);
       }
     }
-    html.moveAfter('<h2>Detailed documentation</h2>');
 
+    html.moveAfter('<h2>Detailed documentation</h2>');
     var cnt = 0;
     do {
-      var method = parseMethod(html);
-      if (method.name === returnValues[cnt].name) {
-        method.returnValue.type = returnValues[cnt].returnValue.type;
+      var method = parseMethod(html, classInfo.path);
+      if (method.name === returnValues[cnt].name) {     // method name
+        classType = returnValues[cnt].returnValue.type;
+        classType = getClassType(classType, classInfo.path);
+        method.returnValue.type = classType;
       } else {
         method.returnValue.type = 'not found';
       }
@@ -239,9 +303,11 @@ function parseClassPage(src) {
     if (html.indexOf('<h2>Deprecated methods</h2>') === 0) {
 
       do {
-        var method = parseMethod(html);
+        var method = parseMethod(html, classInfo.path);
         if (method.name === returnValues[cnt].name) {
-          method.returnValue.type = returnValues[cnt].returnValue.type;
+          classType = returnValues[cnt].returnValue.type;
+          classType = getClassType(classType, classInfo.path);
+          method.returnValue.type = classType;
         } else {
           method.returnValue.type = 'not found';
         }

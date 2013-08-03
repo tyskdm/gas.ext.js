@@ -6,7 +6,7 @@
 Calendar.Color = function() {};
 
 /**
- * @enum
+ * @type {Calendar.Color}
  */
 Calendar.Color.prototype.RED;
 
