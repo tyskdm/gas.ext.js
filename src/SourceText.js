@@ -32,16 +32,20 @@ SourceText.prototype = {
 
     var s = this.text.indexOf(start);
     if (s < 0) {
-      return null;
+      s = 0;
+    } else {
+      s += start.length;
     }
-    s += start.length;
 
+    var str = '';
     var e = this.text.indexOf(end);
     if (e < 0) {
-      return null;
+      str = this.text.substring(s);
+    } else {
+      str = this.text.substring(s, e);
     }
 
-    return this.text.substring(s, e);
+    return str;
   },
 
   /**

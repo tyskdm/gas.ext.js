@@ -26,6 +26,7 @@ function Property() {
  */
 function Method() {
   this.name = '';
+  this.paramString = '';
   this.description = '';
   this.parameters = [];
   this.returnValue = {
@@ -44,10 +45,17 @@ function Parameter() {
 }
 
 
-
-function getClassType(classPath, currentPath) {
+/**
+ * @param {string} classPath
+ * @param {string} currentPath
+ * @param {string} PREFIX
+ * @return {string}
+ */
+function getClassType(classPath, currentPath, PREFIX) {
   var type = classPath;
   var path = '';
+
+  var CLASS_PREFIX = PREFIX;
 
   if (classPath.indexOf('<a') === 0) {
     // classPath = ex. '<a href="../awesome-calendar/color.htm">Color</a>'
@@ -78,19 +86,41 @@ function getClassType(classPath, currentPath) {
         path += String.fromCharCode(charCode) + part.substring(1);
       }
       type = path + '.' + type;                     // 'AwesomeCarendar.Color'
+      type = CLASS_PREFIX + type;
+    }
+
+  } else {
+    // Table of Gas original types but no url link.
+    var HAND_PICK_TABLE = {
+        MenuBar: 'Ui.MenuBar',
+        MenuItem: 'Ui.MenuItem',
+        MenuItemSeparator: 'Ui.MenuItemSeparator',
+        TreeItem: 'Ui.TreeItem'
+    };
+
+    if (HAND_PICK_TABLE[type]) {
+      type = HAND_PICK_TABLE[type];
+      type = CLASS_PREFIX + type;
     }
   }
 
   return type;
 }
 
-
-function parseMethod(html, currentPath) {
+/**
+ * @param {Object} html
+ * @param {string} currentPath
+ * @param {string} PREFIX
+ * @return {Object}
+ */
+function parseMethod(html, currentPath, PREFIX) {
   var method = new Method();
 
   // Method name
   html.moveAfter('<h3 class="showalways">');
-  method.name = html.getBetween('<code>', '</code>');
+  var fName = html.getBetween('<code>', '</code>');
+  method.name = fName.substring(0, fName.indexOf('('));
+  method.paramString = fName.substring(fName.indexOf('('));
 
   // Method description
   var next_p = html.indexOf('</p>');
@@ -145,7 +175,7 @@ function parseMethod(html, currentPath) {
       html.moveAfter('</td>');
 
       classType = html.getBetween('<td><code>', '</code></td>');
-      classType = getClassType(classType, currentPath);
+      classType = getClassType(classType, currentPath, PREFIX);
       parameter.type = classType;
       html.moveAfter('</td>');
 
@@ -184,9 +214,10 @@ function parseMethod(html, currentPath) {
 /**
  * @param {string} src
  * @param {string} path
+ * @param {string} PREFIX
  * @return {Object}
  */
-function parseClassPage(src, path) {
+function parseClassPage(src, path, PREFIX) {
 
   var html = new SourceText(src);
   var classInfo = new ClassInfo();
@@ -197,6 +228,7 @@ function parseClassPage(src, path) {
   if (path.indexOf('<sup>') >= 0) {
     classInfo.path = path.substring(0, path.indexOf('<sup>'));
   }
+  classInfo.path = PREFIX + classInfo.path;
 
   html.moveAfter('<div id="gc-content"');
 
@@ -227,7 +259,7 @@ function parseClassPage(src, path) {
       html.moveAfter('</td>');
 
       classType = html.getBetween('<td><code>', '</code></td>');
-      classType = getClassType(classType, classInfo.path);
+      classType = getClassType(classType, classInfo.path, PREFIX);
       property.type = classType;
 
       html.moveAfter('</td>');
@@ -254,7 +286,10 @@ function parseClassPage(src, path) {
       var tempMethod = new Method();
 
       html.moveAfter('<td><code><a href=');
-      tempMethod.name = html.getBetween('>', '</a></code></td>');  // method name
+      var fName = html.getBetween('>', '</a></code></td>');  // method name
+      tempMethod.name = fName.substring(0, fName.indexOf('('));
+      tempMethod.paramString = fName.substring(fName.indexOf('('));
+
       html.moveAfter('</td>');
       tempMethod.returnValue.type = html.getBetween('<td><code>', '</code></td>');
       html.moveAfter('</td>');
@@ -273,7 +308,9 @@ function parseClassPage(src, path) {
         var tempMethod = new Method();
 
         html.moveAfter('<td><code><s><a href=');
-        tempMethod.name = html.getBetween('>', '</a></s></code></td>');    // method name
+        var fName = html.getBetween('>', '</a></s></code></td>');    // method name
+        tempMethod.name = fName.substring(0, fName.indexOf('('));
+        tempMethod.paramString = fName.substring(fName.indexOf('('));
         html.moveAfter('</td>');
         tempMethod.returnValue.type = html.getBetween('<td><code>', '</code></td>');
         html.moveAfter('</td>');
@@ -287,10 +324,10 @@ function parseClassPage(src, path) {
     html.moveAfter('<h2>Detailed documentation</h2>');
     var cnt = 0;
     do {
-      var method = parseMethod(html, classInfo.path);
+      var method = parseMethod(html, classInfo.path, PREFIX);
       if (method.name === returnValues[cnt].name) {     // method name
         classType = returnValues[cnt].returnValue.type;
-        classType = getClassType(classType, classInfo.path);
+        classType = getClassType(classType, classInfo.path, PREFIX);
         method.returnValue.type = classType;
       } else {
         method.returnValue.type = 'not found';
@@ -303,10 +340,10 @@ function parseClassPage(src, path) {
     if (html.indexOf('<h2>Deprecated methods</h2>') === 0) {
 
       do {
-        var method = parseMethod(html, classInfo.path);
+        var method = parseMethod(html, classInfo.path, PREFIX);
         if (method.name === returnValues[cnt].name) {
           classType = returnValues[cnt].returnValue.type;
-          classType = getClassType(classType, classInfo.path);
+          classType = getClassType(classType, classInfo.path, PREFIX);
           method.returnValue.type = classType;
         } else {
           method.returnValue.type = 'not found';

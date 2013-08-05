@@ -27,6 +27,9 @@ function onOpen() {
 }
 
 
+var GAS_SERVICE_PREFIX = '_';
+
+
 function getClassList() {
   var sheetDb = namespace.require('WIL.Spreadsheet.sheetDb');
   var config = namespace.require('WIL.Spreadsheet.config');
@@ -102,7 +105,7 @@ function getClassInfo() {
     }
 
     var html = UrlFetchApp.fetch(url).getContentText();
-    var classInfo = parseClassPage(html, path);
+    var classInfo = parseClassPage(html, path, GAS_SERVICE_PREFIX);
 
     table.setValue(row, 'Class.type', classInfo.type);
     table.setValue(row, 'Class.Properties', classInfo.properties.length);
@@ -110,7 +113,7 @@ function getClassInfo() {
     table.setValue(row, 'Class.Deprecated', classInfo.deprecatedMethods.length);
     table.setValue(row, 'Class.update', classInfo.lastUpdate);
 
-    var extFile = generateExternContent(classInfo);
+    var extFile = generateExternContent(classInfo, GAS_SERVICE_PREFIX);
     table.setValue(row, 'externfile.auto-generated', extFile);
 
     SpreadsheetApp.flush();
@@ -140,6 +143,7 @@ function exportExternfile() {
 
   var content = '';
   var service = '';
+
   // forEach records
   records.forEach(function(table, row) {
 
@@ -150,15 +154,15 @@ function exportExternfile() {
       }
 
       if (table.getValue(row, 'UseThisService') !== 'no') {
+        // starting new Service block.
         service = sName;
 
-        // add Service Object
         content +=
           '\n' +
           '/**\n' +
-          ' * ' + service + ' Services\n' +
+          ' * ' + GAS_SERVICE_PREFIX + service + ' Services\n' +
           ' */\n' +
-          'var ' + service + ' = {};\n' +
+          'var ' + GAS_SERVICE_PREFIX + service + ' = {};\n' +
           '\n';
 
       } else {
@@ -183,7 +187,7 @@ function exportExternfile() {
       content +=
         '\n' +
         '/**\n' +
-        ' * @type {' + service + '.' + className + '}\n' +
+        ' * @type {' + GAS_SERVICE_PREFIX + service + '.' + className + '}\n' +
         ' */\n' +
         'var ' + className + ';\n' +
         '\n';

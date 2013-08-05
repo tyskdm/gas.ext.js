@@ -4,25 +4,6 @@ build.xml: template for Apache Ant to develop Google Apps Script.
 version 0.7.0
 built 2013.07.17
 Copyright (c) 2013 Tsuyoshi Kodama
-
-The MIT License (MIT)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 <project name="ant-template-for-GAS" default="usage" basedir=".">
 	<description>ant template for GAS</description>
@@ -31,7 +12,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	<property name="package.name"		value="getGasExternFiles"/>
 	<property name="package.description"	value="parse GAS reference web pages and create extern files for google closure compiler."/>
 	<property name="package.website"	value="https://github.com/tyskdm/"/>
-	<property name="package.version"	value="0.2.0"/>
+	<property name="package.version"	value="0.7.0"/>
 
 	<property name="package.author.name"	value="Tsuyoshi Kodama"/>
 	<property name="package.author.email"	value="tsuyoshi.kodama@gmail.com"/>
@@ -62,13 +43,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 	<!-- fileset: source files list -->
 	<fileset id="spec.1st" dir="${spec_dir}">
-		<!-- include name="rajah.init.js"/ -->
-		<exclude name="rajah.init.js"/>
 		<include name="debugMain.js"/>
 	</fileset>
 
 	<fileset id="spec.2nd" dir="${spec_dir}">
-		<exclude name="rajah.init.js"/>
 	</fileset>
 
 	<fileset id="src" dir="${src_dir}">
@@ -83,14 +61,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<include name="WIL.js"/>
 	</fileset>
 
-	<fileset id="lib_ext" dir="${lib_dir}">
-		<!-- using lib file that doesn't have ext file, instead of ext file. -->
-		<exclude name="WIL.js"/>
-	</fileset>
-
 	<fileset id="ext" dir="${ext_dir}">
-		<include name="rajah.ext.js"/>
-		<include name="jasmine.js"/>
 		<include name="gas.ext.js"/>
 	</fileset>
 
@@ -101,7 +72,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	</path>
 
 	<path id="out.audit.externs">
-		<fileset refid="lib_ext"/>
 		<fileset refid="ext"/>
 	</path>
 
@@ -122,7 +92,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	</path>
 
 	<path id="utest.audit.externs">
-		<fileset refid="lib_ext"/>
 		<fileset refid="ext"/>
 	</path>
 
@@ -415,6 +384,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 		<copy file="${out_dir}/out.mini.js"
 			tofile="${dist_dir}/${package.version}/${package.name}.mini.js"/>
+
+		<copy file="${ext_dir}/gas.ext.js"
+			tofile="${dist_dir}/${package.version}/gas.ext.js"/>
 	</target>
 
 
