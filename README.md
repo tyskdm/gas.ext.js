@@ -10,12 +10,12 @@ This repository has 2 objectives.
 
 1. ExternFile Generate tool
 
-Of course, it's google apps script :-)
+    Of course, it's google apps script :-)
 
 2. ExternFile itself
 
-Generated extern file for Google Apps Services.
-Latest version of gas.ext.js is [here](https://github.com/tyskdm/gas.ext.js/tree/master/dist/0.7.0).
+    Generated extern file for Google Apps Services.
+    Latest version of gas.ext.js is [here](https://github.com/tyskdm/gas.ext.js/tree/master/dist/0.7.0).
 
 
 ##ExternFile Generate tool
@@ -29,14 +29,14 @@ The script:
 
 1. parse side-bar of REFERENCE page, and get whole page(class) list.
 
-- Because of it's bugs, eye-ball check and hand correct are needed.
+    - Because of it's bugs, eye-ball check and hand correct are needed.
 
 2. parse each pages to get Class info, and generate anotated class info into a cell of spreadsheet.
 
 3. After indicating which services to use, which classes to create instance by hands,...
 
-- 'Advanced Google Services' pages and 'Jdbc' pages have different format from others, and not enough information.
-- So I didn't use them (means not included in latest gas.ext.js).
+    - 'Advanced Google Services' pages and 'Jdbc' pages have different format from others, and not enough information.
+    - So I didn't use them (means not included in latest gas.ext.js).
 
 4. Merge class info into one file.
 
@@ -70,10 +70,12 @@ case #1:
 _CarendarApp.createCarendar(name)
 _CarendarApp.createCarendar(name, options)
 
+```js
 /**
  * @param {string} name
  * @param {Object=} options
  */
+```
 
 - '=' means it's omissible.
 
@@ -81,10 +83,12 @@ case #2:
 _MenuBar.addItem(text, command)
 _MenuBar.addItem(text, subMenu)
 
+```js
 /**
  * @param {string} text
  * @param {(_Ui.Handler|_Ui.MenuBar)} arg2
  */
+```
 
 - '(...|...)' means OR.
 
@@ -95,10 +99,12 @@ In GAS environment, some Classes are created as global object before executing u
 They are also defined in this extern file.
 
 ex.
+```js
 /**
  * @type {_Calendar.CalendarApp}
  */
 var CalendarApp;
+```
 
 
 
