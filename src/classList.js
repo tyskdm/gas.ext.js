@@ -19,6 +19,7 @@ function Category() {
  */
 function Service() {
   this.name = '';
+  this.status = '';
   this.url = '';
   this.classPages = [];
 }
@@ -28,6 +29,7 @@ function Service() {
  */
 function ClassPage() {
   this.name = '';
+  this.status = '';
   this.url = '';
   this.classInfo = {};
   this.instanceObject = false;
@@ -67,10 +69,14 @@ function parseClassList(url) {
       var service = new Service();
 
       html.moveAfter('<li class=');
+      service.status = html.getBetween('"', '">');
       service.url = html.getBetween('<a href="', '" data-title');
       html.moveAfter('<a href="');
 
       service.name = html.getBetween('<span>', '</span>');      // Service name.
+      if (service.name.indexOf('<') > 0) {
+        service.name = service.name.substring(0, service.name.indexOf('<'));
+      }
       html.moveAfter('</span></a>');
 
       if (html.indexOf('<ul>') !== 0) {
@@ -85,6 +91,7 @@ function parseClassList(url) {
         instanceObject = false;
       }
       while (html.indexOf('<li') === 0) {
+        var classStatus = html.getBetween('<li class="', '">');
         html.moveAfter('>');
         if (html.indexOf('<a') !== 0) {
           instanceObject = false;
@@ -95,6 +102,10 @@ function parseClassList(url) {
         var classPage = new ClassPage();
         classPage.url = html.getBetween('<a href="', '" data-title');
         classPage.name = html.getBetween('<span>', '</span>');  // Class name.
+        if (classPage.name.indexOf('<') > 0) {
+          classPage.name = classPage.name.substring(0, classPage.name.indexOf('<'));
+        }
+        classPage.status = classStatus;
         classPage.instanceObject = instanceObject;
         html.moveAfter('</li>');
 

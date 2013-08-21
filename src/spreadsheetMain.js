@@ -53,12 +53,14 @@ function getClassList() {
     for (s = 0; s < category.services.length; s++) {
       var service = category.services[s];
 
-      list.setValue(r, 'Service', service.name);
+      list.setValue(r, 'Service.name', service.name);
+      list.setValue(r, 'Service.status', service.status);
 
       for (p = 0; p < service.classPages.length; p++) {
         var cPage = service.classPages[p];
 
         list.setValue(r, 'Class.name', cPage.name);
+        list.setValue(r, 'Class.status', cPage.status);
         list.setValue(r, 'Class.URL', cPage.url);
         list.setValue(r, 'Class.obj', (cPage.instanceObject ? 'yes' : ''));
 
@@ -97,8 +99,8 @@ function getClassInfo() {
   // forEach records
   records.forEach(function(table, row) {
     var url = settings.URL.domain + table.getValue(row, 'Class.URL');
-    if (table.getValue(row, 'Service') !== '') {
-      path = table.getValue(row, 'Service');
+    if (table.getValue(row, 'Service.name') !== '') {
+      path = table.getValue(row, 'Service.name');
     }
 
     if (table.getValue(row, 'externfile.auto-generated') !== '') {
@@ -148,7 +150,7 @@ function exportExternfile() {
   // forEach records
   records.forEach(function(table, row) {
 
-    var sName = table.getValue(row, 'Service');
+    var sName = table.getValue(row, 'Service.name');
     if (sName !== '') {
       if (sName.indexOf('<sup>') >= 0) {
         sName = sName.substring(0, sName.indexOf('<sup>'));
