@@ -30,6 +30,7 @@ function ClassPage() {
   this.name = '';
   this.url = '';
   this.classInfo = {};
+  this.instanceObject = false;
 }
 
 
@@ -75,11 +76,18 @@ function parseClassList(url) {
       if (html.indexOf('<ul>') !== 0) {
         html.moveAfter('</li>');
         continue;
+      } else {
+        html.moveAfter('<ul>');
       }
 
+      var instanceObject = true;
+      if (category.name === 'Advanced Google Services') {
+        instanceObject = false;
+      }
       while (html.indexOf('<li') === 0) {
-        html.moveAfter('<li class="">');
+        html.moveAfter('>');
         if (html.indexOf('<a') !== 0) {
+          instanceObject = false;
           html.moveAfter('</li>');
           continue;
         }
@@ -87,6 +95,7 @@ function parseClassList(url) {
         var classPage = new ClassPage();
         classPage.url = html.getBetween('<a href="', '" data-title');
         classPage.name = html.getBetween('<span>', '</span>');  // Class name.
+        classPage.instanceObject = instanceObject;
         html.moveAfter('</li>');
 
         service.classPages.push(classPage);

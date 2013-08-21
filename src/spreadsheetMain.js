@@ -60,6 +60,7 @@ function getClassList() {
 
         list.setValue(r, 'Class.name', cPage.name);
         list.setValue(r, 'Class.URL', cPage.url);
+        list.setValue(r, 'Class.obj', (cPage.instanceObject ? 'yes' : ''));
 
         r++;
       }
