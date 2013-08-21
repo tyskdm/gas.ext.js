@@ -152,11 +152,9 @@ function exportExternfile() {
 
     var sName = table.getValue(row, 'Service.name');
     if (sName !== '') {
-      if (sName.indexOf('<sup>') >= 0) {
-        sName = sName.substring(0, sName.indexOf('<sup>'));
-      }
 
-      if (table.getValue(row, 'UseThisService') !== 'no') {
+      if ((table.getValue(row, 'UseThisService') !== 'no') &&
+          (table.getValue(row, 'Service.status') !== 'deprecated')) {
         // starting new Service block.
         service = sName;
 
@@ -178,22 +176,21 @@ function exportExternfile() {
     }
 
     // In service.
-    content += table.getValue(row, 'externfile.auto-generated');
+    if (table.getValue(row, 'Class.status') !== 'deprecated') {
+      content += table.getValue(row, 'externfile.auto-generated');
 
-    if (table.getValue(row, 'InstanceObject') === 'yes') {
+      if (table.getValue(row, 'Class.obj') === 'yes') {
 
-      // add Global object.
-      var className = table.getValue(row, 'Class.name');
-      if (className.indexOf('<sup>') >= 0) {
-        className = className.substring(0, className.indexOf('<sup>'));
+        // add Global object.
+        var className = table.getValue(row, 'Class.name');
+        content +=
+          '\n' +
+          '/**\n' +
+          ' * @type {' + GAS_SERVICE_PREFIX + service + '.' + className + '}\n' +
+          ' */\n' +
+          'var ' + className + ';\n' +
+          '\n';
       }
-      content +=
-        '\n' +
-        '/**\n' +
-        ' * @type {' + GAS_SERVICE_PREFIX + service + '.' + className + '}\n' +
-        ' */\n' +
-        'var ' + className + ';\n' +
-        '\n';
     }
   });
 
