@@ -70,7 +70,12 @@ function parseClassList(url) {
       html.moveAfter('<a href="');
 
       service.name = html.getBetween('<span>', '</span>');      // Service name.
-      html.moveAfter('</span></a><ul>');
+      html.moveAfter('</span></a>');
+
+      if (html.indexOf('<ul>') !== 0) {
+        html.moveAfter('</li>');
+        continue;
+      }
 
       while (html.indexOf('<li') === 0) {
         html.moveAfter('<li class="">');
