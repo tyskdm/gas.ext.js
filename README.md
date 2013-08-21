@@ -111,6 +111,7 @@ var CalendarApp;
 
 ##Change History
 
+2013.08.21 : fix some bugs about getting class list, get latest extern files.
 2013.08.07 : add this README.md and brief description.
 
 
