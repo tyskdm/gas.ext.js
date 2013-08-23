@@ -63,6 +63,7 @@ Copyright (c) 2013 Tsuyoshi Kodama
 
 	<fileset id="ext" dir="${ext_dir}">
 		<include name="gas.ext.js"/>
+		<include name="wil.ext.js"/>
 	</fileset>
 
 
