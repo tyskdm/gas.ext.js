@@ -1,3 +1,28 @@
+/*
+WIL:
+version 1.1.1
+build 116 - 2013/08/23 12:35:38
+Copyright (c) 2013 Tsuyoshi Kodama
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
 /**
  * namespace Services
  * @param {string} nsString   name of namespace.
@@ -36,8 +61,8 @@ WIL.Spreadsheet = {};
  * @param {_Spreadsheet.Sheet} sheet
  * @param {number} topRow
  * @param {number} topCol
- * @param {number} endRow
- * @param {number} endCol
+ * @param {number=} endRow
+ * @param {number=} endCol
  */
 WIL.Spreadsheet.Table = function(sheet, topRow, topCol, endRow, endCol) {};
 
@@ -89,7 +114,7 @@ WIL.Spreadsheet.Table.prototype.getNumData = function(headerIndex) {};
  * WIL.Spreadsheet.RowsList Class
  * @constructor
  * @param {WIL.Spreadsheet.Table} table
- * @param {function(WIL.Spreadsheet.Table,number):boolean} func Matcher function to select rows.
+ * @param {function(WIL.Spreadsheet.Table,number):boolean=} func Matcher function to select rows.
  */
 WIL.Spreadsheet.RowsList = function(table, func) {};
 
@@ -191,4 +216,3 @@ WIL.Spreadsheet.sheetDb = {};
  * @return {Object} created Table. if fail, returns null.
  */
 WIL.Spreadsheet.sheetDb.getTable = function(tableId, optSpreadsheetId, opt) {};
-

@@ -50,20 +50,12 @@ Copyright (c) 2013 Tsuyoshi Kodama
 	</fileset>
 
 	<fileset id="src" dir="${src_dir}">
-		<include name="classList.js"/>
-		<include name="classInfo.js"/>
-		<include name="externCode.js"/>
-		<include name="SourceText.js"/>
-		<include name="spreadsheetMain.js"/>
 	</fileset>
 
 	<fileset id="lib" dir="${lib_dir}">
-		<include name="WIL.js"/>
 	</fileset>
 
 	<fileset id="ext" dir="${ext_dir}">
-		<include name="gas.ext.js"/>
-		<include name="wil.ext.js"/>
 	</fileset>
 
 
