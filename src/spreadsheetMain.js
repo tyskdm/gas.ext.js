@@ -31,8 +31,12 @@ var GAS_SERVICE_PREFIX = '_';
 
 
 function getClassList() {
-  var sheetDb = namespace.require('WIL.Spreadsheet.sheetDb');
-  var config = namespace.require('WIL.Spreadsheet.config');
+
+  namespace.require('WIL.Spreadsheet.sheetDb');
+  var sheetDb = WIL.Spreadsheet.sheetDb;
+
+  namespace.require('WIL.Spreadsheet.config');
+  var config = WIL.Spreadsheet.config;
 
   var list = sheetDb.getTable('ClassFiles');
 
@@ -72,9 +76,15 @@ function getClassList() {
 
 
 function getClassInfo() {
-  var sheetDb = namespace.require('WIL.Spreadsheet.sheetDb');
-  var RowsList = namespace.require('WIL.Spreadsheet.RowsList');
-  var config = namespace.require('WIL.Spreadsheet.config');
+
+  namespace.require('WIL.Spreadsheet.sheetDb');
+  var sheetDb = WIL.Spreadsheet.sheetDb;
+
+  namespace.require('WIL.Spreadsheet.RowsList');
+  var RowsList = WIL.Spreadsheet.RowsList;
+
+  namespace.require('WIL.Spreadsheet.config');
+  var config = WIL.Spreadsheet.config;
 
   var list = sheetDb.getTable('ClassFiles');
 
@@ -108,7 +118,7 @@ function getClassInfo() {
     }
 
     var html = UrlFetchApp.fetch(url).getContentText();
-    var classInfo = parseClassPage(html, path, GAS_SERVICE_PREFIX);
+    var classInfo = parseClassPage(html, /** @type {string} */ (path), GAS_SERVICE_PREFIX);
 
     table.setValue(row, 'Class.type', classInfo.type);
     table.setValue(row, 'Class.Properties', classInfo.properties.length);
@@ -127,8 +137,12 @@ function getClassInfo() {
 
 
 function exportExternfile() {
-  var sheetDb = namespace.require('WIL.Spreadsheet.sheetDb');
-  var RowsList = namespace.require('WIL.Spreadsheet.RowsList');
+
+  namespace.require('WIL.Spreadsheet.sheetDb');
+  var sheetDb = WIL.Spreadsheet.sheetDb;
+
+  namespace.require('WIL.Spreadsheet.RowsList');
+  var RowsList = WIL.Spreadsheet.RowsList;
 
   var list = sheetDb.getTable('ClassFiles');
 
