@@ -12,7 +12,7 @@ Copyright (c) 2013 Tsuyoshi Kodama
 	<property name="package.name"		value="getGasExternFiles"/>
 	<property name="package.description"	value="parse GAS reference web pages and create extern files for google closure compiler."/>
 	<property name="package.website"	value="https://github.com/tyskdm/"/>
-	<property name="package.version"	value="0.7.1"/>
+	<property name="package.version"	value="0.7.2"/>
 
 	<property name="package.author.name"	value="Tsuyoshi Kodama"/>
 	<property name="package.author.email"	value="tsuyoshi.kodama@gmail.com"/>
