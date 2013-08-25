@@ -1,3 +1,29 @@
+/*
+gas.ext.js : closure-compiler externfile for Google Apps Script
+# created: 2013/08/25 23:31:58
+# tool: getGasExternFiles.js version 0.7.2
+
+Copyright (c) 2013 Tsuyoshi Kodama
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
 
 /**
  * _Calendar Services
@@ -3317,22 +3343,22 @@ _Document.Body.prototype.getImages = function() {};
 _Document.Body.prototype.getListItems = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Body.prototype.getMarginBottom = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Body.prototype.getMarginLeft = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Body.prototype.getMarginRight = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Body.prototype.getMarginTop = function() {};
 
@@ -3342,12 +3368,12 @@ _Document.Body.prototype.getMarginTop = function() {};
 _Document.Body.prototype.getNumChildren = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Body.prototype.getPageHeight = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Body.prototype.getPageWidth = function() {};
 
@@ -3437,37 +3463,37 @@ _Document.Body.prototype.replaceText = function(searchPattern, replacement) {};
 _Document.Body.prototype.setAttributes = function(attributes) {};
 
 /**
- * @param {Number} marginBottom
+ * @param {number} marginBottom
  * @return {_Document.Body}
  */
 _Document.Body.prototype.setMarginBottom = function(marginBottom) {};
 
 /**
- * @param {Number} marginLeft
+ * @param {number} marginLeft
  * @return {_Document.Body}
  */
 _Document.Body.prototype.setMarginLeft = function(marginLeft) {};
 
 /**
- * @param {Number} marginRight
+ * @param {number} marginRight
  * @return {_Document.Body}
  */
 _Document.Body.prototype.setMarginRight = function(marginRight) {};
 
 /**
- * @param {Number} marginTop
+ * @param {number} marginTop
  * @return {_Document.Body}
  */
 _Document.Body.prototype.setMarginTop = function(marginTop) {};
 
 /**
- * @param {Number} pageHeight
+ * @param {number} pageHeight
  * @return {_Document.Body}
  */
 _Document.Body.prototype.setPageHeight = function(pageHeight) {};
 
 /**
- * @param {Number} pageWidth
+ * @param {number} pageWidth
  * @return {_Document.Body}
  */
 _Document.Body.prototype.setPageWidth = function(pageWidth) {};
@@ -5131,22 +5157,22 @@ _Document.ListItem.prototype.getGlyphType = function() {};
 _Document.ListItem.prototype.getHeading = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.ListItem.prototype.getIndentEnd = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.ListItem.prototype.getIndentFirstLine = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.ListItem.prototype.getIndentStart = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.ListItem.prototype.getLineSpacing = function() {};
 
@@ -5186,12 +5212,12 @@ _Document.ListItem.prototype.getParent = function() {};
 _Document.ListItem.prototype.getPreviousSibling = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.ListItem.prototype.getSpacingAfter = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.ListItem.prototype.getSpacingBefore = function() {};
 
@@ -5290,19 +5316,19 @@ _Document.ListItem.prototype.setGlyphType = function(glyphType) {};
 _Document.ListItem.prototype.setHeading = function(heading) {};
 
 /**
- * @param {Number} indentEnd
+ * @param {number} indentEnd
  * @return {_Document.ListItem}
  */
 _Document.ListItem.prototype.setIndentEnd = function(indentEnd) {};
 
 /**
- * @param {Number} indentFirstLine
+ * @param {number} indentFirstLine
  * @return {_Document.ListItem}
  */
 _Document.ListItem.prototype.setIndentFirstLine = function(indentFirstLine) {};
 
 /**
- * @param {Number} indentStart
+ * @param {number} indentStart
  * @return {_Document.ListItem}
  */
 _Document.ListItem.prototype.setIndentStart = function(indentStart) {};
@@ -5314,7 +5340,7 @@ _Document.ListItem.prototype.setIndentStart = function(indentStart) {};
 _Document.ListItem.prototype.setLeftToRight = function(leftToRight) {};
 
 /**
- * @param {Number} multiplier
+ * @param {number} multiplier
  * @return {_Document.ListItem}
  */
 _Document.ListItem.prototype.setLineSpacing = function(multiplier) {};
@@ -5338,13 +5364,13 @@ _Document.ListItem.prototype.setListId = function(listItem) {};
 _Document.ListItem.prototype.setNestingLevel = function(nestingLevel) {};
 
 /**
- * @param {Number} spacingAfter
+ * @param {number} spacingAfter
  * @return {_Document.ListItem}
  */
 _Document.ListItem.prototype.setSpacingAfter = function(spacingAfter) {};
 
 /**
- * @param {Number} spacingBefore
+ * @param {number} spacingBefore
  * @return {_Document.ListItem}
  */
 _Document.ListItem.prototype.setSpacingBefore = function(spacingBefore) {};
@@ -5494,22 +5520,22 @@ _Document.Paragraph.prototype.getChildIndex = function(child) {};
 _Document.Paragraph.prototype.getHeading = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Paragraph.prototype.getIndentEnd = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Paragraph.prototype.getIndentFirstLine = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Paragraph.prototype.getIndentStart = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Paragraph.prototype.getLineSpacing = function() {};
 
@@ -5539,12 +5565,12 @@ _Document.Paragraph.prototype.getParent = function() {};
 _Document.Paragraph.prototype.getPreviousSibling = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Paragraph.prototype.getSpacingAfter = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Paragraph.prototype.getSpacingBefore = function() {};
 
@@ -5637,19 +5663,19 @@ _Document.Paragraph.prototype.setAttributes = function(attributes) {};
 _Document.Paragraph.prototype.setHeading = function(heading) {};
 
 /**
- * @param {Number} indentEnd
+ * @param {number} indentEnd
  * @return {_Document.Paragraph}
  */
 _Document.Paragraph.prototype.setIndentEnd = function(indentEnd) {};
 
 /**
- * @param {Number} indentFirstLine
+ * @param {number} indentFirstLine
  * @return {_Document.Paragraph}
  */
 _Document.Paragraph.prototype.setIndentFirstLine = function(indentFirstLine) {};
 
 /**
- * @param {Number} indentStart
+ * @param {number} indentStart
  * @return {_Document.Paragraph}
  */
 _Document.Paragraph.prototype.setIndentStart = function(indentStart) {};
@@ -5661,7 +5687,7 @@ _Document.Paragraph.prototype.setIndentStart = function(indentStart) {};
 _Document.Paragraph.prototype.setLeftToRight = function(leftToRight) {};
 
 /**
- * @param {Number} multiplier
+ * @param {number} multiplier
  * @return {_Document.Paragraph}
  */
 _Document.Paragraph.prototype.setLineSpacing = function(multiplier) {};
@@ -5673,13 +5699,13 @@ _Document.Paragraph.prototype.setLineSpacing = function(multiplier) {};
 _Document.Paragraph.prototype.setLinkUrl = function(url) {};
 
 /**
- * @param {Number} spacingAfter
+ * @param {number} spacingAfter
  * @return {_Document.Paragraph}
  */
 _Document.Paragraph.prototype.setSpacingAfter = function(spacingAfter) {};
 
 /**
- * @param {Number} spacingBefore
+ * @param {number} spacingBefore
  * @return {_Document.Paragraph}
  */
 _Document.Paragraph.prototype.setSpacingBefore = function(spacingBefore) {};
@@ -5808,7 +5834,7 @@ _Document.Table.prototype.getAttributes = function() {};
 _Document.Table.prototype.getBorderColor = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.Table.prototype.getBorderWidth = function() {};
 
@@ -5833,7 +5859,7 @@ _Document.Table.prototype.getChildIndex = function(child) {};
 
 /**
  * @param {number} columnIndex
- * @return {Number}
+ * @return {number}
  */
 _Document.Table.prototype.getColumnWidth = function(columnIndex) {};
 
@@ -5932,14 +5958,14 @@ _Document.Table.prototype.setAttributes = function(attributes) {};
 _Document.Table.prototype.setBorderColor = function(color) {};
 
 /**
- * @param {Number} width
+ * @param {number} width
  * @return {_Document.Table}
  */
 _Document.Table.prototype.setBorderWidth = function(width) {};
 
 /**
  * @param {number} columnIndex
- * @param {Number} width
+ * @param {number} width
  * @return {_Document.Table}
  */
 _Document.Table.prototype.setColumnWidth = function(columnIndex, width) {};
@@ -6053,22 +6079,22 @@ _Document.TableCell.prototype.getNextSibling = function() {};
 _Document.TableCell.prototype.getNumChildren = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.TableCell.prototype.getPaddingBottom = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.TableCell.prototype.getPaddingLeft = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.TableCell.prototype.getPaddingRight = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.TableCell.prototype.getPaddingTop = function() {};
 
@@ -6108,7 +6134,7 @@ _Document.TableCell.prototype.getType = function() {};
 _Document.TableCell.prototype.getVerticalAlignment = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Document.TableCell.prototype.getWidth = function() {};
 
@@ -6193,25 +6219,25 @@ _Document.TableCell.prototype.setBackgroundColor = function(color) {};
 _Document.TableCell.prototype.setLinkUrl = function(url) {};
 
 /**
- * @param {Number} paddingBottom
+ * @param {number} paddingBottom
  * @return {_Document.TableCell}
  */
 _Document.TableCell.prototype.setPaddingBottom = function(paddingBottom) {};
 
 /**
- * @param {Number} paddingLeft
+ * @param {number} paddingLeft
  * @return {_Document.TableCell}
  */
 _Document.TableCell.prototype.setPaddingLeft = function(paddingLeft) {};
 
 /**
- * @param {Number} paddingTop
+ * @param {number} paddingTop
  * @return {_Document.TableCell}
  */
 _Document.TableCell.prototype.setPaddingRight = function(paddingTop) {};
 
 /**
- * @param {Number} paddingTop
+ * @param {number} paddingTop
  * @return {_Document.TableCell}
  */
 _Document.TableCell.prototype.setPaddingTop = function(paddingTop) {};
@@ -6229,7 +6255,7 @@ _Document.TableCell.prototype.setText = function(text) {};
 _Document.TableCell.prototype.setVerticalAlignment = function(alignment) {};
 
 /**
- * @param {Number} width
+ * @param {number} width
  * @return {_Document.TableCell}
  */
 _Document.TableCell.prototype.setWidth = function(width) {};
@@ -8061,7 +8087,7 @@ var DriveApp;
 
 /**
  * Class File
- * Last updated July 11, 2013.
+ * Last updated August 21, 2013.
  * @constructor
  */
 _Drive.File = function() {};
@@ -8200,10 +8226,11 @@ _Drive.File.prototype.isStarred = function() {};
 _Drive.File.prototype.isTrashed = function() {};
 
 /**
- * @param {string=} name
+ * @param {(_Drive.Folder|string)=} arg1
+ * @param {_Drive.Folder=} destination
  * @return {_Drive.File}
  */
-_Drive.File.prototype.makeCopy = function(name) {};
+_Drive.File.prototype.makeCopy = function(arg1, destination) {};
 
 /**
  * @param {(string|_Base.User)} arg1
@@ -8713,42 +8740,42 @@ _Finance.HistoricalStockInfo.prototype.timeFetched;
 _Finance.StockInfo = function() {};
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.ask;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.average;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.beta;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.bid;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.capitalgain;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.change;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.changepct;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.closeyest;
 
@@ -8763,7 +8790,7 @@ _Finance.StockInfo.prototype.currency;
 _Finance.StockInfo.prototype.datadelay;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.eps;
 
@@ -8773,7 +8800,7 @@ _Finance.StockInfo.prototype.eps;
 _Finance.StockInfo.prototype.exchange;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.expenseratio;
 
@@ -8793,12 +8820,12 @@ _Finance.StockInfo.prototype.has_stock_data;
 _Finance.StockInfo.prototype.high;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.high52;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.incomedividend;
 
@@ -8808,7 +8835,7 @@ _Finance.StockInfo.prototype.incomedividend;
 _Finance.StockInfo.prototype.low;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.low52;
 
@@ -8818,7 +8845,7 @@ _Finance.StockInfo.prototype.low52;
 _Finance.StockInfo.prototype.marketcap;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.morningstarrating;
 
@@ -8828,7 +8855,7 @@ _Finance.StockInfo.prototype.morningstarrating;
 _Finance.StockInfo.prototype.name;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.nav;
 
@@ -8838,12 +8865,12 @@ _Finance.StockInfo.prototype.nav;
 _Finance.StockInfo.prototype.netassets;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.pe;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.price;
 
@@ -8853,47 +8880,47 @@ _Finance.StockInfo.prototype.price;
 _Finance.StockInfo.prototype.priceopen;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.quote;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.return1;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.return13;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.return156;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.return260;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.return4;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.return52;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.returnday;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.returnytd;
 
@@ -8933,7 +8960,7 @@ _Finance.StockInfo.prototype.volumeavg;
 _Finance.StockInfo.prototype.volumedelay;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfo.prototype.yieldpct;
 
@@ -8945,22 +8972,22 @@ _Finance.StockInfo.prototype.yieldpct;
 _Finance.StockInfoSnapshot = function() {};
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfoSnapshot.prototype.close;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfoSnapshot.prototype.high;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfoSnapshot.prototype.low;
 
 /**
- * @type {Number}
+ * @type {number}
  */
 _Finance.StockInfoSnapshot.prototype.open;
 
@@ -11723,12 +11750,12 @@ _Maps.Maps.prototype.StaticMap;
 
 /**
  * @param {string} polyline
- * @return {Array.<Number>}
+ * @return {Array.<number>}
  */
 _Maps.Maps.prototype.decodePolyline = function(polyline) {};
 
 /**
- * @param {Array.<Number>} points
+ * @param {Array.<number>} points
  * @return {string}
  */
 _Maps.Maps.prototype.encodePolyline = function(points) {};
@@ -11773,8 +11800,8 @@ var Maps;
 _Maps.DirectionFinder = function() {};
 
 /**
- * @param {(Number|string)} arg1
- * @param {Number=} longitude
+ * @param {(number|string)} arg1
+ * @param {number=} longitude
  * @return {_Maps.DirectionFinder}
  */
 _Maps.DirectionFinder.prototype.addWaypoint = function(arg1, longitude) {};
@@ -11814,8 +11841,8 @@ _Maps.DirectionFinder.prototype.setAvoid = function(avoid) {};
 _Maps.DirectionFinder.prototype.setDepart = function(time) {};
 
 /**
- * @param {(Number|string)} arg1
- * @param {Number=} longitude
+ * @param {(number|string)} arg1
+ * @param {number=} longitude
  * @return {_Maps.DirectionFinder}
  */
 _Maps.DirectionFinder.prototype.setDestination = function(arg1, longitude) {};
@@ -11839,8 +11866,8 @@ _Maps.DirectionFinder.prototype.setMode = function(mode) {};
 _Maps.DirectionFinder.prototype.setOptimizeWaypoints = function(optimizeOrder) {};
 
 /**
- * @param {(Number|string)} arg1
- * @param {Number=} longitude
+ * @param {(number|string)} arg1
+ * @param {number=} longitude
  * @return {_Maps.DirectionFinder}
  */
 _Maps.DirectionFinder.prototype.setOrigin = function(arg1, longitude) {};
@@ -11859,20 +11886,20 @@ _Maps.DirectionFinder.prototype.setRegion = function(region) {};
 _Maps.ElevationSampler = function() {};
 
 /**
- * @param {Number} latitude
- * @param {Number} longitude
+ * @param {number} latitude
+ * @param {number} longitude
  * @return {Object}
  */
 _Maps.ElevationSampler.prototype.sampleLocation = function(latitude, longitude) {};
 
 /**
- * @param {(Array.<Number>|string)} arg1
+ * @param {(Array.<number>|string)} arg1
  * @return {Object}
  */
 _Maps.ElevationSampler.prototype.sampleLocations = function(arg1) {};
 
 /**
- * @param {(Array.<Number>|string)} arg1
+ * @param {(Array.<number>|string)} arg1
  * @param {number} numSamples
  * @return {Object}
  */
@@ -11892,19 +11919,19 @@ _Maps.Geocoder = function() {};
 _Maps.Geocoder.prototype.geocode = function(address) {};
 
 /**
- * @param {Number} arg1
- * @param {Number} arg2
- * @param {Number=} neLatitude
- * @param {Number=} neLongitude
+ * @param {number} arg1
+ * @param {number} arg2
+ * @param {number=} neLatitude
+ * @param {number=} neLongitude
  * @return {Object}
  */
 _Maps.Geocoder.prototype.reverseGeocode = function(arg1, arg2, neLatitude, neLongitude) {};
 
 /**
- * @param {Number} swLatitude
- * @param {Number} swLongitude
- * @param {Number} neLatitude
- * @param {Number} neLongitude
+ * @param {number} swLatitude
+ * @param {number} swLongitude
+ * @param {number} neLatitude
+ * @param {number} neLongitude
  * @return {_Maps.Geocoder}
  */
 _Maps.Geocoder.prototype.setBounds = function(swLatitude, swLongitude, neLatitude, neLongitude) {};
@@ -11935,28 +11962,28 @@ _Maps.StaticMap = function() {};
 _Maps.StaticMap.prototype.addAddress = function(address) {};
 
 /**
- * @param {(Number|string)} arg1
- * @param {Number=} longitude
+ * @param {(number|string)} arg1
+ * @param {number=} longitude
  * @return {_Maps.StaticMap}
  */
 _Maps.StaticMap.prototype.addMarker = function(arg1, longitude) {};
 
 /**
- * @param {(Array.<Number>|string)} arg1
+ * @param {(Array.<number>|string)} arg1
  * @return {_Maps.StaticMap}
  */
 _Maps.StaticMap.prototype.addPath = function(arg1) {};
 
 /**
- * @param {Number} latitude
- * @param {Number} longitude
+ * @param {number} latitude
+ * @param {number} longitude
  * @return {_Maps.StaticMap}
  */
 _Maps.StaticMap.prototype.addPoint = function(latitude, longitude) {};
 
 /**
- * @param {(Number|string)} arg1
- * @param {Number=} longitude
+ * @param {(number|string)} arg1
+ * @param {number=} longitude
  * @return {_Maps.StaticMap}
  */
 _Maps.StaticMap.prototype.addVisible = function(arg1, longitude) {};
@@ -12008,8 +12035,8 @@ _Maps.StaticMap.prototype.getMapImage = function() {};
 _Maps.StaticMap.prototype.getMapUrl = function() {};
 
 /**
- * @param {(Number|string)} arg1
- * @param {Number=} longitude
+ * @param {(number|string)} arg1
+ * @param {number=} longitude
  * @return {_Maps.StaticMap}
  */
 _Maps.StaticMap.prototype.setCenter = function(arg1, longitude) {};
@@ -13361,51 +13388,51 @@ _Spreadsheet.DataValidationBuilder.prototype.requireDateOnOrAfter = function(dat
 _Spreadsheet.DataValidationBuilder.prototype.requireDateOnOrBefore = function(date) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberBetween = function(start, end) {};
 
 /**
- * @param {Number} number
+ * @param {number} number
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberEqualTo = function(number) {};
 
 /**
- * @param {Number} number
+ * @param {number} number
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberGreaterThan = function(number) {};
 
 /**
- * @param {Number} number
+ * @param {number} number
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberGreaterThanOrEqualTo = function(number) {};
 
 /**
- * @param {Number} number
+ * @param {number} number
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberLessThan = function(number) {};
 
 /**
- * @param {Number} number
+ * @param {number} number
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberLessThanOrEqualTo = function(number) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberNotBetween = function(start, end) {};
 
 /**
- * @param {Number} number
+ * @param {number} number
  * @return {_Spreadsheet.DataValidationBuilder}
  */
 _Spreadsheet.DataValidationBuilder.prototype.requireNumberNotEqualTo = function(number) {};
@@ -13603,8 +13630,8 @@ _Spreadsheet.EmbeddedAreaChartBuilder.prototype.setPointStyle = function(style) 
 _Spreadsheet.EmbeddedAreaChartBuilder.prototype.setPosition = function(anchorRowPos, anchorColPos, offsetX, offsetY) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.EmbeddedAreaChartBuilder}
  */
 _Spreadsheet.EmbeddedAreaChartBuilder.prototype.setRange = function(start, end) {};
@@ -13798,8 +13825,8 @@ _Spreadsheet.EmbeddedBarChartBuilder.prototype.setOption = function(option, valu
 _Spreadsheet.EmbeddedBarChartBuilder.prototype.setPosition = function(anchorRowPos, anchorColPos, offsetX, offsetY) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.EmbeddedBarChartBuilder}
  */
 _Spreadsheet.EmbeddedBarChartBuilder.prototype.setRange = function(start, end) {};
@@ -14138,8 +14165,8 @@ _Spreadsheet.EmbeddedColumnChartBuilder.prototype.setOption = function(option, v
 _Spreadsheet.EmbeddedColumnChartBuilder.prototype.setPosition = function(anchorRowPos, anchorColPos, offsetX, offsetY) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.EmbeddedColumnChartBuilder}
  */
 _Spreadsheet.EmbeddedColumnChartBuilder.prototype.setRange = function(start, end) {};
@@ -14340,8 +14367,8 @@ _Spreadsheet.EmbeddedLineChartBuilder.prototype.setPointStyle = function(style) 
 _Spreadsheet.EmbeddedLineChartBuilder.prototype.setPosition = function(anchorRowPos, anchorColPos, offsetX, offsetY) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.EmbeddedLineChartBuilder}
  */
 _Spreadsheet.EmbeddedLineChartBuilder.prototype.setRange = function(start, end) {};
@@ -14685,8 +14712,8 @@ _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setTitleTextStyle = function(
 _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setXAxisLogScale = function() {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.EmbeddedScatterChartBuilder}
  */
 _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setXAxisRange = function(start, end) {};
@@ -14715,8 +14742,8 @@ _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setXAxisTitleTextStyle = func
 _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setYAxisLogScale = function() {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Spreadsheet.EmbeddedScatterChartBuilder}
  */
 _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setYAxisRange = function(start, end) {};
@@ -16319,7 +16346,7 @@ _Spreadsheet.Spreadsheet.prototype.sort = function(columnPosition, ascending) {}
 /**
  * @param {string} msg
  * @param {string=} title
- * @param {Number=} timeoutSeconds
+ * @param {number=} timeoutSeconds
  */
 _Spreadsheet.Spreadsheet.prototype.toast = function(msg, title, timeoutSeconds) {};
 
@@ -17367,8 +17394,8 @@ _Charts.AreaChartBuilder.prototype.setOption = function(option, value) {};
 _Charts.AreaChartBuilder.prototype.setPointStyle = function(style) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Charts.AreaChartBuilder}
  */
 _Charts.AreaChartBuilder.prototype.setRange = function(start, end) {};
@@ -17510,8 +17537,8 @@ _Charts.BarChartBuilder.prototype.setLegendTextStyle = function(textStyle) {};
 _Charts.BarChartBuilder.prototype.setOption = function(option, value) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Charts.BarChartBuilder}
  */
 _Charts.BarChartBuilder.prototype.setRange = function(start, end) {};
@@ -17790,8 +17817,8 @@ _Charts.ColumnChartBuilder.prototype.setLegendTextStyle = function(textStyle) {}
 _Charts.ColumnChartBuilder.prototype.setOption = function(option, value) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Charts.ColumnChartBuilder}
  */
 _Charts.ColumnChartBuilder.prototype.setRange = function(start, end) {};
@@ -18082,8 +18109,8 @@ _Charts.LineChartBuilder.prototype.setOption = function(option, value) {};
 _Charts.LineChartBuilder.prototype.setPointStyle = function(style) {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Charts.LineChartBuilder}
  */
 _Charts.LineChartBuilder.prototype.setRange = function(start, end) {};
@@ -18401,8 +18428,8 @@ _Charts.ScatterChartBuilder.prototype.setTitleTextStyle = function(textStyle) {}
 _Charts.ScatterChartBuilder.prototype.setXAxisLogScale = function() {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Charts.ScatterChartBuilder}
  */
 _Charts.ScatterChartBuilder.prototype.setXAxisRange = function(start, end) {};
@@ -18431,8 +18458,8 @@ _Charts.ScatterChartBuilder.prototype.setXAxisTitleTextStyle = function(textStyl
 _Charts.ScatterChartBuilder.prototype.setYAxisLogScale = function() {};
 
 /**
- * @param {Number} start
- * @param {Number} end
+ * @param {number} start
+ * @param {number} end
  * @return {_Charts.ScatterChartBuilder}
  */
 _Charts.ScatterChartBuilder.prototype.setYAxisRange = function(start, end) {};
@@ -18632,7 +18659,7 @@ _Charts.TextStyle.prototype.getColor = function() {};
 _Charts.TextStyle.prototype.getFontName = function() {};
 
 /**
- * @return {Number}
+ * @return {number}
  */
 _Charts.TextStyle.prototype.getFontSize = function() {};
 
@@ -18661,7 +18688,7 @@ _Charts.TextStyleBuilder.prototype.setColor = function(cssValue) {};
 _Charts.TextStyleBuilder.prototype.setFontName = function(fontName) {};
 
 /**
- * @param {Number} fontSize
+ * @param {number} fontSize
  * @return {_Charts.TextStyleBuilder}
  */
 _Charts.TextStyleBuilder.prototype.setFontSize = function(fontSize) {};
@@ -21169,8 +21196,8 @@ _Ui.ClientHandler.prototype.validateNotOptions = function(widget, options) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @return {_Ui.ClientHandler}
  */
 _Ui.ClientHandler.prototype.validateNotRange = function(widget, min, max) {};
@@ -21197,8 +21224,8 @@ _Ui.ClientHandler.prototype.validateOptions = function(widget, options) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @return {_Ui.ClientHandler}
  */
 _Ui.ClientHandler.prototype.validateRange = function(widget, min, max) {};
@@ -26179,8 +26206,8 @@ _Ui.ServerHandler.prototype.validateNotOptions = function(widget, options) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @return {_Ui.ServerHandler}
  */
 _Ui.ServerHandler.prototype.validateNotRange = function(widget, min, max) {};
@@ -26207,8 +26234,8 @@ _Ui.ServerHandler.prototype.validateOptions = function(widget, options) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @return {_Ui.ServerHandler}
  */
 _Ui.ServerHandler.prototype.validateRange = function(widget, min, max) {};
@@ -26759,21 +26786,21 @@ _Ui.SplitLayoutPanel.prototype.add = function(widget) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} width
+ * @param {number} width
  * @return {_Ui.SplitLayoutPanel}
  */
 _Ui.SplitLayoutPanel.prototype.addEast = function(widget, width) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} height
+ * @param {number} height
  * @return {_Ui.SplitLayoutPanel}
  */
 _Ui.SplitLayoutPanel.prototype.addNorth = function(widget, height) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} height
+ * @param {number} height
  * @return {_Ui.SplitLayoutPanel}
  */
 _Ui.SplitLayoutPanel.prototype.addSouth = function(widget, height) {};
@@ -26792,7 +26819,7 @@ _Ui.SplitLayoutPanel.prototype.addStyleName = function(styleName) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} width
+ * @param {number} width
  * @return {_Ui.SplitLayoutPanel}
  */
 _Ui.SplitLayoutPanel.prototype.addWest = function(widget, width) {};
@@ -29267,8 +29294,8 @@ _Ui.Handler.prototype.validateNotOptions = function(widget, options) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @return {_Ui.Handler}
  */
 _Ui.Handler.prototype.validateNotRange = function(widget, min, max) {};
@@ -29295,8 +29322,8 @@ _Ui.Handler.prototype.validateOptions = function(widget, options) {};
 
 /**
  * @param {_Ui.Widget} widget
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @return {_Ui.Handler}
  */
 _Ui.Handler.prototype.validateRange = function(widget, min, max) {};
