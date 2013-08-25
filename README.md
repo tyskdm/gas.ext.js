@@ -15,7 +15,7 @@ This repository has 2 objectives.
 2. ExternFile itself
 
     Generated extern file for Google Apps Services.
-    Latest version of gas.ext.js is [here](https://github.com/tyskdm/gas.ext.js/tree/master/dist/0.7.0).
+    Latest version of gas.ext.js is [here](https://github.com/tyskdm/gas.ext.js/tree/master/dist/0.7.2).
 
 
 ##ExternFile Generate tool
