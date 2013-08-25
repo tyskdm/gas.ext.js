@@ -67,6 +67,10 @@ var typeTable = {
   'Integer[]': 'Array.<number>',
   'Integer[][]': 'Array.<Array.<number>>',
 
+  'Number': 'number',
+  'Number[]': 'Array.<number>',
+  'Number[][]': 'Array.<Array.<number>>',
+
   //Byte is number but it's always used only lower 8-bits.
   'Byte': 'number',
   'Byte[]': 'Array.<number>',
