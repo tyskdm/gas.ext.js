@@ -1,6 +1,6 @@
 /*
 gas.ext.js : closure-compiler externfile for Google Apps Script
-# created: 2013/08/25 23:31:58
+# created: 2013/09/01 01:11:25
 # tool: getGasExternFiles.js version 0.7.2
 
 Copyright (c) 2013 Tsuyoshi Kodama
@@ -24,6 +24,7 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
+
 
 /**
  * _Calendar Services
@@ -2693,7 +2694,7 @@ var DocsList;
 
 /**
  * Class File
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _DocsList.File = function() {};
@@ -7835,7 +7836,7 @@ _Domain.DomainNickname.prototype.getUsername = function() {};
 
 /**
  * Class DomainUser
- * Last updated June 27, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Domain.DomainUser = function() {};
@@ -9046,7 +9047,7 @@ var _Forms = {};
 
 /**
  * Class FormApp
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Forms.FormApp = function() {};
@@ -9738,7 +9739,7 @@ _Forms.Form.prototype.setTitle = function(title) {};
 
 /**
  * Class FormResponse
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Forms.FormResponse = function() {};
@@ -9962,7 +9963,7 @@ _Forms.ImageItem.prototype.setWidth = function(width) {};
 
 /**
  * Class Item
- * Last updated May 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Forms.Item = function() {};
@@ -13500,7 +13501,7 @@ _Spreadsheet.DataValidationBuilder.prototype.withCriteria = function(criteria, a
 
 /**
  * Class EmbeddedAreaChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedAreaChartBuilder = function() {};
@@ -13696,7 +13697,7 @@ _Spreadsheet.EmbeddedAreaChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedBarChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedBarChartBuilder = function() {};
@@ -13945,7 +13946,7 @@ _Spreadsheet.EmbeddedChart.prototype.setId = function(id) {};
 
 /**
  * Class EmbeddedChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedChartBuilder = function() {};
@@ -14041,7 +14042,7 @@ _Spreadsheet.EmbeddedChartBuilder.prototype.setPosition = function(anchorRowPos,
 
 /**
  * Class EmbeddedColumnChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedColumnChartBuilder = function() {};
@@ -14231,7 +14232,7 @@ _Spreadsheet.EmbeddedColumnChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedLineChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedLineChartBuilder = function() {};
@@ -14428,7 +14429,7 @@ _Spreadsheet.EmbeddedLineChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedPieChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedPieChartBuilder = function() {};
@@ -14570,7 +14571,7 @@ _Spreadsheet.EmbeddedPieChartBuilder.prototype.setTitleTextStyle = function(text
 
 /**
  * Class EmbeddedScatterChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedScatterChartBuilder = function() {};
@@ -14768,7 +14769,7 @@ _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setYAxisTitleTextStyle = func
 
 /**
  * Class EmbeddedTableChartBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedTableChartBuilder = function() {};
@@ -14945,7 +14946,7 @@ _Spreadsheet.PageProtection.prototype.setProtected = function(protection) {};
 
 /**
  * Class Range
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.Range = function() {};
@@ -15501,7 +15502,7 @@ _Spreadsheet.Range.prototype.sort = function(sortSpecObj) {};
 
 /**
  * Class Sheet
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.Sheet = function() {};
@@ -15892,7 +15893,7 @@ _Spreadsheet.Sheet.prototype.updateChart = function(chart) {};
 
 /**
  * Class Spreadsheet
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.Spreadsheet = function() {};
@@ -16870,7 +16871,7 @@ _Base.PromptResponse.prototype.getSelectedButton = function() {};
 
 /**
  * Class Ui
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Base.Ui = function() {};
@@ -16918,7 +16919,7 @@ _Base.Ui.prototype.showSidebar = function(userInterface) {};
 
 /**
  * Class User
- * Last updated June 27, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Base.User = function() {};
@@ -17967,7 +17968,7 @@ _Charts.DataTable = function() {};
 
 /**
  * Class DataTableBuilder
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Charts.DataTableBuilder = function() {};
@@ -18788,7 +18789,7 @@ _Charts.CurveStyle.prototype.SMOOTH;
 
 /**
  * Enum MatchType
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Charts.MatchType = function() {};
@@ -19833,7 +19834,7 @@ _ScriptDb.QueryOperator = function() {};
 
 /**
  * Class ScriptDbInstance
- * Last updated August 7, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _ScriptDb.ScriptDbInstance = function() {};
@@ -20122,7 +20123,7 @@ var UiApp;
 
 /**
  * Class AbsolutePanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.AbsolutePanel = function() {};
@@ -20258,7 +20259,7 @@ _Ui.AbsolutePanel.prototype.setWidth = function(width) {};
 
 /**
  * Class Anchor
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Anchor = function() {};
@@ -20481,7 +20482,7 @@ _Ui.Anchor.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class Button
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Button = function() {};
@@ -20680,7 +20681,7 @@ _Ui.Button.prototype.setWidth = function(width) {};
 
 /**
  * Class CaptionPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.CaptionPanel = function() {};
@@ -20812,7 +20813,7 @@ _Ui.CaptionPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class CheckBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.CheckBox = function() {};
@@ -21239,7 +21240,7 @@ _Ui.ClientHandler.prototype.validateSum = function(widgets, sum) {};
 
 /**
  * Class DateBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DateBox = function() {};
@@ -21405,7 +21406,7 @@ _Ui.DateBox.prototype.showDatePicker = function() {};
 
 /**
  * Class DatePicker
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DatePicker = function() {};
@@ -21537,7 +21538,7 @@ _Ui.DatePicker.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratedStackPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DecoratedStackPanel = function() {};
@@ -21673,7 +21674,7 @@ _Ui.DecoratedStackPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratedTabBar
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DecoratedTabBar = function() {};
@@ -21814,7 +21815,7 @@ _Ui.DecoratedTabBar.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratedTabPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DecoratedTabPanel = function() {};
@@ -21948,7 +21949,7 @@ _Ui.DecoratedTabPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratorPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DecoratorPanel = function() {};
@@ -22074,7 +22075,7 @@ _Ui.DecoratorPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class DialogBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.DialogBox = function() {};
@@ -22332,7 +22333,7 @@ _Ui.DocsListDialog.prototype.showDocsPicker = function() {};
 
 /**
  * Class FileUpload
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.FileUpload = function() {};
@@ -22458,7 +22459,7 @@ _Ui.FileUpload.prototype.setWidth = function(width) {};
 
 /**
  * Class FlexTable
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.FlexTable = function() {};
@@ -22685,7 +22686,7 @@ _Ui.FlexTable.prototype.setWidth = function(width) {};
 
 /**
  * Class FlowPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.FlowPanel = function() {};
@@ -22818,7 +22819,7 @@ _Ui.FlowPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class FocusPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.FocusPanel = function() {};
@@ -23016,7 +23017,7 @@ _Ui.FocusPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class FormPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.FormPanel = function() {};
@@ -23170,7 +23171,7 @@ _Ui.FormPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class Grid
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Grid = function() {};
@@ -23364,7 +23365,7 @@ _Ui.Grid.prototype.setWidth = function(width) {};
 
 /**
  * Class HTML
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.HTML = function() {};
@@ -23532,7 +23533,7 @@ _Ui.HTML.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class Hidden
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Hidden = function() {};
@@ -23584,7 +23585,7 @@ _Ui.Hidden.prototype.setValue = function(value) {};
 
 /**
  * Class HorizontalPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.HorizontalPanel = function() {};
@@ -23762,7 +23763,7 @@ _Ui.HorizontalPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class Image
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Image = function() {};
@@ -23941,7 +23942,7 @@ _Ui.Image.prototype.setWidth = function(width) {};
 
 /**
  * Class InlineLabel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.InlineLabel = function() {};
@@ -24103,7 +24104,7 @@ _Ui.InlineLabel.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class Label
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Label = function() {};
@@ -24265,7 +24266,7 @@ _Ui.Label.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class ListBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.ListBox = function() {};
@@ -24514,7 +24515,7 @@ _Ui.ListBox.prototype.setWidth = function(width) {};
 
 /**
  * Class MenuBar
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.MenuBar = function() {};
@@ -24654,7 +24655,7 @@ _Ui.MenuBar.prototype.setWidth = function(width) {};
 
 /**
  * Class MenuItem
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.MenuItem = function() {};
@@ -24787,7 +24788,7 @@ _Ui.MenuItem.prototype.setWidth = function(width) {};
 
 /**
  * Class MenuItemSeparator
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.MenuItemSeparator = function() {};
@@ -24896,7 +24897,7 @@ _Ui.MenuItemSeparator.prototype.setWidth = function(width) {};
 
 /**
  * Class PasswordTextBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.PasswordTextBox = function() {};
@@ -25143,7 +25144,7 @@ _Ui.PasswordTextBox.prototype.setWidth = function(width) {};
 
 /**
  * Class PopupPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.PopupPanel = function() {};
@@ -25321,7 +25322,7 @@ _Ui.PopupPanel.prototype.show = function() {};
 
 /**
  * Class PushButton
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.PushButton = function() {};
@@ -25520,7 +25521,7 @@ _Ui.PushButton.prototype.setWidth = function(width) {};
 
 /**
  * Class RadioButton
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.RadioButton = function() {};
@@ -25743,7 +25744,7 @@ _Ui.RadioButton.prototype.setWidth = function(width) {};
 
 /**
  * Class ResetButton
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.ResetButton = function() {};
@@ -25942,7 +25943,7 @@ _Ui.ResetButton.prototype.setWidth = function(width) {};
 
 /**
  * Class ScrollPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.ScrollPanel = function() {};
@@ -26249,7 +26250,7 @@ _Ui.ServerHandler.prototype.validateSum = function(widgets, sum) {};
 
 /**
  * Class SimpleCheckBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.SimpleCheckBox = function() {};
@@ -26448,7 +26449,7 @@ _Ui.SimpleCheckBox.prototype.setWidth = function(width) {};
 
 /**
  * Class SimplePanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.SimplePanel = function() {};
@@ -26574,7 +26575,7 @@ _Ui.SimplePanel.prototype.setWidth = function(width) {};
 
 /**
  * Class SimpleRadioButton
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.SimpleRadioButton = function() {};
@@ -26773,7 +26774,7 @@ _Ui.SimpleRadioButton.prototype.setWidth = function(width) {};
 
 /**
  * Class SplitLayoutPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.SplitLayoutPanel = function() {};
@@ -26934,7 +26935,7 @@ _Ui.SplitLayoutPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class StackPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.StackPanel = function() {};
@@ -27070,7 +27071,7 @@ _Ui.StackPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class SubmitButton
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.SubmitButton = function() {};
@@ -27269,7 +27270,7 @@ _Ui.SubmitButton.prototype.setWidth = function(width) {};
 
 /**
  * Class TabBar
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.TabBar = function() {};
@@ -27410,7 +27411,7 @@ _Ui.TabBar.prototype.setWidth = function(width) {};
 
 /**
  * Class TabPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.TabPanel = function() {};
@@ -27544,7 +27545,7 @@ _Ui.TabPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class TextArea
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.TextArea = function() {};
@@ -27791,7 +27792,7 @@ _Ui.TextArea.prototype.setWidth = function(width) {};
 
 /**
  * Class TextBox
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.TextBox = function() {};
@@ -28038,7 +28039,7 @@ _Ui.TextBox.prototype.setWidth = function(width) {};
 
 /**
  * Class ToggleButton
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.ToggleButton = function() {};
@@ -28243,7 +28244,7 @@ _Ui.ToggleButton.prototype.setWidth = function(width) {};
 
 /**
  * Class Tree
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.Tree = function() {};
@@ -28464,7 +28465,7 @@ _Ui.Tree.prototype.setWidth = function(width) {};
 
 /**
  * Class TreeItem
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.TreeItem = function() {};
@@ -28996,7 +28997,7 @@ _Ui.UiInstance.prototype.setWidth = function(width) {};
 
 /**
  * Class VerticalPanel
- * Last updated August 15, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _Ui.VerticalPanel = function() {};
@@ -29678,7 +29679,7 @@ var _UrlFetch = {};
 
 /**
  * Class UrlFetchApp
- * Last updated March 26, 2013.
+ * Last updated August 28, 2013.
  * @constructor
  */
 _UrlFetch.UrlFetchApp = function() {};
