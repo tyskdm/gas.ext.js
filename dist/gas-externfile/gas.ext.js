@@ -1,6 +1,6 @@
 /*
 gas.ext.js : closure-compiler externfile for Google Apps Script
-# created: 2013/09/01 01:11:25
+# created: 2013/09/12 00:02:56
 # tool: getGasExternFiles.js version 0.7.2
 
 Copyright (c) 2013 Tsuyoshi Kodama
@@ -7962,7 +7962,7 @@ var _Drive = {};
 
 /**
  * Class DriveApp
- * Last updated August 7, 2013.
+ * Last updated September 9, 2013.
  * @constructor
  */
 _Drive.DriveApp = function() {};
@@ -8038,6 +8038,12 @@ _Drive.DriveApp.prototype.getFolderById = function(id) {};
 _Drive.DriveApp.prototype.getFolders = function() {};
 
 /**
+ * @param {string} name
+ * @return {_Drive.FolderIterator}
+ */
+_Drive.DriveApp.prototype.getFoldersByName = function(name) {};
+
+/**
  * @return {_Drive.Folder}
  */
 _Drive.DriveApp.prototype.getRootFolder = function() {};
@@ -8080,6 +8086,12 @@ _Drive.DriveApp.prototype.removeFolder = function(child) {};
  */
 _Drive.DriveApp.prototype.searchFiles = function(params) {};
 
+/**
+ * @param {string} params
+ * @return {_Drive.FolderIterator}
+ */
+_Drive.DriveApp.prototype.searchFolders = function(params) {};
+
 
 /**
  * @type {_Drive.DriveApp}
@@ -8088,7 +8100,7 @@ var DriveApp;
 
 /**
  * Class File
- * Last updated August 21, 2013.
+ * Last updated September 9, 2013.
  * @constructor
  */
 _Drive.File = function() {};
@@ -8162,6 +8174,11 @@ _Drive.File.prototype.getDescription = function() {};
 _Drive.File.prototype.getDownloadUrl = function() {};
 
 /**
+ * @return {Array.<_Drive.User>}
+ */
+_Drive.File.prototype.getEditors = function() {};
+
+/**
  * @return {string}
  */
 _Drive.File.prototype.getId = function() {};
@@ -8210,6 +8227,11 @@ _Drive.File.prototype.getThumbnail = function() {};
  * @return {string}
  */
 _Drive.File.prototype.getUrl = function() {};
+
+/**
+ * @return {Array.<_Drive.User>}
+ */
+_Drive.File.prototype.getViewers = function() {};
 
 /**
  * @return {boolean}
@@ -8325,7 +8347,7 @@ _Drive.FileIterator.prototype.next = function() {};
 
 /**
  * Class Folder
- * Last updated August 7, 2013.
+ * Last updated September 9, 2013.
  * @constructor
  */
 _Drive.Folder = function() {};
@@ -8397,6 +8419,11 @@ _Drive.Folder.prototype.getDateCreated = function() {};
 _Drive.Folder.prototype.getDescription = function() {};
 
 /**
+ * @return {Array.<_Drive.User>}
+ */
+_Drive.Folder.prototype.getEditors = function() {};
+
+/**
  * @return {_Drive.FileIterator}
  */
 _Drive.Folder.prototype.getFiles = function() {};
@@ -8417,6 +8444,12 @@ _Drive.Folder.prototype.getFilesByType = function(mimeType) {};
  * @return {_Drive.FolderIterator}
  */
 _Drive.Folder.prototype.getFolders = function() {};
+
+/**
+ * @param {string} name
+ * @return {_Drive.FolderIterator}
+ */
+_Drive.Folder.prototype.getFoldersByName = function(name) {};
 
 /**
  * @return {string}
@@ -8457,6 +8490,11 @@ _Drive.Folder.prototype.getSize = function() {};
  * @return {string}
  */
 _Drive.Folder.prototype.getUrl = function() {};
+
+/**
+ * @return {Array.<_Drive.User>}
+ */
+_Drive.Folder.prototype.getViewers = function() {};
 
 /**
  * @return {boolean}
@@ -8508,6 +8546,12 @@ _Drive.Folder.prototype.revokePermissions = function(user) {};
  * @return {_Drive.FileIterator}
  */
 _Drive.Folder.prototype.searchFiles = function(params) {};
+
+/**
+ * @param {string} params
+ * @return {_Drive.FolderIterator}
+ */
+_Drive.Folder.prototype.searchFolders = function(params) {};
 
 /**
  * @param {string} description
@@ -15893,7 +15937,7 @@ _Spreadsheet.Sheet.prototype.updateChart = function(chart) {};
 
 /**
  * Class Spreadsheet
- * Last updated August 28, 2013.
+ * Last updated September 9, 2013.
  * @constructor
  */
 _Spreadsheet.Spreadsheet = function() {};
