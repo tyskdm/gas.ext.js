@@ -286,7 +286,6 @@ var generateExternContent = function(cInfo, PREFIX) {
   // Header block
   con.b_start();
   con.b_addString(cInfo.type + ' ' + cInfo.name);
-  con.b_addString(cInfo.lastUpdate);
   con.b_addString('@constructor');
   con.b_end();
   // Class definition
@@ -336,5 +335,3 @@ var generateExternContent = function(cInfo, PREFIX) {
 
   return con.text;
 };
-
-

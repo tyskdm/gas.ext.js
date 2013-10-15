@@ -202,7 +202,8 @@ function exportExternfile() {
           '/**\n' +
           ' * @type {' + GAS_SERVICE_PREFIX + service + '.' + className + '}\n' +
           ' */\n' +
-          'var ' + className + ';\n' +
+          'var ' + className +
+              ' = new ' + GAS_SERVICE_PREFIX + service + '.' + className + '();\n' +
           '\n';
       }
     }
@@ -215,5 +216,3 @@ function exportExternfile() {
 
   Browser.msgBox('Complete.');
 }
-
-
