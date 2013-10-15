@@ -29508,159 +29508,159 @@ _UI.VerticalAlignment.prototype.BOTTOM;
 
 
 /**
- * _URL Fetch Services
+ * _URL_Fetch Services
  */
-var _URL Fetch = {};
+var _URL_Fetch = {};
 
 /**
  * Class UrlFetchApp
  * @constructor
  */
-_URL Fetch.UrlFetchApp = function() {};
+_URL_Fetch.UrlFetchApp = function() {};
 
 /**
  * @param {string} serviceName
- * @return {_URL Fetch.OAuthConfig}
+ * @return {_URL_Fetch.OAuthConfig}
  */
-_URL Fetch.UrlFetchApp.prototype.addOAuthService = function(serviceName) {};
+_URL_Fetch.UrlFetchApp.prototype.addOAuthService = function(serviceName) {};
 
 /**
  * @param {string=} url
- * @return {_URL Fetch.HTTPResponse}
+ * @return {_URL_Fetch.HTTPResponse}
  */
-_URL Fetch.UrlFetchApp.prototype.fetch = function(url) {};
+_URL_Fetch.UrlFetchApp.prototype.fetch = function(url) {};
 
 /**
  * @param {string} url
  * @param {Object=} params
  * @return {Object}
  */
-_URL Fetch.UrlFetchApp.prototype.getRequest = function(url, params) {};
+_URL_Fetch.UrlFetchApp.prototype.getRequest = function(url, params) {};
 
 /**
  * @param {string} serviceName
  */
-_URL Fetch.UrlFetchApp.prototype.removeOAuthService = function(serviceName) {};
+_URL_Fetch.UrlFetchApp.prototype.removeOAuthService = function(serviceName) {};
 
 
 /**
- * @type {_URL Fetch.UrlFetchApp}
+ * @type {_URL_Fetch.UrlFetchApp}
  */
-var UrlFetchApp = new _URL Fetch.UrlFetchApp();
+var UrlFetchApp = new _URL_Fetch.UrlFetchApp();
 
 /**
  * Class HTTPResponse
  * @constructor
  */
-_URL Fetch.HTTPResponse = function() {};
+_URL_Fetch.HTTPResponse = function() {};
 
 /**
  * @return {Object}
  */
-_URL Fetch.HTTPResponse.prototype.getAllHeaders = function() {};
+_URL_Fetch.HTTPResponse.prototype.getAllHeaders = function() {};
 
 /**
  * @param {string} contentType
  * @return {_Base.Blob}
  */
-_URL Fetch.HTTPResponse.prototype.getAs = function(contentType) {};
+_URL_Fetch.HTTPResponse.prototype.getAs = function(contentType) {};
 
 /**
  * @return {_Base.Blob}
  */
-_URL Fetch.HTTPResponse.prototype.getBlob = function() {};
+_URL_Fetch.HTTPResponse.prototype.getBlob = function() {};
 
 /**
  * @return {Array.<number>}
  */
-_URL Fetch.HTTPResponse.prototype.getContent = function() {};
+_URL_Fetch.HTTPResponse.prototype.getContent = function() {};
 
 /**
  * @param {string=} charset
  * @return {string}
  */
-_URL Fetch.HTTPResponse.prototype.getContentText = function(charset) {};
+_URL_Fetch.HTTPResponse.prototype.getContentText = function(charset) {};
 
 /**
  * @return {Object}
  */
-_URL Fetch.HTTPResponse.prototype.getHeaders = function() {};
+_URL_Fetch.HTTPResponse.prototype.getHeaders = function() {};
 
 /**
  * @return {number}
  */
-_URL Fetch.HTTPResponse.prototype.getResponseCode = function() {};
+_URL_Fetch.HTTPResponse.prototype.getResponseCode = function() {};
 
 /**
  * Class OAuthConfig
  * @constructor
  */
-_URL Fetch.OAuthConfig = function() {};
+_URL_Fetch.OAuthConfig = function() {};
 
 /**
  * @return {string}
  */
-_URL Fetch.OAuthConfig.prototype.getAccessTokenUrl = function() {};
+_URL_Fetch.OAuthConfig.prototype.getAccessTokenUrl = function() {};
 
 /**
  * @return {string}
  */
-_URL Fetch.OAuthConfig.prototype.getAuthorizationUrl = function() {};
+_URL_Fetch.OAuthConfig.prototype.getAuthorizationUrl = function() {};
 
 /**
  * @return {string}
  */
-_URL Fetch.OAuthConfig.prototype.getMethod = function() {};
+_URL_Fetch.OAuthConfig.prototype.getMethod = function() {};
 
 /**
  * @return {string}
  */
-_URL Fetch.OAuthConfig.prototype.getParamLocation = function() {};
+_URL_Fetch.OAuthConfig.prototype.getParamLocation = function() {};
 
 /**
  * @return {string}
  */
-_URL Fetch.OAuthConfig.prototype.getRequestTokenUrl = function() {};
+_URL_Fetch.OAuthConfig.prototype.getRequestTokenUrl = function() {};
 
 /**
  * @return {string}
  */
-_URL Fetch.OAuthConfig.prototype.getServiceName = function() {};
+_URL_Fetch.OAuthConfig.prototype.getServiceName = function() {};
 
 /**
  * @param {string} url
  */
-_URL Fetch.OAuthConfig.prototype.setAccessTokenUrl = function(url) {};
+_URL_Fetch.OAuthConfig.prototype.setAccessTokenUrl = function(url) {};
 
 /**
  * @param {string} url
  */
-_URL Fetch.OAuthConfig.prototype.setAuthorizationUrl = function(url) {};
+_URL_Fetch.OAuthConfig.prototype.setAuthorizationUrl = function(url) {};
 
 /**
  * @param {string} consumerKey
  */
-_URL Fetch.OAuthConfig.prototype.setConsumerKey = function(consumerKey) {};
+_URL_Fetch.OAuthConfig.prototype.setConsumerKey = function(consumerKey) {};
 
 /**
  * @param {string} consumerSecret
  */
-_URL Fetch.OAuthConfig.prototype.setConsumerSecret = function(consumerSecret) {};
+_URL_Fetch.OAuthConfig.prototype.setConsumerSecret = function(consumerSecret) {};
 
 /**
  * @param {string} method
  */
-_URL Fetch.OAuthConfig.prototype.setMethod = function(method) {};
+_URL_Fetch.OAuthConfig.prototype.setMethod = function(method) {};
 
 /**
  * @param {string} location
  */
-_URL Fetch.OAuthConfig.prototype.setParamLocation = function(location) {};
+_URL_Fetch.OAuthConfig.prototype.setParamLocation = function(location) {};
 
 /**
  * @param {string} url
  */
-_URL Fetch.OAuthConfig.prototype.setRequestTokenUrl = function(url) {};
+_URL_Fetch.OAuthConfig.prototype.setRequestTokenUrl = function(url) {};
 
 
 /**

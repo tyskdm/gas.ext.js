@@ -1,6 +1,6 @@
 /*
 gas.ext.js : closure-compiler externfile for Google Apps Script
-# created: 2013/09/12 00:02:56
+# created: 2013/10/15 20:08:21
 # tool: getGasExternFiles.js version 0.7.2
 
 Copyright (c) 2013 Tsuyoshi Kodama
@@ -33,7 +33,6 @@ var _Calendar = {};
 
 /**
  * Class CalendarApp
- * Last updated June 27, 2013.
  * @constructor
  */
 _Calendar.CalendarApp = function() {};
@@ -269,11 +268,10 @@ _Calendar.CalendarApp.prototype.subscribeToCalendar = function(id, options) {};
 /**
  * @type {_Calendar.CalendarApp}
  */
-var CalendarApp;
+var CalendarApp = new _Calendar.CalendarApp();
 
 /**
  * Class Calendar
- * Last updated March 26, 2013.
  * @constructor
  */
 _Calendar.Calendar = function() {};
@@ -432,7 +430,6 @@ _Calendar.Calendar.prototype.unsubscribeFromCalendar = function() {};
 
 /**
  * Class CalendarEvent
- * Last updated March 26, 2013.
  * @constructor
  */
 _Calendar.CalendarEvent = function() {};
@@ -711,7 +708,6 @@ _Calendar.CalendarEvent.prototype.setVisibility = function(visibility) {};
 
 /**
  * Class CalendarEventSeries
- * Last updated March 26, 2013.
  * @constructor
  */
 _Calendar.CalendarEventSeries = function() {};
@@ -950,7 +946,6 @@ _Calendar.CalendarEventSeries.prototype.setVisibility = function(visibility) {};
 
 /**
  * Class EventGuest
- * Last updated August 15, 2013.
  * @constructor
  */
 _Calendar.EventGuest = function() {};
@@ -977,7 +972,6 @@ _Calendar.EventGuest.prototype.getName = function() {};
 
 /**
  * Class EventRecurrence
- * Last updated March 26, 2013.
  * @constructor
  */
 _Calendar.EventRecurrence = function() {};
@@ -1042,7 +1036,6 @@ _Calendar.EventRecurrence.prototype.setTimeZone = function(timeZone) {};
 
 /**
  * Class RecurrenceRule
- * Last updated March 26, 2013.
  * @constructor
  */
 _Calendar.RecurrenceRule = function() {};
@@ -1191,7 +1184,6 @@ _Calendar.RecurrenceRule.prototype.weekStartsOn = function(day) {};
 
 /**
  * Enum Color
- * Last updated June 27, 2013.
  * @constructor
  */
 _Calendar.Color = function() {};
@@ -1303,7 +1295,6 @@ _Calendar.Color.prototype.YELLOW;
 
 /**
  * Enum GuestStatus
- * Last updated June 27, 2013.
  * @constructor
  */
 _Calendar.GuestStatus = function() {};
@@ -1335,7 +1326,6 @@ _Calendar.GuestStatus.prototype.YES;
 
 /**
  * Enum Visibility
- * Last updated June 27, 2013.
  * @constructor
  */
 _Calendar.Visibility = function() {};
@@ -1368,7 +1358,6 @@ var _Contacts = {};
 
 /**
  * Class ContactsApp
- * Last updated August 15, 2013.
  * @constructor
  */
 _Contacts.ContactsApp = function() {};
@@ -1547,11 +1536,10 @@ _Contacts.ContactsApp.prototype.getContactsByUrl = function(query, label) {};
 /**
  * @type {_Contacts.ContactsApp}
  */
-var ContactsApp;
+var ContactsApp = new _Contacts.ContactsApp();
 
 /**
  * Class AddressField
- * Last updated August 15, 2013.
  * @constructor
  */
 _Contacts.AddressField = function() {};
@@ -1594,7 +1582,6 @@ _Contacts.AddressField.prototype.setLabel = function(arg1) {};
 
 /**
  * Class CompanyField
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.CompanyField = function() {};
@@ -1637,7 +1624,6 @@ _Contacts.CompanyField.prototype.setJobTitle = function(title) {};
 
 /**
  * Class Contact
- * Last updated June 27, 2013.
  * @constructor
  */
 _Contacts.Contact = function() {};
@@ -1906,7 +1892,6 @@ _Contacts.Contact.prototype.setSuffix = function(suffix) {};
 
 /**
  * Class ContactGroup
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.ContactGroup = function() {};
@@ -1955,7 +1940,6 @@ _Contacts.ContactGroup.prototype.setName = function(name) {};
 
 /**
  * Class CustomField
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.CustomField = function() {};
@@ -1988,7 +1972,6 @@ _Contacts.CustomField.prototype.setValue = function(value) {};
 
 /**
  * Class DateField
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.DateField = function() {};
@@ -2033,7 +2016,6 @@ _Contacts.DateField.prototype.setLabel = function(label) {};
 
 /**
  * Class EmailField
- * Last updated August 15, 2013.
  * @constructor
  */
 _Contacts.EmailField = function() {};
@@ -2087,7 +2069,6 @@ _Contacts.EmailField.prototype.setLabel = function(arg1) {};
 
 /**
  * Class IMField
- * Last updated August 15, 2013.
  * @constructor
  */
 _Contacts.IMField = function() {};
@@ -2130,7 +2111,6 @@ _Contacts.IMField.prototype.setLabel = function(arg1) {};
 
 /**
  * Class PhoneField
- * Last updated August 15, 2013.
  * @constructor
  */
 _Contacts.PhoneField = function() {};
@@ -2173,7 +2153,6 @@ _Contacts.PhoneField.prototype.setPhoneNumber = function(number) {};
 
 /**
  * Class UrlField
- * Last updated August 15, 2013.
  * @constructor
  */
 _Contacts.UrlField = function() {};
@@ -2216,7 +2195,6 @@ _Contacts.UrlField.prototype.setLabel = function(arg1) {};
 
 /**
  * Enum ExtendedField
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.ExtendedField = function() {};
@@ -2283,7 +2261,6 @@ _Contacts.ExtendedField.prototype.OTHER;
 
 /**
  * Enum Field
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.Field = function() {};
@@ -2505,7 +2482,6 @@ _Contacts.Field.prototype.COMPANY;
 
 /**
  * Enum Gender
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.Gender = function() {};
@@ -2522,7 +2498,6 @@ _Contacts.Gender.prototype.FEMALE;
 
 /**
  * Enum Priority
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.Priority = function() {};
@@ -2544,7 +2519,6 @@ _Contacts.Priority.prototype.NORMAL;
 
 /**
  * Enum Sensitivity
- * Last updated March 26, 2013.
  * @constructor
  */
 _Contacts.Sensitivity = function() {};
@@ -2577,7 +2551,6 @@ var _DocsList = {};
 
 /**
  * Class DocsList
- * Last updated August 15, 2013.
  * @constructor
  */
 _DocsList.DocsList = function() {};
@@ -2690,11 +2663,10 @@ _DocsList.DocsList.prototype.getRootFolder = function() {};
 /**
  * @type {_DocsList.DocsList}
  */
-var DocsList;
+var DocsList = new _DocsList.DocsList();
 
 /**
  * Class File
- * Last updated August 28, 2013.
  * @constructor
  */
 _DocsList.File = function() {};
@@ -2878,7 +2850,6 @@ _DocsList.File.prototype.setTrashed = function(trash) {};
 
 /**
  * Class FilesResult
- * Last updated March 26, 2013.
  * @constructor
  */
 _DocsList.FilesResult = function() {};
@@ -2895,7 +2866,6 @@ _DocsList.FilesResult.prototype.getToken = function() {};
 
 /**
  * Class Folder
- * Last updated August 15, 2013.
  * @constructor
  */
 _DocsList.Folder = function() {};
@@ -3099,7 +3069,6 @@ _DocsList.Folder.prototype.setTrashed = function(trash) {};
 
 /**
  * Class FoldersResult
- * Last updated August 7, 2013.
  * @constructor
  */
 _DocsList.FoldersResult = function() {};
@@ -3116,14 +3085,12 @@ _DocsList.FoldersResult.prototype.getToken = function() {};
 
 /**
  * Class Token
- * Last updated March 26, 2013.
  * @constructor
  */
 _DocsList.Token = function() {};
 
 /**
  * Enum FileType
- * Last updated March 26, 2013.
  * @constructor
  */
 _DocsList.FileType = function() {};
@@ -3166,7 +3133,6 @@ var _Document = {};
 
 /**
  * Class DocumentApp
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.DocumentApp = function() {};
@@ -3238,11 +3204,10 @@ _Document.DocumentApp.prototype.openByUrl = function(url) {};
 /**
  * @type {_Document.DocumentApp}
  */
-var DocumentApp;
+var DocumentApp = new _Document.DocumentApp();
 
 /**
  * Class Body
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Body = function() {};
@@ -3327,11 +3292,6 @@ _Document.Body.prototype.getChild = function(childIndex) {};
  * @return {number}
  */
 _Document.Body.prototype.getChildIndex = function(child) {};
-
-/**
- * @return {Array.<_Document.Footnote>}
- */
-_Document.Body.prototype.getFootnotes = function() {};
 
 /**
  * @return {Array.<_Document.InlineImage>}
@@ -3507,7 +3467,6 @@ _Document.Body.prototype.setText = function(text) {};
 
 /**
  * Class ContainerElement
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.ContainerElement = function() {};
@@ -3684,7 +3643,6 @@ _Document.ContainerElement.prototype.setLinkUrl = function(url) {};
 
 /**
  * Class Cursor
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Cursor = function() {};
@@ -3723,7 +3681,6 @@ _Document.Cursor.prototype.insertText = function(text) {};
 
 /**
  * Class Document
- * Last updated July 11, 2013.
  * @constructor
  */
 _Document.Document = function() {};
@@ -3852,7 +3809,6 @@ _Document.Document.prototype.setName = function(name) {};
 
 /**
  * Class Equation
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Equation = function() {};
@@ -3974,7 +3930,6 @@ _Document.Equation.prototype.setLinkUrl = function(url) {};
 
 /**
  * Class EquationFunction
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.EquationFunction = function() {};
@@ -4101,7 +4056,6 @@ _Document.EquationFunction.prototype.setLinkUrl = function(url) {};
 
 /**
  * Class EquationFunctionArgumentSeparator
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.EquationFunctionArgumentSeparator = function() {};
@@ -4159,7 +4113,6 @@ _Document.EquationFunctionArgumentSeparator.prototype.setAttributes = function(a
 
 /**
  * Class EquationSymbol
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.EquationSymbol = function() {};
@@ -4222,7 +4175,6 @@ _Document.EquationSymbol.prototype.setAttributes = function(attributes) {};
 
 /**
  * Class FooterSection
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.FooterSection = function() {};
@@ -4303,29 +4255,14 @@ _Document.FooterSection.prototype.getChild = function(childIndex) {};
 _Document.FooterSection.prototype.getChildIndex = function(child) {};
 
 /**
- * @return {Array.<_Document.Footnote>}
- */
-_Document.FooterSection.prototype.getFootnotes = function() {};
-
-/**
  * @return {Array.<_Document.InlineImage>}
  */
 _Document.FooterSection.prototype.getImages = function() {};
 
 /**
- * @return {string}
- */
-_Document.FooterSection.prototype.getLinkUrl = function() {};
-
-/**
  * @return {Array.<_Document.ListItem>}
  */
 _Document.FooterSection.prototype.getListItems = function() {};
-
-/**
- * @return {_Document.Element}
- */
-_Document.FooterSection.prototype.getNextSibling = function() {};
 
 /**
  * @return {number}
@@ -4341,11 +4278,6 @@ _Document.FooterSection.prototype.getParagraphs = function() {};
  * @return {_Document.ContainerElement}
  */
 _Document.FooterSection.prototype.getParent = function() {};
-
-/**
- * @return {_Document.Element}
- */
-_Document.FooterSection.prototype.getPreviousSibling = function() {};
 
 /**
  * @return {Array.<_Document.Table>}
@@ -4397,11 +4329,6 @@ _Document.FooterSection.prototype.insertParagraph = function(childIndex, arg2) {
 _Document.FooterSection.prototype.insertTable = function(childIndex, arg2) {};
 
 /**
- * @return {boolean}
- */
-_Document.FooterSection.prototype.isAtDocumentEnd = function() {};
-
-/**
  * @param {_Document.Element} child
  * @return {_Document.FooterSection}
  */
@@ -4426,12 +4353,6 @@ _Document.FooterSection.prototype.replaceText = function(searchPattern, replacem
 _Document.FooterSection.prototype.setAttributes = function(attributes) {};
 
 /**
- * @param {string} url
- * @return {_Document.FooterSection}
- */
-_Document.FooterSection.prototype.setLinkUrl = function(url) {};
-
-/**
  * @param {string} text
  * @return {_Document.FooterSection}
  */
@@ -4439,7 +4360,6 @@ _Document.FooterSection.prototype.setText = function(text) {};
 
 /**
  * Class Footnote
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Footnote = function() {};
@@ -4497,7 +4417,6 @@ _Document.Footnote.prototype.setAttributes = function(attributes) {};
 
 /**
  * Class FootnoteSection
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.FootnoteSection = function() {};
@@ -4555,16 +4474,6 @@ _Document.FootnoteSection.prototype.getChild = function(childIndex) {};
 _Document.FootnoteSection.prototype.getChildIndex = function(child) {};
 
 /**
- * @return {Array.<_Document.Footnote>}
- */
-_Document.FootnoteSection.prototype.getFootnotes = function() {};
-
-/**
- * @return {string}
- */
-_Document.FootnoteSection.prototype.getLinkUrl = function() {};
-
-/**
  * @return {_Document.Element}
  */
 _Document.FootnoteSection.prototype.getNextSibling = function() {};
@@ -4607,11 +4516,6 @@ _Document.FootnoteSection.prototype.getType = function() {};
 _Document.FootnoteSection.prototype.insertParagraph = function(childIndex, arg2) {};
 
 /**
- * @return {boolean}
- */
-_Document.FootnoteSection.prototype.isAtDocumentEnd = function() {};
-
-/**
  * @param {_Document.Element} child
  * @return {_Document.FootnoteSection}
  */
@@ -4636,12 +4540,6 @@ _Document.FootnoteSection.prototype.replaceText = function(searchPattern, replac
 _Document.FootnoteSection.prototype.setAttributes = function(attributes) {};
 
 /**
- * @param {string} url
- * @return {_Document.FootnoteSection}
- */
-_Document.FootnoteSection.prototype.setLinkUrl = function(url) {};
-
-/**
  * @param {string} text
  * @return {_Document.FootnoteSection}
  */
@@ -4649,7 +4547,6 @@ _Document.FootnoteSection.prototype.setText = function(text) {};
 
 /**
  * Class HeaderSection
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.HeaderSection = function() {};
@@ -4730,29 +4627,14 @@ _Document.HeaderSection.prototype.getChild = function(childIndex) {};
 _Document.HeaderSection.prototype.getChildIndex = function(child) {};
 
 /**
- * @return {Array.<_Document.Footnote>}
- */
-_Document.HeaderSection.prototype.getFootnotes = function() {};
-
-/**
  * @return {Array.<_Document.InlineImage>}
  */
 _Document.HeaderSection.prototype.getImages = function() {};
 
 /**
- * @return {string}
- */
-_Document.HeaderSection.prototype.getLinkUrl = function() {};
-
-/**
  * @return {Array.<_Document.ListItem>}
  */
 _Document.HeaderSection.prototype.getListItems = function() {};
-
-/**
- * @return {_Document.Element}
- */
-_Document.HeaderSection.prototype.getNextSibling = function() {};
 
 /**
  * @return {number}
@@ -4768,11 +4650,6 @@ _Document.HeaderSection.prototype.getParagraphs = function() {};
  * @return {_Document.ContainerElement}
  */
 _Document.HeaderSection.prototype.getParent = function() {};
-
-/**
- * @return {_Document.Element}
- */
-_Document.HeaderSection.prototype.getPreviousSibling = function() {};
 
 /**
  * @return {Array.<_Document.Table>}
@@ -4824,11 +4701,6 @@ _Document.HeaderSection.prototype.insertParagraph = function(childIndex, arg2) {
 _Document.HeaderSection.prototype.insertTable = function(childIndex, arg2) {};
 
 /**
- * @return {boolean}
- */
-_Document.HeaderSection.prototype.isAtDocumentEnd = function() {};
-
-/**
  * @param {_Document.Element} child
  * @return {_Document.HeaderSection}
  */
@@ -4853,12 +4725,6 @@ _Document.HeaderSection.prototype.replaceText = function(searchPattern, replacem
 _Document.HeaderSection.prototype.setAttributes = function(attributes) {};
 
 /**
- * @param {string} url
- * @return {_Document.HeaderSection}
- */
-_Document.HeaderSection.prototype.setLinkUrl = function(url) {};
-
-/**
  * @param {string} text
  * @return {_Document.HeaderSection}
  */
@@ -4866,7 +4732,6 @@ _Document.HeaderSection.prototype.setText = function(text) {};
 
 /**
  * Class HorizontalRule
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.HorizontalRule = function() {};
@@ -4919,7 +4784,6 @@ _Document.HorizontalRule.prototype.setAttributes = function(attributes) {};
 
 /**
  * Class InlineDrawing
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.InlineDrawing = function() {};
@@ -4977,7 +4841,6 @@ _Document.InlineDrawing.prototype.setAttributes = function(attributes) {};
 
 /**
  * Class InlineImage
- * Last updated July 11, 2013.
  * @constructor
  */
 _Document.InlineImage = function() {};
@@ -5007,6 +4870,11 @@ _Document.InlineImage.prototype.getBlob = function() {};
  * @return {number}
  */
 _Document.InlineImage.prototype.getHeight = function() {};
+
+/**
+ * @return {string}
+ */
+_Document.InlineImage.prototype.getLinkUrl = function() {};
 
 /**
  * @return {_Document.Element}
@@ -5061,6 +4929,12 @@ _Document.InlineImage.prototype.setAttributes = function(attributes) {};
 _Document.InlineImage.prototype.setHeight = function(height) {};
 
 /**
+ * @param {string} url
+ * @return {_Document.InlineImage}
+ */
+_Document.InlineImage.prototype.setLinkUrl = function(url) {};
+
+/**
  * @param {number} width
  * @return {_Document.InlineImage}
  */
@@ -5068,7 +4942,6 @@ _Document.InlineImage.prototype.setWidth = function(width) {};
 
 /**
  * Class ListItem
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.ListItem = function() {};
@@ -5383,7 +5256,6 @@ _Document.ListItem.prototype.setText = function(text) {};
 
 /**
  * Class PageBreak
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.PageBreak = function() {};
@@ -5436,7 +5308,6 @@ _Document.PageBreak.prototype.setAttributes = function(attributes) {};
 
 /**
  * Class Paragraph
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Paragraph = function() {};
@@ -5718,7 +5589,6 @@ _Document.Paragraph.prototype.setText = function(text) {};
 
 /**
  * Class SearchResult
- * Last updated August 7, 2013.
  * @constructor
  */
 _Document.SearchResult = function() {};
@@ -5745,7 +5615,6 @@ _Document.SearchResult.prototype.isPartial = function() {};
 
 /**
  * Class SelectedElement
- * Last updated August 7, 2013.
  * @constructor
  */
 _Document.SelectedElement = function() {};
@@ -5772,7 +5641,6 @@ _Document.SelectedElement.prototype.isPartial = function() {};
 
 /**
  * Class Selection
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Selection = function() {};
@@ -5784,7 +5652,6 @@ _Document.Selection.prototype.getSelectedElements = function() {};
 
 /**
  * Class Table
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Table = function() {};
@@ -5979,7 +5846,6 @@ _Document.Table.prototype.setLinkUrl = function(url) {};
 
 /**
  * Class TableCell
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.TableCell = function() {};
@@ -6263,7 +6129,6 @@ _Document.TableCell.prototype.setWidth = function(width) {};
 
 /**
  * Class TableOfContents
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.TableOfContents = function() {};
@@ -6380,7 +6245,6 @@ _Document.TableOfContents.prototype.setLinkUrl = function(url) {};
 
 /**
  * Class TableRow
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.TableRow = function() {};
@@ -6554,7 +6418,6 @@ _Document.TableRow.prototype.setMinimumHeight = function(minHeight) {};
 
 /**
  * Class Text
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Text = function() {};
@@ -6796,7 +6659,6 @@ _Document.Text.prototype.setUnderline = function(arg1, endOffsetInclusive, under
 
 /**
  * Class UnsupportedElement
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.UnsupportedElement = function() {};
@@ -6854,7 +6716,6 @@ _Document.UnsupportedElement.prototype.setAttributes = function(attributes) {};
 
 /**
  * Interface Element
- * Last updated June 27, 2013.
  * @constructor
  */
 _Document.Element = function() {};
@@ -7012,7 +6873,6 @@ _Document.Element.prototype.setAttributes = function(attributes) {};
 
 /**
  * Enum Attribute
- * Last updated May 15, 2013.
  * @constructor
  */
 _Document.Attribute = function() {};
@@ -7209,7 +7069,6 @@ _Document.Attribute.prototype.WIDTH;
 
 /**
  * Enum ElementType
- * Last updated June 19, 2013.
  * @constructor
  */
 _Document.ElementType = function() {};
@@ -7331,7 +7190,6 @@ _Document.ElementType.prototype.UNSUPPORTED;
 
 /**
  * Enum FontFamily
- * Last updated March 26, 2013.
  * @constructor
  */
 _Document.FontFamily = function() {};
@@ -7468,7 +7326,6 @@ _Document.FontFamily.prototype.VERDANA;
 
 /**
  * Enum GlyphType
- * Last updated March 26, 2013.
  * @constructor
  */
 _Document.GlyphType = function() {};
@@ -7515,7 +7372,6 @@ _Document.GlyphType.prototype.ROMAN_LOWER;
 
 /**
  * Enum HorizontalAlignment
- * Last updated March 26, 2013.
  * @constructor
  */
 _Document.HorizontalAlignment = function() {};
@@ -7542,7 +7398,6 @@ _Document.HorizontalAlignment.prototype.JUSTIFY;
 
 /**
  * Enum ParagraphHeading
- * Last updated March 26, 2013.
  * @constructor
  */
 _Document.ParagraphHeading = function() {};
@@ -7584,7 +7439,6 @@ _Document.ParagraphHeading.prototype.HEADING6;
 
 /**
  * Enum VerticalAlignment
- * Last updated March 26, 2013.
  * @constructor
  */
 _Document.VerticalAlignment = function() {};
@@ -7612,7 +7466,6 @@ var _Domain = {};
 
 /**
  * Class GroupsManager
- * Last updated March 26, 2013.
  * @constructor
  */
 _Domain.GroupsManager = function() {};
@@ -7652,11 +7505,10 @@ _Domain.GroupsManager.prototype.getGroup = function(groupId) {};
 /**
  * @type {_Domain.GroupsManager}
  */
-var GroupsManager;
+var GroupsManager = new _Domain.GroupsManager();
 
 /**
  * Class NicknameManager
- * Last updated March 26, 2013.
  * @constructor
  */
 _Domain.NicknameManager = function() {};
@@ -7689,11 +7541,10 @@ _Domain.NicknameManager.prototype.getNickname = function(nickname) {};
 /**
  * @type {_Domain.NicknameManager}
  */
-var NicknameManager;
+var NicknameManager = new _Domain.NicknameManager();
 
 /**
  * Class UserManager
- * Last updated March 26, 2013.
  * @constructor
  */
 _Domain.UserManager = function() {};
@@ -7728,11 +7579,10 @@ _Domain.UserManager.prototype.getUser = function(arg1) {};
 /**
  * @type {_Domain.UserManager}
  */
-var UserManager;
+var UserManager = new _Domain.UserManager();
 
 /**
  * Class DomainGroup
- * Last updated March 26, 2013.
  * @constructor
  */
 _Domain.DomainGroup = function() {};
@@ -7815,7 +7665,6 @@ _Domain.DomainGroup.prototype.setPermissionLevel = function(level) {};
 
 /**
  * Class DomainNickname
- * Last updated March 26, 2013.
  * @constructor
  */
 _Domain.DomainNickname = function() {};
@@ -7836,7 +7685,6 @@ _Domain.DomainNickname.prototype.getUsername = function() {};
 
 /**
  * Class DomainUser
- * Last updated August 28, 2013.
  * @constructor
  */
 _Domain.DomainUser = function() {};
@@ -7929,7 +7777,6 @@ _Domain.DomainUser.prototype.setUsername = function(username) {};
 
 /**
  * Enum PermissionLevel
- * Last updated March 26, 2013.
  * @constructor
  */
 _Domain.PermissionLevel = function() {};
@@ -7962,7 +7809,6 @@ var _Drive = {};
 
 /**
  * Class DriveApp
- * Last updated September 9, 2013.
  * @constructor
  */
 _Drive.DriveApp = function() {};
@@ -7988,6 +7834,18 @@ _Drive.DriveApp.prototype.addFile = function(child) {};
  * @return {_Drive.Folder}
  */
 _Drive.DriveApp.prototype.addFolder = function(child) {};
+
+/**
+ * @param {string} continuationToken
+ * @return {_Drive.FileIterator}
+ */
+_Drive.DriveApp.prototype.continueFileIterator = function(continuationToken) {};
+
+/**
+ * @param {string} continuationToken
+ * @return {_Drive.FolderIterator}
+ */
+_Drive.DriveApp.prototype.continueFolderIterator = function(continuationToken) {};
 
 /**
  * @param {(_Base.BlobSource|string)} arg1
@@ -8096,11 +7954,10 @@ _Drive.DriveApp.prototype.searchFolders = function(params) {};
 /**
  * @type {_Drive.DriveApp}
  */
-var DriveApp;
+var DriveApp = new _Drive.DriveApp();
 
 /**
  * Class File
- * Last updated September 9, 2013.
  * @constructor
  */
 _Drive.File = function() {};
@@ -8197,6 +8054,11 @@ _Drive.File.prototype.getMimeType = function() {};
  * @return {string}
  */
 _Drive.File.prototype.getName = function() {};
+
+/**
+ * @return {_Drive.User}
+ */
+_Drive.File.prototype.getOwner = function() {};
 
 /**
  * @return {_Drive.FolderIterator}
@@ -8330,10 +8192,14 @@ _Drive.File.prototype.setTrashed = function(trashed) {};
 
 /**
  * Class FileIterator
- * Last updated July 31, 2013.
  * @constructor
  */
 _Drive.FileIterator = function() {};
+
+/**
+ * @return {string}
+ */
+_Drive.FileIterator.prototype.getContinuationToken = function() {};
 
 /**
  * @return {boolean}
@@ -8347,7 +8213,6 @@ _Drive.FileIterator.prototype.next = function() {};
 
 /**
  * Class Folder
- * Last updated September 9, 2013.
  * @constructor
  */
 _Drive.Folder = function() {};
@@ -8465,6 +8330,11 @@ _Drive.Folder.prototype.getLastUpdated = function() {};
  * @return {string}
  */
 _Drive.Folder.prototype.getName = function() {};
+
+/**
+ * @return {_Drive.User}
+ */
+_Drive.Folder.prototype.getOwner = function() {};
 
 /**
  * @return {_Drive.FolderIterator}
@@ -8598,10 +8468,14 @@ _Drive.Folder.prototype.setTrashed = function(trashed) {};
 
 /**
  * Class FolderIterator
- * Last updated May 15, 2013.
  * @constructor
  */
 _Drive.FolderIterator = function() {};
+
+/**
+ * @return {string}
+ */
+_Drive.FolderIterator.prototype.getContinuationToken = function() {};
 
 /**
  * @return {boolean}
@@ -8614,8 +8488,33 @@ _Drive.FolderIterator.prototype.hasNext = function() {};
 _Drive.FolderIterator.prototype.next = function() {};
 
 /**
+ * Class User
+ * @constructor
+ */
+_Drive.User = function() {};
+
+/**
+ * @return {string}
+ */
+_Drive.User.prototype.getDomain = function() {};
+
+/**
+ * @return {string}
+ */
+_Drive.User.prototype.getEmail = function() {};
+
+/**
+ * @return {string}
+ */
+_Drive.User.prototype.getName = function() {};
+
+/**
+ * @return {string}
+ */
+_Drive.User.prototype.getPhotoUrl = function() {};
+
+/**
  * Enum Access
- * Last updated May 15, 2013.
  * @constructor
  */
 _Drive.Access = function() {};
@@ -8647,7 +8546,6 @@ _Drive.Access.prototype.PRIVATE;
 
 /**
  * Enum Permission
- * Last updated May 15, 2013.
  * @constructor
  */
 _Drive.Permission = function() {};
@@ -8685,7 +8583,6 @@ var _Finance = {};
 
 /**
  * Class FinanceApp
- * Last updated March 26, 2013.
  * @constructor
  */
 _Finance.FinanceApp = function() {};
@@ -8723,11 +8620,10 @@ _Finance.FinanceApp.prototype.getStockInfo = function(stockSymbol) {};
 /**
  * @type {_Finance.FinanceApp}
  */
-var FinanceApp;
+var FinanceApp = new _Finance.FinanceApp();
 
 /**
  * Class HistoricalStockInfo
- * Last updated March 26, 2013.
  * @constructor
  */
 _Finance.HistoricalStockInfo = function() {};
@@ -8779,7 +8675,6 @@ _Finance.HistoricalStockInfo.prototype.timeFetched;
 
 /**
  * Class StockInfo
- * Last updated March 26, 2013.
  * @constructor
  */
 _Finance.StockInfo = function() {};
@@ -9011,7 +8906,6 @@ _Finance.StockInfo.prototype.yieldpct;
 
 /**
  * Class StockInfoSnapshot
- * Last updated March 26, 2013.
  * @constructor
  */
 _Finance.StockInfoSnapshot = function() {};
@@ -9048,7 +8942,6 @@ _Finance.StockInfoSnapshot.prototype.volume;
 
 /**
  * Enum Interval
- * Last updated March 26, 2013.
  * @constructor
  */
 _Finance.Interval = function() {};
@@ -9091,7 +8984,6 @@ var _Forms = {};
 
 /**
  * Class FormApp
- * Last updated August 28, 2013.
  * @constructor
  */
 _Forms.FormApp = function() {};
@@ -9148,11 +9040,10 @@ _Forms.FormApp.prototype.openByUrl = function(url) {};
 /**
  * @type {_Forms.FormApp}
  */
-var FormApp;
+var FormApp = new _Forms.FormApp();
 
 /**
  * Class CheckboxItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.CheckboxItem = function() {};
@@ -9252,7 +9143,6 @@ _Forms.CheckboxItem.prototype.showOtherOption = function(enabled) {};
 
 /**
  * Class Choice
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.Choice = function() {};
@@ -9274,7 +9164,6 @@ _Forms.Choice.prototype.getValue = function() {};
 
 /**
  * Class DateItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.DateItem = function() {};
@@ -9351,7 +9240,6 @@ _Forms.DateItem.prototype.setTitle = function(title) {};
 
 /**
  * Class DateTimeItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.DateTimeItem = function() {};
@@ -9428,7 +9316,6 @@ _Forms.DateTimeItem.prototype.setTitle = function(title) {};
 
 /**
  * Class DurationItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.DurationItem = function() {};
@@ -9496,7 +9383,6 @@ _Forms.DurationItem.prototype.setTitle = function(title) {};
 
 /**
  * Class Form
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.Form = function() {};
@@ -9584,6 +9470,11 @@ _Forms.Form.prototype.addTextItem = function() {};
 _Forms.Form.prototype.addTimeItem = function() {};
 
 /**
+ * @return {_Forms.VideoItem}
+ */
+_Forms.Form.prototype.addVideoItem = function() {};
+
+/**
  * @return {boolean}
  */
 _Forms.Form.prototype.canEditResponse = function() {};
@@ -9612,6 +9503,11 @@ _Forms.Form.prototype.deleteItem = function(arg1) {};
  * @return {string}
  */
 _Forms.Form.prototype.getConfirmationMessage = function() {};
+
+/**
+ * @return {string}
+ */
+_Forms.Form.prototype.getCustomClosedFormMessage = function() {};
 
 /**
  * @return {string}
@@ -9685,6 +9581,11 @@ _Forms.Form.prototype.getTitle = function() {};
 /**
  * @return {boolean}
  */
+_Forms.Form.prototype.hasProgressBar = function() {};
+
+/**
+ * @return {boolean}
+ */
 _Forms.Form.prototype.hasRespondAgainLink = function() {};
 
 /**
@@ -9745,6 +9646,12 @@ _Forms.Form.prototype.setCollectEmail = function(collect) {};
 _Forms.Form.prototype.setConfirmationMessage = function(message) {};
 
 /**
+ * @param {string} message
+ * @return {_Forms.Form}
+ */
+_Forms.Form.prototype.setCustomClosedFormMessage = function(message) {};
+
+/**
  * @param {string} description
  * @return {_Forms.Form}
  */
@@ -9756,6 +9663,12 @@ _Forms.Form.prototype.setDescription = function(description) {};
  * @return {_Forms.Form}
  */
 _Forms.Form.prototype.setDestination = function(type, id) {};
+
+/**
+ * @param {boolean} enabled
+ * @return {_Forms.Form}
+ */
+_Forms.Form.prototype.setProgressBar = function(enabled) {};
 
 /**
  * @param {boolean} enabled
@@ -9783,7 +9696,6 @@ _Forms.Form.prototype.setTitle = function(title) {};
 
 /**
  * Class FormResponse
- * Last updated August 28, 2013.
  * @constructor
  */
 _Forms.FormResponse = function() {};
@@ -9837,7 +9749,6 @@ _Forms.FormResponse.prototype.withItemResponse = function(response) {};
 
 /**
  * Class GridItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.GridItem = function() {};
@@ -9925,7 +9836,6 @@ _Forms.GridItem.prototype.setTitle = function(title) {};
 
 /**
  * Class ImageItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.ImageItem = function() {};
@@ -10007,7 +9917,6 @@ _Forms.ImageItem.prototype.setWidth = function(width) {};
 
 /**
  * Class Item
- * Last updated August 28, 2013.
  * @constructor
  */
 _Forms.Item = function() {};
@@ -10083,6 +9992,11 @@ _Forms.Item.prototype.asTextItem = function() {};
 _Forms.Item.prototype.asTimeItem = function() {};
 
 /**
+ * @return {_Forms.VideoItem}
+ */
+_Forms.Item.prototype.asVideoItem = function() {};
+
+/**
  * @return {_Forms.Item}
  */
 _Forms.Item.prototype.duplicate = function() {};
@@ -10126,7 +10040,6 @@ _Forms.Item.prototype.setTitle = function(title) {};
 
 /**
  * Class ItemResponse
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.ItemResponse = function() {};
@@ -10143,7 +10056,6 @@ _Forms.ItemResponse.prototype.getResponse = function() {};
 
 /**
  * Class ListItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.ListItem = function() {};
@@ -10233,7 +10145,6 @@ _Forms.ListItem.prototype.setTitle = function(title) {};
 
 /**
  * Class MultipleChoiceItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.MultipleChoiceItem = function() {};
@@ -10334,7 +10245,6 @@ _Forms.MultipleChoiceItem.prototype.showOtherOption = function(enabled) {};
 
 /**
  * Class PageBreakItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.PageBreakItem = function() {};
@@ -10399,7 +10309,6 @@ _Forms.PageBreakItem.prototype.setTitle = function(title) {};
 
 /**
  * Class ParagraphTextItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.ParagraphTextItem = function() {};
@@ -10465,7 +10374,6 @@ _Forms.ParagraphTextItem.prototype.setTitle = function(title) {};
 
 /**
  * Class ScaleItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.ScaleItem = function() {};
@@ -10565,7 +10473,6 @@ _Forms.ScaleItem.prototype.setTitle = function(title) {};
 
 /**
  * Class SectionHeaderItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.SectionHeaderItem = function() {};
@@ -10614,7 +10521,6 @@ _Forms.SectionHeaderItem.prototype.setTitle = function(title) {};
 
 /**
  * Class TextItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.TextItem = function() {};
@@ -10680,7 +10586,6 @@ _Forms.TextItem.prototype.setTitle = function(title) {};
 
 /**
  * Class TimeItem
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.TimeItem = function() {};
@@ -10746,8 +10651,83 @@ _Forms.TimeItem.prototype.setRequired = function(enabled) {};
 _Forms.TimeItem.prototype.setTitle = function(title) {};
 
 /**
+ * Class VideoItem
+ * @constructor
+ */
+_Forms.VideoItem = function() {};
+
+/**
+ * @return {_Forms.VideoItem}
+ */
+_Forms.VideoItem.prototype.duplicate = function() {};
+
+/**
+ * @return {_Forms.Alignment}
+ */
+_Forms.VideoItem.prototype.getAlignment = function() {};
+
+/**
+ * @return {string}
+ */
+_Forms.VideoItem.prototype.getHelpText = function() {};
+
+/**
+ * @return {number}
+ */
+_Forms.VideoItem.prototype.getId = function() {};
+
+/**
+ * @return {number}
+ */
+_Forms.VideoItem.prototype.getIndex = function() {};
+
+/**
+ * @return {string}
+ */
+_Forms.VideoItem.prototype.getTitle = function() {};
+
+/**
+ * @return {_Forms.ItemType}
+ */
+_Forms.VideoItem.prototype.getType = function() {};
+
+/**
+ * @return {number}
+ */
+_Forms.VideoItem.prototype.getWidth = function() {};
+
+/**
+ * @param {_Forms.Alignment} alignment
+ * @return {_Forms.VideoItem}
+ */
+_Forms.VideoItem.prototype.setAlignment = function(alignment) {};
+
+/**
+ * @param {string} text
+ * @return {_Forms.VideoItem}
+ */
+_Forms.VideoItem.prototype.setHelpText = function(text) {};
+
+/**
+ * @param {string} title
+ * @return {_Forms.VideoItem}
+ */
+_Forms.VideoItem.prototype.setTitle = function(title) {};
+
+/**
+ * @param {string} youtubeUrl
+ * @return {_Forms.VideoItem}
+ */
+_Forms.VideoItem.prototype.setVideoUrl = function(youtubeUrl) {};
+
+/**
+ * @param {number} width
+ * @return {_Forms.VideoItem}
+ */
+_Forms.VideoItem.prototype.setWidth = function(width) {};
+
+/**
  * Enum Alignment
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.Alignment = function() {};
@@ -10769,7 +10749,6 @@ _Forms.Alignment.prototype.RIGHT;
 
 /**
  * Enum DestinationType
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.DestinationType = function() {};
@@ -10781,7 +10760,6 @@ _Forms.DestinationType.prototype.SPREADSHEET;
 
 /**
  * Enum ItemType
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.ItemType = function() {};
@@ -10858,7 +10836,6 @@ _Forms.ItemType.prototype.TIME;
 
 /**
  * Enum PageNavigationType
- * Last updated May 15, 2013.
  * @constructor
  */
 _Forms.PageNavigationType = function() {};
@@ -10891,7 +10868,6 @@ var _Gmail = {};
 
 /**
  * Class GmailApp
- * Last updated August 7, 2013.
  * @constructor
  */
 _Gmail.GmailApp = function() {};
@@ -11216,11 +11192,10 @@ _Gmail.GmailApp.prototype.unstarMessages = function(messages) {};
 /**
  * @type {_Gmail.GmailApp}
  */
-var GmailApp;
+var GmailApp = new _Gmail.GmailApp();
 
 /**
  * Class GmailAttachment
- * Last updated July 11, 2013.
  * @constructor
  */
 _Gmail.GmailAttachment = function() {};
@@ -11299,7 +11274,6 @@ _Gmail.GmailAttachment.prototype.setName = function(name) {};
 
 /**
  * Class GmailLabel
- * Last updated March 26, 2013.
  * @constructor
  */
 _Gmail.GmailLabel = function() {};
@@ -11351,7 +11325,6 @@ _Gmail.GmailLabel.prototype.removeFromThreads = function(threads) {};
 
 /**
  * Class GmailMessage
- * Last updated August 7, 2013.
  * @constructor
  */
 _Gmail.GmailMessage = function() {};
@@ -11504,7 +11477,6 @@ _Gmail.GmailMessage.prototype.unstar = function() {};
 
 /**
  * Class GmailThread
- * Last updated March 26, 2013.
  * @constructor
  */
 _Gmail.GmailThread = function() {};
@@ -11658,7 +11630,6 @@ var _Groups = {};
 
 /**
  * Class GroupsApp
- * Last updated August 15, 2013.
  * @constructor
  */
 _Groups.GroupsApp = function() {};
@@ -11683,11 +11654,10 @@ _Groups.GroupsApp.prototype.getGroups = function() {};
 /**
  * @type {_Groups.GroupsApp}
  */
-var GroupsApp;
+var GroupsApp = new _Groups.GroupsApp();
 
 /**
  * Class Group
- * Last updated March 26, 2013.
  * @constructor
  */
 _Groups.Group = function() {};
@@ -11716,7 +11686,6 @@ _Groups.Group.prototype.hasUser = function(arg1) {};
 
 /**
  * Enum Role
- * Last updated March 26, 2013.
  * @constructor
  */
 _Groups.Role = function() {};
@@ -11754,7 +11723,6 @@ var _Language = {};
 
 /**
  * Class LanguageApp
- * Last updated June 27, 2013.
  * @constructor
  */
 _Language.LanguageApp = function() {};
@@ -11768,7 +11736,7 @@ _Language.LanguageApp.prototype.translate = function() {};
 /**
  * @type {_Language.LanguageApp}
  */
-var LanguageApp;
+var LanguageApp = new _Language.LanguageApp();
 
 
 /**
@@ -11778,7 +11746,6 @@ var _Maps = {};
 
 /**
  * Class Maps
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Maps = function() {};
@@ -11835,11 +11802,10 @@ _Maps.Maps.prototype.setAuthentication = function(clientId, signingKey) {};
 /**
  * @type {_Maps.Maps}
  */
-var Maps;
+var Maps = new _Maps.Maps();
 
 /**
  * Class DirectionFinder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.DirectionFinder = function() {};
@@ -11925,7 +11891,6 @@ _Maps.DirectionFinder.prototype.setRegion = function(region) {};
 
 /**
  * Class ElevationSampler
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.ElevationSampler = function() {};
@@ -11952,7 +11917,6 @@ _Maps.ElevationSampler.prototype.samplePath = function(arg1, numSamples) {};
 
 /**
  * Class Geocoder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Geocoder = function() {};
@@ -11995,7 +11959,6 @@ _Maps.Geocoder.prototype.setRegion = function(region) {};
 
 /**
  * Class StaticMap
- * Last updated July 11, 2013.
  * @constructor
  */
 _Maps.StaticMap = function() {};
@@ -12148,7 +12111,6 @@ _Maps.StaticMap.prototype.setZoom = function(zoom) {};
 
 /**
  * Enum Avoid
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Avoid = function() {};
@@ -12165,7 +12127,6 @@ _Maps.Avoid.prototype.HIGHWAYS;
 
 /**
  * Enum Color
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Color = function() {};
@@ -12222,7 +12183,6 @@ _Maps.Color.prototype.WHITE;
 
 /**
  * Enum DirectionFinderEnums
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.DirectionFinderEnums = function() {};
@@ -12239,7 +12199,6 @@ _Maps.DirectionFinderEnums.prototype.Mode;
 
 /**
  * Enum Format
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Format = function() {};
@@ -12276,7 +12235,6 @@ _Maps.Format.prototype.JPG_BASELINE;
 
 /**
  * Enum MarkerSize
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.MarkerSize = function() {};
@@ -12298,7 +12256,6 @@ _Maps.MarkerSize.prototype.SMALL;
 
 /**
  * Enum Mode
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Mode = function() {};
@@ -12320,7 +12277,6 @@ _Maps.Mode.prototype.BICYCLING;
 
 /**
  * Enum StaticMapEnums
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.StaticMapEnums = function() {};
@@ -12347,7 +12303,6 @@ _Maps.StaticMapEnums.prototype.Type;
 
 /**
  * Enum Type
- * Last updated March 26, 2013.
  * @constructor
  */
 _Maps.Type = function() {};
@@ -12380,7 +12335,6 @@ var _Sites = {};
 
 /**
  * Class SitesApp
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.SitesApp = function() {};
@@ -12463,11 +12417,10 @@ _Sites.SitesApp.prototype.getSites = function(arg1, arg2, max) {};
 /**
  * @type {_Sites.SitesApp}
  */
-var SitesApp;
+var SitesApp = new _Sites.SitesApp();
 
 /**
  * Class Attachment
- * Last updated July 11, 2013.
  * @constructor
  */
 _Sites.Attachment = function() {};
@@ -12565,7 +12518,6 @@ _Sites.Attachment.prototype.setUrl = function(url) {};
 
 /**
  * Class Column
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.Column = function() {};
@@ -12592,7 +12544,6 @@ _Sites.Column.prototype.setName = function(name) {};
 
 /**
  * Class Comment
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.Comment = function() {};
@@ -12645,7 +12596,6 @@ _Sites.Comment.prototype.setParent = function(parent) {};
 
 /**
  * Class ListItem
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.ListItem = function() {};
@@ -12703,7 +12653,6 @@ _Sites.ListItem.prototype.setValueByName = function(name, value) {};
 
 /**
  * Class Page
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.Page = function() {};
@@ -12956,7 +12905,6 @@ _Sites.Page.prototype.setTitle = function(title) {};
 
 /**
  * Class Site
- * Last updated May 15, 2013.
  * @constructor
  */
 _Sites.Site = function() {};
@@ -13144,7 +13092,6 @@ _Sites.Site.prototype.setTitle = function(title) {};
 
 /**
  * Enum AttachmentType
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.AttachmentType = function() {};
@@ -13161,7 +13108,6 @@ _Sites.AttachmentType.prototype.HOSTED;
 
 /**
  * Enum PageType
- * Last updated March 26, 2013.
  * @constructor
  */
 _Sites.PageType = function() {};
@@ -13199,7 +13145,6 @@ var _Spreadsheet = {};
 
 /**
  * Class SpreadsheetApp
- * Last updated August 7, 2013.
  * @constructor
  */
 _Spreadsheet.SpreadsheetApp = function() {};
@@ -13285,11 +13230,10 @@ _Spreadsheet.SpreadsheetApp.prototype.setActiveSpreadsheet = function(newActiveS
 /**
  * @type {_Spreadsheet.SpreadsheetApp}
  */
-var SpreadsheetApp;
+var SpreadsheetApp = new _Spreadsheet.SpreadsheetApp();
 
 /**
  * Class ContainerInfo
- * Last updated March 26, 2013.
  * @constructor
  */
 _Spreadsheet.ContainerInfo = function() {};
@@ -13316,7 +13260,6 @@ _Spreadsheet.ContainerInfo.prototype.getOffsetY = function() {};
 
 /**
  * Class DataValidation
- * Last updated August 7, 2013.
  * @constructor
  */
 _Spreadsheet.DataValidation = function() {};
@@ -13348,7 +13291,6 @@ _Spreadsheet.DataValidation.prototype.getHelpText = function() {};
 
 /**
  * Class DataValidationBuilder
- * Last updated August 7, 2013.
  * @constructor
  */
 _Spreadsheet.DataValidationBuilder = function() {};
@@ -13545,7 +13487,6 @@ _Spreadsheet.DataValidationBuilder.prototype.withCriteria = function(criteria, a
 
 /**
  * Class EmbeddedAreaChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedAreaChartBuilder = function() {};
@@ -13741,7 +13682,6 @@ _Spreadsheet.EmbeddedAreaChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedBarChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedBarChartBuilder = function() {};
@@ -13936,7 +13876,6 @@ _Spreadsheet.EmbeddedBarChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedChart
- * Last updated July 11, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedChart = function() {};
@@ -13990,7 +13929,6 @@ _Spreadsheet.EmbeddedChart.prototype.setId = function(id) {};
 
 /**
  * Class EmbeddedChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedChartBuilder = function() {};
@@ -14086,7 +14024,6 @@ _Spreadsheet.EmbeddedChartBuilder.prototype.setPosition = function(anchorRowPos,
 
 /**
  * Class EmbeddedColumnChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedColumnChartBuilder = function() {};
@@ -14276,7 +14213,6 @@ _Spreadsheet.EmbeddedColumnChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedLineChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedLineChartBuilder = function() {};
@@ -14473,7 +14409,6 @@ _Spreadsheet.EmbeddedLineChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class EmbeddedPieChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedPieChartBuilder = function() {};
@@ -14615,7 +14550,6 @@ _Spreadsheet.EmbeddedPieChartBuilder.prototype.setTitleTextStyle = function(text
 
 /**
  * Class EmbeddedScatterChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedScatterChartBuilder = function() {};
@@ -14813,7 +14747,6 @@ _Spreadsheet.EmbeddedScatterChartBuilder.prototype.setYAxisTitleTextStyle = func
 
 /**
  * Class EmbeddedTableChartBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.EmbeddedTableChartBuilder = function() {};
@@ -14958,7 +14891,6 @@ _Spreadsheet.EmbeddedTableChartBuilder.prototype.useAlternatingRowStyle = functi
 
 /**
  * Class PageProtection
- * Last updated March 26, 2013.
  * @constructor
  */
 _Spreadsheet.PageProtection = function() {};
@@ -14990,7 +14922,6 @@ _Spreadsheet.PageProtection.prototype.setProtected = function(protection) {};
 
 /**
  * Class Range
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.Range = function() {};
@@ -15546,7 +15477,6 @@ _Spreadsheet.Range.prototype.sort = function(sortSpecObj) {};
 
 /**
  * Class Sheet
- * Last updated August 28, 2013.
  * @constructor
  */
 _Spreadsheet.Sheet = function() {};
@@ -15937,7 +15867,6 @@ _Spreadsheet.Sheet.prototype.updateChart = function(chart) {};
 
 /**
  * Class Spreadsheet
- * Last updated September 9, 2013.
  * @constructor
  */
 _Spreadsheet.Spreadsheet = function() {};
@@ -16413,7 +16342,6 @@ _Spreadsheet.Spreadsheet.prototype.updateMenu = function(name, subMenus) {};
 
 /**
  * Enum DataValidationCriteria
- * Last updated August 7, 2013.
  * @constructor
  */
 _Spreadsheet.DataValidationCriteria = function() {};
@@ -16541,7 +16469,6 @@ var _Base = {};
 
 /**
  * Class Browser
- * Last updated June 27, 2013.
  * @constructor
  */
 _Base.Browser = function() {};
@@ -16571,11 +16498,10 @@ _Base.Browser.prototype.msgBox = function(arg1, arg2, buttons) {};
 /**
  * @type {_Base.Browser}
  */
-var Browser;
+var Browser = new _Base.Browser();
 
 /**
  * Class Logger
- * Last updated June 27, 2013.
  * @constructor
  */
 _Base.Logger = function() {};
@@ -16600,11 +16526,10 @@ _Base.Logger.prototype.log = function(arg1, values) {};
 /**
  * @type {_Base.Logger}
  */
-var Logger;
+var Logger = new _Base.Logger();
 
 /**
  * Enum MimeType
- * Last updated May 15, 2013.
  * @constructor
  */
 _Base.MimeType = function() {};
@@ -16763,11 +16688,10 @@ _Base.MimeType.prototype.ZIP;
 /**
  * @type {_Base.MimeType}
  */
-var MimeType;
+var MimeType = new _Base.MimeType();
 
 /**
  * Class Session
- * Last updated March 26, 2013.
  * @constructor
  */
 _Base.Session = function() {};
@@ -16791,11 +16715,10 @@ _Base.Session.prototype.getTimeZone = function() {};
 /**
  * @type {_Base.Session}
  */
-var Session;
+var Session = new _Base.Session();
 
 /**
  * Class Blob
- * Last updated July 11, 2013.
  * @constructor
  */
 _Base.Blob = function() {};
@@ -16869,17 +16792,16 @@ _Base.Blob.prototype.setName = function(name) {};
 
 /**
  * Class Menu
- * Last updated August 7, 2013.
  * @constructor
  */
 _Base.Menu = function() {};
 
 /**
  * @param {string} caption
- * @param {string} _function
+ * @param {string} function_
  * @return {_Base.Menu}
  */
-_Base.Menu.prototype.addItem = function(caption, _function) {};
+_Base.Menu.prototype.addItem = function(caption, function_) {};
 
 /**
  * @return {_Base.Menu}
@@ -16898,7 +16820,6 @@ _Base.Menu.prototype.addToUi = function() {};
 
 /**
  * Class PromptResponse
- * Last updated May 15, 2013.
  * @constructor
  */
 _Base.PromptResponse = function() {};
@@ -16915,7 +16836,6 @@ _Base.PromptResponse.prototype.getSelectedButton = function() {};
 
 /**
  * Class Ui
- * Last updated August 28, 2013.
  * @constructor
  */
 _Base.Ui = function() {};
@@ -16963,7 +16883,6 @@ _Base.Ui.prototype.showSidebar = function(userInterface) {};
 
 /**
  * Class User
- * Last updated August 28, 2013.
  * @constructor
  */
 _Base.User = function() {};
@@ -16975,7 +16894,6 @@ _Base.User.prototype.getEmail = function() {};
 
 /**
  * Interface BlobSource
- * Last updated July 11, 2013.
  * @constructor
  */
 _Base.BlobSource = function() {};
@@ -16993,7 +16911,6 @@ _Base.BlobSource.prototype.getBlob = function() {};
 
 /**
  * Enum Button
- * Last updated August 7, 2013.
  * @constructor
  */
 _Base.Button = function() {};
@@ -17025,7 +16942,6 @@ _Base.Button.prototype.NO;
 
 /**
  * Enum ButtonSet
- * Last updated August 7, 2013.
  * @constructor
  */
 _Base.ButtonSet = function() {};
@@ -17052,7 +16968,6 @@ _Base.ButtonSet.prototype.YES_NO_CANCEL;
 
 /**
  * Enum Month
- * Last updated June 27, 2013.
  * @constructor
  */
 _Base.Month = function() {};
@@ -17119,7 +17034,6 @@ _Base.Month.prototype.DECEMBER;
 
 /**
  * Enum Weekday
- * Last updated June 27, 2013.
  * @constructor
  */
 _Base.Weekday = function() {};
@@ -17167,7 +17081,6 @@ var _Cache = {};
 
 /**
  * Class CacheService
- * Last updated March 26, 2013.
  * @constructor
  */
 _Cache.CacheService = function() {};
@@ -17186,11 +17099,10 @@ _Cache.CacheService.prototype.getPublicCache = function() {};
 /**
  * @type {_Cache.CacheService}
  */
-var CacheService;
+var CacheService = new _Cache.CacheService();
 
 /**
  * Class Cache
- * Last updated August 15, 2013.
  * @constructor
  */
 _Cache.Cache = function() {};
@@ -17238,7 +17150,6 @@ var _Charts = {};
 
 /**
  * Class Charts
- * Last updated June 27, 2013.
  * @constructor
  */
 _Charts.Charts = function() {};
@@ -17357,11 +17268,10 @@ _Charts.Charts.prototype.newTextStyle = function() {};
 /**
  * @type {_Charts.Charts}
  */
-var Charts;
+var Charts = new _Charts.Charts();
 
 /**
  * Class AreaChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.AreaChartBuilder = function() {};
@@ -17505,7 +17415,6 @@ _Charts.AreaChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class BarChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.BarChartBuilder = function() {};
@@ -17648,7 +17557,6 @@ _Charts.BarChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class CategoryFilterBuilder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.CategoryFilterBuilder = function() {};
@@ -17738,7 +17646,6 @@ _Charts.CategoryFilterBuilder.prototype.setValues = function(values) {};
 
 /**
  * Class Chart
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.Chart = function() {};
@@ -17777,7 +17684,6 @@ _Charts.Chart.prototype.setId = function(id) {};
 
 /**
  * Class ChartOptions
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.ChartOptions = function() {};
@@ -17790,7 +17696,6 @@ _Charts.ChartOptions.prototype.get = function(option) {};
 
 /**
  * Class ColumnChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.ColumnChartBuilder = function() {};
@@ -17928,7 +17833,6 @@ _Charts.ColumnChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class Control
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.Control = function() {};
@@ -17951,7 +17855,6 @@ _Charts.Control.prototype.setId = function(id) {};
 
 /**
  * Class DashboardPanel
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.DashboardPanel = function() {};
@@ -17980,7 +17883,6 @@ _Charts.DashboardPanel.prototype.setId = function(id) {};
 
 /**
  * Class DashboardPanelBuilder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.DashboardPanelBuilder = function() {};
@@ -18005,14 +17907,12 @@ _Charts.DashboardPanelBuilder.prototype.setDataTable = function(arg1) {};
 
 /**
  * Class DataTable
- * Last updated June 27, 2013.
  * @constructor
  */
 _Charts.DataTable = function() {};
 
 /**
  * Class DataTableBuilder
- * Last updated August 28, 2013.
  * @constructor
  */
 _Charts.DataTableBuilder = function() {};
@@ -18045,14 +17945,12 @@ _Charts.DataTableBuilder.prototype.setValue = function(row, column, value) {};
 
 /**
  * Class DataViewDefinition
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.DataViewDefinition = function() {};
 
 /**
  * Class DataViewDefinitionBuilder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.DataViewDefinitionBuilder = function() {};
@@ -18070,7 +17968,6 @@ _Charts.DataViewDefinitionBuilder.prototype.setColumns = function(columns) {};
 
 /**
  * Class LineChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.LineChartBuilder = function() {};
@@ -18215,7 +18112,6 @@ _Charts.LineChartBuilder.prototype.useLogScale = function() {};
 
 /**
  * Class NumberRangeFilterBuilder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.NumberRangeFilterBuilder = function() {};
@@ -18293,7 +18189,6 @@ _Charts.NumberRangeFilterBuilder.prototype.setTicks = function(ticks) {};
 
 /**
  * Class PieChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.PieChartBuilder = function() {};
@@ -18383,7 +18278,6 @@ _Charts.PieChartBuilder.prototype.setTitleTextStyle = function(textStyle) {};
 
 /**
  * Class ScatterChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.ScatterChartBuilder = function() {};
@@ -18529,7 +18423,6 @@ _Charts.ScatterChartBuilder.prototype.setYAxisTitleTextStyle = function(textStyl
 
 /**
  * Class StringFilterBuilder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.StringFilterBuilder = function() {};
@@ -18595,7 +18488,6 @@ _Charts.StringFilterBuilder.prototype.setRealtimeTrigger = function(realtimeTrig
 
 /**
  * Class TableChartBuilder
- * Last updated August 15, 2013.
  * @constructor
  */
 _Charts.TableChartBuilder = function() {};
@@ -18688,7 +18580,6 @@ _Charts.TableChartBuilder.prototype.useAlternatingRowStyle = function(alternate)
 
 /**
  * Class TextStyle
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.TextStyle = function() {};
@@ -18710,7 +18601,6 @@ _Charts.TextStyle.prototype.getFontSize = function() {};
 
 /**
  * Class TextStyleBuilder
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.TextStyleBuilder = function() {};
@@ -18740,7 +18630,6 @@ _Charts.TextStyleBuilder.prototype.setFontSize = function(fontSize) {};
 
 /**
  * Interface DataTableSource
- * Last updated June 27, 2013.
  * @constructor
  */
 _Charts.DataTableSource = function() {};
@@ -18752,7 +18641,6 @@ _Charts.DataTableSource.prototype.getDataTable = function() {};
 
 /**
  * Enum ChartType
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.ChartType = function() {};
@@ -18794,7 +18682,6 @@ _Charts.ChartType.prototype.TABLE;
 
 /**
  * Enum ColumnType
- * Last updated June 27, 2013.
  * @constructor
  */
 _Charts.ColumnType = function() {};
@@ -18816,7 +18703,6 @@ _Charts.ColumnType.prototype.STRING;
 
 /**
  * Enum CurveStyle
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.CurveStyle = function() {};
@@ -18833,7 +18719,6 @@ _Charts.CurveStyle.prototype.SMOOTH;
 
 /**
  * Enum MatchType
- * Last updated August 28, 2013.
  * @constructor
  */
 _Charts.MatchType = function() {};
@@ -18860,7 +18745,6 @@ _Charts.MatchType.prototype.getName = function() {};
 
 /**
  * Enum Orientation
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.Orientation = function() {};
@@ -18877,7 +18761,6 @@ _Charts.Orientation.prototype.VERTICAL;
 
 /**
  * Enum PickerValuesLayout
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.PickerValuesLayout = function() {};
@@ -18904,7 +18787,6 @@ _Charts.PickerValuesLayout.prototype.BELOW_STACKED;
 
 /**
  * Enum PointStyle
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.PointStyle = function() {};
@@ -18936,7 +18818,6 @@ _Charts.PointStyle.prototype.HUGE;
 
 /**
  * Enum Position
- * Last updated March 26, 2013.
  * @constructor
  */
 _Charts.Position = function() {};
@@ -18969,7 +18850,6 @@ var _Content = {};
 
 /**
  * Class ContentService
- * Last updated March 26, 2013.
  * @constructor
  */
 _Content.ContentService = function() {};
@@ -18989,11 +18869,10 @@ _Content.ContentService.prototype.createTextOutput = function(content) {};
 /**
  * @type {_Content.ContentService}
  */
-var ContentService;
+var ContentService = new _Content.ContentService();
 
 /**
  * Class TextOutput
- * Last updated August 15, 2013.
  * @constructor
  */
 _Content.TextOutput = function() {};
@@ -19044,7 +18923,6 @@ _Content.TextOutput.prototype.setMimeType = function(mimeType) {};
 
 /**
  * Enum MimeType
- * Last updated March 26, 2013.
  * @constructor
  */
 _Content.MimeType = function() {};
@@ -19096,183 +18974,179 @@ _Content.MimeType.prototype.XML;
 
 
 /**
- * _Html Services
+ * _HTML Services
  */
-var _Html = {};
+var _HTML = {};
 
 /**
  * Class HtmlService
- * Last updated May 15, 2013.
  * @constructor
  */
-_Html.HtmlService = function() {};
+_HTML.HtmlService = function() {};
 
 /**
- * @type {_Html.SandboxMode}
+ * @type {_HTML.SandboxMode}
  */
-_Html.HtmlService.prototype.SandboxMode;
+_HTML.HtmlService.prototype.SandboxMode;
 
 /**
  * @param {(_Base.BlobSource|string)=} arg1
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlService.prototype.createHtmlOutput = function(arg1) {};
+_HTML.HtmlService.prototype.createHtmlOutput = function(arg1) {};
 
 /**
  * @param {string} filename
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlService.prototype.createHtmlOutputFromFile = function(filename) {};
+_HTML.HtmlService.prototype.createHtmlOutputFromFile = function(filename) {};
 
 /**
  * @param {(_Base.BlobSource|string)} arg1
- * @return {_Html.HtmlTemplate}
+ * @return {_HTML.HtmlTemplate}
  */
-_Html.HtmlService.prototype.createTemplate = function(arg1) {};
+_HTML.HtmlService.prototype.createTemplate = function(arg1) {};
 
 /**
  * @param {string} filename
- * @return {_Html.HtmlTemplate}
+ * @return {_HTML.HtmlTemplate}
  */
-_Html.HtmlService.prototype.createTemplateFromFile = function(filename) {};
+_HTML.HtmlService.prototype.createTemplateFromFile = function(filename) {};
 
 
 /**
- * @type {_Html.HtmlService}
+ * @type {_HTML.HtmlService}
  */
-var HtmlService;
+var HtmlService = new _HTML.HtmlService();
 
 /**
  * Class HtmlOutput
- * Last updated July 11, 2013.
  * @constructor
  */
-_Html.HtmlOutput = function() {};
+_HTML.HtmlOutput = function() {};
 
 /**
  * @param {string} addedContent
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.append = function(addedContent) {};
+_HTML.HtmlOutput.prototype.append = function(addedContent) {};
 
 /**
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.appendUntrusted = function(addedContent) {};
+_HTML.HtmlOutput.prototype.appendUntrusted = function(addedContent) {};
 
 /**
- * @return {_Html.HtmlTemplate}
+ * @return {_HTML.HtmlTemplate}
  */
-_Html.HtmlOutput.prototype.asTemplate = function() {};
+_HTML.HtmlOutput.prototype.asTemplate = function() {};
 
 /**
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.clear = function() {};
+_HTML.HtmlOutput.prototype.clear = function() {};
 
 /**
  * @param {string} contentType
  * @return {_Base.Blob}
  */
-_Html.HtmlOutput.prototype.getAs = function(contentType) {};
+_HTML.HtmlOutput.prototype.getAs = function(contentType) {};
 
 /**
  * @return {_Base.Blob}
  */
-_Html.HtmlOutput.prototype.getBlob = function() {};
+_HTML.HtmlOutput.prototype.getBlob = function() {};
 
 /**
  * @return {string}
  */
-_Html.HtmlOutput.prototype.getContent = function() {};
+_HTML.HtmlOutput.prototype.getContent = function() {};
 
 /**
  * @return {number}
  */
-_Html.HtmlOutput.prototype.getHeight = function() {};
+_HTML.HtmlOutput.prototype.getHeight = function() {};
 
 /**
  * @return {string}
  */
-_Html.HtmlOutput.prototype.getTitle = function() {};
+_HTML.HtmlOutput.prototype.getTitle = function() {};
 
 /**
  * @return {number}
  */
-_Html.HtmlOutput.prototype.getWidth = function() {};
+_HTML.HtmlOutput.prototype.getWidth = function() {};
 
 /**
  * @param {string} content
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.setContent = function(content) {};
+_HTML.HtmlOutput.prototype.setContent = function(content) {};
 
 /**
  * @param {number} height
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.setHeight = function(height) {};
+_HTML.HtmlOutput.prototype.setHeight = function(height) {};
 
 /**
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.setSandboxMode = function(mode) {};
+_HTML.HtmlOutput.prototype.setSandboxMode = function(mode) {};
 
 /**
  * @param {string} title
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.setTitle = function(title) {};
+_HTML.HtmlOutput.prototype.setTitle = function(title) {};
 
 /**
  * @param {number} width
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlOutput.prototype.setWidth = function(width) {};
+_HTML.HtmlOutput.prototype.setWidth = function(width) {};
 
 /**
  * Class HtmlTemplate
- * Last updated March 26, 2013.
  * @constructor
  */
-_Html.HtmlTemplate = function() {};
+_HTML.HtmlTemplate = function() {};
 
 /**
- * @return {_Html.HtmlOutput}
+ * @return {_HTML.HtmlOutput}
  */
-_Html.HtmlTemplate.prototype.evaluate = function() {};
-
-/**
- * @return {string}
- */
-_Html.HtmlTemplate.prototype.getCode = function() {};
+_HTML.HtmlTemplate.prototype.evaluate = function() {};
 
 /**
  * @return {string}
  */
-_Html.HtmlTemplate.prototype.getCodeWithComments = function() {};
+_HTML.HtmlTemplate.prototype.getCode = function() {};
 
 /**
  * @return {string}
  */
-_Html.HtmlTemplate.prototype.getRawContent = function() {};
+_HTML.HtmlTemplate.prototype.getCodeWithComments = function() {};
+
+/**
+ * @return {string}
+ */
+_HTML.HtmlTemplate.prototype.getRawContent = function() {};
 
 /**
  * Enum SandboxMode
- * Last updated May 15, 2013.
  * @constructor
  */
-_Html.SandboxMode = function() {};
+_HTML.SandboxMode = function() {};
 
 /**
- * @type {_Html.SandboxMode}
+ * @type {_HTML.SandboxMode}
  */
-_Html.SandboxMode.prototype.EMULATED;
+_HTML.SandboxMode.prototype.EMULATED;
 
 /**
- * @type {_Html.SandboxMode}
+ * @type {_HTML.SandboxMode}
  */
-_Html.SandboxMode.prototype.NATIVE;
+_HTML.SandboxMode.prototype.NATIVE;
 
 
 /**
@@ -19282,7 +19156,6 @@ var _Lock = {};
 
 /**
  * Class LockService
- * Last updated June 27, 2013.
  * @constructor
  */
 _Lock.LockService = function() {};
@@ -19301,11 +19174,10 @@ _Lock.LockService.prototype.getPublicLock = function() {};
 /**
  * @type {_Lock.LockService}
  */
-var LockService;
+var LockService = new _Lock.LockService();
 
 /**
  * Class Lock
- * Last updated March 26, 2013.
  * @constructor
  */
 _Lock.Lock = function() {};
@@ -19338,7 +19210,6 @@ var _Mail = {};
 
 /**
  * Class MailApp
- * Last updated August 15, 2013.
  * @constructor
  */
 _Mail.MailApp = function() {};
@@ -19360,7 +19231,7 @@ _Mail.MailApp.prototype.sendEmail = function(arg1, arg2, arg3, arg4) {};
 /**
  * @type {_Mail.MailApp}
  */
-var MailApp;
+var MailApp = new _Mail.MailApp();
 
 
 /**
@@ -19370,7 +19241,6 @@ var _Properties = {};
 
 /**
  * Class ScriptProperties
- * Last updated June 27, 2013.
  * @constructor
  */
 _Properties.ScriptProperties = function() {};
@@ -19420,11 +19290,10 @@ _Properties.ScriptProperties.prototype.setProperty = function(key, value) {};
 /**
  * @type {_Properties.ScriptProperties}
  */
-var ScriptProperties;
+var ScriptProperties = new _Properties.ScriptProperties();
 
 /**
  * Class UserProperties
- * Last updated June 27, 2013.
  * @constructor
  */
 _Properties.UserProperties = function() {};
@@ -19474,7 +19343,7 @@ _Properties.UserProperties.prototype.setProperty = function(key, value) {};
 /**
  * @type {_Properties.UserProperties}
  */
-var UserProperties;
+var UserProperties = new _Properties.UserProperties();
 
 
 /**
@@ -19484,7 +19353,6 @@ var _Script = {};
 
 /**
  * Class ScriptApp
- * Last updated June 27, 2013.
  * @constructor
  */
 _Script.ScriptApp = function() {};
@@ -19533,11 +19401,10 @@ _Script.ScriptApp.prototype.newTrigger = function(functionName) {};
 /**
  * @type {_Script.ScriptApp}
  */
-var ScriptApp;
+var ScriptApp = new _Script.ScriptApp();
 
 /**
  * Class ClockTriggerBuilder
- * Last updated August 7, 2013.
  * @constructor
  */
 _Script.ClockTriggerBuilder = function() {};
@@ -19623,7 +19490,6 @@ _Script.ClockTriggerBuilder.prototype.onWeekDay = function(day) {};
 
 /**
  * Class FormTriggerBuilder
- * Last updated May 15, 2013.
  * @constructor
  */
 _Script.FormTriggerBuilder = function() {};
@@ -19645,7 +19511,6 @@ _Script.FormTriggerBuilder.prototype.onOpen = function() {};
 
 /**
  * Class Service
- * Last updated March 26, 2013.
  * @constructor
  */
 _Script.Service = function() {};
@@ -19676,7 +19541,6 @@ _Script.Service.prototype.isEnabled = function() {};
 
 /**
  * Class SpreadsheetTriggerBuilder
- * Last updated May 6, 2013.
  * @constructor
  */
 _Script.SpreadsheetTriggerBuilder = function() {};
@@ -19708,7 +19572,6 @@ _Script.SpreadsheetTriggerBuilder.prototype.onOpen = function() {};
 
 /**
  * Class Trigger
- * Last updated June 27, 2013.
  * @constructor
  */
 _Script.Trigger = function() {};
@@ -19740,7 +19603,6 @@ _Script.Trigger.prototype.getUniqueId = function() {};
 
 /**
  * Class TriggerBuilder
- * Last updated June 4, 2013.
  * @constructor
  */
 _Script.TriggerBuilder = function() {};
@@ -19764,7 +19626,6 @@ _Script.TriggerBuilder.prototype.timeBased = function() {};
 
 /**
  * Enum EventType
- * Last updated March 26, 2013.
  * @constructor
  */
 _Script.EventType = function() {};
@@ -19791,7 +19652,6 @@ _Script.EventType.prototype.ON_FORM_SUBMIT;
 
 /**
  * Enum Service.Restriction
- * Last updated March 26, 2013.
  * @constructor
  */
 _Script.Service.Restriction = function() {};
@@ -19813,7 +19673,6 @@ _Script.Service.Restriction.prototype.ALL;
 
 /**
  * Enum TriggerSource
- * Last updated June 13, 2013.
  * @constructor
  */
 _Script.TriggerSource = function() {};
@@ -19835,4123 +19694,4090 @@ _Script.TriggerSource.prototype.FORMS;
 
 
 /**
- * _ScriptDb Services
+ * _ScriptDB Services
  */
-var _ScriptDb = {};
+var _ScriptDB = {};
 
 /**
  * Class ScriptDb
- * Last updated June 27, 2013.
  * @constructor
  */
-_ScriptDb.ScriptDb = function() {};
+_ScriptDB.ScriptDb = function() {};
 
 /**
- * @return {_ScriptDb.ScriptDbInstance}
+ * @return {_ScriptDB.ScriptDbInstance}
  */
-_ScriptDb.ScriptDb.prototype.getMyDb = function() {};
+_ScriptDB.ScriptDb.prototype.getMyDb = function() {};
 
 
 /**
- * @type {_ScriptDb.ScriptDb}
+ * @type {_ScriptDB.ScriptDb}
  */
-var ScriptDb;
+var ScriptDb = new _ScriptDB.ScriptDb();
 
 /**
  * Class MutationResult
- * Last updated March 26, 2013.
  * @constructor
  */
-_ScriptDb.MutationResult = function() {};
+_ScriptDB.MutationResult = function() {};
 
 /**
  * @return {boolean}
  */
-_ScriptDb.MutationResult.prototype.successful = function() {};
+_ScriptDB.MutationResult.prototype.successful = function() {};
 
 /**
  * Class QueryOperator
- * Last updated March 26, 2013.
  * @constructor
  */
-_ScriptDb.QueryOperator = function() {};
+_ScriptDB.QueryOperator = function() {};
 
 /**
  * Class ScriptDbInstance
- * Last updated August 28, 2013.
  * @constructor
  */
-_ScriptDb.ScriptDbInstance = function() {};
+_ScriptDB.ScriptDbInstance = function() {};
 
 /**
- * @type {_ScriptDb.SortDirection}
+ * @type {_ScriptDB.SortDirection}
  */
-_ScriptDb.ScriptDbInstance.prototype.ASCENDING;
+_ScriptDB.ScriptDbInstance.prototype.ASCENDING;
 
 /**
- * @type {_ScriptDb.SortDirection}
+ * @type {_ScriptDB.SortDirection}
  */
-_ScriptDb.ScriptDbInstance.prototype.DESCENDING;
+_ScriptDB.ScriptDbInstance.prototype.DESCENDING;
 
 /**
- * @type {_ScriptDb.SortStrategy}
+ * @type {_ScriptDB.SortStrategy}
  */
-_ScriptDb.ScriptDbInstance.prototype.LEXICAL;
+_ScriptDB.ScriptDbInstance.prototype.LEXICAL;
 
 /**
- * @type {_ScriptDb.SortStrategy}
+ * @type {_ScriptDB.SortStrategy}
  */
-_ScriptDb.ScriptDbInstance.prototype.NUMERIC;
+_ScriptDB.ScriptDbInstance.prototype.NUMERIC;
 
 /**
  * @param {Array.<Object>} mutateResults
  * @return {boolean}
  */
-_ScriptDb.ScriptDbInstance.prototype.allOk = function(mutateResults) {};
+_ScriptDB.ScriptDbInstance.prototype.allOk = function(mutateResults) {};
 
 /**
  * @param {Array.<Object>} values
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.anyOf = function(values) {};
+_ScriptDB.ScriptDbInstance.prototype.anyOf = function(values) {};
 
 /**
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.anyValue = function() {};
+_ScriptDB.ScriptDbInstance.prototype.anyValue = function() {};
 
 /**
  * @param {Object} value1
  * @param {Object} value2
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.between = function(value1, value2) {};
+_ScriptDB.ScriptDbInstance.prototype.between = function(value1, value2) {};
 
 /**
  * @param {Object} query
  * @return {number}
  */
-_ScriptDb.ScriptDbInstance.prototype.count = function(query) {};
+_ScriptDB.ScriptDbInstance.prototype.count = function(query) {};
 
 /**
  * @param {Object} value
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.greaterThan = function(value) {};
+_ScriptDB.ScriptDbInstance.prototype.greaterThan = function(value) {};
 
 /**
  * @param {Object} value
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.greaterThanOrEqualTo = function(value) {};
+_ScriptDB.ScriptDbInstance.prototype.greaterThanOrEqualTo = function(value) {};
 
 /**
  * @param {Object} value
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.lessThan = function(value) {};
+_ScriptDB.ScriptDbInstance.prototype.lessThan = function(value) {};
 
 /**
  * @param {Object} value
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.lessThanOrEqualTo = function(value) {};
+_ScriptDB.ScriptDbInstance.prototype.lessThanOrEqualTo = function(value) {};
 
 /**
  * @param {(string|Array.<string>)} arg1
- * @return {(_ScriptDb.ScriptDbMap|Array.<_ScriptDb.ScriptDbMap>)}
+ * @return {(_ScriptDB.ScriptDbMap|Array.<_ScriptDB.ScriptDbMap>)}
  */
-_ScriptDb.ScriptDbInstance.prototype.load = function(arg1) {};
+_ScriptDB.ScriptDbInstance.prototype.load = function(arg1) {};
 
 /**
  * @param {Object} value
- * @return {_ScriptDb.QueryOperator}
+ * @return {_ScriptDB.QueryOperator}
  */
-_ScriptDb.ScriptDbInstance.prototype.not = function(value) {};
+_ScriptDB.ScriptDbInstance.prototype.not = function(value) {};
 
 /**
  * @param {Object} query
- * @return {_ScriptDb.ScriptDbResult}
+ * @return {_ScriptDB.ScriptDbResult}
  */
-_ScriptDb.ScriptDbInstance.prototype.query = function(query) {};
+_ScriptDB.ScriptDbInstance.prototype.query = function(query) {};
 
 /**
- * @param {_ScriptDb.ScriptDbMap} item
+ * @param {_ScriptDB.ScriptDbMap} item
  */
-_ScriptDb.ScriptDbInstance.prototype.remove = function(item) {};
+_ScriptDB.ScriptDbInstance.prototype.remove = function(item) {};
 
 /**
- * @param {Array.<_ScriptDb.ScriptDbMap>} items
+ * @param {Array.<_ScriptDB.ScriptDbMap>} items
  * @param {boolean} atomic
- * @return {Array.<_ScriptDb.MutationResult>}
+ * @return {Array.<_ScriptDB.MutationResult>}
  */
-_ScriptDb.ScriptDbInstance.prototype.removeBatch = function(items, atomic) {};
+_ScriptDB.ScriptDbInstance.prototype.removeBatch = function(items, atomic) {};
 
 /**
  * @param {string} id
  */
-_ScriptDb.ScriptDbInstance.prototype.removeById = function(id) {};
+_ScriptDB.ScriptDbInstance.prototype.removeById = function(id) {};
 
 /**
  * @param {Array.<string>} ids
  * @param {boolean} atomic
- * @return {Array.<_ScriptDb.MutationResult>}
+ * @return {Array.<_ScriptDB.MutationResult>}
  */
-_ScriptDb.ScriptDbInstance.prototype.removeByIdBatch = function(ids, atomic) {};
+_ScriptDB.ScriptDbInstance.prototype.removeByIdBatch = function(ids, atomic) {};
 
 /**
- * @param {(Object|_ScriptDb.ScriptDbMap)} item
- * @return {_ScriptDb.ScriptDbMap}
+ * @param {(Object|_ScriptDB.ScriptDbMap)} item
+ * @return {_ScriptDB.ScriptDbMap}
  */
-_ScriptDb.ScriptDbInstance.prototype.save = function(item) {};
+_ScriptDB.ScriptDbInstance.prototype.save = function(item) {};
 
 /**
  * @param {Array.<Object>} items
  * @param {boolean} atomic
  * @return {Array.<Object>}
  */
-_ScriptDb.ScriptDbInstance.prototype.saveBatch = function(items, atomic) {};
+_ScriptDB.ScriptDbInstance.prototype.saveBatch = function(items, atomic) {};
 
 /**
  * Class ScriptDbMap
- * Last updated March 26, 2013.
  * @constructor
  */
-_ScriptDb.ScriptDbMap = function() {};
+_ScriptDB.ScriptDbMap = function() {};
 
 /**
  * @return {string}
  */
-_ScriptDb.ScriptDbMap.prototype.getId = function() {};
+_ScriptDB.ScriptDbMap.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_ScriptDb.ScriptDbMap.prototype.toJson = function() {};
+_ScriptDB.ScriptDbMap.prototype.toJson = function() {};
 
 /**
  * Class ScriptDbResult
- * Last updated March 26, 2013.
  * @constructor
  */
-_ScriptDb.ScriptDbResult = function() {};
+_ScriptDB.ScriptDbResult = function() {};
 
 /**
  * @return {number}
  */
-_ScriptDb.ScriptDbResult.prototype.getSize = function() {};
+_ScriptDB.ScriptDbResult.prototype.getSize = function() {};
 
 /**
  * @return {boolean}
  */
-_ScriptDb.ScriptDbResult.prototype.hasNext = function() {};
+_ScriptDB.ScriptDbResult.prototype.hasNext = function() {};
 
 /**
- * @return {_ScriptDb.ScriptDbResult}
+ * @return {_ScriptDB.ScriptDbResult}
  */
-_ScriptDb.ScriptDbResult.prototype.limit = function(number) {};
+_ScriptDB.ScriptDbResult.prototype.limit = function(number) {};
 
 /**
- * @return {_ScriptDb.ScriptDbMap}
+ * @return {_ScriptDB.ScriptDbMap}
  */
-_ScriptDb.ScriptDbResult.prototype.next = function() {};
+_ScriptDB.ScriptDbResult.prototype.next = function() {};
 
 /**
  * @param {number} pageNumber
  * @param {number} pageSize
- * @return {_ScriptDb.ScriptDbResult}
+ * @return {_ScriptDB.ScriptDbResult}
  */
-_ScriptDb.ScriptDbResult.prototype.paginate = function(pageNumber, pageSize) {};
+_ScriptDB.ScriptDbResult.prototype.paginate = function(pageNumber, pageSize) {};
 
 /**
  * @param {string=} fieldPath
- * @param {(_ScriptDb.SortDirection|_ScriptDb.SortStrategy)=} arg2
- * @param {_ScriptDb.SortStrategy=} strategy
- * @return {_ScriptDb.ScriptDbResult}
+ * @param {(_ScriptDB.SortDirection|_ScriptDB.SortStrategy)=} arg2
+ * @param {_ScriptDB.SortStrategy=} strategy
+ * @return {_ScriptDB.ScriptDbResult}
  */
-_ScriptDb.ScriptDbResult.prototype.sortBy = function(fieldPath, arg2, strategy) {};
+_ScriptDB.ScriptDbResult.prototype.sortBy = function(fieldPath, arg2, strategy) {};
 
 /**
  * @param {number} number
- * @return {_ScriptDb.ScriptDbResult}
+ * @return {_ScriptDB.ScriptDbResult}
  */
-_ScriptDb.ScriptDbResult.prototype.startAt = function(number) {};
+_ScriptDB.ScriptDbResult.prototype.startAt = function(number) {};
 
 /**
  * Enum SortDirection
- * Last updated March 26, 2013.
  * @constructor
  */
-_ScriptDb.SortDirection = function() {};
+_ScriptDB.SortDirection = function() {};
 
 /**
- * @type {_ScriptDb.SortDirection}
+ * @type {_ScriptDB.SortDirection}
  */
-_ScriptDb.SortDirection.prototype.DESCENDING;
+_ScriptDB.SortDirection.prototype.DESCENDING;
 
 /**
- * @type {_ScriptDb.SortDirection}
+ * @type {_ScriptDB.SortDirection}
  */
-_ScriptDb.SortDirection.prototype.ASCENDING;
+_ScriptDB.SortDirection.prototype.ASCENDING;
 
 /**
  * Enum SortStrategy
- * Last updated March 26, 2013.
  * @constructor
  */
-_ScriptDb.SortStrategy = function() {};
+_ScriptDB.SortStrategy = function() {};
 
 /**
- * @type {_ScriptDb.SortStrategy}
+ * @type {_ScriptDB.SortStrategy}
  */
-_ScriptDb.SortStrategy.prototype.LEXICAL;
+_ScriptDB.SortStrategy.prototype.LEXICAL;
 
 /**
- * @type {_ScriptDb.SortStrategy}
+ * @type {_ScriptDB.SortStrategy}
  */
-_ScriptDb.SortStrategy.prototype.NUMERIC;
+_ScriptDB.SortStrategy.prototype.NUMERIC;
 
 
 /**
- * _Ui Services
+ * _UI Services
  */
-var _Ui = {};
+var _UI = {};
 
 /**
  * Class UiApp
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.UiApp = function() {};
+_UI.UiApp = function() {};
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.UiApp.prototype.DateTimeFormat;
+_UI.UiApp.prototype.DateTimeFormat;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.UiApp.prototype.FileType;
+_UI.UiApp.prototype.FileType;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.UiApp.prototype.HorizontalAlignment;
+_UI.UiApp.prototype.HorizontalAlignment;
 
 /**
- * @type {_Ui.VerticalAlignment}
+ * @type {_UI.VerticalAlignment}
  */
-_Ui.UiApp.prototype.VerticalAlignment;
+_UI.UiApp.prototype.VerticalAlignment;
 
 /**
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiApp.prototype.createApplication = function() {};
+_UI.UiApp.prototype.createApplication = function() {};
 
 /**
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiApp.prototype.getActiveApplication = function() {};
+_UI.UiApp.prototype.getActiveApplication = function() {};
 
 /**
  * @return {string}
  */
-_Ui.UiApp.prototype.getUserAgent = function() {};
+_UI.UiApp.prototype.getUserAgent = function() {};
 
 
 /**
- * @type {_Ui.UiApp}
+ * @type {_UI.UiApp}
  */
-var UiApp;
+var UiApp = new _UI.UiApp();
 
 /**
  * Class AbsolutePanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.AbsolutePanel = function() {};
+_UI.AbsolutePanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number=} left
  * @param {number=} top
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.add = function(widget, left, top) {};
+_UI.AbsolutePanel.prototype.add = function(widget, left, top) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.AbsolutePanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.addStyleName = function(styleName) {};
+_UI.AbsolutePanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.clear = function() {};
-
-/**
- * @return {string}
- */
-_Ui.AbsolutePanel.prototype.getId = function() {};
+_UI.AbsolutePanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.AbsolutePanel.prototype.getTag = function() {};
+_UI.AbsolutePanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.AbsolutePanel.prototype.getType = function() {};
+_UI.AbsolutePanel.prototype.getTag = function() {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.AbsolutePanel}
+ * @return {string}
  */
-_Ui.AbsolutePanel.prototype.remove = function(arg1) {};
+_UI.AbsolutePanel.prototype.getType = function() {};
+
+/**
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.AbsolutePanel}
+ */
+_UI.AbsolutePanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {string} height
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setHeight = function(height) {};
+_UI.AbsolutePanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setId = function(id) {};
+_UI.AbsolutePanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setPixelSize = function(width, height) {};
+_UI.AbsolutePanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setSize = function(width, height) {};
+_UI.AbsolutePanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.AbsolutePanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.AbsolutePanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setStyleName = function(styleName) {};
+_UI.AbsolutePanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.AbsolutePanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setTag = function(tag) {};
+_UI.AbsolutePanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setTitle = function(title) {};
+_UI.AbsolutePanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setVisible = function(visible) {};
+_UI.AbsolutePanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} left
  * @param {number} top
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setWidgetPosition = function(widget, left, top) {};
+_UI.AbsolutePanel.prototype.setWidgetPosition = function(widget, left, top) {};
 
 /**
  * @param {string} width
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.AbsolutePanel.prototype.setWidth = function(width) {};
+_UI.AbsolutePanel.prototype.setWidth = function(width) {};
 
 /**
  * Class Anchor
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Anchor = function() {};
+_UI.Anchor = function() {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addBlurHandler = function(handler) {};
+_UI.Anchor.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addClickHandler = function(handler) {};
+_UI.Anchor.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addFocusHandler = function(handler) {};
+_UI.Anchor.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addKeyDownHandler = function(handler) {};
+_UI.Anchor.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addKeyPressHandler = function(handler) {};
+_UI.Anchor.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addKeyUpHandler = function(handler) {};
+_UI.Anchor.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addMouseDownHandler = function(handler) {};
+_UI.Anchor.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addMouseMoveHandler = function(handler) {};
+_UI.Anchor.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addMouseOutHandler = function(handler) {};
+_UI.Anchor.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addMouseOverHandler = function(handler) {};
+_UI.Anchor.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addMouseUpHandler = function(handler) {};
+_UI.Anchor.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.Anchor}
- */
-_Ui.Anchor.prototype.addStyleDependentName = function(styleName) {};
+_UI.Anchor.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.addStyleName = function(styleName) {};
+_UI.Anchor.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.Anchor}
+ */
+_UI.Anchor.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.Anchor.prototype.getId = function() {};
+_UI.Anchor.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Anchor.prototype.getTag = function() {};
+_UI.Anchor.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Anchor.prototype.getType = function() {};
+_UI.Anchor.prototype.getType = function() {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setFocus = function(focus) {};
+_UI.Anchor.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} html
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setHTML = function(html) {};
+_UI.Anchor.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setHeight = function(height) {};
+_UI.Anchor.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.Anchor}
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
+_UI.Anchor.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
 
 /**
  * @param {string} href
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setHref = function(href) {};
+_UI.Anchor.prototype.setHref = function(href) {};
 
 /**
  * @param {string} id
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setId = function(id) {};
+_UI.Anchor.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setName = function(name) {};
+_UI.Anchor.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setPixelSize = function(width, height) {};
+_UI.Anchor.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setSize = function(width, height) {};
+_UI.Anchor.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.Anchor.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setStyleAttributes = function(attributes) {};
+_UI.Anchor.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setStyleName = function(styleName) {};
+_UI.Anchor.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setStylePrimaryName = function(styleName) {};
+_UI.Anchor.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setTabIndex = function(index) {};
+_UI.Anchor.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setTag = function(tag) {};
+_UI.Anchor.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} target
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setTarget = function(target) {};
+_UI.Anchor.prototype.setTarget = function(target) {};
 
 /**
  * @param {string} text
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setText = function(text) {};
+_UI.Anchor.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setTitle = function(title) {};
+_UI.Anchor.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setVisible = function(visible) {};
+_UI.Anchor.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setWidth = function(width) {};
+_UI.Anchor.prototype.setWidth = function(width) {};
 
 /**
  * @param {boolean} wordWrap
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.Anchor.prototype.setWordWrap = function(wordWrap) {};
+_UI.Anchor.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class Button
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Button = function() {};
+_UI.Button = function() {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addBlurHandler = function(handler) {};
+_UI.Button.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addClickHandler = function(handler) {};
+_UI.Button.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addFocusHandler = function(handler) {};
+_UI.Button.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addKeyDownHandler = function(handler) {};
+_UI.Button.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addKeyPressHandler = function(handler) {};
+_UI.Button.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addKeyUpHandler = function(handler) {};
+_UI.Button.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addMouseDownHandler = function(handler) {};
+_UI.Button.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addMouseMoveHandler = function(handler) {};
+_UI.Button.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addMouseOutHandler = function(handler) {};
+_UI.Button.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addMouseOverHandler = function(handler) {};
+_UI.Button.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addMouseUpHandler = function(handler) {};
+_UI.Button.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.Button}
- */
-_Ui.Button.prototype.addStyleDependentName = function(styleName) {};
+_UI.Button.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.addStyleName = function(styleName) {};
+_UI.Button.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.Button}
+ */
+_UI.Button.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.Button.prototype.getId = function() {};
+_UI.Button.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Button.prototype.getTag = function() {};
+_UI.Button.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Button.prototype.getType = function() {};
+_UI.Button.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setEnabled = function(enabled) {};
+_UI.Button.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setFocus = function(focus) {};
+_UI.Button.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} html
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setHTML = function(html) {};
+_UI.Button.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setHeight = function(height) {};
+_UI.Button.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setId = function(id) {};
+_UI.Button.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setPixelSize = function(width, height) {};
+_UI.Button.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setSize = function(width, height) {};
+_UI.Button.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.Button.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setStyleAttributes = function(attributes) {};
+_UI.Button.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setStyleName = function(styleName) {};
+_UI.Button.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setStylePrimaryName = function(styleName) {};
+_UI.Button.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setTabIndex = function(index) {};
+_UI.Button.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setTag = function(tag) {};
+_UI.Button.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setText = function(text) {};
+_UI.Button.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setTitle = function(title) {};
+_UI.Button.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setVisible = function(visible) {};
+_UI.Button.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.Button}
+ * @return {_UI.Button}
  */
-_Ui.Button.prototype.setWidth = function(width) {};
+_UI.Button.prototype.setWidth = function(width) {};
 
 /**
  * Class CaptionPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.CaptionPanel = function() {};
+_UI.CaptionPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.CaptionPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.add = function(widget) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.CaptionPanel}
- */
-_Ui.CaptionPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.CaptionPanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.addStyleName = function(styleName) {};
+_UI.CaptionPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.CaptionPanel}
+ * @param {string} styleName
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.clear = function() {};
+_UI.CaptionPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.CaptionPanel.prototype.getTag = function() {};
+_UI.CaptionPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.CaptionPanel.prototype.getType = function() {};
+_UI.CaptionPanel.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.CaptionPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.CaptionPanel.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setHeight = function(height) {};
+_UI.CaptionPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setId = function(id) {};
+_UI.CaptionPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setPixelSize = function(width, height) {};
+_UI.CaptionPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setSize = function(width, height) {};
+_UI.CaptionPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.CaptionPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.CaptionPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setStyleName = function(styleName) {};
+_UI.CaptionPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.CaptionPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setTag = function(tag) {};
+_UI.CaptionPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setText = function(text) {};
+_UI.CaptionPanel.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setTitle = function(title) {};
+_UI.CaptionPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setVisible = function(visible) {};
+_UI.CaptionPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.CaptionPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setWidget = function(widget) {};
+_UI.CaptionPanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.CaptionPanel.prototype.setWidth = function(width) {};
+_UI.CaptionPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class CheckBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.CheckBox = function() {};
+_UI.CheckBox = function() {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addBlurHandler = function(handler) {};
+_UI.CheckBox.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addClickHandler = function(handler) {};
+_UI.CheckBox.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addFocusHandler = function(handler) {};
+_UI.CheckBox.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addKeyDownHandler = function(handler) {};
+_UI.CheckBox.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addKeyPressHandler = function(handler) {};
+_UI.CheckBox.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addKeyUpHandler = function(handler) {};
+_UI.CheckBox.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addMouseDownHandler = function(handler) {};
+_UI.CheckBox.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addMouseMoveHandler = function(handler) {};
+_UI.CheckBox.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addMouseOutHandler = function(handler) {};
+_UI.CheckBox.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addMouseOverHandler = function(handler) {};
+_UI.CheckBox.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addMouseUpHandler = function(handler) {};
+_UI.CheckBox.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.CheckBox}
- */
-_Ui.CheckBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.CheckBox.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addStyleName = function(styleName) {};
+_UI.CheckBox.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.CheckBox}
+ * @param {string} styleName
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.addValueChangeHandler = function(handler) {};
+_UI.CheckBox.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.CheckBox.prototype.getTag = function() {};
+_UI.CheckBox.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.CheckBox.prototype.getType = function() {};
+_UI.CheckBox.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.CheckBox.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.CheckBox.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setEnabled = function(enabled) {};
+_UI.CheckBox.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setFocus = function(focus) {};
+_UI.CheckBox.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} formValue
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setFormValue = function(formValue) {};
+_UI.CheckBox.prototype.setFormValue = function(formValue) {};
 
 /**
  * @param {string} html
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setHTML = function(html) {};
+_UI.CheckBox.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setHeight = function(height) {};
+_UI.CheckBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setId = function(id) {};
+_UI.CheckBox.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setName = function(name) {};
+_UI.CheckBox.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setPixelSize = function(width, height) {};
+_UI.CheckBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setSize = function(width, height) {};
+_UI.CheckBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.CheckBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.CheckBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setStyleName = function(styleName) {};
+_UI.CheckBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.CheckBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setTabIndex = function(index) {};
+_UI.CheckBox.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setTag = function(tag) {};
+_UI.CheckBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setText = function(text) {};
+_UI.CheckBox.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setTitle = function(title) {};
+_UI.CheckBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} value
  * @param {boolean=} fireEvents
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setValue = function(value, fireEvents) {};
+_UI.CheckBox.prototype.setValue = function(value, fireEvents) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setVisible = function(visible) {};
+_UI.CheckBox.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.CheckBox.prototype.setWidth = function(width) {};
+_UI.CheckBox.prototype.setWidth = function(width) {};
 
 /**
  * Class ClientHandler
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.ClientHandler = function() {};
+_UI.ClientHandler = function() {};
 
 /**
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.forEventSource = function() {};
+_UI.ClientHandler.prototype.forEventSource = function() {};
 
 /**
  * @param {...Object} widgets
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.forTargets = function(widgets) {};
+_UI.ClientHandler.prototype.forTargets = function(widgets) {};
 
 /**
  * @return {string}
  */
-_Ui.ClientHandler.prototype.getId = function() {};
+_UI.ClientHandler.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ClientHandler.prototype.getTag = function() {};
+_UI.ClientHandler.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ClientHandler.prototype.getType = function() {};
+_UI.ClientHandler.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setEnabled = function(enabled) {};
+_UI.ClientHandler.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {string} html
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setHTML = function(html) {};
+_UI.ClientHandler.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} id
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setId = function(id) {};
+_UI.ClientHandler.prototype.setId = function(id) {};
 
 /**
  * @param {(number|string)} arg1
  * @param {(number|string)} arg2
  * @param {string=} attribute
  * @param {string=} value
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setStyleAttribute = function(arg1, arg2, attribute, value) {};
+_UI.ClientHandler.prototype.setStyleAttribute = function(arg1, arg2, attribute, value) {};
 
 /**
  * @param {(number|Object)} arg1
  * @param {number=} column
  * @param {Object=} attributes
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setStyleAttributes = function(arg1, column, attributes) {};
+_UI.ClientHandler.prototype.setStyleAttributes = function(arg1, column, attributes) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setTag = function(tag) {};
+_UI.ClientHandler.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setText = function(text) {};
+_UI.ClientHandler.prototype.setText = function(text) {};
 
 /**
  * @param {boolean} value
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setValue = function(value) {};
+_UI.ClientHandler.prototype.setValue = function(value) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.setVisible = function(visible) {};
+_UI.ClientHandler.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ClientHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateEmail = function(widget) {};
+_UI.ClientHandler.prototype.validateEmail = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ClientHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateInteger = function(widget) {};
+_UI.ClientHandler.prototype.validateInteger = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateLength = function(widget, min, max) {};
+_UI.ClientHandler.prototype.validateLength = function(widget, min, max) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} pattern
  * @param {string=} flags
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateMatches = function(widget, pattern, flags) {};
+_UI.ClientHandler.prototype.validateMatches = function(widget, pattern, flags) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ClientHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotEmail = function(widget) {};
+_UI.ClientHandler.prototype.validateNotEmail = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ClientHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotInteger = function(widget) {};
+_UI.ClientHandler.prototype.validateNotInteger = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotLength = function(widget, min, max) {};
+_UI.ClientHandler.prototype.validateNotLength = function(widget, min, max) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} pattern
  * @param {string=} flags
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotMatches = function(widget, pattern, flags) {};
+_UI.ClientHandler.prototype.validateNotMatches = function(widget, pattern, flags) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ClientHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotNumber = function(widget) {};
+_UI.ClientHandler.prototype.validateNotNumber = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {Array.<string>} options
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotOptions = function(widget, options) {};
+_UI.ClientHandler.prototype.validateNotOptions = function(widget, options) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotRange = function(widget, min, max) {};
+_UI.ClientHandler.prototype.validateNotRange = function(widget, min, max) {};
 
 /**
- * @param {Array.<_Ui.Widget>} widgets
+ * @param {Array.<_UI.Widget>} widgets
  * @param {number} sum
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNotSum = function(widgets, sum) {};
+_UI.ClientHandler.prototype.validateNotSum = function(widgets, sum) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ClientHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateNumber = function(widget) {};
+_UI.ClientHandler.prototype.validateNumber = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {Array.<string>} options
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateOptions = function(widget, options) {};
+_UI.ClientHandler.prototype.validateOptions = function(widget, options) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateRange = function(widget, min, max) {};
+_UI.ClientHandler.prototype.validateRange = function(widget, min, max) {};
 
 /**
- * @param {Array.<_Ui.Widget>} widgets
+ * @param {Array.<_UI.Widget>} widgets
  * @param {number} sum
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.ClientHandler.prototype.validateSum = function(widgets, sum) {};
+_UI.ClientHandler.prototype.validateSum = function(widgets, sum) {};
 
 /**
  * Class DateBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DateBox = function() {};
+_UI.DateBox = function() {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.DateBox.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.addStyleName = function(styleName) {};
+_UI.DateBox.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.addValueChangeHandler = function(handler) {};
-
-/**
- * @return {string}
- */
-_Ui.DateBox.prototype.getId = function() {};
+_UI.DateBox.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.DateBox.prototype.getTag = function() {};
+_UI.DateBox.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DateBox.prototype.getType = function() {};
+_UI.DateBox.prototype.getTag = function() {};
 
 /**
- * @return {_Ui.DateBox}
+ * @return {string}
  */
-_Ui.DateBox.prototype.hideDatePicker = function() {};
+_UI.DateBox.prototype.getType = function() {};
+
+/**
+ * @return {_UI.DateBox}
+ */
+_UI.DateBox.prototype.hideDatePicker = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setEnabled = function(enabled) {};
+_UI.DateBox.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} fireEvents
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setFireEventsForInvalid = function(fireEvents) {};
+_UI.DateBox.prototype.setFireEventsForInvalid = function(fireEvents) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setFocus = function(focus) {};
+_UI.DateBox.prototype.setFocus = function(focus) {};
 
 /**
- * @param {_Ui.DateTimeFormat} dateTimeFormat
- * @return {_Ui.DateBox}
+ * @param {_UI.DateTimeFormat} dateTimeFormat
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setFormat = function(dateTimeFormat) {};
+_UI.DateBox.prototype.setFormat = function(dateTimeFormat) {};
 
 /**
  * @param {string} height
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setHeight = function(height) {};
+_UI.DateBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setId = function(id) {};
+_UI.DateBox.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setName = function(name) {};
+_UI.DateBox.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setPixelSize = function(width, height) {};
+_UI.DateBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setSize = function(width, height) {};
+_UI.DateBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DateBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.DateBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setStyleName = function(styleName) {};
+_UI.DateBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DateBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setTabIndex = function(index) {};
+_UI.DateBox.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setTag = function(tag) {};
+_UI.DateBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setTitle = function(title) {};
+_UI.DateBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {Date} date
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setValue = function(date) {};
+_UI.DateBox.prototype.setValue = function(date) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setVisible = function(visible) {};
+_UI.DateBox.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.setWidth = function(width) {};
+_UI.DateBox.prototype.setWidth = function(width) {};
 
 /**
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.DateBox.prototype.showDatePicker = function() {};
+_UI.DateBox.prototype.showDatePicker = function() {};
 
 /**
  * Class DatePicker
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DatePicker = function() {};
+_UI.DatePicker = function() {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.addStyleDependentName = function(styleName) {};
+_UI.DatePicker.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.addStyleName = function(styleName) {};
+_UI.DatePicker.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.addValueChangeHandler = function(handler) {};
-
-/**
- * @return {string}
- */
-_Ui.DatePicker.prototype.getId = function() {};
+_UI.DatePicker.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.DatePicker.prototype.getTag = function() {};
+_UI.DatePicker.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DatePicker.prototype.getType = function() {};
+_UI.DatePicker.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.DatePicker.prototype.getType = function() {};
 
 /**
  * @param {Date} date
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setCurrentMonth = function(date) {};
+_UI.DatePicker.prototype.setCurrentMonth = function(date) {};
 
 /**
  * @param {string} height
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setHeight = function(height) {};
+_UI.DatePicker.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setId = function(id) {};
+_UI.DatePicker.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setName = function(name) {};
+_UI.DatePicker.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setPixelSize = function(width, height) {};
+_UI.DatePicker.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setSize = function(width, height) {};
+_UI.DatePicker.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DatePicker.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setStyleAttributes = function(attributes) {};
+_UI.DatePicker.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setStyleName = function(styleName) {};
+_UI.DatePicker.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DatePicker.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setTag = function(tag) {};
+_UI.DatePicker.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setTitle = function(title) {};
+_UI.DatePicker.prototype.setTitle = function(title) {};
 
 /**
  * @param {Date} date
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setValue = function(date) {};
+_UI.DatePicker.prototype.setValue = function(date) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setVisible = function(visible) {};
+_UI.DatePicker.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.DatePicker.prototype.setWidth = function(width) {};
+_UI.DatePicker.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratedStackPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DecoratedStackPanel = function() {};
+_UI.DecoratedStackPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string=} text
  * @param {boolean=} asHtml
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.add = function(widget, text, asHtml) {};
+_UI.DecoratedStackPanel.prototype.add = function(widget, text, asHtml) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.DecoratedStackPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.addStyleName = function(styleName) {};
+_UI.DecoratedStackPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.clear = function() {};
-
-/**
- * @return {string}
- */
-_Ui.DecoratedStackPanel.prototype.getId = function() {};
+_UI.DecoratedStackPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedStackPanel.prototype.getTag = function() {};
+_UI.DecoratedStackPanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedStackPanel.prototype.getType = function() {};
+_UI.DecoratedStackPanel.prototype.getTag = function() {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.DecoratedStackPanel}
+ * @return {string}
  */
-_Ui.DecoratedStackPanel.prototype.remove = function(arg1) {};
+_UI.DecoratedStackPanel.prototype.getType = function() {};
+
+/**
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.DecoratedStackPanel}
+ */
+_UI.DecoratedStackPanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {string} height
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setHeight = function(height) {};
+_UI.DecoratedStackPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setId = function(id) {};
+_UI.DecoratedStackPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setPixelSize = function(width, height) {};
+_UI.DecoratedStackPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setSize = function(width, height) {};
+_UI.DecoratedStackPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {number} index
  * @param {string} text
  * @param {boolean=} asHtml
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setStackText = function(index, text, asHtml) {};
+_UI.DecoratedStackPanel.prototype.setStackText = function(index, text, asHtml) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DecoratedStackPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.DecoratedStackPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setStyleName = function(styleName) {};
+_UI.DecoratedStackPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DecoratedStackPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setTag = function(tag) {};
+_UI.DecoratedStackPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setTitle = function(title) {};
+_UI.DecoratedStackPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setVisible = function(visible) {};
+_UI.DecoratedStackPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.DecoratedStackPanel.prototype.setWidth = function(width) {};
+_UI.DecoratedStackPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratedTabBar
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DecoratedTabBar = function() {};
+_UI.DecoratedTabBar = function() {};
 
 /**
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.addSelectionHandler = function(handler) {};
+_UI.DecoratedTabBar.prototype.addSelectionHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.addStyleDependentName = function(styleName) {};
+_UI.DecoratedTabBar.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.addStyleName = function(styleName) {};
+_UI.DecoratedTabBar.prototype.addStyleName = function(styleName) {};
 
 /**
- * @param {(string|_Ui.Widget)} arg1
+ * @param {(string|_UI.Widget)} arg1
  * @param {boolean=} asHtml
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.addTab = function(arg1, asHtml) {};
+_UI.DecoratedTabBar.prototype.addTab = function(arg1, asHtml) {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedTabBar.prototype.getId = function() {};
+_UI.DecoratedTabBar.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedTabBar.prototype.getTag = function() {};
+_UI.DecoratedTabBar.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedTabBar.prototype.getType = function() {};
+_UI.DecoratedTabBar.prototype.getType = function() {};
 
 /**
  * @param {number} index
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.selectTab = function(index) {};
+_UI.DecoratedTabBar.prototype.selectTab = function(index) {};
 
 /**
  * @param {string} height
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setHeight = function(height) {};
+_UI.DecoratedTabBar.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setId = function(id) {};
+_UI.DecoratedTabBar.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setPixelSize = function(width, height) {};
+_UI.DecoratedTabBar.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setSize = function(width, height) {};
+_UI.DecoratedTabBar.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DecoratedTabBar.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setStyleAttributes = function(attributes) {};
+_UI.DecoratedTabBar.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setStyleName = function(styleName) {};
+_UI.DecoratedTabBar.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DecoratedTabBar.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
  * @param {boolean} enabled
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setTabEnabled = function(index, enabled) {};
+_UI.DecoratedTabBar.prototype.setTabEnabled = function(index, enabled) {};
 
 /**
  * @param {number} index
  * @param {string} text
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setTabText = function(index, text) {};
+_UI.DecoratedTabBar.prototype.setTabText = function(index, text) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setTag = function(tag) {};
+_UI.DecoratedTabBar.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setTitle = function(title) {};
+_UI.DecoratedTabBar.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setVisible = function(visible) {};
+_UI.DecoratedTabBar.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.DecoratedTabBar.prototype.setWidth = function(width) {};
+_UI.DecoratedTabBar.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratedTabPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DecoratedTabPanel = function() {};
+_UI.DecoratedTabPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @param {(string|_Ui.Widget)=} arg2
+ * @param {_UI.Widget} widget
+ * @param {(string|_UI.Widget)=} arg2
  * @param {boolean=} asHtml
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.add = function(widget, arg2, asHtml) {};
+_UI.DecoratedTabPanel.prototype.add = function(widget, arg2, asHtml) {};
 
 /**
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.addSelectionHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.DecoratedTabPanel}
- */
-_Ui.DecoratedTabPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.DecoratedTabPanel.prototype.addSelectionHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.addStyleName = function(styleName) {};
+_UI.DecoratedTabPanel.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.DecoratedTabPanel}
+ */
+_UI.DecoratedTabPanel.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedTabPanel.prototype.getId = function() {};
+_UI.DecoratedTabPanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedTabPanel.prototype.getTag = function() {};
+_UI.DecoratedTabPanel.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratedTabPanel.prototype.getType = function() {};
+_UI.DecoratedTabPanel.prototype.getType = function() {};
 
 /**
  * @param {number} index
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.selectTab = function(index) {};
+_UI.DecoratedTabPanel.prototype.selectTab = function(index) {};
 
 /**
  * @param {boolean} animationEnabled
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setAnimationEnabled = function(animationEnabled) {};
+_UI.DecoratedTabPanel.prototype.setAnimationEnabled = function(animationEnabled) {};
 
 /**
  * @param {string} height
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setHeight = function(height) {};
+_UI.DecoratedTabPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setId = function(id) {};
+_UI.DecoratedTabPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setPixelSize = function(width, height) {};
+_UI.DecoratedTabPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setSize = function(width, height) {};
+_UI.DecoratedTabPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DecoratedTabPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.DecoratedTabPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setStyleName = function(styleName) {};
+_UI.DecoratedTabPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DecoratedTabPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setTag = function(tag) {};
+_UI.DecoratedTabPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setTitle = function(title) {};
+_UI.DecoratedTabPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setVisible = function(visible) {};
+_UI.DecoratedTabPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.DecoratedTabPanel.prototype.setWidth = function(width) {};
+_UI.DecoratedTabPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class DecoratorPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DecoratorPanel = function() {};
+_UI.DecoratorPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.DecoratorPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.add = function(widget) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.DecoratorPanel}
- */
-_Ui.DecoratorPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.DecoratorPanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.addStyleName = function(styleName) {};
+_UI.DecoratorPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.DecoratorPanel}
+ * @param {string} styleName
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.clear = function() {};
+_UI.DecoratorPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.DecoratorPanel.prototype.getTag = function() {};
+_UI.DecoratorPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DecoratorPanel.prototype.getType = function() {};
+_UI.DecoratorPanel.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.DecoratorPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.DecoratorPanel.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setHeight = function(height) {};
+_UI.DecoratorPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setId = function(id) {};
+_UI.DecoratorPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setPixelSize = function(width, height) {};
+_UI.DecoratorPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setSize = function(width, height) {};
+_UI.DecoratorPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DecoratorPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.DecoratorPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setStyleName = function(styleName) {};
+_UI.DecoratorPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DecoratorPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setTag = function(tag) {};
+_UI.DecoratorPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setTitle = function(title) {};
+_UI.DecoratorPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setVisible = function(visible) {};
+_UI.DecoratorPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.DecoratorPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setWidget = function(widget) {};
+_UI.DecoratorPanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.DecoratorPanel.prototype.setWidth = function(width) {};
+_UI.DecoratorPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class DialogBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.DialogBox = function() {};
+_UI.DialogBox = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.DialogBox}
+ * @param {_UI.Widget} widget
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.add = function(widget) {};
+_UI.DialogBox.prototype.add = function(widget) {};
 
 /**
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.addCloseHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.DialogBox}
- */
-_Ui.DialogBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.DialogBox.prototype.addCloseHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.addStyleName = function(styleName) {};
+_UI.DialogBox.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.DialogBox}
+ * @param {string} styleName
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.clear = function() {};
+_UI.DialogBox.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.DialogBox.prototype.getTag = function() {};
+_UI.DialogBox.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.DialogBox.prototype.getType = function() {};
+_UI.DialogBox.prototype.getId = function() {};
 
 /**
- * @return {_Ui.DialogBox}
+ * @return {string}
  */
-_Ui.DialogBox.prototype.hide = function() {};
+_UI.DialogBox.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.DialogBox.prototype.getType = function() {};
+
+/**
+ * @return {_UI.DialogBox}
+ */
+_UI.DialogBox.prototype.hide = function() {};
 
 /**
  * @param {boolean} animationEnabled
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setAnimationEnabled = function(animationEnabled) {};
+_UI.DialogBox.prototype.setAnimationEnabled = function(animationEnabled) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setAutoHideEnabled = function(enabled) {};
+_UI.DialogBox.prototype.setAutoHideEnabled = function(enabled) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setGlassEnabled = function(enabled) {};
+_UI.DialogBox.prototype.setGlassEnabled = function(enabled) {};
 
 /**
  * @param {string} html
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setHTML = function(html) {};
+_UI.DialogBox.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setHeight = function(height) {};
+_UI.DialogBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setId = function(id) {};
+_UI.DialogBox.prototype.setId = function(id) {};
 
 /**
  * @param {boolean} modal
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setModal = function(modal) {};
+_UI.DialogBox.prototype.setModal = function(modal) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setPixelSize = function(width, height) {};
+_UI.DialogBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {number} left
  * @param {number} top
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setPopupPosition = function(left, top) {};
+_UI.DialogBox.prototype.setPopupPosition = function(left, top) {};
 
 /**
  * @param {boolean} previewing
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setPreviewingAllNativeEvents = function(previewing) {};
+_UI.DialogBox.prototype.setPreviewingAllNativeEvents = function(previewing) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setSize = function(width, height) {};
+_UI.DialogBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.DialogBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.DialogBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setStyleName = function(styleName) {};
+_UI.DialogBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.DialogBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setTag = function(tag) {};
+_UI.DialogBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setText = function(text) {};
+_UI.DialogBox.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setTitle = function(title) {};
+_UI.DialogBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setVisible = function(visible) {};
+_UI.DialogBox.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.DialogBox}
+ * @param {_UI.Widget} widget
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setWidget = function(widget) {};
+_UI.DialogBox.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.setWidth = function(width) {};
+_UI.DialogBox.prototype.setWidth = function(width) {};
 
 /**
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.DialogBox.prototype.show = function() {};
+_UI.DialogBox.prototype.show = function() {};
 
 /**
  * Class DocsListDialog
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.DocsListDialog = function() {};
+_UI.DocsListDialog = function() {};
 
 /**
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.addCloseHandler = function(handler) {};
+_UI.DocsListDialog.prototype.addCloseHandler = function(handler) {};
 
 /**
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.addSelectionHandler = function(handler) {};
+_UI.DocsListDialog.prototype.addSelectionHandler = function(handler) {};
 
 /**
- * @param {_Ui.FileType} fileType
- * @return {_Ui.DocsListDialog}
+ * @param {_UI.FileType} fileType
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.addView = function(fileType) {};
-
-/**
- * @return {string}
- */
-_Ui.DocsListDialog.prototype.getId = function() {};
+_UI.DocsListDialog.prototype.addView = function(fileType) {};
 
 /**
  * @return {string}
  */
-_Ui.DocsListDialog.prototype.getType = function() {};
+_UI.DocsListDialog.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.DocsListDialog.prototype.getType = function() {};
 
 /**
  * @param {string} title
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.setDialogTitle = function(title) {};
+_UI.DocsListDialog.prototype.setDialogTitle = function(title) {};
 
 /**
  * @param {number} height
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.setHeight = function(height) {};
+_UI.DocsListDialog.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.FileType} fileType
- * @return {_Ui.DocsListDialog}
+ * @param {_UI.FileType} fileType
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.setInitialView = function(fileType) {};
+_UI.DocsListDialog.prototype.setInitialView = function(fileType) {};
 
 /**
  * @param {boolean} multiSelectEnabled
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.setMultiSelectEnabled = function(multiSelectEnabled) {};
+_UI.DocsListDialog.prototype.setMultiSelectEnabled = function(multiSelectEnabled) {};
 
 /**
  * @param {number} width
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.setWidth = function(width) {};
+_UI.DocsListDialog.prototype.setWidth = function(width) {};
 
 /**
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.DocsListDialog.prototype.showDocsPicker = function() {};
+_UI.DocsListDialog.prototype.showDocsPicker = function() {};
 
 /**
  * Class FileUpload
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.FileUpload = function() {};
+_UI.FileUpload = function() {};
 
 /**
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.addChangeHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.FileUpload}
- */
-_Ui.FileUpload.prototype.addStyleDependentName = function(styleName) {};
+_UI.FileUpload.prototype.addChangeHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.addStyleName = function(styleName) {};
+_UI.FileUpload.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.FileUpload}
+ */
+_UI.FileUpload.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.FileUpload.prototype.getId = function() {};
+_UI.FileUpload.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FileUpload.prototype.getTag = function() {};
+_UI.FileUpload.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FileUpload.prototype.getType = function() {};
+_UI.FileUpload.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setEnabled = function(enabled) {};
+_UI.FileUpload.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {string} height
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setHeight = function(height) {};
+_UI.FileUpload.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setId = function(id) {};
+_UI.FileUpload.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setName = function(name) {};
+_UI.FileUpload.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setPixelSize = function(width, height) {};
+_UI.FileUpload.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setSize = function(width, height) {};
+_UI.FileUpload.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.FileUpload.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setStyleAttributes = function(attributes) {};
+_UI.FileUpload.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setStyleName = function(styleName) {};
+_UI.FileUpload.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setStylePrimaryName = function(styleName) {};
+_UI.FileUpload.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setTag = function(tag) {};
+_UI.FileUpload.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setTitle = function(title) {};
+_UI.FileUpload.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setVisible = function(visible) {};
+_UI.FileUpload.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.FileUpload.prototype.setWidth = function(width) {};
+_UI.FileUpload.prototype.setWidth = function(width) {};
 
 /**
  * Class FlexTable
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.FlexTable = function() {};
+_UI.FlexTable = function() {};
 
 /**
  * @param {number} row
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.addCell = function(row) {};
+_UI.FlexTable.prototype.addCell = function(row) {};
 
 /**
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.addClickHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.FlexTable}
- */
-_Ui.FlexTable.prototype.addStyleDependentName = function(styleName) {};
+_UI.FlexTable.prototype.addClickHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.addStyleName = function(styleName) {};
+_UI.FlexTable.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.FlexTable}
+ * @param {string} styleName
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.clear = function() {};
+_UI.FlexTable.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.FlexTable.prototype.getTag = function() {};
+_UI.FlexTable.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FlexTable.prototype.getType = function() {};
+_UI.FlexTable.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.FlexTable.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.FlexTable.prototype.getType = function() {};
 
 /**
  * @param {number} beforeRow
  * @param {number} beforeColumn
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.insertCell = function(beforeRow, beforeColumn) {};
+_UI.FlexTable.prototype.insertCell = function(beforeRow, beforeColumn) {};
 
 /**
  * @param {number} beforeRow
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.insertRow = function(beforeRow) {};
+_UI.FlexTable.prototype.insertRow = function(beforeRow) {};
 
 /**
  * @param {number} row
  * @param {number} column
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.removeCell = function(row, column) {};
+_UI.FlexTable.prototype.removeCell = function(row, column) {};
 
 /**
  * @param {number} row
  * @param {number} column
  * @param {number} num
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.removeCells = function(row, column, num) {};
+_UI.FlexTable.prototype.removeCells = function(row, column, num) {};
 
 /**
  * @param {number} row
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.removeRow = function(row) {};
+_UI.FlexTable.prototype.removeRow = function(row) {};
 
 /**
  * @param {number} width
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setBorderWidth = function(width) {};
+_UI.FlexTable.prototype.setBorderWidth = function(width) {};
 
 /**
  * @param {number} padding
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setCellPadding = function(padding) {};
+_UI.FlexTable.prototype.setCellPadding = function(padding) {};
 
 /**
  * @param {number} spacing
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setCellSpacing = function(spacing) {};
+_UI.FlexTable.prototype.setCellSpacing = function(spacing) {};
 
 /**
  * @param {number} column
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setColumnStyleAttribute = function(column, attribute, value) {};
+_UI.FlexTable.prototype.setColumnStyleAttribute = function(column, attribute, value) {};
 
 /**
  * @param {number} column
  * @param {Object} attributes
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setColumnStyleAttributes = function(column, attributes) {};
+_UI.FlexTable.prototype.setColumnStyleAttributes = function(column, attributes) {};
 
 /**
  * @param {string} height
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setHeight = function(height) {};
+_UI.FlexTable.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setId = function(id) {};
+_UI.FlexTable.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setPixelSize = function(width, height) {};
+_UI.FlexTable.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {number} row
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setRowStyleAttribute = function(row, attribute, value) {};
+_UI.FlexTable.prototype.setRowStyleAttribute = function(row, attribute, value) {};
 
 /**
  * @param {number} row
  * @param {Object} attributes
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setRowStyleAttributes = function(row, attributes) {};
+_UI.FlexTable.prototype.setRowStyleAttributes = function(row, attributes) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setSize = function(width, height) {};
+_UI.FlexTable.prototype.setSize = function(width, height) {};
 
 /**
  * @param {(number|string)} arg1
  * @param {(number|string)} arg2
  * @param {string=} attribute
  * @param {string=} value
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setStyleAttribute = function(arg1, arg2, attribute, value) {};
+_UI.FlexTable.prototype.setStyleAttribute = function(arg1, arg2, attribute, value) {};
 
 /**
  * @param {(number|Object)} arg1
  * @param {number=} column
  * @param {Object=} attributes
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setStyleAttributes = function(arg1, column, attributes) {};
+_UI.FlexTable.prototype.setStyleAttributes = function(arg1, column, attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setStyleName = function(styleName) {};
+_UI.FlexTable.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setStylePrimaryName = function(styleName) {};
+_UI.FlexTable.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setTag = function(tag) {};
+_UI.FlexTable.prototype.setTag = function(tag) {};
 
 /**
  * @param {number} row
  * @param {number} column
  * @param {string} text
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setText = function(row, column, text) {};
+_UI.FlexTable.prototype.setText = function(row, column, text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setTitle = function(title) {};
+_UI.FlexTable.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setVisible = function(visible) {};
+_UI.FlexTable.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} row
  * @param {number} column
- * @param {_Ui.Widget} widget
- * @return {_Ui.FlexTable}
+ * @param {_UI.Widget} widget
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setWidget = function(row, column, widget) {};
+_UI.FlexTable.prototype.setWidget = function(row, column, widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.FlexTable.prototype.setWidth = function(width) {};
+_UI.FlexTable.prototype.setWidth = function(width) {};
 
 /**
  * Class FlowPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.FlowPanel = function() {};
+_UI.FlowPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.FlowPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.add = function(widget) {};
+_UI.FlowPanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.FlowPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.addStyleName = function(styleName) {};
+_UI.FlowPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.clear = function() {};
-
-/**
- * @return {string}
- */
-_Ui.FlowPanel.prototype.getId = function() {};
+_UI.FlowPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FlowPanel.prototype.getTag = function() {};
+_UI.FlowPanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FlowPanel.prototype.getType = function() {};
+_UI.FlowPanel.prototype.getTag = function() {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @return {string}
+ */
+_UI.FlowPanel.prototype.getType = function() {};
+
+/**
+ * @param {_UI.Widget} widget
  * @param {number} beforeIndex
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.insert = function(widget, beforeIndex) {};
+_UI.FlowPanel.prototype.insert = function(widget, beforeIndex) {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.FlowPanel}
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.remove = function(arg1) {};
+_UI.FlowPanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {string} height
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setHeight = function(height) {};
+_UI.FlowPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setId = function(id) {};
+_UI.FlowPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setPixelSize = function(width, height) {};
+_UI.FlowPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setSize = function(width, height) {};
+_UI.FlowPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.FlowPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.FlowPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setStyleName = function(styleName) {};
+_UI.FlowPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.FlowPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setTag = function(tag) {};
+_UI.FlowPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setTitle = function(title) {};
+_UI.FlowPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setVisible = function(visible) {};
+_UI.FlowPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.FlowPanel.prototype.setWidth = function(width) {};
+_UI.FlowPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class FocusPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.FocusPanel = function() {};
+_UI.FocusPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.FocusPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.add = function(widget) {};
+_UI.FocusPanel.prototype.add = function(widget) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addBlurHandler = function(handler) {};
+_UI.FocusPanel.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addClickHandler = function(handler) {};
+_UI.FocusPanel.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addFocusHandler = function(handler) {};
+_UI.FocusPanel.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addKeyDownHandler = function(handler) {};
+_UI.FocusPanel.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addKeyPressHandler = function(handler) {};
+_UI.FocusPanel.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addKeyUpHandler = function(handler) {};
+_UI.FocusPanel.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addMouseDownHandler = function(handler) {};
+_UI.FocusPanel.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addMouseMoveHandler = function(handler) {};
+_UI.FocusPanel.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addMouseOutHandler = function(handler) {};
+_UI.FocusPanel.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addMouseOverHandler = function(handler) {};
+_UI.FocusPanel.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addMouseUpHandler = function(handler) {};
+_UI.FocusPanel.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.FocusPanel}
- */
-_Ui.FocusPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.FocusPanel.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.addStyleName = function(styleName) {};
+_UI.FocusPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.FocusPanel}
+ * @param {string} styleName
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.clear = function() {};
+_UI.FocusPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.FocusPanel.prototype.getTag = function() {};
+_UI.FocusPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FocusPanel.prototype.getType = function() {};
+_UI.FocusPanel.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.FocusPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.FocusPanel.prototype.getType = function() {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setFocus = function(focus) {};
+_UI.FocusPanel.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setHeight = function(height) {};
+_UI.FocusPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setId = function(id) {};
+_UI.FocusPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setPixelSize = function(width, height) {};
+_UI.FocusPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setSize = function(width, height) {};
+_UI.FocusPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.FocusPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.FocusPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setStyleName = function(styleName) {};
+_UI.FocusPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.FocusPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setTabIndex = function(index) {};
+_UI.FocusPanel.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setTag = function(tag) {};
+_UI.FocusPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setTitle = function(title) {};
+_UI.FocusPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setVisible = function(visible) {};
+_UI.FocusPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.FocusPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setWidget = function(widget) {};
+_UI.FocusPanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.FocusPanel}
+ * @return {_UI.FocusPanel}
  */
-_Ui.FocusPanel.prototype.setWidth = function(width) {};
+_UI.FocusPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class FormPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.FormPanel = function() {};
+_UI.FormPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.FormPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.add = function(widget) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.FormPanel}
- */
-_Ui.FormPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.FormPanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.addStyleName = function(styleName) {};
+_UI.FormPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.FormPanel}
+ * @param {string} styleName
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.addSubmitCompleteHandler = function(handler) {};
+_UI.FormPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.addSubmitHandler = function(handler) {};
+_UI.FormPanel.prototype.addSubmitCompleteHandler = function(handler) {};
 
 /**
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.clear = function() {};
+_UI.FormPanel.prototype.addSubmitHandler = function(handler) {};
 
 /**
- * @return {string}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.FormPanel.prototype.getTag = function() {};
+_UI.FormPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.FormPanel.prototype.getType = function() {};
+_UI.FormPanel.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.FormPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.FormPanel.prototype.getType = function() {};
 
 /**
  * @param {string} action
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setAction = function(action) {};
+_UI.FormPanel.prototype.setAction = function(action) {};
 
 /**
  * @param {string} encoding
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setEncoding = function(encoding) {};
+_UI.FormPanel.prototype.setEncoding = function(encoding) {};
 
 /**
  * @param {string} height
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setHeight = function(height) {};
+_UI.FormPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setId = function(id) {};
+_UI.FormPanel.prototype.setId = function(id) {};
 
 /**
  * @param {string} method
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setMethod = function(method) {};
+_UI.FormPanel.prototype.setMethod = function(method) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setPixelSize = function(width, height) {};
+_UI.FormPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setSize = function(width, height) {};
+_UI.FormPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.FormPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.FormPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setStyleName = function(styleName) {};
+_UI.FormPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.FormPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setTag = function(tag) {};
+_UI.FormPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setTitle = function(title) {};
+_UI.FormPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setVisible = function(visible) {};
+_UI.FormPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.FormPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setWidget = function(widget) {};
+_UI.FormPanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.FormPanel.prototype.setWidth = function(width) {};
+_UI.FormPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class Grid
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Grid = function() {};
+_UI.Grid = function() {};
 
 /**
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.addClickHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.Grid}
- */
-_Ui.Grid.prototype.addStyleDependentName = function(styleName) {};
+_UI.Grid.prototype.addClickHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.addStyleName = function(styleName) {};
+_UI.Grid.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.Grid}
+ * @param {string} styleName
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.clear = function() {};
+_UI.Grid.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.Grid.prototype.getTag = function() {};
+_UI.Grid.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Grid.prototype.getType = function() {};
+_UI.Grid.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.Grid.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.Grid.prototype.getType = function() {};
 
 /**
  * @param {number} rows
  * @param {number} columns
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.resize = function(rows, columns) {};
+_UI.Grid.prototype.resize = function(rows, columns) {};
 
 /**
  * @param {number} width
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setBorderWidth = function(width) {};
+_UI.Grid.prototype.setBorderWidth = function(width) {};
 
 /**
  * @param {number} padding
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setCellPadding = function(padding) {};
+_UI.Grid.prototype.setCellPadding = function(padding) {};
 
 /**
  * @param {number} spacing
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setCellSpacing = function(spacing) {};
+_UI.Grid.prototype.setCellSpacing = function(spacing) {};
 
 /**
  * @param {number} column
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setColumnStyleAttribute = function(column, attribute, value) {};
+_UI.Grid.prototype.setColumnStyleAttribute = function(column, attribute, value) {};
 
 /**
  * @param {number} column
  * @param {Object} attributes
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setColumnStyleAttributes = function(column, attributes) {};
+_UI.Grid.prototype.setColumnStyleAttributes = function(column, attributes) {};
 
 /**
  * @param {string} height
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setHeight = function(height) {};
+_UI.Grid.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setId = function(id) {};
+_UI.Grid.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setPixelSize = function(width, height) {};
+_UI.Grid.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {number} row
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setRowStyleAttribute = function(row, attribute, value) {};
+_UI.Grid.prototype.setRowStyleAttribute = function(row, attribute, value) {};
 
 /**
  * @param {number} row
  * @param {Object} attributes
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setRowStyleAttributes = function(row, attributes) {};
+_UI.Grid.prototype.setRowStyleAttributes = function(row, attributes) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setSize = function(width, height) {};
+_UI.Grid.prototype.setSize = function(width, height) {};
 
 /**
  * @param {(number|string)} arg1
  * @param {(number|string)} arg2
  * @param {string=} attribute
  * @param {string=} value
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setStyleAttribute = function(arg1, arg2, attribute, value) {};
+_UI.Grid.prototype.setStyleAttribute = function(arg1, arg2, attribute, value) {};
 
 /**
  * @param {(number|Object)} arg1
  * @param {number=} column
  * @param {Object=} attributes
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setStyleAttributes = function(arg1, column, attributes) {};
+_UI.Grid.prototype.setStyleAttributes = function(arg1, column, attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setStyleName = function(styleName) {};
+_UI.Grid.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setStylePrimaryName = function(styleName) {};
+_UI.Grid.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setTag = function(tag) {};
+_UI.Grid.prototype.setTag = function(tag) {};
 
 /**
  * @param {number} row
  * @param {number} column
  * @param {string} text
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setText = function(row, column, text) {};
+_UI.Grid.prototype.setText = function(row, column, text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setTitle = function(title) {};
+_UI.Grid.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setVisible = function(visible) {};
+_UI.Grid.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} row
  * @param {number} column
- * @param {_Ui.Widget} widget
- * @return {_Ui.Grid}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setWidget = function(row, column, widget) {};
+_UI.Grid.prototype.setWidget = function(row, column, widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.Grid.prototype.setWidth = function(width) {};
+_UI.Grid.prototype.setWidth = function(width) {};
 
 /**
  * Class HTML
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.HTML = function() {};
+_UI.HTML = function() {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addClickHandler = function(handler) {};
+_UI.HTML.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addMouseDownHandler = function(handler) {};
+_UI.HTML.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addMouseMoveHandler = function(handler) {};
+_UI.HTML.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addMouseOutHandler = function(handler) {};
+_UI.HTML.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addMouseOverHandler = function(handler) {};
+_UI.HTML.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addMouseUpHandler = function(handler) {};
+_UI.HTML.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.HTML}
- */
-_Ui.HTML.prototype.addStyleDependentName = function(styleName) {};
+_UI.HTML.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.addStyleName = function(styleName) {};
+_UI.HTML.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.HTML}
+ */
+_UI.HTML.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.HTML.prototype.getId = function() {};
+_UI.HTML.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.HTML.prototype.getTag = function() {};
+_UI.HTML.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.HTML.prototype.getType = function() {};
+_UI.HTML.prototype.getType = function() {};
 
 /**
  * @param {string} html
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setHTML = function(html) {};
+_UI.HTML.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setHeight = function(height) {};
+_UI.HTML.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.HTML}
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
+_UI.HTML.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
 
 /**
  * @param {string} id
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setId = function(id) {};
+_UI.HTML.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setPixelSize = function(width, height) {};
+_UI.HTML.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setSize = function(width, height) {};
+_UI.HTML.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.HTML.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setStyleAttributes = function(attributes) {};
+_UI.HTML.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setStyleName = function(styleName) {};
+_UI.HTML.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setStylePrimaryName = function(styleName) {};
+_UI.HTML.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setTag = function(tag) {};
+_UI.HTML.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setText = function(text) {};
+_UI.HTML.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setTitle = function(title) {};
+_UI.HTML.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setVisible = function(visible) {};
+_UI.HTML.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setWidth = function(width) {};
+_UI.HTML.prototype.setWidth = function(width) {};
 
 /**
  * @param {boolean} wordWrap
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.HTML.prototype.setWordWrap = function(wordWrap) {};
+_UI.HTML.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class Hidden
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Hidden = function() {};
+_UI.Hidden = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Hidden.prototype.getId = function() {};
+_UI.Hidden.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Hidden.prototype.getTag = function() {};
+_UI.Hidden.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Hidden.prototype.getType = function() {};
+_UI.Hidden.prototype.getType = function() {};
 
 /**
  * @param {string} id
- * @return {_Ui.Hidden}
+ * @return {_UI.Hidden}
  */
-_Ui.Hidden.prototype.setId = function(id) {};
+_UI.Hidden.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.Hidden}
+ * @return {_UI.Hidden}
  */
-_Ui.Hidden.prototype.setName = function(name) {};
+_UI.Hidden.prototype.setName = function(name) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.Hidden}
+ * @return {_UI.Hidden}
  */
-_Ui.Hidden.prototype.setStyleAttributes = function(attributes) {};
+_UI.Hidden.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Hidden}
+ * @return {_UI.Hidden}
  */
-_Ui.Hidden.prototype.setTag = function(tag) {};
+_UI.Hidden.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} value
- * @return {_Ui.Hidden}
+ * @return {_UI.Hidden}
  */
-_Ui.Hidden.prototype.setValue = function(value) {};
+_UI.Hidden.prototype.setValue = function(value) {};
 
 /**
  * Class HorizontalPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.HorizontalPanel = function() {};
+_UI.HorizontalPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.HorizontalPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.add = function(widget) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.HorizontalPanel}
- */
-_Ui.HorizontalPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.HorizontalPanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.addStyleName = function(styleName) {};
+_UI.HorizontalPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.HorizontalPanel}
+ * @param {string} styleName
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.clear = function() {};
+_UI.HorizontalPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.HorizontalPanel.prototype.getTag = function() {};
+_UI.HorizontalPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.HorizontalPanel.prototype.getType = function() {};
+_UI.HorizontalPanel.prototype.getId = function() {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.HorizontalPanel}
+ * @return {string}
  */
-_Ui.HorizontalPanel.prototype.remove = function(arg1) {};
+_UI.HorizontalPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.HorizontalPanel.prototype.getType = function() {};
+
+/**
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.HorizontalPanel}
+ */
+_UI.HorizontalPanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {number} width
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setBorderWidth = function(width) {};
+_UI.HorizontalPanel.prototype.setBorderWidth = function(width) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} height
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setCellHeight = function(widget, height) {};
+_UI.HorizontalPanel.prototype.setCellHeight = function(widget, height) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.HorizontalPanel}
+ * @param {_UI.Widget} widget
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setCellHorizontalAlignment = function(widget, horizontalAlignment) {};
+_UI.HorizontalPanel.prototype.setCellHorizontalAlignment = function(widget, horizontalAlignment) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @param {_Ui.VerticalAlignment} verticalAlignment
- * @return {_Ui.HorizontalPanel}
+ * @param {_UI.Widget} widget
+ * @param {_UI.VerticalAlignment} verticalAlignment
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setCellVerticalAlignment = function(widget, verticalAlignment) {};
+_UI.HorizontalPanel.prototype.setCellVerticalAlignment = function(widget, verticalAlignment) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} width
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setCellWidth = function(widget, width) {};
+_UI.HorizontalPanel.prototype.setCellWidth = function(widget, width) {};
 
 /**
  * @param {string} height
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setHeight = function(height) {};
+_UI.HorizontalPanel.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.HorizontalPanel}
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
+_UI.HorizontalPanel.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
 
 /**
  * @param {string} id
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setId = function(id) {};
+_UI.HorizontalPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setPixelSize = function(width, height) {};
+_UI.HorizontalPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setSize = function(width, height) {};
+_UI.HorizontalPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {number} spacing
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setSpacing = function(spacing) {};
+_UI.HorizontalPanel.prototype.setSpacing = function(spacing) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.HorizontalPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.HorizontalPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setStyleName = function(styleName) {};
+_UI.HorizontalPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.HorizontalPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setTag = function(tag) {};
+_UI.HorizontalPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setTitle = function(title) {};
+_UI.HorizontalPanel.prototype.setTitle = function(title) {};
 
 /**
- * @param {_Ui.VerticalAlignment} verticalAlignment
- * @return {_Ui.HorizontalPanel}
+ * @param {_UI.VerticalAlignment} verticalAlignment
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setVerticalAlignment = function(verticalAlignment) {};
+_UI.HorizontalPanel.prototype.setVerticalAlignment = function(verticalAlignment) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setVisible = function(visible) {};
+_UI.HorizontalPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.HorizontalPanel.prototype.setWidth = function(width) {};
+_UI.HorizontalPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class Image
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Image = function() {};
+_UI.Image = function() {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addClickHandler = function(handler) {};
+_UI.Image.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addErrorHandler = function(handler) {};
+_UI.Image.prototype.addErrorHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addLoadHandler = function(handler) {};
+_UI.Image.prototype.addLoadHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addMouseDownHandler = function(handler) {};
+_UI.Image.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addMouseMoveHandler = function(handler) {};
+_UI.Image.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addMouseOutHandler = function(handler) {};
+_UI.Image.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addMouseOverHandler = function(handler) {};
+_UI.Image.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addMouseUpHandler = function(handler) {};
+_UI.Image.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.Image}
- */
-_Ui.Image.prototype.addStyleDependentName = function(styleName) {};
+_UI.Image.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.addStyleName = function(styleName) {};
+_UI.Image.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.Image}
+ */
+_UI.Image.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.Image.prototype.getId = function() {};
+_UI.Image.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Image.prototype.getTag = function() {};
+_UI.Image.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Image.prototype.getType = function() {};
+_UI.Image.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setHeight = function(height) {};
+_UI.Image.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setId = function(id) {};
+_UI.Image.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setPixelSize = function(width, height) {};
+_UI.Image.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setSize = function(width, height) {};
+_UI.Image.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.Image.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setStyleAttributes = function(attributes) {};
+_UI.Image.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setStyleName = function(styleName) {};
+_UI.Image.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setStylePrimaryName = function(styleName) {};
+_UI.Image.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setTag = function(tag) {};
+_UI.Image.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setTitle = function(title) {};
+_UI.Image.prototype.setTitle = function(title) {};
 
 /**
  * @param {string} url
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setUrl = function(url) {};
+_UI.Image.prototype.setUrl = function(url) {};
 
 /**
  * @param {string} url
@@ -23959,4855 +23785,4828 @@ _Ui.Image.prototype.setUrl = function(url) {};
  * @param {number} top
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setUrlAndVisibleRect = function(url, left, top, width, height) {};
+_UI.Image.prototype.setUrlAndVisibleRect = function(url, left, top, width, height) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setVisible = function(visible) {};
+_UI.Image.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} left
  * @param {number} top
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setVisibleRect = function(left, top, width, height) {};
+_UI.Image.prototype.setVisibleRect = function(left, top, width, height) {};
 
 /**
  * @param {string} width
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.Image.prototype.setWidth = function(width) {};
+_UI.Image.prototype.setWidth = function(width) {};
 
 /**
  * Class InlineLabel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.InlineLabel = function() {};
+_UI.InlineLabel = function() {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addClickHandler = function(handler) {};
+_UI.InlineLabel.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addMouseDownHandler = function(handler) {};
+_UI.InlineLabel.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addMouseMoveHandler = function(handler) {};
+_UI.InlineLabel.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addMouseOutHandler = function(handler) {};
+_UI.InlineLabel.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addMouseOverHandler = function(handler) {};
+_UI.InlineLabel.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addMouseUpHandler = function(handler) {};
+_UI.InlineLabel.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.InlineLabel}
- */
-_Ui.InlineLabel.prototype.addStyleDependentName = function(styleName) {};
+_UI.InlineLabel.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.addStyleName = function(styleName) {};
+_UI.InlineLabel.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.InlineLabel}
+ */
+_UI.InlineLabel.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.InlineLabel.prototype.getId = function() {};
+_UI.InlineLabel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.InlineLabel.prototype.getTag = function() {};
+_UI.InlineLabel.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.InlineLabel.prototype.getType = function() {};
+_UI.InlineLabel.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setHeight = function(height) {};
+_UI.InlineLabel.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.InlineLabel}
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
+_UI.InlineLabel.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
 
 /**
  * @param {string} id
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setId = function(id) {};
+_UI.InlineLabel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setPixelSize = function(width, height) {};
+_UI.InlineLabel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setSize = function(width, height) {};
+_UI.InlineLabel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.InlineLabel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setStyleAttributes = function(attributes) {};
+_UI.InlineLabel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setStyleName = function(styleName) {};
+_UI.InlineLabel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.InlineLabel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setTag = function(tag) {};
+_UI.InlineLabel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setText = function(text) {};
+_UI.InlineLabel.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setTitle = function(title) {};
+_UI.InlineLabel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setVisible = function(visible) {};
+_UI.InlineLabel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setWidth = function(width) {};
+_UI.InlineLabel.prototype.setWidth = function(width) {};
 
 /**
  * @param {boolean} wordWrap
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.InlineLabel.prototype.setWordWrap = function(wordWrap) {};
+_UI.InlineLabel.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class Label
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Label = function() {};
+_UI.Label = function() {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addClickHandler = function(handler) {};
+_UI.Label.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addMouseDownHandler = function(handler) {};
+_UI.Label.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addMouseMoveHandler = function(handler) {};
+_UI.Label.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addMouseOutHandler = function(handler) {};
+_UI.Label.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addMouseOverHandler = function(handler) {};
+_UI.Label.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addMouseUpHandler = function(handler) {};
+_UI.Label.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.Label}
- */
-_Ui.Label.prototype.addStyleDependentName = function(styleName) {};
+_UI.Label.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.addStyleName = function(styleName) {};
+_UI.Label.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.Label}
+ */
+_UI.Label.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.Label.prototype.getId = function() {};
+_UI.Label.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Label.prototype.getTag = function() {};
+_UI.Label.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Label.prototype.getType = function() {};
+_UI.Label.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setHeight = function(height) {};
+_UI.Label.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.Label}
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
+_UI.Label.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
 
 /**
  * @param {string} id
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setId = function(id) {};
+_UI.Label.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setPixelSize = function(width, height) {};
+_UI.Label.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setSize = function(width, height) {};
+_UI.Label.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.Label.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setStyleAttributes = function(attributes) {};
+_UI.Label.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setStyleName = function(styleName) {};
+_UI.Label.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setStylePrimaryName = function(styleName) {};
+_UI.Label.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setTag = function(tag) {};
+_UI.Label.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setText = function(text) {};
+_UI.Label.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setTitle = function(title) {};
+_UI.Label.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setVisible = function(visible) {};
+_UI.Label.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setWidth = function(width) {};
+_UI.Label.prototype.setWidth = function(width) {};
 
 /**
  * @param {boolean} wordWrap
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.Label.prototype.setWordWrap = function(wordWrap) {};
+_UI.Label.prototype.setWordWrap = function(wordWrap) {};
 
 /**
  * Class ListBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.ListBox = function() {};
+_UI.ListBox = function() {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addBlurHandler = function(handler) {};
+_UI.ListBox.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addChangeHandler = function(handler) {};
+_UI.ListBox.prototype.addChangeHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addClickHandler = function(handler) {};
+_UI.ListBox.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addFocusHandler = function(handler) {};
+_UI.ListBox.prototype.addFocusHandler = function(handler) {};
 
 /**
  * @param {string} text
  * @param {string=} value
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addItem = function(text, value) {};
+_UI.ListBox.prototype.addItem = function(text, value) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addKeyDownHandler = function(handler) {};
+_UI.ListBox.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addKeyPressHandler = function(handler) {};
+_UI.ListBox.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addKeyUpHandler = function(handler) {};
+_UI.ListBox.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addMouseDownHandler = function(handler) {};
+_UI.ListBox.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addMouseMoveHandler = function(handler) {};
+_UI.ListBox.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addMouseOutHandler = function(handler) {};
+_UI.ListBox.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addMouseOverHandler = function(handler) {};
+_UI.ListBox.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addMouseUpHandler = function(handler) {};
+_UI.ListBox.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.ListBox}
- */
-_Ui.ListBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.ListBox.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.addStyleName = function(styleName) {};
+_UI.ListBox.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.ListBox}
+ * @param {string} styleName
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.clear = function() {};
+_UI.ListBox.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.ListBox.prototype.getTag = function() {};
+_UI.ListBox.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ListBox.prototype.getType = function() {};
+_UI.ListBox.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.ListBox.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.ListBox.prototype.getType = function() {};
 
 /**
  * @param {number} index
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.removeItem = function(index) {};
+_UI.ListBox.prototype.removeItem = function(index) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setEnabled = function(enabled) {};
+_UI.ListBox.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setFocus = function(focus) {};
+_UI.ListBox.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setHeight = function(height) {};
+_UI.ListBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setId = function(id) {};
+_UI.ListBox.prototype.setId = function(id) {};
 
 /**
  * @param {number} index
  * @param {boolean} selected
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setItemSelected = function(index, selected) {};
+_UI.ListBox.prototype.setItemSelected = function(index, selected) {};
 
 /**
  * @param {number} index
  * @param {string} text
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setItemText = function(index, text) {};
+_UI.ListBox.prototype.setItemText = function(index, text) {};
 
 /**
  * @param {string} name
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setName = function(name) {};
+_UI.ListBox.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setPixelSize = function(width, height) {};
+_UI.ListBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {number} index
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setSelectedIndex = function(index) {};
+_UI.ListBox.prototype.setSelectedIndex = function(index) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setSize = function(width, height) {};
+_UI.ListBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.ListBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.ListBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setStyleName = function(styleName) {};
+_UI.ListBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.ListBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setTabIndex = function(index) {};
+_UI.ListBox.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setTag = function(tag) {};
+_UI.ListBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setTitle = function(title) {};
+_UI.ListBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {number} index
  * @param {string} value
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setValue = function(index, value) {};
+_UI.ListBox.prototype.setValue = function(index, value) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setVisible = function(visible) {};
+_UI.ListBox.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} count
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setVisibleItemCount = function(count) {};
+_UI.ListBox.prototype.setVisibleItemCount = function(count) {};
 
 /**
  * @param {string} width
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.ListBox.prototype.setWidth = function(width) {};
+_UI.ListBox.prototype.setWidth = function(width) {};
 
 /**
  * Class MenuBar
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.MenuBar = function() {};
+_UI.MenuBar = function() {};
 
 /**
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.addCloseHandler = function(handler) {};
+_UI.MenuBar.prototype.addCloseHandler = function(handler) {};
 
 /**
  * @param {(_Ui.MenuItem|string)} arg1
- * @param {(boolean|_Ui.Handler|_Ui.MenuBar)=} arg2
- * @param {(_Ui.Handler|_Ui.MenuBar)=} arg3
- * @return {_Ui.MenuBar}
+ * @param {(boolean|_UI.Handler|_Ui.MenuBar)=} arg2
+ * @param {(_UI.Handler|_Ui.MenuBar)=} arg3
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.addItem = function(arg1, arg2, arg3) {};
+_UI.MenuBar.prototype.addItem = function(arg1, arg2, arg3) {};
 
 /**
  * @param {_Ui.MenuItemSeparator=} separator
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.addSeparator = function(separator) {};
+_UI.MenuBar.prototype.addSeparator = function(separator) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.addStyleDependentName = function(styleName) {};
+_UI.MenuBar.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.addStyleName = function(styleName) {};
+_UI.MenuBar.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.MenuBar.prototype.getId = function() {};
+_UI.MenuBar.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.MenuBar.prototype.getTag = function() {};
+_UI.MenuBar.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.MenuBar.prototype.getType = function() {};
+_UI.MenuBar.prototype.getType = function() {};
 
 /**
  * @param {boolean} animationEnabled
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setAnimationEnabled = function(animationEnabled) {};
+_UI.MenuBar.prototype.setAnimationEnabled = function(animationEnabled) {};
 
 /**
  * @param {boolean} autoOpen
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setAutoOpen = function(autoOpen) {};
+_UI.MenuBar.prototype.setAutoOpen = function(autoOpen) {};
 
 /**
  * @param {string} height
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setHeight = function(height) {};
+_UI.MenuBar.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setId = function(id) {};
+_UI.MenuBar.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setPixelSize = function(width, height) {};
+_UI.MenuBar.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setSize = function(width, height) {};
+_UI.MenuBar.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.MenuBar.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setStyleAttributes = function(attributes) {};
+_UI.MenuBar.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setStyleName = function(styleName) {};
+_UI.MenuBar.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setStylePrimaryName = function(styleName) {};
+_UI.MenuBar.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setTag = function(tag) {};
+_UI.MenuBar.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setTitle = function(title) {};
+_UI.MenuBar.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setVisible = function(visible) {};
+_UI.MenuBar.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.MenuBar.prototype.setWidth = function(width) {};
+_UI.MenuBar.prototype.setWidth = function(width) {};
 
 /**
  * Class MenuItem
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.MenuItem = function() {};
+_UI.MenuItem = function() {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.addStyleDependentName = function(styleName) {};
+_UI.MenuItem.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.addStyleName = function(styleName) {};
+_UI.MenuItem.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.MenuItem.prototype.getId = function() {};
+_UI.MenuItem.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.MenuItem.prototype.getTag = function() {};
+_UI.MenuItem.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.MenuItem.prototype.getType = function() {};
+_UI.MenuItem.prototype.getType = function() {};
 
 /**
- * @param {_Ui.Handler} handler
- * @return {_Ui.MenuItem}
+ * @param {_UI.Handler} handler
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setCommand = function(handler) {};
+_UI.MenuItem.prototype.setCommand = function(handler) {};
 
 /**
  * @param {string} html
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setHTML = function(html) {};
+_UI.MenuItem.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setHeight = function(height) {};
+_UI.MenuItem.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setId = function(id) {};
+_UI.MenuItem.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setPixelSize = function(width, height) {};
+_UI.MenuItem.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setSize = function(width, height) {};
+_UI.MenuItem.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.MenuItem.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setStyleAttributes = function(attributes) {};
+_UI.MenuItem.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setStyleName = function(styleName) {};
+_UI.MenuItem.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setStylePrimaryName = function(styleName) {};
+_UI.MenuItem.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {_Ui.MenuBar} subMenu
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setSubMenu = function(subMenu) {};
+_UI.MenuItem.prototype.setSubMenu = function(subMenu) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setTag = function(tag) {};
+_UI.MenuItem.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setText = function(text) {};
+_UI.MenuItem.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setTitle = function(title) {};
+_UI.MenuItem.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setVisible = function(visible) {};
+_UI.MenuItem.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.MenuItem}
+ * @return {_UI.MenuItem}
  */
-_Ui.MenuItem.prototype.setWidth = function(width) {};
+_UI.MenuItem.prototype.setWidth = function(width) {};
 
 /**
  * Class MenuItemSeparator
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.MenuItemSeparator = function() {};
+_UI.MenuItemSeparator = function() {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.addStyleDependentName = function(styleName) {};
+_UI.MenuItemSeparator.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.addStyleName = function(styleName) {};
+_UI.MenuItemSeparator.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.MenuItemSeparator.prototype.getId = function() {};
+_UI.MenuItemSeparator.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.MenuItemSeparator.prototype.getTag = function() {};
+_UI.MenuItemSeparator.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.MenuItemSeparator.prototype.getType = function() {};
+_UI.MenuItemSeparator.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setHeight = function(height) {};
+_UI.MenuItemSeparator.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setId = function(id) {};
+_UI.MenuItemSeparator.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setPixelSize = function(width, height) {};
+_UI.MenuItemSeparator.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setSize = function(width, height) {};
+_UI.MenuItemSeparator.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.MenuItemSeparator.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setStyleAttributes = function(attributes) {};
+_UI.MenuItemSeparator.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setStyleName = function(styleName) {};
+_UI.MenuItemSeparator.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setStylePrimaryName = function(styleName) {};
+_UI.MenuItemSeparator.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setTag = function(tag) {};
+_UI.MenuItemSeparator.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setTitle = function(title) {};
+_UI.MenuItemSeparator.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setVisible = function(visible) {};
+_UI.MenuItemSeparator.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.MenuItemSeparator.prototype.setWidth = function(width) {};
+_UI.MenuItemSeparator.prototype.setWidth = function(width) {};
 
 /**
  * Class PasswordTextBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.PasswordTextBox = function() {};
+_UI.PasswordTextBox = function() {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addBlurHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addChangeHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addChangeHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addClickHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addFocusHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addKeyDownHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addKeyPressHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addKeyUpHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addMouseDownHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addMouseMoveHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addMouseOutHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addMouseOverHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addMouseUpHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.PasswordTextBox}
- */
-_Ui.PasswordTextBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.PasswordTextBox.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addStyleName = function(styleName) {};
+_UI.PasswordTextBox.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @param {string} styleName
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.addValueChangeHandler = function(handler) {};
+_UI.PasswordTextBox.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.PasswordTextBox.prototype.getTag = function() {};
+_UI.PasswordTextBox.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.PasswordTextBox.prototype.getType = function() {};
+_UI.PasswordTextBox.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.PasswordTextBox.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.PasswordTextBox.prototype.getType = function() {};
 
 /**
  * @param {number} position
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setCursorPos = function(position) {};
+_UI.PasswordTextBox.prototype.setCursorPos = function(position) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setEnabled = function(enabled) {};
+_UI.PasswordTextBox.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setFocus = function(focus) {};
+_UI.PasswordTextBox.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setHeight = function(height) {};
+_UI.PasswordTextBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setId = function(id) {};
+_UI.PasswordTextBox.prototype.setId = function(id) {};
 
 /**
  * @param {number} length
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setMaxLength = function(length) {};
+_UI.PasswordTextBox.prototype.setMaxLength = function(length) {};
 
 /**
  * @param {string} name
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setName = function(name) {};
+_UI.PasswordTextBox.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setPixelSize = function(width, height) {};
+_UI.PasswordTextBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {boolean} readOnly
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setReadOnly = function(readOnly) {};
+_UI.PasswordTextBox.prototype.setReadOnly = function(readOnly) {};
 
 /**
  * @param {number} position
  * @param {number} length
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setSelectionRange = function(position, length) {};
+_UI.PasswordTextBox.prototype.setSelectionRange = function(position, length) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setSize = function(width, height) {};
+_UI.PasswordTextBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.PasswordTextBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.PasswordTextBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setStyleName = function(styleName) {};
+_UI.PasswordTextBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.PasswordTextBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setTabIndex = function(index) {};
+_UI.PasswordTextBox.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setTag = function(tag) {};
+_UI.PasswordTextBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setText = function(text) {};
+_UI.PasswordTextBox.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setTitle = function(title) {};
+_UI.PasswordTextBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {string} value
  * @param {boolean=} fireEvents
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setValue = function(value, fireEvents) {};
+_UI.PasswordTextBox.prototype.setValue = function(value, fireEvents) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setVisible = function(visible) {};
+_UI.PasswordTextBox.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} length
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setVisibleLength = function(length) {};
+_UI.PasswordTextBox.prototype.setVisibleLength = function(length) {};
 
 /**
  * @param {string} width
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.PasswordTextBox.prototype.setWidth = function(width) {};
+_UI.PasswordTextBox.prototype.setWidth = function(width) {};
 
 /**
  * Class PopupPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.PopupPanel = function() {};
+_UI.PopupPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.PopupPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.add = function(widget) {};
+_UI.PopupPanel.prototype.add = function(widget) {};
 
 /**
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.addCloseHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.PopupPanel}
- */
-_Ui.PopupPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.PopupPanel.prototype.addCloseHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.addStyleName = function(styleName) {};
+_UI.PopupPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.PopupPanel}
+ * @param {string} styleName
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.clear = function() {};
+_UI.PopupPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.PopupPanel.prototype.getTag = function() {};
+_UI.PopupPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.PopupPanel.prototype.getType = function() {};
+_UI.PopupPanel.prototype.getId = function() {};
 
 /**
- * @return {_Ui.PopupPanel}
+ * @return {string}
  */
-_Ui.PopupPanel.prototype.hide = function() {};
+_UI.PopupPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.PopupPanel.prototype.getType = function() {};
+
+/**
+ * @return {_UI.PopupPanel}
+ */
+_UI.PopupPanel.prototype.hide = function() {};
 
 /**
  * @param {boolean} animationEnabled
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setAnimationEnabled = function(animationEnabled) {};
+_UI.PopupPanel.prototype.setAnimationEnabled = function(animationEnabled) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setAutoHideEnabled = function(enabled) {};
+_UI.PopupPanel.prototype.setAutoHideEnabled = function(enabled) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setGlassEnabled = function(enabled) {};
+_UI.PopupPanel.prototype.setGlassEnabled = function(enabled) {};
 
 /**
  * @param {string} height
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setHeight = function(height) {};
+_UI.PopupPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setId = function(id) {};
+_UI.PopupPanel.prototype.setId = function(id) {};
 
 /**
  * @param {boolean} modal
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setModal = function(modal) {};
+_UI.PopupPanel.prototype.setModal = function(modal) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setPixelSize = function(width, height) {};
+_UI.PopupPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {number} left
  * @param {number} top
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setPopupPosition = function(left, top) {};
+_UI.PopupPanel.prototype.setPopupPosition = function(left, top) {};
 
 /**
  * @param {boolean} previewing
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setPreviewingAllNativeEvents = function(previewing) {};
+_UI.PopupPanel.prototype.setPreviewingAllNativeEvents = function(previewing) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setSize = function(width, height) {};
+_UI.PopupPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.PopupPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.PopupPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setStyleName = function(styleName) {};
+_UI.PopupPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.PopupPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setTag = function(tag) {};
+_UI.PopupPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setTitle = function(title) {};
+_UI.PopupPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setVisible = function(visible) {};
+_UI.PopupPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.PopupPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setWidget = function(widget) {};
+_UI.PopupPanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.setWidth = function(width) {};
+_UI.PopupPanel.prototype.setWidth = function(width) {};
 
 /**
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.PopupPanel.prototype.show = function() {};
+_UI.PopupPanel.prototype.show = function() {};
 
 /**
  * Class PushButton
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.PushButton = function() {};
+_UI.PushButton = function() {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addBlurHandler = function(handler) {};
+_UI.PushButton.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addClickHandler = function(handler) {};
+_UI.PushButton.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addFocusHandler = function(handler) {};
+_UI.PushButton.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addKeyDownHandler = function(handler) {};
+_UI.PushButton.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addKeyPressHandler = function(handler) {};
+_UI.PushButton.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addKeyUpHandler = function(handler) {};
+_UI.PushButton.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addMouseDownHandler = function(handler) {};
+_UI.PushButton.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addMouseMoveHandler = function(handler) {};
+_UI.PushButton.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addMouseOutHandler = function(handler) {};
+_UI.PushButton.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addMouseOverHandler = function(handler) {};
+_UI.PushButton.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addMouseUpHandler = function(handler) {};
+_UI.PushButton.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.PushButton}
- */
-_Ui.PushButton.prototype.addStyleDependentName = function(styleName) {};
+_UI.PushButton.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.addStyleName = function(styleName) {};
+_UI.PushButton.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.PushButton}
+ */
+_UI.PushButton.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.PushButton.prototype.getId = function() {};
+_UI.PushButton.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.PushButton.prototype.getTag = function() {};
+_UI.PushButton.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.PushButton.prototype.getType = function() {};
+_UI.PushButton.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setEnabled = function(enabled) {};
+_UI.PushButton.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setFocus = function(focus) {};
+_UI.PushButton.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} html
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setHTML = function(html) {};
+_UI.PushButton.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setHeight = function(height) {};
+_UI.PushButton.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setId = function(id) {};
+_UI.PushButton.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setPixelSize = function(width, height) {};
+_UI.PushButton.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setSize = function(width, height) {};
+_UI.PushButton.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.PushButton.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setStyleAttributes = function(attributes) {};
+_UI.PushButton.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setStyleName = function(styleName) {};
+_UI.PushButton.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setStylePrimaryName = function(styleName) {};
+_UI.PushButton.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setTabIndex = function(index) {};
+_UI.PushButton.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setTag = function(tag) {};
+_UI.PushButton.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setText = function(text) {};
+_UI.PushButton.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setTitle = function(title) {};
+_UI.PushButton.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setVisible = function(visible) {};
+_UI.PushButton.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.PushButton}
+ * @return {_UI.PushButton}
  */
-_Ui.PushButton.prototype.setWidth = function(width) {};
+_UI.PushButton.prototype.setWidth = function(width) {};
 
 /**
  * Class RadioButton
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.RadioButton = function() {};
+_UI.RadioButton = function() {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addBlurHandler = function(handler) {};
+_UI.RadioButton.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addClickHandler = function(handler) {};
+_UI.RadioButton.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addFocusHandler = function(handler) {};
+_UI.RadioButton.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addKeyDownHandler = function(handler) {};
+_UI.RadioButton.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addKeyPressHandler = function(handler) {};
+_UI.RadioButton.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addKeyUpHandler = function(handler) {};
+_UI.RadioButton.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addMouseDownHandler = function(handler) {};
+_UI.RadioButton.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addMouseMoveHandler = function(handler) {};
+_UI.RadioButton.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addMouseOutHandler = function(handler) {};
+_UI.RadioButton.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addMouseOverHandler = function(handler) {};
+_UI.RadioButton.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addMouseUpHandler = function(handler) {};
+_UI.RadioButton.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.RadioButton}
- */
-_Ui.RadioButton.prototype.addStyleDependentName = function(styleName) {};
+_UI.RadioButton.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addStyleName = function(styleName) {};
+_UI.RadioButton.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.RadioButton}
+ * @param {string} styleName
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.addValueChangeHandler = function(handler) {};
+_UI.RadioButton.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.RadioButton.prototype.getTag = function() {};
+_UI.RadioButton.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.RadioButton.prototype.getType = function() {};
+_UI.RadioButton.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.RadioButton.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.RadioButton.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setEnabled = function(enabled) {};
+_UI.RadioButton.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setFocus = function(focus) {};
+_UI.RadioButton.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} formValue
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setFormValue = function(formValue) {};
+_UI.RadioButton.prototype.setFormValue = function(formValue) {};
 
 /**
  * @param {string} html
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setHTML = function(html) {};
+_UI.RadioButton.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setHeight = function(height) {};
+_UI.RadioButton.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setId = function(id) {};
+_UI.RadioButton.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setName = function(name) {};
+_UI.RadioButton.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setPixelSize = function(width, height) {};
+_UI.RadioButton.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setSize = function(width, height) {};
+_UI.RadioButton.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.RadioButton.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setStyleAttributes = function(attributes) {};
+_UI.RadioButton.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setStyleName = function(styleName) {};
+_UI.RadioButton.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setStylePrimaryName = function(styleName) {};
+_UI.RadioButton.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setTabIndex = function(index) {};
+_UI.RadioButton.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setTag = function(tag) {};
+_UI.RadioButton.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setText = function(text) {};
+_UI.RadioButton.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setTitle = function(title) {};
+_UI.RadioButton.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} value
  * @param {boolean=} fireEvents
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setValue = function(value, fireEvents) {};
+_UI.RadioButton.prototype.setValue = function(value, fireEvents) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setVisible = function(visible) {};
+_UI.RadioButton.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.RadioButton.prototype.setWidth = function(width) {};
+_UI.RadioButton.prototype.setWidth = function(width) {};
 
 /**
  * Class ResetButton
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.ResetButton = function() {};
+_UI.ResetButton = function() {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addBlurHandler = function(handler) {};
+_UI.ResetButton.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addClickHandler = function(handler) {};
+_UI.ResetButton.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addFocusHandler = function(handler) {};
+_UI.ResetButton.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addKeyDownHandler = function(handler) {};
+_UI.ResetButton.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addKeyPressHandler = function(handler) {};
+_UI.ResetButton.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addKeyUpHandler = function(handler) {};
+_UI.ResetButton.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addMouseDownHandler = function(handler) {};
+_UI.ResetButton.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addMouseMoveHandler = function(handler) {};
+_UI.ResetButton.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addMouseOutHandler = function(handler) {};
+_UI.ResetButton.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addMouseOverHandler = function(handler) {};
+_UI.ResetButton.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addMouseUpHandler = function(handler) {};
+_UI.ResetButton.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.ResetButton}
- */
-_Ui.ResetButton.prototype.addStyleDependentName = function(styleName) {};
+_UI.ResetButton.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.addStyleName = function(styleName) {};
+_UI.ResetButton.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.ResetButton}
+ */
+_UI.ResetButton.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.ResetButton.prototype.getId = function() {};
+_UI.ResetButton.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ResetButton.prototype.getTag = function() {};
+_UI.ResetButton.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ResetButton.prototype.getType = function() {};
+_UI.ResetButton.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setEnabled = function(enabled) {};
+_UI.ResetButton.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setFocus = function(focus) {};
+_UI.ResetButton.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} html
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setHTML = function(html) {};
+_UI.ResetButton.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setHeight = function(height) {};
+_UI.ResetButton.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setId = function(id) {};
+_UI.ResetButton.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setPixelSize = function(width, height) {};
+_UI.ResetButton.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setSize = function(width, height) {};
+_UI.ResetButton.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.ResetButton.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setStyleAttributes = function(attributes) {};
+_UI.ResetButton.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setStyleName = function(styleName) {};
+_UI.ResetButton.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setStylePrimaryName = function(styleName) {};
+_UI.ResetButton.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setTabIndex = function(index) {};
+_UI.ResetButton.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setTag = function(tag) {};
+_UI.ResetButton.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setText = function(text) {};
+_UI.ResetButton.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setTitle = function(title) {};
+_UI.ResetButton.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setVisible = function(visible) {};
+_UI.ResetButton.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.ResetButton}
+ * @return {_UI.ResetButton}
  */
-_Ui.ResetButton.prototype.setWidth = function(width) {};
+_UI.ResetButton.prototype.setWidth = function(width) {};
 
 /**
  * Class ScrollPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.ScrollPanel = function() {};
+_UI.ScrollPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ScrollPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.add = function(widget) {};
+_UI.ScrollPanel.prototype.add = function(widget) {};
 
 /**
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.addScrollHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.ScrollPanel}
- */
-_Ui.ScrollPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.ScrollPanel.prototype.addScrollHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.addStyleName = function(styleName) {};
+_UI.ScrollPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.ScrollPanel}
+ * @param {string} styleName
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.clear = function() {};
+_UI.ScrollPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.ScrollPanel.prototype.getTag = function() {};
+_UI.ScrollPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ScrollPanel.prototype.getType = function() {};
+_UI.ScrollPanel.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.ScrollPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.ScrollPanel.prototype.getType = function() {};
 
 /**
  * @param {boolean} alwaysShow
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setAlwaysShowScrollBars = function(alwaysShow) {};
+_UI.ScrollPanel.prototype.setAlwaysShowScrollBars = function(alwaysShow) {};
 
 /**
  * @param {string} height
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setHeight = function(height) {};
+_UI.ScrollPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {number} position
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setHorizontalScrollPosition = function(position) {};
+_UI.ScrollPanel.prototype.setHorizontalScrollPosition = function(position) {};
 
 /**
  * @param {string} id
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setId = function(id) {};
+_UI.ScrollPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setPixelSize = function(width, height) {};
+_UI.ScrollPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {number} position
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setScrollPosition = function(position) {};
+_UI.ScrollPanel.prototype.setScrollPosition = function(position) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setSize = function(width, height) {};
+_UI.ScrollPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.ScrollPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.ScrollPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setStyleName = function(styleName) {};
+_UI.ScrollPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.ScrollPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setTag = function(tag) {};
+_UI.ScrollPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setTitle = function(title) {};
+_UI.ScrollPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setVisible = function(visible) {};
+_UI.ScrollPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ScrollPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setWidget = function(widget) {};
+_UI.ScrollPanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.ScrollPanel}
+ * @return {_UI.ScrollPanel}
  */
-_Ui.ScrollPanel.prototype.setWidth = function(width) {};
+_UI.ScrollPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class ServerHandler
- * Last updated May 6, 2013.
  * @constructor
  */
-_Ui.ServerHandler = function() {};
+_UI.ServerHandler = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.addCallbackElement = function(widget) {};
-
-/**
- * @return {string}
- */
-_Ui.ServerHandler.prototype.getId = function() {};
+_UI.ServerHandler.prototype.addCallbackElement = function(widget) {};
 
 /**
  * @return {string}
  */
-_Ui.ServerHandler.prototype.getTag = function() {};
+_UI.ServerHandler.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ServerHandler.prototype.getType = function() {};
+_UI.ServerHandler.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.ServerHandler.prototype.getType = function() {};
 
 /**
  * @param {string} functionToInvoke
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.setCallbackFunction = function(functionToInvoke) {};
+_UI.ServerHandler.prototype.setCallbackFunction = function(functionToInvoke) {};
 
 /**
  * @param {string} id
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.setId = function(id) {};
+_UI.ServerHandler.prototype.setId = function(id) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.setTag = function(tag) {};
+_UI.ServerHandler.prototype.setTag = function(tag) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateEmail = function(widget) {};
+_UI.ServerHandler.prototype.validateEmail = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateInteger = function(widget) {};
+_UI.ServerHandler.prototype.validateInteger = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateLength = function(widget, min, max) {};
+_UI.ServerHandler.prototype.validateLength = function(widget, min, max) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} pattern
  * @param {string=} flags
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateMatches = function(widget, pattern, flags) {};
+_UI.ServerHandler.prototype.validateMatches = function(widget, pattern, flags) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotEmail = function(widget) {};
+_UI.ServerHandler.prototype.validateNotEmail = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotInteger = function(widget) {};
+_UI.ServerHandler.prototype.validateNotInteger = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotLength = function(widget, min, max) {};
+_UI.ServerHandler.prototype.validateNotLength = function(widget, min, max) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} pattern
  * @param {string=} flags
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotMatches = function(widget, pattern, flags) {};
+_UI.ServerHandler.prototype.validateNotMatches = function(widget, pattern, flags) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotNumber = function(widget) {};
+_UI.ServerHandler.prototype.validateNotNumber = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {Array.<string>} options
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotOptions = function(widget, options) {};
+_UI.ServerHandler.prototype.validateNotOptions = function(widget, options) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotRange = function(widget, min, max) {};
+_UI.ServerHandler.prototype.validateNotRange = function(widget, min, max) {};
 
 /**
- * @param {Array.<_Ui.Widget>} widgets
+ * @param {Array.<_UI.Widget>} widgets
  * @param {number} sum
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNotSum = function(widgets, sum) {};
+_UI.ServerHandler.prototype.validateNotSum = function(widgets, sum) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.ServerHandler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateNumber = function(widget) {};
+_UI.ServerHandler.prototype.validateNumber = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {Array.<string>} options
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateOptions = function(widget, options) {};
+_UI.ServerHandler.prototype.validateOptions = function(widget, options) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateRange = function(widget, min, max) {};
+_UI.ServerHandler.prototype.validateRange = function(widget, min, max) {};
 
 /**
- * @param {Array.<_Ui.Widget>} widgets
+ * @param {Array.<_UI.Widget>} widgets
  * @param {number} sum
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.ServerHandler.prototype.validateSum = function(widgets, sum) {};
+_UI.ServerHandler.prototype.validateSum = function(widgets, sum) {};
 
 /**
  * Class SimpleCheckBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.SimpleCheckBox = function() {};
+_UI.SimpleCheckBox = function() {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addBlurHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addClickHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addFocusHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addKeyDownHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addKeyPressHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addKeyUpHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addMouseDownHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addMouseMoveHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addMouseOutHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addMouseOverHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addMouseUpHandler = function(handler) {};
+_UI.SimpleCheckBox.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.SimpleCheckBox}
- */
-_Ui.SimpleCheckBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.SimpleCheckBox.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.addStyleName = function(styleName) {};
+_UI.SimpleCheckBox.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.SimpleCheckBox}
+ */
+_UI.SimpleCheckBox.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.SimpleCheckBox.prototype.getId = function() {};
+_UI.SimpleCheckBox.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SimpleCheckBox.prototype.getTag = function() {};
+_UI.SimpleCheckBox.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SimpleCheckBox.prototype.getType = function() {};
+_UI.SimpleCheckBox.prototype.getType = function() {};
 
 /**
  * @param {boolean} checked
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setChecked = function(checked) {};
+_UI.SimpleCheckBox.prototype.setChecked = function(checked) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setEnabled = function(enabled) {};
+_UI.SimpleCheckBox.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setFocus = function(focus) {};
+_UI.SimpleCheckBox.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setHeight = function(height) {};
+_UI.SimpleCheckBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setId = function(id) {};
+_UI.SimpleCheckBox.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setName = function(name) {};
+_UI.SimpleCheckBox.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setPixelSize = function(width, height) {};
+_UI.SimpleCheckBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setSize = function(width, height) {};
+_UI.SimpleCheckBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.SimpleCheckBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.SimpleCheckBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setStyleName = function(styleName) {};
+_UI.SimpleCheckBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.SimpleCheckBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setTabIndex = function(index) {};
+_UI.SimpleCheckBox.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setTag = function(tag) {};
+_UI.SimpleCheckBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setTitle = function(title) {};
+_UI.SimpleCheckBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setVisible = function(visible) {};
+_UI.SimpleCheckBox.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.SimpleCheckBox.prototype.setWidth = function(width) {};
+_UI.SimpleCheckBox.prototype.setWidth = function(width) {};
 
 /**
  * Class SimplePanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.SimplePanel = function() {};
+_UI.SimplePanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.SimplePanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.add = function(widget) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.SimplePanel}
- */
-_Ui.SimplePanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.SimplePanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.addStyleName = function(styleName) {};
+_UI.SimplePanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.SimplePanel}
+ * @param {string} styleName
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.clear = function() {};
+_UI.SimplePanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.SimplePanel.prototype.getTag = function() {};
+_UI.SimplePanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SimplePanel.prototype.getType = function() {};
+_UI.SimplePanel.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.SimplePanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.SimplePanel.prototype.getType = function() {};
 
 /**
  * @param {string} height
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setHeight = function(height) {};
+_UI.SimplePanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setId = function(id) {};
+_UI.SimplePanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setPixelSize = function(width, height) {};
+_UI.SimplePanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setSize = function(width, height) {};
+_UI.SimplePanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.SimplePanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.SimplePanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setStyleName = function(styleName) {};
+_UI.SimplePanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.SimplePanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setTag = function(tag) {};
+_UI.SimplePanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setTitle = function(title) {};
+_UI.SimplePanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setVisible = function(visible) {};
+_UI.SimplePanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.SimplePanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setWidget = function(widget) {};
+_UI.SimplePanel.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.SimplePanel.prototype.setWidth = function(width) {};
+_UI.SimplePanel.prototype.setWidth = function(width) {};
 
 /**
  * Class SimpleRadioButton
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.SimpleRadioButton = function() {};
+_UI.SimpleRadioButton = function() {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addBlurHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addClickHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addFocusHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addKeyDownHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addKeyPressHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addKeyUpHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addMouseDownHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addMouseMoveHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addMouseOutHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addMouseOverHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addMouseUpHandler = function(handler) {};
+_UI.SimpleRadioButton.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.SimpleRadioButton}
- */
-_Ui.SimpleRadioButton.prototype.addStyleDependentName = function(styleName) {};
+_UI.SimpleRadioButton.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.addStyleName = function(styleName) {};
+_UI.SimpleRadioButton.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.SimpleRadioButton}
+ */
+_UI.SimpleRadioButton.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.SimpleRadioButton.prototype.getId = function() {};
+_UI.SimpleRadioButton.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SimpleRadioButton.prototype.getTag = function() {};
+_UI.SimpleRadioButton.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SimpleRadioButton.prototype.getType = function() {};
+_UI.SimpleRadioButton.prototype.getType = function() {};
 
 /**
  * @param {boolean} checked
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setChecked = function(checked) {};
+_UI.SimpleRadioButton.prototype.setChecked = function(checked) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setEnabled = function(enabled) {};
+_UI.SimpleRadioButton.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setFocus = function(focus) {};
+_UI.SimpleRadioButton.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setHeight = function(height) {};
+_UI.SimpleRadioButton.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setId = function(id) {};
+_UI.SimpleRadioButton.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setName = function(name) {};
+_UI.SimpleRadioButton.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setPixelSize = function(width, height) {};
+_UI.SimpleRadioButton.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setSize = function(width, height) {};
+_UI.SimpleRadioButton.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.SimpleRadioButton.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setStyleAttributes = function(attributes) {};
+_UI.SimpleRadioButton.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setStyleName = function(styleName) {};
+_UI.SimpleRadioButton.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setStylePrimaryName = function(styleName) {};
+_UI.SimpleRadioButton.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setTabIndex = function(index) {};
+_UI.SimpleRadioButton.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setTag = function(tag) {};
+_UI.SimpleRadioButton.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setTitle = function(title) {};
+_UI.SimpleRadioButton.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setVisible = function(visible) {};
+_UI.SimpleRadioButton.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.SimpleRadioButton.prototype.setWidth = function(width) {};
+_UI.SimpleRadioButton.prototype.setWidth = function(width) {};
 
 /**
  * Class SplitLayoutPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.SplitLayoutPanel = function() {};
+_UI.SplitLayoutPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.SplitLayoutPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.add = function(widget) {};
+_UI.SplitLayoutPanel.prototype.add = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} width
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.addEast = function(widget, width) {};
+_UI.SplitLayoutPanel.prototype.addEast = function(widget, width) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} height
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.addNorth = function(widget, height) {};
+_UI.SplitLayoutPanel.prototype.addNorth = function(widget, height) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} height
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.addSouth = function(widget, height) {};
+_UI.SplitLayoutPanel.prototype.addSouth = function(widget, height) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.SplitLayoutPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.addStyleName = function(styleName) {};
+_UI.SplitLayoutPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} width
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.addWest = function(widget, width) {};
+_UI.SplitLayoutPanel.prototype.addWest = function(widget, width) {};
 
 /**
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.clear = function() {};
-
-/**
- * @return {string}
- */
-_Ui.SplitLayoutPanel.prototype.getId = function() {};
+_UI.SplitLayoutPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SplitLayoutPanel.prototype.getTag = function() {};
+_UI.SplitLayoutPanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SplitLayoutPanel.prototype.getType = function() {};
+_UI.SplitLayoutPanel.prototype.getTag = function() {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.SplitLayoutPanel}
+ * @return {string}
  */
-_Ui.SplitLayoutPanel.prototype.remove = function(arg1) {};
+_UI.SplitLayoutPanel.prototype.getType = function() {};
+
+/**
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.SplitLayoutPanel}
+ */
+_UI.SplitLayoutPanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {string} height
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setHeight = function(height) {};
+_UI.SplitLayoutPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setId = function(id) {};
+_UI.SplitLayoutPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setPixelSize = function(width, height) {};
+_UI.SplitLayoutPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setSize = function(width, height) {};
+_UI.SplitLayoutPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.SplitLayoutPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.SplitLayoutPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setStyleName = function(styleName) {};
+_UI.SplitLayoutPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.SplitLayoutPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setTag = function(tag) {};
+_UI.SplitLayoutPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setTitle = function(title) {};
+_UI.SplitLayoutPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setVisible = function(visible) {};
+_UI.SplitLayoutPanel.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} minSize
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setWidgetMinSize = function(widget, minSize) {};
+_UI.SplitLayoutPanel.prototype.setWidgetMinSize = function(widget, minSize) {};
 
 /**
  * @param {string} width
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.SplitLayoutPanel.prototype.setWidth = function(width) {};
+_UI.SplitLayoutPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class StackPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.StackPanel = function() {};
+_UI.StackPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string=} text
  * @param {boolean=} asHtml
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.add = function(widget, text, asHtml) {};
+_UI.StackPanel.prototype.add = function(widget, text, asHtml) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.StackPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.addStyleName = function(styleName) {};
+_UI.StackPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.clear = function() {};
-
-/**
- * @return {string}
- */
-_Ui.StackPanel.prototype.getId = function() {};
+_UI.StackPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.StackPanel.prototype.getTag = function() {};
+_UI.StackPanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.StackPanel.prototype.getType = function() {};
+_UI.StackPanel.prototype.getTag = function() {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.StackPanel}
+ * @return {string}
  */
-_Ui.StackPanel.prototype.remove = function(arg1) {};
+_UI.StackPanel.prototype.getType = function() {};
+
+/**
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.StackPanel}
+ */
+_UI.StackPanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {string} height
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setHeight = function(height) {};
+_UI.StackPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setId = function(id) {};
+_UI.StackPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setPixelSize = function(width, height) {};
+_UI.StackPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setSize = function(width, height) {};
+_UI.StackPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {number} index
  * @param {string} text
  * @param {boolean=} asHtml
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setStackText = function(index, text, asHtml) {};
+_UI.StackPanel.prototype.setStackText = function(index, text, asHtml) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.StackPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.StackPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setStyleName = function(styleName) {};
+_UI.StackPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.StackPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setTag = function(tag) {};
+_UI.StackPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setTitle = function(title) {};
+_UI.StackPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setVisible = function(visible) {};
+_UI.StackPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.StackPanel.prototype.setWidth = function(width) {};
+_UI.StackPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class SubmitButton
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.SubmitButton = function() {};
+_UI.SubmitButton = function() {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addBlurHandler = function(handler) {};
+_UI.SubmitButton.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addClickHandler = function(handler) {};
+_UI.SubmitButton.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addFocusHandler = function(handler) {};
+_UI.SubmitButton.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addKeyDownHandler = function(handler) {};
+_UI.SubmitButton.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addKeyPressHandler = function(handler) {};
+_UI.SubmitButton.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addKeyUpHandler = function(handler) {};
+_UI.SubmitButton.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addMouseDownHandler = function(handler) {};
+_UI.SubmitButton.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addMouseMoveHandler = function(handler) {};
+_UI.SubmitButton.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addMouseOutHandler = function(handler) {};
+_UI.SubmitButton.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addMouseOverHandler = function(handler) {};
+_UI.SubmitButton.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addMouseUpHandler = function(handler) {};
+_UI.SubmitButton.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.SubmitButton}
- */
-_Ui.SubmitButton.prototype.addStyleDependentName = function(styleName) {};
+_UI.SubmitButton.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.addStyleName = function(styleName) {};
+_UI.SubmitButton.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.SubmitButton}
+ */
+_UI.SubmitButton.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.SubmitButton.prototype.getId = function() {};
+_UI.SubmitButton.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SubmitButton.prototype.getTag = function() {};
+_UI.SubmitButton.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.SubmitButton.prototype.getType = function() {};
+_UI.SubmitButton.prototype.getType = function() {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setEnabled = function(enabled) {};
+_UI.SubmitButton.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setFocus = function(focus) {};
+_UI.SubmitButton.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} html
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setHTML = function(html) {};
+_UI.SubmitButton.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setHeight = function(height) {};
+_UI.SubmitButton.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setId = function(id) {};
+_UI.SubmitButton.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setPixelSize = function(width, height) {};
+_UI.SubmitButton.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setSize = function(width, height) {};
+_UI.SubmitButton.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.SubmitButton.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setStyleAttributes = function(attributes) {};
+_UI.SubmitButton.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setStyleName = function(styleName) {};
+_UI.SubmitButton.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setStylePrimaryName = function(styleName) {};
+_UI.SubmitButton.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setTabIndex = function(index) {};
+_UI.SubmitButton.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setTag = function(tag) {};
+_UI.SubmitButton.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setText = function(text) {};
+_UI.SubmitButton.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setTitle = function(title) {};
+_UI.SubmitButton.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setVisible = function(visible) {};
+_UI.SubmitButton.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.SubmitButton.prototype.setWidth = function(width) {};
+_UI.SubmitButton.prototype.setWidth = function(width) {};
 
 /**
  * Class TabBar
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.TabBar = function() {};
+_UI.TabBar = function() {};
 
 /**
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.addSelectionHandler = function(handler) {};
+_UI.TabBar.prototype.addSelectionHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.addStyleDependentName = function(styleName) {};
+_UI.TabBar.prototype.addStyleDependentName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.addStyleName = function(styleName) {};
+_UI.TabBar.prototype.addStyleName = function(styleName) {};
 
 /**
- * @param {(string|_Ui.Widget)} arg1
+ * @param {(string|_UI.Widget)} arg1
  * @param {boolean=} asHtml
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.addTab = function(arg1, asHtml) {};
+_UI.TabBar.prototype.addTab = function(arg1, asHtml) {};
 
 /**
  * @return {string}
  */
-_Ui.TabBar.prototype.getId = function() {};
+_UI.TabBar.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.TabBar.prototype.getTag = function() {};
+_UI.TabBar.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.TabBar.prototype.getType = function() {};
+_UI.TabBar.prototype.getType = function() {};
 
 /**
  * @param {number} index
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.selectTab = function(index) {};
+_UI.TabBar.prototype.selectTab = function(index) {};
 
 /**
  * @param {string} height
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setHeight = function(height) {};
+_UI.TabBar.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setId = function(id) {};
+_UI.TabBar.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setPixelSize = function(width, height) {};
+_UI.TabBar.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setSize = function(width, height) {};
+_UI.TabBar.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.TabBar.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setStyleAttributes = function(attributes) {};
+_UI.TabBar.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setStyleName = function(styleName) {};
+_UI.TabBar.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setStylePrimaryName = function(styleName) {};
+_UI.TabBar.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
  * @param {boolean} enabled
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setTabEnabled = function(index, enabled) {};
+_UI.TabBar.prototype.setTabEnabled = function(index, enabled) {};
 
 /**
  * @param {number} index
  * @param {string} text
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setTabText = function(index, text) {};
+_UI.TabBar.prototype.setTabText = function(index, text) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setTag = function(tag) {};
+_UI.TabBar.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setTitle = function(title) {};
+_UI.TabBar.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setVisible = function(visible) {};
+_UI.TabBar.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.TabBar.prototype.setWidth = function(width) {};
+_UI.TabBar.prototype.setWidth = function(width) {};
 
 /**
  * Class TabPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.TabPanel = function() {};
+_UI.TabPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @param {(string|_Ui.Widget)=} arg2
+ * @param {_UI.Widget} widget
+ * @param {(string|_UI.Widget)=} arg2
  * @param {boolean=} asHtml
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.add = function(widget, arg2, asHtml) {};
+_UI.TabPanel.prototype.add = function(widget, arg2, asHtml) {};
 
 /**
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.addSelectionHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.TabPanel}
- */
-_Ui.TabPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.TabPanel.prototype.addSelectionHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.addStyleName = function(styleName) {};
+_UI.TabPanel.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.TabPanel}
+ */
+_UI.TabPanel.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.TabPanel.prototype.getId = function() {};
+_UI.TabPanel.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.TabPanel.prototype.getTag = function() {};
+_UI.TabPanel.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.TabPanel.prototype.getType = function() {};
+_UI.TabPanel.prototype.getType = function() {};
 
 /**
  * @param {number} index
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.selectTab = function(index) {};
+_UI.TabPanel.prototype.selectTab = function(index) {};
 
 /**
  * @param {boolean} animationEnabled
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setAnimationEnabled = function(animationEnabled) {};
+_UI.TabPanel.prototype.setAnimationEnabled = function(animationEnabled) {};
 
 /**
  * @param {string} height
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setHeight = function(height) {};
+_UI.TabPanel.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setId = function(id) {};
+_UI.TabPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setPixelSize = function(width, height) {};
+_UI.TabPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setSize = function(width, height) {};
+_UI.TabPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.TabPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.TabPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setStyleName = function(styleName) {};
+_UI.TabPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.TabPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setTag = function(tag) {};
+_UI.TabPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setTitle = function(title) {};
+_UI.TabPanel.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setVisible = function(visible) {};
+_UI.TabPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.TabPanel.prototype.setWidth = function(width) {};
+_UI.TabPanel.prototype.setWidth = function(width) {};
 
 /**
  * Class TextArea
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.TextArea = function() {};
+_UI.TextArea = function() {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addBlurHandler = function(handler) {};
+_UI.TextArea.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addChangeHandler = function(handler) {};
+_UI.TextArea.prototype.addChangeHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addClickHandler = function(handler) {};
+_UI.TextArea.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addFocusHandler = function(handler) {};
+_UI.TextArea.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addKeyDownHandler = function(handler) {};
+_UI.TextArea.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addKeyPressHandler = function(handler) {};
+_UI.TextArea.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addKeyUpHandler = function(handler) {};
+_UI.TextArea.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addMouseDownHandler = function(handler) {};
+_UI.TextArea.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addMouseMoveHandler = function(handler) {};
+_UI.TextArea.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addMouseOutHandler = function(handler) {};
+_UI.TextArea.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addMouseOverHandler = function(handler) {};
+_UI.TextArea.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addMouseUpHandler = function(handler) {};
+_UI.TextArea.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.TextArea}
- */
-_Ui.TextArea.prototype.addStyleDependentName = function(styleName) {};
+_UI.TextArea.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addStyleName = function(styleName) {};
+_UI.TextArea.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.TextArea}
+ * @param {string} styleName
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.addValueChangeHandler = function(handler) {};
+_UI.TextArea.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.TextArea.prototype.getTag = function() {};
+_UI.TextArea.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.TextArea.prototype.getType = function() {};
+_UI.TextArea.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.TextArea.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.TextArea.prototype.getType = function() {};
 
 /**
  * @param {number} width
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setCharacterWidth = function(width) {};
+_UI.TextArea.prototype.setCharacterWidth = function(width) {};
 
 /**
  * @param {number} position
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setCursorPos = function(position) {};
+_UI.TextArea.prototype.setCursorPos = function(position) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setEnabled = function(enabled) {};
+_UI.TextArea.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setFocus = function(focus) {};
+_UI.TextArea.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setHeight = function(height) {};
+_UI.TextArea.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setId = function(id) {};
+_UI.TextArea.prototype.setId = function(id) {};
 
 /**
  * @param {string} name
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setName = function(name) {};
+_UI.TextArea.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setPixelSize = function(width, height) {};
+_UI.TextArea.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {boolean} readOnly
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setReadOnly = function(readOnly) {};
+_UI.TextArea.prototype.setReadOnly = function(readOnly) {};
 
 /**
  * @param {number} position
  * @param {number} length
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setSelectionRange = function(position, length) {};
+_UI.TextArea.prototype.setSelectionRange = function(position, length) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setSize = function(width, height) {};
+_UI.TextArea.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.TextArea.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setStyleAttributes = function(attributes) {};
+_UI.TextArea.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setStyleName = function(styleName) {};
+_UI.TextArea.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setStylePrimaryName = function(styleName) {};
+_UI.TextArea.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setTabIndex = function(index) {};
+_UI.TextArea.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setTag = function(tag) {};
+_UI.TextArea.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setText = function(text) {};
+_UI.TextArea.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setTitle = function(title) {};
+_UI.TextArea.prototype.setTitle = function(title) {};
 
 /**
  * @param {string} value
  * @param {boolean=} fireEvents
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setValue = function(value, fireEvents) {};
+_UI.TextArea.prototype.setValue = function(value, fireEvents) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setVisible = function(visible) {};
+_UI.TextArea.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} lines
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setVisibleLines = function(lines) {};
+_UI.TextArea.prototype.setVisibleLines = function(lines) {};
 
 /**
  * @param {string} width
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.TextArea.prototype.setWidth = function(width) {};
+_UI.TextArea.prototype.setWidth = function(width) {};
 
 /**
  * Class TextBox
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.TextBox = function() {};
+_UI.TextBox = function() {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addBlurHandler = function(handler) {};
+_UI.TextBox.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addChangeHandler = function(handler) {};
+_UI.TextBox.prototype.addChangeHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addClickHandler = function(handler) {};
+_UI.TextBox.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addFocusHandler = function(handler) {};
+_UI.TextBox.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addKeyDownHandler = function(handler) {};
+_UI.TextBox.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addKeyPressHandler = function(handler) {};
+_UI.TextBox.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addKeyUpHandler = function(handler) {};
+_UI.TextBox.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addMouseDownHandler = function(handler) {};
+_UI.TextBox.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addMouseMoveHandler = function(handler) {};
+_UI.TextBox.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addMouseOutHandler = function(handler) {};
+_UI.TextBox.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addMouseOverHandler = function(handler) {};
+_UI.TextBox.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addMouseUpHandler = function(handler) {};
+_UI.TextBox.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.TextBox}
- */
-_Ui.TextBox.prototype.addStyleDependentName = function(styleName) {};
+_UI.TextBox.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addStyleName = function(styleName) {};
+_UI.TextBox.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.TextBox}
+ * @param {string} styleName
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.addValueChangeHandler = function(handler) {};
+_UI.TextBox.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.TextBox.prototype.getTag = function() {};
+_UI.TextBox.prototype.addValueChangeHandler = function(handler) {};
 
 /**
  * @return {string}
  */
-_Ui.TextBox.prototype.getType = function() {};
+_UI.TextBox.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.TextBox.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.TextBox.prototype.getType = function() {};
 
 /**
  * @param {number} position
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setCursorPos = function(position) {};
+_UI.TextBox.prototype.setCursorPos = function(position) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setEnabled = function(enabled) {};
+_UI.TextBox.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setFocus = function(focus) {};
+_UI.TextBox.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setHeight = function(height) {};
+_UI.TextBox.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setId = function(id) {};
+_UI.TextBox.prototype.setId = function(id) {};
 
 /**
  * @param {number} length
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setMaxLength = function(length) {};
+_UI.TextBox.prototype.setMaxLength = function(length) {};
 
 /**
  * @param {string} name
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setName = function(name) {};
+_UI.TextBox.prototype.setName = function(name) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setPixelSize = function(width, height) {};
+_UI.TextBox.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {boolean} readOnly
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setReadOnly = function(readOnly) {};
+_UI.TextBox.prototype.setReadOnly = function(readOnly) {};
 
 /**
  * @param {number} position
  * @param {number} length
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setSelectionRange = function(position, length) {};
+_UI.TextBox.prototype.setSelectionRange = function(position, length) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setSize = function(width, height) {};
+_UI.TextBox.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.TextBox.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setStyleAttributes = function(attributes) {};
+_UI.TextBox.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setStyleName = function(styleName) {};
+_UI.TextBox.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setStylePrimaryName = function(styleName) {};
+_UI.TextBox.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setTabIndex = function(index) {};
+_UI.TextBox.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setTag = function(tag) {};
+_UI.TextBox.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setText = function(text) {};
+_UI.TextBox.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setTitle = function(title) {};
+_UI.TextBox.prototype.setTitle = function(title) {};
 
 /**
  * @param {string} value
  * @param {boolean=} fireEvents
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setValue = function(value, fireEvents) {};
+_UI.TextBox.prototype.setValue = function(value, fireEvents) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setVisible = function(visible) {};
+_UI.TextBox.prototype.setVisible = function(visible) {};
 
 /**
  * @param {number} length
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setVisibleLength = function(length) {};
+_UI.TextBox.prototype.setVisibleLength = function(length) {};
 
 /**
  * @param {string} width
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.TextBox.prototype.setWidth = function(width) {};
+_UI.TextBox.prototype.setWidth = function(width) {};
 
 /**
  * Class ToggleButton
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.ToggleButton = function() {};
+_UI.ToggleButton = function() {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addBlurHandler = function(handler) {};
+_UI.ToggleButton.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addClickHandler = function(handler) {};
+_UI.ToggleButton.prototype.addClickHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addFocusHandler = function(handler) {};
+_UI.ToggleButton.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addKeyDownHandler = function(handler) {};
+_UI.ToggleButton.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addKeyPressHandler = function(handler) {};
+_UI.ToggleButton.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addKeyUpHandler = function(handler) {};
+_UI.ToggleButton.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addMouseDownHandler = function(handler) {};
+_UI.ToggleButton.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addMouseMoveHandler = function(handler) {};
+_UI.ToggleButton.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addMouseOutHandler = function(handler) {};
+_UI.ToggleButton.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addMouseOverHandler = function(handler) {};
+_UI.ToggleButton.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addMouseUpHandler = function(handler) {};
+_UI.ToggleButton.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addMouseWheelHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.ToggleButton}
- */
-_Ui.ToggleButton.prototype.addStyleDependentName = function(styleName) {};
+_UI.ToggleButton.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.addStyleName = function(styleName) {};
+_UI.ToggleButton.prototype.addStyleDependentName = function(styleName) {};
+
+/**
+ * @param {string} styleName
+ * @return {_UI.ToggleButton}
+ */
+_UI.ToggleButton.prototype.addStyleName = function(styleName) {};
 
 /**
  * @return {string}
  */
-_Ui.ToggleButton.prototype.getId = function() {};
+_UI.ToggleButton.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ToggleButton.prototype.getTag = function() {};
+_UI.ToggleButton.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.ToggleButton.prototype.getType = function() {};
+_UI.ToggleButton.prototype.getType = function() {};
 
 /**
  * @param {boolean} down
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setDown = function(down) {};
+_UI.ToggleButton.prototype.setDown = function(down) {};
 
 /**
  * @param {boolean} enabled
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setEnabled = function(enabled) {};
+_UI.ToggleButton.prototype.setEnabled = function(enabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setFocus = function(focus) {};
+_UI.ToggleButton.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} html
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setHTML = function(html) {};
+_UI.ToggleButton.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setHeight = function(height) {};
+_UI.ToggleButton.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setId = function(id) {};
+_UI.ToggleButton.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setPixelSize = function(width, height) {};
+_UI.ToggleButton.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setSize = function(width, height) {};
+_UI.ToggleButton.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.ToggleButton.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setStyleAttributes = function(attributes) {};
+_UI.ToggleButton.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setStyleName = function(styleName) {};
+_UI.ToggleButton.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setStylePrimaryName = function(styleName) {};
+_UI.ToggleButton.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setTabIndex = function(index) {};
+_UI.ToggleButton.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setTag = function(tag) {};
+_UI.ToggleButton.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setText = function(text) {};
+_UI.ToggleButton.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setTitle = function(title) {};
+_UI.ToggleButton.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setVisible = function(visible) {};
+_UI.ToggleButton.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.ToggleButton}
+ * @return {_UI.ToggleButton}
  */
-_Ui.ToggleButton.prototype.setWidth = function(width) {};
+_UI.ToggleButton.prototype.setWidth = function(width) {};
 
 /**
  * Class Tree
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.Tree = function() {};
+_UI.Tree = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Tree}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.add = function(widget) {};
+_UI.Tree.prototype.add = function(widget) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addBlurHandler = function(handler) {};
+_UI.Tree.prototype.addBlurHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addCloseHandler = function(handler) {};
+_UI.Tree.prototype.addCloseHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addFocusHandler = function(handler) {};
+_UI.Tree.prototype.addFocusHandler = function(handler) {};
 
 /**
- * @param {(string|_Ui.TreeItem|_Ui.Widget)} arg1
- * @return {_Ui.Tree}
+ * @param {(string|_Ui.TreeItem|_UI.Widget)} arg1
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addItem = function(arg1) {};
+_UI.Tree.prototype.addItem = function(arg1) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addKeyDownHandler = function(handler) {};
+_UI.Tree.prototype.addKeyDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addKeyPressHandler = function(handler) {};
+_UI.Tree.prototype.addKeyPressHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addKeyUpHandler = function(handler) {};
+_UI.Tree.prototype.addKeyUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addMouseDownHandler = function(handler) {};
+_UI.Tree.prototype.addMouseDownHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addMouseMoveHandler = function(handler) {};
+_UI.Tree.prototype.addMouseMoveHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addMouseOutHandler = function(handler) {};
+_UI.Tree.prototype.addMouseOutHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addMouseOverHandler = function(handler) {};
+_UI.Tree.prototype.addMouseOverHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addMouseUpHandler = function(handler) {};
+_UI.Tree.prototype.addMouseUpHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addMouseWheelHandler = function(handler) {};
+_UI.Tree.prototype.addMouseWheelHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addOpenHandler = function(handler) {};
+_UI.Tree.prototype.addOpenHandler = function(handler) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addSelectionHandler = function(handler) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.Tree}
- */
-_Ui.Tree.prototype.addStyleDependentName = function(styleName) {};
+_UI.Tree.prototype.addSelectionHandler = function(handler) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.addStyleName = function(styleName) {};
+_UI.Tree.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.Tree}
+ * @param {string} styleName
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.clear = function() {};
+_UI.Tree.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.Tree.prototype.getTag = function() {};
+_UI.Tree.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Tree.prototype.getType = function() {};
+_UI.Tree.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.Tree.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.Tree.prototype.getType = function() {};
 
 /**
  * @param {boolean} animationEnabled
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setAnimationEnabled = function(animationEnabled) {};
+_UI.Tree.prototype.setAnimationEnabled = function(animationEnabled) {};
 
 /**
  * @param {boolean} focus
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setFocus = function(focus) {};
+_UI.Tree.prototype.setFocus = function(focus) {};
 
 /**
  * @param {string} height
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setHeight = function(height) {};
+_UI.Tree.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setId = function(id) {};
+_UI.Tree.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setPixelSize = function(width, height) {};
+_UI.Tree.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {_Ui.TreeItem} item
  * @param {boolean=} fireEvents
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setSelectedItem = function(item, fireEvents) {};
+_UI.Tree.prototype.setSelectedItem = function(item, fireEvents) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setSize = function(width, height) {};
+_UI.Tree.prototype.setSize = function(width, height) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.Tree.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setStyleAttributes = function(attributes) {};
+_UI.Tree.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setStyleName = function(styleName) {};
+_UI.Tree.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setStylePrimaryName = function(styleName) {};
+_UI.Tree.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {number} index
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setTabIndex = function(index) {};
+_UI.Tree.prototype.setTabIndex = function(index) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setTag = function(tag) {};
+_UI.Tree.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setTitle = function(title) {};
+_UI.Tree.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setVisible = function(visible) {};
+_UI.Tree.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.Tree.prototype.setWidth = function(width) {};
+_UI.Tree.prototype.setWidth = function(width) {};
 
 /**
  * Class TreeItem
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.TreeItem = function() {};
+_UI.TreeItem = function() {};
 
 /**
- * @param {(string|_Ui.TreeItem|_Ui.Widget)} arg1
- * @return {_Ui.TreeItem}
+ * @param {(string|_Ui.TreeItem|_UI.Widget)} arg1
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.addItem = function(arg1) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.TreeItem}
- */
-_Ui.TreeItem.prototype.addStyleDependentName = function(styleName) {};
+_UI.TreeItem.prototype.addItem = function(arg1) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.addStyleName = function(styleName) {};
+_UI.TreeItem.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.TreeItem}
+ * @param {string} styleName
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.clear = function() {};
+_UI.TreeItem.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.TreeItem.prototype.getTag = function() {};
+_UI.TreeItem.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.TreeItem.prototype.getType = function() {};
+_UI.TreeItem.prototype.getId = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.TreeItem.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.TreeItem.prototype.getType = function() {};
 
 /**
  * @param {string} html
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setHTML = function(html) {};
+_UI.TreeItem.prototype.setHTML = function(html) {};
 
 /**
  * @param {string} height
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setHeight = function(height) {};
+_UI.TreeItem.prototype.setHeight = function(height) {};
 
 /**
  * @param {string} id
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setId = function(id) {};
+_UI.TreeItem.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setPixelSize = function(width, height) {};
+_UI.TreeItem.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {boolean} selected
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setSelected = function(selected) {};
+_UI.TreeItem.prototype.setSelected = function(selected) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setSize = function(width, height) {};
+_UI.TreeItem.prototype.setSize = function(width, height) {};
 
 /**
  * @param {boolean} open
  * @param {boolean=} fireEvents
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setState = function(open, fireEvents) {};
+_UI.TreeItem.prototype.setState = function(open, fireEvents) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.TreeItem.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setStyleAttributes = function(attributes) {};
+_UI.TreeItem.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setStyleName = function(styleName) {};
+_UI.TreeItem.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setStylePrimaryName = function(styleName) {};
+_UI.TreeItem.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setTag = function(tag) {};
+_UI.TreeItem.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} text
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setText = function(text) {};
+_UI.TreeItem.prototype.setText = function(text) {};
 
 /**
  * @param {string} title
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setTitle = function(title) {};
+_UI.TreeItem.prototype.setTitle = function(title) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setVisible = function(visible) {};
+_UI.TreeItem.prototype.setVisible = function(visible) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.TreeItem}
+ * @param {_UI.Widget} widget
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setWidget = function(widget) {};
+_UI.TreeItem.prototype.setWidget = function(widget) {};
 
 /**
  * @param {string} width
- * @return {_Ui.TreeItem}
+ * @return {_UI.TreeItem}
  */
-_Ui.TreeItem.prototype.setWidth = function(width) {};
+_UI.TreeItem.prototype.setWidth = function(width) {};
 
 /**
  * Class UiInstance
- * Last updated April 21, 2013.
  * @constructor
  */
-_Ui.UiInstance = function() {};
+_UI.UiInstance = function() {};
 
 /**
- * @param {_Ui.Widget} child
- * @return {_Ui.UiInstance}
+ * @param {_UI.Widget} child
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.add = function(child) {};
+_UI.UiInstance.prototype.add = function(child) {};
 
 /**
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.close = function() {};
+_UI.UiInstance.prototype.close = function() {};
 
 /**
- * @return {_Ui.AbsolutePanel}
+ * @return {_UI.AbsolutePanel}
  */
-_Ui.UiInstance.prototype.createAbsolutePanel = function() {};
+_UI.UiInstance.prototype.createAbsolutePanel = function() {};
 
 /**
  * @param {string} text
  * @param {(boolean|string)} arg2
  * @param {string=} href
- * @return {_Ui.Anchor}
+ * @return {_UI.Anchor}
  */
-_Ui.UiInstance.prototype.createAnchor = function(text, arg2, href) {};
+_UI.UiInstance.prototype.createAnchor = function(text, arg2, href) {};
 
 /**
  * @param {string=} html
- * @param {_Ui.Handler=} clickHandler
- * @return {_Ui.Button}
+ * @param {_UI.Handler=} clickHandler
+ * @return {_UI.Button}
  */
-_Ui.UiInstance.prototype.createButton = function(html, clickHandler) {};
+_UI.UiInstance.prototype.createButton = function(html, clickHandler) {};
 
 /**
  * @param {string=} caption
  * @param {boolean=} asHtml
- * @return {_Ui.CaptionPanel}
+ * @return {_UI.CaptionPanel}
  */
-_Ui.UiInstance.prototype.createCaptionPanel = function(caption, asHtml) {};
+_UI.UiInstance.prototype.createCaptionPanel = function(caption, asHtml) {};
 
 /**
  * @param {string=} label
  * @param {boolean=} asHtml
- * @return {_Ui.CheckBox}
+ * @return {_UI.CheckBox}
  */
-_Ui.UiInstance.prototype.createCheckBox = function(label, asHtml) {};
+_UI.UiInstance.prototype.createCheckBox = function(label, asHtml) {};
 
 /**
- * @return {_Ui.ClientHandler}
+ * @return {_UI.ClientHandler}
  */
-_Ui.UiInstance.prototype.createClientHandler = function() {};
+_UI.UiInstance.prototype.createClientHandler = function() {};
 
 /**
- * @return {_Ui.DateBox}
+ * @return {_UI.DateBox}
  */
-_Ui.UiInstance.prototype.createDateBox = function() {};
+_UI.UiInstance.prototype.createDateBox = function() {};
 
 /**
- * @return {_Ui.DatePicker}
+ * @return {_UI.DatePicker}
  */
-_Ui.UiInstance.prototype.createDatePicker = function() {};
+_UI.UiInstance.prototype.createDatePicker = function() {};
 
 /**
- * @return {_Ui.DecoratedStackPanel}
+ * @return {_UI.DecoratedStackPanel}
  */
-_Ui.UiInstance.prototype.createDecoratedStackPanel = function() {};
+_UI.UiInstance.prototype.createDecoratedStackPanel = function() {};
 
 /**
- * @return {_Ui.DecoratedTabBar}
+ * @return {_UI.DecoratedTabBar}
  */
-_Ui.UiInstance.prototype.createDecoratedTabBar = function() {};
+_UI.UiInstance.prototype.createDecoratedTabBar = function() {};
 
 /**
- * @return {_Ui.DecoratedTabPanel}
+ * @return {_UI.DecoratedTabPanel}
  */
-_Ui.UiInstance.prototype.createDecoratedTabPanel = function() {};
+_UI.UiInstance.prototype.createDecoratedTabPanel = function() {};
 
 /**
- * @return {_Ui.DecoratorPanel}
+ * @return {_UI.DecoratorPanel}
  */
-_Ui.UiInstance.prototype.createDecoratorPanel = function() {};
+_UI.UiInstance.prototype.createDecoratorPanel = function() {};
 
 /**
  * @param {boolean=} autoHide
  * @param {boolean=} modal
- * @return {_Ui.DialogBox}
+ * @return {_UI.DialogBox}
  */
-_Ui.UiInstance.prototype.createDialogBox = function(autoHide, modal) {};
+_UI.UiInstance.prototype.createDialogBox = function(autoHide, modal) {};
 
 /**
- * @return {_Ui.DocsListDialog}
+ * @return {_UI.DocsListDialog}
  */
-_Ui.UiInstance.prototype.createDocsListDialog = function() {};
+_UI.UiInstance.prototype.createDocsListDialog = function() {};
 
 /**
- * @return {_Ui.FileUpload}
+ * @return {_UI.FileUpload}
  */
-_Ui.UiInstance.prototype.createFileUpload = function() {};
+_UI.UiInstance.prototype.createFileUpload = function() {};
 
 /**
- * @return {_Ui.FlexTable}
+ * @return {_UI.FlexTable}
  */
-_Ui.UiInstance.prototype.createFlexTable = function() {};
+_UI.UiInstance.prototype.createFlexTable = function() {};
 
 /**
- * @return {_Ui.FlowPanel}
+ * @return {_UI.FlowPanel}
  */
-_Ui.UiInstance.prototype.createFlowPanel = function() {};
+_UI.UiInstance.prototype.createFlowPanel = function() {};
 
 /**
- * @param {_Ui.Widget=} child
- * @return {_Ui.FocusPanel}
+ * @param {_UI.Widget=} child
+ * @return {_UI.FocusPanel}
  */
-_Ui.UiInstance.prototype.createFocusPanel = function(child) {};
+_UI.UiInstance.prototype.createFocusPanel = function(child) {};
 
 /**
- * @return {_Ui.FormPanel}
+ * @return {_UI.FormPanel}
  */
-_Ui.UiInstance.prototype.createFormPanel = function() {};
+_UI.UiInstance.prototype.createFormPanel = function() {};
 
 /**
  * @param {number=} rows
  * @param {number=} columns
- * @return {_Ui.Grid}
+ * @return {_UI.Grid}
  */
-_Ui.UiInstance.prototype.createGrid = function(rows, columns) {};
+_UI.UiInstance.prototype.createGrid = function(rows, columns) {};
 
 /**
  * @param {string=} html
  * @param {boolean=} wordWrap
- * @return {_Ui.HTML}
+ * @return {_UI.HTML}
  */
-_Ui.UiInstance.prototype.createHTML = function(html, wordWrap) {};
+_UI.UiInstance.prototype.createHTML = function(html, wordWrap) {};
 
 /**
  * @param {string=} name
  * @param {string=} value
- * @return {_Ui.Hidden}
+ * @return {_UI.Hidden}
  */
-_Ui.UiInstance.prototype.createHidden = function(name, value) {};
+_UI.UiInstance.prototype.createHidden = function(name, value) {};
 
 /**
- * @return {_Ui.HorizontalPanel}
+ * @return {_UI.HorizontalPanel}
  */
-_Ui.UiInstance.prototype.createHorizontalPanel = function() {};
+_UI.UiInstance.prototype.createHorizontalPanel = function() {};
 
 /**
  * @param {string=} url
@@ -28815,1064 +28614,1053 @@ _Ui.UiInstance.prototype.createHorizontalPanel = function() {};
  * @param {number=} top
  * @param {number=} width
  * @param {number=} height
- * @return {_Ui.Image}
+ * @return {_UI.Image}
  */
-_Ui.UiInstance.prototype.createImage = function(url, left, top, width, height) {};
+_UI.UiInstance.prototype.createImage = function(url, left, top, width, height) {};
 
 /**
  * @param {string=} text
- * @return {_Ui.InlineLabel}
+ * @return {_UI.InlineLabel}
  */
-_Ui.UiInstance.prototype.createInlineLabel = function(text) {};
+_UI.UiInstance.prototype.createInlineLabel = function(text) {};
 
 /**
  * @param {string=} text
  * @param {boolean=} wordWrap
- * @return {_Ui.Label}
+ * @return {_UI.Label}
  */
-_Ui.UiInstance.prototype.createLabel = function(text, wordWrap) {};
+_UI.UiInstance.prototype.createLabel = function(text, wordWrap) {};
 
 /**
  * @param {boolean=} isMultipleSelect
- * @return {_Ui.ListBox}
+ * @return {_UI.ListBox}
  */
-_Ui.UiInstance.prototype.createListBox = function(isMultipleSelect) {};
+_UI.UiInstance.prototype.createListBox = function(isMultipleSelect) {};
 
 /**
  * @param {boolean=} vertical
- * @return {_Ui.MenuBar}
+ * @return {_UI.MenuBar}
  */
-_Ui.UiInstance.prototype.createMenuBar = function(vertical) {};
+_UI.UiInstance.prototype.createMenuBar = function(vertical) {};
 
 /**
  * @param {string} text
- * @param {(boolean|_Ui.Handler)} arg2
- * @param {_Ui.Handler=} command
- * @return {_Ui.MenuItem}
+ * @param {(boolean|_UI.Handler)} arg2
+ * @param {_UI.Handler=} command
+ * @return {_UI.MenuItem}
  */
-_Ui.UiInstance.prototype.createMenuItem = function(text, arg2, command) {};
+_UI.UiInstance.prototype.createMenuItem = function(text, arg2, command) {};
 
 /**
- * @return {_Ui.MenuItemSeparator}
+ * @return {_UI.MenuItemSeparator}
  */
-_Ui.UiInstance.prototype.createMenuItemSeparator = function() {};
+_UI.UiInstance.prototype.createMenuItemSeparator = function() {};
 
 /**
- * @return {_Ui.PasswordTextBox}
+ * @return {_UI.PasswordTextBox}
  */
-_Ui.UiInstance.prototype.createPasswordTextBox = function() {};
+_UI.UiInstance.prototype.createPasswordTextBox = function() {};
 
 /**
  * @param {boolean=} autoHide
  * @param {boolean=} modal
- * @return {_Ui.PopupPanel}
+ * @return {_UI.PopupPanel}
  */
-_Ui.UiInstance.prototype.createPopupPanel = function(autoHide, modal) {};
+_UI.UiInstance.prototype.createPopupPanel = function(autoHide, modal) {};
 
 /**
  * @param {string=} upText
- * @param {(_Ui.Handler|string)=} arg2
- * @param {_Ui.Handler=} clickHandler
- * @return {_Ui.PushButton}
+ * @param {(_UI.Handler|string)=} arg2
+ * @param {_UI.Handler=} clickHandler
+ * @return {_UI.PushButton}
  */
-_Ui.UiInstance.prototype.createPushButton = function(upText, arg2, clickHandler) {};
+_UI.UiInstance.prototype.createPushButton = function(upText, arg2, clickHandler) {};
 
 /**
  * @param {string} name
  * @param {string=} label
  * @param {boolean=} asHtml
- * @return {_Ui.RadioButton}
+ * @return {_UI.RadioButton}
  */
-_Ui.UiInstance.prototype.createRadioButton = function(name, label, asHtml) {};
+_UI.UiInstance.prototype.createRadioButton = function(name, label, asHtml) {};
 
 /**
  * @param {string=} html
- * @param {_Ui.Handler=} clickHandler
- * @return {_Ui.ResetButton}
+ * @param {_UI.Handler=} clickHandler
+ * @return {_UI.ResetButton}
  */
-_Ui.UiInstance.prototype.createResetButton = function(html, clickHandler) {};
+_UI.UiInstance.prototype.createResetButton = function(html, clickHandler) {};
 
 /**
- * @param {_Ui.Widget=} child
- * @return {_Ui.ScrollPanel}
+ * @param {_UI.Widget=} child
+ * @return {_UI.ScrollPanel}
  */
-_Ui.UiInstance.prototype.createScrollPanel = function(child) {};
+_UI.UiInstance.prototype.createScrollPanel = function(child) {};
 
 /**
  * @param {string=} functionName
- * @return {_Ui.ServerHandler}
+ * @return {_UI.ServerHandler}
  */
-_Ui.UiInstance.prototype.createServerHandler = function(functionName) {};
+_UI.UiInstance.prototype.createServerHandler = function(functionName) {};
 
 /**
- * @return {_Ui.SimpleCheckBox}
+ * @return {_UI.SimpleCheckBox}
  */
-_Ui.UiInstance.prototype.createSimpleCheckBox = function() {};
+_UI.UiInstance.prototype.createSimpleCheckBox = function() {};
 
 /**
- * @return {_Ui.SimplePanel}
+ * @return {_UI.SimplePanel}
  */
-_Ui.UiInstance.prototype.createSimplePanel = function() {};
+_UI.UiInstance.prototype.createSimplePanel = function() {};
 
 /**
  * @param {string} name
- * @return {_Ui.SimpleRadioButton}
+ * @return {_UI.SimpleRadioButton}
  */
-_Ui.UiInstance.prototype.createSimpleRadioButton = function(name) {};
+_UI.UiInstance.prototype.createSimpleRadioButton = function(name) {};
 
 /**
- * @return {_Ui.SplitLayoutPanel}
+ * @return {_UI.SplitLayoutPanel}
  */
-_Ui.UiInstance.prototype.createSplitLayoutPanel = function() {};
+_UI.UiInstance.prototype.createSplitLayoutPanel = function() {};
 
 /**
- * @return {_Ui.StackPanel}
+ * @return {_UI.StackPanel}
  */
-_Ui.UiInstance.prototype.createStackPanel = function() {};
+_UI.UiInstance.prototype.createStackPanel = function() {};
 
 /**
  * @param {string=} html
- * @return {_Ui.SubmitButton}
+ * @return {_UI.SubmitButton}
  */
-_Ui.UiInstance.prototype.createSubmitButton = function(html) {};
+_UI.UiInstance.prototype.createSubmitButton = function(html) {};
 
 /**
- * @return {_Ui.TabBar}
+ * @return {_UI.TabBar}
  */
-_Ui.UiInstance.prototype.createTabBar = function() {};
+_UI.UiInstance.prototype.createTabBar = function() {};
 
 /**
- * @return {_Ui.TabPanel}
+ * @return {_UI.TabPanel}
  */
-_Ui.UiInstance.prototype.createTabPanel = function() {};
+_UI.UiInstance.prototype.createTabPanel = function() {};
 
 /**
- * @return {_Ui.TextArea}
+ * @return {_UI.TextArea}
  */
-_Ui.UiInstance.prototype.createTextArea = function() {};
+_UI.UiInstance.prototype.createTextArea = function() {};
 
 /**
- * @return {_Ui.TextBox}
+ * @return {_UI.TextBox}
  */
-_Ui.UiInstance.prototype.createTextBox = function() {};
+_UI.UiInstance.prototype.createTextBox = function() {};
 
 /**
  * @param {string=} upText
- * @param {(_Ui.Handler|string)=} arg2
- * @return {_Ui.ToggleButton}
+ * @param {(_UI.Handler|string)=} arg2
+ * @return {_UI.ToggleButton}
  */
-_Ui.UiInstance.prototype.createToggleButton = function(upText, arg2) {};
+_UI.UiInstance.prototype.createToggleButton = function(upText, arg2) {};
 
 /**
- * @return {_Ui.Tree}
+ * @return {_UI.Tree}
  */
-_Ui.UiInstance.prototype.createTree = function() {};
+_UI.UiInstance.prototype.createTree = function() {};
 
 /**
- * @param {(string|_Ui.Widget)=} arg1
- * @return {_Ui.TreeItem}
+ * @param {(string|_UI.Widget)=} arg1
+ * @return {_UI.TreeItem}
  */
-_Ui.UiInstance.prototype.createTreeItem = function(arg1) {};
+_UI.UiInstance.prototype.createTreeItem = function(arg1) {};
 
 /**
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.UiInstance.prototype.createVerticalPanel = function() {};
+_UI.UiInstance.prototype.createVerticalPanel = function() {};
 
 /**
  * @param {string} id
- * @return {_Ui.Component}
+ * @return {_UI.Component}
  */
-_Ui.UiInstance.prototype.getElementById = function(id) {};
+_UI.UiInstance.prototype.getElementById = function(id) {};
 
 /**
  * @return {string}
  */
-_Ui.UiInstance.prototype.getId = function() {};
+_UI.UiInstance.prototype.getId = function() {};
 
 /**
  * @return {boolean}
  */
-_Ui.UiInstance.prototype.isStandardsMode = function() {};
+_UI.UiInstance.prototype.isStandardsMode = function() {};
 
 /**
  * @param {string} componentName
  * @param {Object=} optAdvancedArgs
- * @return {_Ui.Component}
+ * @return {_UI.Component}
  */
-_Ui.UiInstance.prototype.loadComponent = function(componentName, optAdvancedArgs) {};
+_UI.UiInstance.prototype.loadComponent = function(componentName, optAdvancedArgs) {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.UiInstance}
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.remove = function(arg1) {};
+_UI.UiInstance.prototype.remove = function(arg1) {};
 
 /**
  * @param {number} height
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.setHeight = function(height) {};
+_UI.UiInstance.prototype.setHeight = function(height) {};
 
 /**
  * @param {boolean} standardsMode
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.setStandardsMode = function(standardsMode) {};
+_UI.UiInstance.prototype.setStandardsMode = function(standardsMode) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.UiInstance.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {string} title
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.setTitle = function(title) {};
+_UI.UiInstance.prototype.setTitle = function(title) {};
 
 /**
  * @param {number} width
- * @return {_Ui.UiInstance}
+ * @return {_UI.UiInstance}
  */
-_Ui.UiInstance.prototype.setWidth = function(width) {};
+_UI.UiInstance.prototype.setWidth = function(width) {};
 
 /**
  * Class VerticalPanel
- * Last updated August 28, 2013.
  * @constructor
  */
-_Ui.VerticalPanel = function() {};
+_UI.VerticalPanel = function() {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.VerticalPanel}
+ * @param {_UI.Widget} widget
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.add = function(widget) {};
-
-/**
- * @param {string} styleName
- * @return {_Ui.VerticalPanel}
- */
-_Ui.VerticalPanel.prototype.addStyleDependentName = function(styleName) {};
+_UI.VerticalPanel.prototype.add = function(widget) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.addStyleName = function(styleName) {};
+_UI.VerticalPanel.prototype.addStyleDependentName = function(styleName) {};
 
 /**
- * @return {_Ui.VerticalPanel}
+ * @param {string} styleName
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.clear = function() {};
+_UI.VerticalPanel.prototype.addStyleName = function(styleName) {};
 
 /**
- * @return {string}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.getId = function() {};
-
-/**
- * @return {string}
- */
-_Ui.VerticalPanel.prototype.getTag = function() {};
+_UI.VerticalPanel.prototype.clear = function() {};
 
 /**
  * @return {string}
  */
-_Ui.VerticalPanel.prototype.getType = function() {};
+_UI.VerticalPanel.prototype.getId = function() {};
 
 /**
- * @param {(number|_Ui.Widget)} arg1
- * @return {_Ui.VerticalPanel}
+ * @return {string}
  */
-_Ui.VerticalPanel.prototype.remove = function(arg1) {};
+_UI.VerticalPanel.prototype.getTag = function() {};
+
+/**
+ * @return {string}
+ */
+_UI.VerticalPanel.prototype.getType = function() {};
+
+/**
+ * @param {(number|_UI.Widget)} arg1
+ * @return {_UI.VerticalPanel}
+ */
+_UI.VerticalPanel.prototype.remove = function(arg1) {};
 
 /**
  * @param {number} width
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setBorderWidth = function(width) {};
+_UI.VerticalPanel.prototype.setBorderWidth = function(width) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} height
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setCellHeight = function(widget, height) {};
+_UI.VerticalPanel.prototype.setCellHeight = function(widget, height) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.VerticalPanel}
+ * @param {_UI.Widget} widget
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setCellHorizontalAlignment = function(widget, horizontalAlignment) {};
+_UI.VerticalPanel.prototype.setCellHorizontalAlignment = function(widget, horizontalAlignment) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @param {_Ui.VerticalAlignment} verticalAlignment
- * @return {_Ui.VerticalPanel}
+ * @param {_UI.Widget} widget
+ * @param {_UI.VerticalAlignment} verticalAlignment
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setCellVerticalAlignment = function(widget, verticalAlignment) {};
+_UI.VerticalPanel.prototype.setCellVerticalAlignment = function(widget, verticalAlignment) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} width
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setCellWidth = function(widget, width) {};
+_UI.VerticalPanel.prototype.setCellWidth = function(widget, width) {};
 
 /**
  * @param {string} height
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setHeight = function(height) {};
+_UI.VerticalPanel.prototype.setHeight = function(height) {};
 
 /**
- * @param {_Ui.HorizontalAlignment} horizontalAlignment
- * @return {_Ui.VerticalPanel}
+ * @param {_UI.HorizontalAlignment} horizontalAlignment
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
+_UI.VerticalPanel.prototype.setHorizontalAlignment = function(horizontalAlignment) {};
 
 /**
  * @param {string} id
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setId = function(id) {};
+_UI.VerticalPanel.prototype.setId = function(id) {};
 
 /**
  * @param {number} width
  * @param {number} height
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setPixelSize = function(width, height) {};
+_UI.VerticalPanel.prototype.setPixelSize = function(width, height) {};
 
 /**
  * @param {string} width
  * @param {string} height
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setSize = function(width, height) {};
+_UI.VerticalPanel.prototype.setSize = function(width, height) {};
 
 /**
  * @param {number} spacing
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setSpacing = function(spacing) {};
+_UI.VerticalPanel.prototype.setSpacing = function(spacing) {};
 
 /**
  * @param {string} attribute
  * @param {string} value
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setStyleAttribute = function(attribute, value) {};
+_UI.VerticalPanel.prototype.setStyleAttribute = function(attribute, value) {};
 
 /**
  * @param {Object} attributes
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setStyleAttributes = function(attributes) {};
+_UI.VerticalPanel.prototype.setStyleAttributes = function(attributes) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setStyleName = function(styleName) {};
+_UI.VerticalPanel.prototype.setStyleName = function(styleName) {};
 
 /**
  * @param {string} styleName
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setStylePrimaryName = function(styleName) {};
+_UI.VerticalPanel.prototype.setStylePrimaryName = function(styleName) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setTag = function(tag) {};
+_UI.VerticalPanel.prototype.setTag = function(tag) {};
 
 /**
  * @param {string} title
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setTitle = function(title) {};
+_UI.VerticalPanel.prototype.setTitle = function(title) {};
 
 /**
- * @param {_Ui.VerticalAlignment} verticalAlignment
- * @return {_Ui.VerticalPanel}
+ * @param {_UI.VerticalAlignment} verticalAlignment
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setVerticalAlignment = function(verticalAlignment) {};
+_UI.VerticalPanel.prototype.setVerticalAlignment = function(verticalAlignment) {};
 
 /**
  * @param {boolean} visible
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setVisible = function(visible) {};
+_UI.VerticalPanel.prototype.setVisible = function(visible) {};
 
 /**
  * @param {string} width
- * @return {_Ui.VerticalPanel}
+ * @return {_UI.VerticalPanel}
  */
-_Ui.VerticalPanel.prototype.setWidth = function(width) {};
+_UI.VerticalPanel.prototype.setWidth = function(width) {};
 
 /**
  * Interface Component
- * Last updated June 27, 2013.
  * @constructor
  */
-_Ui.Component = function() {};
+_UI.Component = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Component.prototype.getId = function() {};
+_UI.Component.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Component.prototype.getType = function() {};
+_UI.Component.prototype.getType = function() {};
 
 /**
  * Interface Handler
- * Last updated June 27, 2013.
  * @constructor
  */
-_Ui.Handler = function() {};
+_UI.Handler = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Handler.prototype.getId = function() {};
+_UI.Handler.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Handler.prototype.getTag = function() {};
+_UI.Handler.prototype.getTag = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Handler.prototype.getType = function() {};
+_UI.Handler.prototype.getType = function() {};
 
 /**
  * @param {string} id
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.setId = function(id) {};
+_UI.Handler.prototype.setId = function(id) {};
 
 /**
  * @param {string} tag
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.setTag = function(tag) {};
+_UI.Handler.prototype.setTag = function(tag) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Handler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateEmail = function(widget) {};
+_UI.Handler.prototype.validateEmail = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Handler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateInteger = function(widget) {};
+_UI.Handler.prototype.validateInteger = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateLength = function(widget, min, max) {};
+_UI.Handler.prototype.validateLength = function(widget, min, max) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} pattern
  * @param {string=} flags
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateMatches = function(widget, pattern, flags) {};
+_UI.Handler.prototype.validateMatches = function(widget, pattern, flags) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Handler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotEmail = function(widget) {};
+_UI.Handler.prototype.validateNotEmail = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Handler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotInteger = function(widget) {};
+_UI.Handler.prototype.validateNotInteger = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotLength = function(widget, min, max) {};
+_UI.Handler.prototype.validateNotLength = function(widget, min, max) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {string} pattern
  * @param {string=} flags
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotMatches = function(widget, pattern, flags) {};
+_UI.Handler.prototype.validateNotMatches = function(widget, pattern, flags) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Handler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotNumber = function(widget) {};
+_UI.Handler.prototype.validateNotNumber = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {Array.<string>} options
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotOptions = function(widget, options) {};
+_UI.Handler.prototype.validateNotOptions = function(widget, options) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotRange = function(widget, min, max) {};
+_UI.Handler.prototype.validateNotRange = function(widget, min, max) {};
 
 /**
- * @param {Array.<_Ui.Widget>} widgets
+ * @param {Array.<_UI.Widget>} widgets
  * @param {number} sum
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNotSum = function(widgets, sum) {};
+_UI.Handler.prototype.validateNotSum = function(widgets, sum) {};
 
 /**
- * @param {_Ui.Widget} widget
- * @return {_Ui.Handler}
+ * @param {_UI.Widget} widget
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateNumber = function(widget) {};
+_UI.Handler.prototype.validateNumber = function(widget) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {Array.<string>} options
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateOptions = function(widget, options) {};
+_UI.Handler.prototype.validateOptions = function(widget, options) {};
 
 /**
- * @param {_Ui.Widget} widget
+ * @param {_UI.Widget} widget
  * @param {number} min
  * @param {number} max
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateRange = function(widget, min, max) {};
+_UI.Handler.prototype.validateRange = function(widget, min, max) {};
 
 /**
- * @param {Array.<_Ui.Widget>} widgets
+ * @param {Array.<_UI.Widget>} widgets
  * @param {number} sum
- * @return {_Ui.Handler}
+ * @return {_UI.Handler}
  */
-_Ui.Handler.prototype.validateSum = function(widgets, sum) {};
+_UI.Handler.prototype.validateSum = function(widgets, sum) {};
 
 /**
  * Interface Widget
- * Last updated June 27, 2013.
  * @constructor
  */
-_Ui.Widget = function() {};
+_UI.Widget = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Widget.prototype.getId = function() {};
+_UI.Widget.prototype.getId = function() {};
 
 /**
  * @return {string}
  */
-_Ui.Widget.prototype.getType = function() {};
+_UI.Widget.prototype.getType = function() {};
 
 /**
  * Enum DateTimeFormat
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.DateTimeFormat = function() {};
+_UI.DateTimeFormat = function() {};
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.ISO_8601;
+_UI.DateTimeFormat.prototype.ISO_8601;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.RFC_2822;
+_UI.DateTimeFormat.prototype.RFC_2822;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_FULL;
+_UI.DateTimeFormat.prototype.DATE_FULL;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_LONG;
+_UI.DateTimeFormat.prototype.DATE_LONG;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_MEDIUM;
+_UI.DateTimeFormat.prototype.DATE_MEDIUM;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_SHORT;
+_UI.DateTimeFormat.prototype.DATE_SHORT;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.TIME_FULL;
+_UI.DateTimeFormat.prototype.TIME_FULL;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.TIME_LONG;
+_UI.DateTimeFormat.prototype.TIME_LONG;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.TIME_MEDIUM;
+_UI.DateTimeFormat.prototype.TIME_MEDIUM;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.TIME_SHORT;
+_UI.DateTimeFormat.prototype.TIME_SHORT;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_TIME_FULL;
+_UI.DateTimeFormat.prototype.DATE_TIME_FULL;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_TIME_LONG;
+_UI.DateTimeFormat.prototype.DATE_TIME_LONG;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_TIME_MEDIUM;
+_UI.DateTimeFormat.prototype.DATE_TIME_MEDIUM;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DATE_TIME_SHORT;
+_UI.DateTimeFormat.prototype.DATE_TIME_SHORT;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.DAY;
+_UI.DateTimeFormat.prototype.DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.HOUR_MINUTE;
+_UI.DateTimeFormat.prototype.HOUR_MINUTE;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.HOUR_MINUTE_SECOND;
+_UI.DateTimeFormat.prototype.HOUR_MINUTE_SECOND;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.HOUR24_MINUTE;
+_UI.DateTimeFormat.prototype.HOUR24_MINUTE;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.HOUR24_MINUTE_SECOND;
+_UI.DateTimeFormat.prototype.HOUR24_MINUTE_SECOND;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MINUTE_SECOND;
+_UI.DateTimeFormat.prototype.MINUTE_SECOND;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MONTH;
+_UI.DateTimeFormat.prototype.MONTH;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MONTH_ABBR;
+_UI.DateTimeFormat.prototype.MONTH_ABBR;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MONTH_ABBR_DAY;
+_UI.DateTimeFormat.prototype.MONTH_ABBR_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MONTH_DAY;
+_UI.DateTimeFormat.prototype.MONTH_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MONTH_NUM_DAY;
+_UI.DateTimeFormat.prototype.MONTH_NUM_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.MONTH_WEEKDAY_DAY;
+_UI.DateTimeFormat.prototype.MONTH_WEEKDAY_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR;
+_UI.DateTimeFormat.prototype.YEAR;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH;
+_UI.DateTimeFormat.prototype.YEAR_MONTH;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH_ABBR;
+_UI.DateTimeFormat.prototype.YEAR_MONTH_ABBR;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH_ABBR_DAY;
+_UI.DateTimeFormat.prototype.YEAR_MONTH_ABBR_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH_DAY;
+_UI.DateTimeFormat.prototype.YEAR_MONTH_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH_NUM;
+_UI.DateTimeFormat.prototype.YEAR_MONTH_NUM;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH_NUM_DAY;
+_UI.DateTimeFormat.prototype.YEAR_MONTH_NUM_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_MONTH_WEEKDAY_DAY;
+_UI.DateTimeFormat.prototype.YEAR_MONTH_WEEKDAY_DAY;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_QUARTER;
+_UI.DateTimeFormat.prototype.YEAR_QUARTER;
 
 /**
- * @type {_Ui.DateTimeFormat}
+ * @type {_UI.DateTimeFormat}
  */
-_Ui.DateTimeFormat.prototype.YEAR_QUARTER_ABBR;
+_UI.DateTimeFormat.prototype.YEAR_QUARTER_ABBR;
 
 /**
  * Enum FileType
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.FileType = function() {};
+_UI.FileType = function() {};
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.ALL;
+_UI.FileType.prototype.ALL;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.ALL_DOCS;
+_UI.FileType.prototype.ALL_DOCS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.DRAWINGS;
+_UI.FileType.prototype.DRAWINGS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.DOCUMENTS;
+_UI.FileType.prototype.DOCUMENTS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.SPREADSHEETS;
+_UI.FileType.prototype.SPREADSHEETS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.FOLDERS;
+_UI.FileType.prototype.FOLDERS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.RECENTLY_PICKED;
+_UI.FileType.prototype.RECENTLY_PICKED;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.PRESENTATIONS;
+_UI.FileType.prototype.PRESENTATIONS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.FORMS;
+_UI.FileType.prototype.FORMS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.PHOTOS;
+_UI.FileType.prototype.PHOTOS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.PHOTO_ALBUMS;
+_UI.FileType.prototype.PHOTO_ALBUMS;
 
 /**
- * @type {_Ui.FileType}
+ * @type {_UI.FileType}
  */
-_Ui.FileType.prototype.PDFS;
+_UI.FileType.prototype.PDFS;
 
 /**
  * Enum HorizontalAlignment
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.HorizontalAlignment = function() {};
+_UI.HorizontalAlignment = function() {};
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.LEFT;
+_UI.HorizontalAlignment.prototype.LEFT;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.RIGHT;
+_UI.HorizontalAlignment.prototype.RIGHT;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.CENTER;
+_UI.HorizontalAlignment.prototype.CENTER;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.DEFAULT;
+_UI.HorizontalAlignment.prototype.DEFAULT;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.JUSTIFY;
+_UI.HorizontalAlignment.prototype.JUSTIFY;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.LOCALE_START;
+_UI.HorizontalAlignment.prototype.LOCALE_START;
 
 /**
- * @type {_Ui.HorizontalAlignment}
+ * @type {_UI.HorizontalAlignment}
  */
-_Ui.HorizontalAlignment.prototype.LOCALE_END;
+_UI.HorizontalAlignment.prototype.LOCALE_END;
 
 /**
  * Enum VerticalAlignment
- * Last updated March 26, 2013.
  * @constructor
  */
-_Ui.VerticalAlignment = function() {};
+_UI.VerticalAlignment = function() {};
 
 /**
- * @type {_Ui.VerticalAlignment}
+ * @type {_UI.VerticalAlignment}
  */
-_Ui.VerticalAlignment.prototype.TOP;
+_UI.VerticalAlignment.prototype.TOP;
 
 /**
- * @type {_Ui.VerticalAlignment}
+ * @type {_UI.VerticalAlignment}
  */
-_Ui.VerticalAlignment.prototype.MIDDLE;
+_UI.VerticalAlignment.prototype.MIDDLE;
 
 /**
- * @type {_Ui.VerticalAlignment}
+ * @type {_UI.VerticalAlignment}
  */
-_Ui.VerticalAlignment.prototype.BOTTOM;
+_UI.VerticalAlignment.prototype.BOTTOM;
 
 
 /**
- * _UrlFetch Services
+ * _URL_Fetch Services
  */
-var _UrlFetch = {};
+var _URL_Fetch = {};
 
 /**
  * Class UrlFetchApp
- * Last updated August 28, 2013.
  * @constructor
  */
-_UrlFetch.UrlFetchApp = function() {};
+_URL_Fetch.UrlFetchApp = function() {};
 
 /**
  * @param {string} serviceName
- * @return {_UrlFetch.OAuthConfig}
+ * @return {_URL_Fetch.OAuthConfig}
  */
-_UrlFetch.UrlFetchApp.prototype.addOAuthService = function(serviceName) {};
+_URL_Fetch.UrlFetchApp.prototype.addOAuthService = function(serviceName) {};
 
 /**
  * @param {string=} url
- * @return {_UrlFetch.HTTPResponse}
+ * @return {_URL_Fetch.HTTPResponse}
  */
-_UrlFetch.UrlFetchApp.prototype.fetch = function(url) {};
+_URL_Fetch.UrlFetchApp.prototype.fetch = function(url) {};
 
 /**
  * @param {string} url
  * @param {Object=} params
  * @return {Object}
  */
-_UrlFetch.UrlFetchApp.prototype.getRequest = function(url, params) {};
+_URL_Fetch.UrlFetchApp.prototype.getRequest = function(url, params) {};
 
 /**
  * @param {string} serviceName
  */
-_UrlFetch.UrlFetchApp.prototype.removeOAuthService = function(serviceName) {};
+_URL_Fetch.UrlFetchApp.prototype.removeOAuthService = function(serviceName) {};
 
 
 /**
- * @type {_UrlFetch.UrlFetchApp}
+ * @type {_URL_Fetch.UrlFetchApp}
  */
-var UrlFetchApp;
+var UrlFetchApp = new _URL_Fetch.UrlFetchApp();
 
 /**
  * Class HTTPResponse
- * Last updated July 11, 2013.
  * @constructor
  */
-_UrlFetch.HTTPResponse = function() {};
+_URL_Fetch.HTTPResponse = function() {};
 
 /**
  * @return {Object}
  */
-_UrlFetch.HTTPResponse.prototype.getAllHeaders = function() {};
+_URL_Fetch.HTTPResponse.prototype.getAllHeaders = function() {};
 
 /**
  * @param {string} contentType
  * @return {_Base.Blob}
  */
-_UrlFetch.HTTPResponse.prototype.getAs = function(contentType) {};
+_URL_Fetch.HTTPResponse.prototype.getAs = function(contentType) {};
 
 /**
  * @return {_Base.Blob}
  */
-_UrlFetch.HTTPResponse.prototype.getBlob = function() {};
+_URL_Fetch.HTTPResponse.prototype.getBlob = function() {};
 
 /**
  * @return {Array.<number>}
  */
-_UrlFetch.HTTPResponse.prototype.getContent = function() {};
+_URL_Fetch.HTTPResponse.prototype.getContent = function() {};
 
 /**
  * @param {string=} charset
  * @return {string}
  */
-_UrlFetch.HTTPResponse.prototype.getContentText = function(charset) {};
+_URL_Fetch.HTTPResponse.prototype.getContentText = function(charset) {};
 
 /**
  * @return {Object}
  */
-_UrlFetch.HTTPResponse.prototype.getHeaders = function() {};
+_URL_Fetch.HTTPResponse.prototype.getHeaders = function() {};
 
 /**
  * @return {number}
  */
-_UrlFetch.HTTPResponse.prototype.getResponseCode = function() {};
+_URL_Fetch.HTTPResponse.prototype.getResponseCode = function() {};
 
 /**
  * Class OAuthConfig
- * Last updated March 26, 2013.
  * @constructor
  */
-_UrlFetch.OAuthConfig = function() {};
+_URL_Fetch.OAuthConfig = function() {};
 
 /**
  * @return {string}
  */
-_UrlFetch.OAuthConfig.prototype.getAccessTokenUrl = function() {};
+_URL_Fetch.OAuthConfig.prototype.getAccessTokenUrl = function() {};
 
 /**
  * @return {string}
  */
-_UrlFetch.OAuthConfig.prototype.getAuthorizationUrl = function() {};
+_URL_Fetch.OAuthConfig.prototype.getAuthorizationUrl = function() {};
 
 /**
  * @return {string}
  */
-_UrlFetch.OAuthConfig.prototype.getMethod = function() {};
+_URL_Fetch.OAuthConfig.prototype.getMethod = function() {};
 
 /**
  * @return {string}
  */
-_UrlFetch.OAuthConfig.prototype.getParamLocation = function() {};
+_URL_Fetch.OAuthConfig.prototype.getParamLocation = function() {};
 
 /**
  * @return {string}
  */
-_UrlFetch.OAuthConfig.prototype.getRequestTokenUrl = function() {};
+_URL_Fetch.OAuthConfig.prototype.getRequestTokenUrl = function() {};
 
 /**
  * @return {string}
  */
-_UrlFetch.OAuthConfig.prototype.getServiceName = function() {};
+_URL_Fetch.OAuthConfig.prototype.getServiceName = function() {};
 
 /**
  * @param {string} url
  */
-_UrlFetch.OAuthConfig.prototype.setAccessTokenUrl = function(url) {};
+_URL_Fetch.OAuthConfig.prototype.setAccessTokenUrl = function(url) {};
 
 /**
  * @param {string} url
  */
-_UrlFetch.OAuthConfig.prototype.setAuthorizationUrl = function(url) {};
+_URL_Fetch.OAuthConfig.prototype.setAuthorizationUrl = function(url) {};
 
 /**
  * @param {string} consumerKey
  */
-_UrlFetch.OAuthConfig.prototype.setConsumerKey = function(consumerKey) {};
+_URL_Fetch.OAuthConfig.prototype.setConsumerKey = function(consumerKey) {};
 
 /**
  * @param {string} consumerSecret
  */
-_UrlFetch.OAuthConfig.prototype.setConsumerSecret = function(consumerSecret) {};
+_URL_Fetch.OAuthConfig.prototype.setConsumerSecret = function(consumerSecret) {};
 
 /**
  * @param {string} method
  */
-_UrlFetch.OAuthConfig.prototype.setMethod = function(method) {};
+_URL_Fetch.OAuthConfig.prototype.setMethod = function(method) {};
 
 /**
  * @param {string} location
  */
-_UrlFetch.OAuthConfig.prototype.setParamLocation = function(location) {};
+_URL_Fetch.OAuthConfig.prototype.setParamLocation = function(location) {};
 
 /**
  * @param {string} url
  */
-_UrlFetch.OAuthConfig.prototype.setRequestTokenUrl = function(url) {};
+_URL_Fetch.OAuthConfig.prototype.setRequestTokenUrl = function(url) {};
 
 
 /**
@@ -29882,7 +29670,6 @@ var _Utilities = {};
 
 /**
  * Class Utilities
- * Last updated June 27, 2013.
  * @constructor
  */
 _Utilities.Utilities = function() {};
@@ -30005,11 +29792,10 @@ _Utilities.Utilities.prototype.zip = function(blobs, name) {};
 /**
  * @type {_Utilities.Utilities}
  */
-var Utilities;
+var Utilities = new _Utilities.Utilities();
 
 /**
  * Enum Charset
- * Last updated March 26, 2013.
  * @constructor
  */
 _Utilities.Charset = function() {};
@@ -30026,7 +29812,6 @@ _Utilities.Charset.prototype.UTF_8;
 
 /**
  * Enum DigestAlgorithm
- * Last updated March 26, 2013.
  * @constructor
  */
 _Utilities.DigestAlgorithm = function() {};
@@ -30063,7 +29848,6 @@ _Utilities.DigestAlgorithm.prototype.SHA_512;
 
 /**
  * Enum MacAlgorithm
- * Last updated March 26, 2013.
  * @constructor
  */
 _Utilities.MacAlgorithm = function() {};
@@ -30095,811 +29879,797 @@ _Utilities.MacAlgorithm.prototype.HMAC_SHA_512;
 
 
 /**
- * _Xml Services
+ * _XML Services
  */
-var _Xml = {};
+var _XML = {};
 
 /**
  * Class XmlService
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.XmlService = function() {};
+_XML.XmlService = function() {};
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.XmlService.prototype.ContentTypes;
-
-/**
- * @param {string} text
- * @return {_Xml.Cdata}
- */
-_Xml.XmlService.prototype.createCdata = function(text) {};
+_XML.XmlService.prototype.ContentTypes;
 
 /**
  * @param {string} text
- * @return {_Xml.Comment}
+ * @return {_XML.Cdata}
  */
-_Xml.XmlService.prototype.createComment = function(text) {};
+_XML.XmlService.prototype.createCdata = function(text) {};
+
+/**
+ * @param {string} text
+ * @return {_XML.Comment}
+ */
+_XML.XmlService.prototype.createComment = function(text) {};
 
 /**
  * @param {string} elementName
  * @param {string=} arg2
  * @param {string=} systemId
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.XmlService.prototype.createDocType = function(elementName, arg2, systemId) {};
+_XML.XmlService.prototype.createDocType = function(elementName, arg2, systemId) {};
 
 /**
- * @param {_Xml.Element=} rootElement
- * @return {_Xml.Document}
+ * @param {_XML.Element=} rootElement
+ * @return {_XML.Document}
  */
-_Xml.XmlService.prototype.createDocument = function(rootElement) {};
+_XML.XmlService.prototype.createDocument = function(rootElement) {};
 
 /**
  * @param {string} name
- * @param {_Xml.Namespace=} namespace
- * @return {_Xml.Element}
+ * @param {_XML.Namespace=} namespace
+ * @return {_XML.Element}
  */
-_Xml.XmlService.prototype.createElement = function(name, namespace) {};
+_XML.XmlService.prototype.createElement = function(name, namespace) {};
 
 /**
  * @param {string} text
- * @return {_Xml.Text}
+ * @return {_XML.Text}
  */
-_Xml.XmlService.prototype.createText = function(text) {};
+_XML.XmlService.prototype.createText = function(text) {};
 
 /**
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.XmlService.prototype.getCompactFormat = function() {};
+_XML.XmlService.prototype.getCompactFormat = function() {};
 
 /**
  * @param {string} arg1
  * @param {string=} uri
- * @return {_Xml.Namespace}
+ * @return {_XML.Namespace}
  */
-_Xml.XmlService.prototype.getNamespace = function(arg1, uri) {};
+_XML.XmlService.prototype.getNamespace = function(arg1, uri) {};
 
 /**
- * @return {_Xml.Namespace}
+ * @return {_XML.Namespace}
  */
-_Xml.XmlService.prototype.getNoNamespace = function() {};
+_XML.XmlService.prototype.getNoNamespace = function() {};
 
 /**
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.XmlService.prototype.getPrettyFormat = function() {};
+_XML.XmlService.prototype.getPrettyFormat = function() {};
 
 /**
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.XmlService.prototype.getRawFormat = function() {};
+_XML.XmlService.prototype.getRawFormat = function() {};
 
 /**
- * @return {_Xml.Namespace}
+ * @return {_XML.Namespace}
  */
-_Xml.XmlService.prototype.getXmlNamespace = function() {};
+_XML.XmlService.prototype.getXmlNamespace = function() {};
 
 /**
  * @param {string} xml
- * @return {_Xml.Document}
+ * @return {_XML.Document}
  */
-_Xml.XmlService.prototype.parse = function(xml) {};
+_XML.XmlService.prototype.parse = function(xml) {};
 
 
 /**
- * @type {_Xml.XmlService}
+ * @type {_XML.XmlService}
  */
-var XmlService;
+var XmlService = new _XML.XmlService();
 
 /**
  * Class Attribute
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Attribute = function() {};
+_XML.Attribute = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Attribute.prototype.getName = function() {};
+_XML.Attribute.prototype.getName = function() {};
 
 /**
- * @return {_Xml.Namespace}
+ * @return {_XML.Namespace}
  */
-_Xml.Attribute.prototype.getNamespace = function() {};
+_XML.Attribute.prototype.getNamespace = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Attribute.prototype.getValue = function() {};
+_XML.Attribute.prototype.getValue = function() {};
 
 /**
  * @param {string} name
- * @return {_Xml.Attribute}
+ * @return {_XML.Attribute}
  */
-_Xml.Attribute.prototype.setName = function(name) {};
+_XML.Attribute.prototype.setName = function(name) {};
 
 /**
- * @param {_Xml.Namespace} namespace
- * @return {_Xml.Attribute}
+ * @param {_XML.Namespace} namespace
+ * @return {_XML.Attribute}
  */
-_Xml.Attribute.prototype.setNamespace = function(namespace) {};
+_XML.Attribute.prototype.setNamespace = function(namespace) {};
 
 /**
  * @param {string} value
- * @return {_Xml.Attribute}
+ * @return {_XML.Attribute}
  */
-_Xml.Attribute.prototype.setValue = function(value) {};
+_XML.Attribute.prototype.setValue = function(value) {};
 
 /**
  * Class Cdata
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Cdata = function() {};
+_XML.Cdata = function() {};
 
 /**
  * @param {string} text
- * @return {_Xml.Text}
+ * @return {_XML.Text}
  */
-_Xml.Cdata.prototype.append = function(text) {};
+_XML.Cdata.prototype.append = function(text) {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Cdata.prototype.detach = function() {};
+_XML.Cdata.prototype.detach = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Cdata.prototype.getParentElement = function() {};
+_XML.Cdata.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Cdata.prototype.getText = function() {};
+_XML.Cdata.prototype.getText = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Cdata.prototype.getValue = function() {};
+_XML.Cdata.prototype.getValue = function() {};
 
 /**
  * @param {string} text
- * @return {_Xml.Text}
+ * @return {_XML.Text}
  */
-_Xml.Cdata.prototype.setText = function(text) {};
+_XML.Cdata.prototype.setText = function(text) {};
 
 /**
  * Class Comment
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Comment = function() {};
+_XML.Comment = function() {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Comment.prototype.detach = function() {};
+_XML.Comment.prototype.detach = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Comment.prototype.getParentElement = function() {};
-
-/**
- * @return {string}
- */
-_Xml.Comment.prototype.getText = function() {};
+_XML.Comment.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Comment.prototype.getValue = function() {};
+_XML.Comment.prototype.getText = function() {};
+
+/**
+ * @return {string}
+ */
+_XML.Comment.prototype.getValue = function() {};
 
 /**
  * @param {string} text
- * @return {_Xml.Comment}
+ * @return {_XML.Comment}
  */
-_Xml.Comment.prototype.setText = function(text) {};
+_XML.Comment.prototype.setText = function(text) {};
 
 /**
  * Class DocType
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.DocType = function() {};
+_XML.DocType = function() {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.DocType.prototype.detach = function() {};
-
-/**
- * @return {string}
- */
-_Xml.DocType.prototype.getElementName = function() {};
+_XML.DocType.prototype.detach = function() {};
 
 /**
  * @return {string}
  */
-_Xml.DocType.prototype.getInternalSubset = function() {};
-
-/**
- * @return {_Xml.Element}
- */
-_Xml.DocType.prototype.getParentElement = function() {};
+_XML.DocType.prototype.getElementName = function() {};
 
 /**
  * @return {string}
  */
-_Xml.DocType.prototype.getPublicId = function() {};
+_XML.DocType.prototype.getInternalSubset = function() {};
+
+/**
+ * @return {_XML.Element}
+ */
+_XML.DocType.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.DocType.prototype.getSystemId = function() {};
+_XML.DocType.prototype.getPublicId = function() {};
 
 /**
  * @return {string}
  */
-_Xml.DocType.prototype.getValue = function() {};
+_XML.DocType.prototype.getSystemId = function() {};
+
+/**
+ * @return {string}
+ */
+_XML.DocType.prototype.getValue = function() {};
 
 /**
  * @param {string} name
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.DocType.prototype.setElementName = function(name) {};
+_XML.DocType.prototype.setElementName = function(name) {};
 
 /**
  * @param {string} data
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.DocType.prototype.setInternalSubset = function(data) {};
+_XML.DocType.prototype.setInternalSubset = function(data) {};
 
 /**
  * @param {string} id
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.DocType.prototype.setPublicId = function(id) {};
+_XML.DocType.prototype.setPublicId = function(id) {};
 
 /**
  * @param {string} id
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.DocType.prototype.setSystemId = function(id) {};
+_XML.DocType.prototype.setSystemId = function(id) {};
 
 /**
  * Class Document
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Document = function() {};
+_XML.Document = function() {};
 
 /**
- * @param {(_Xml.Content|number)} arg1
- * @param {_Xml.Content=} content
- * @return {_Xml.Document}
+ * @param {(_XML.Content|number)} arg1
+ * @param {_XML.Content=} content
+ * @return {_XML.Document}
  */
-_Xml.Document.prototype.addContent = function(arg1, content) {};
+_XML.Document.prototype.addContent = function(arg1, content) {};
 
 /**
- * @return {Array.<_Xml.Content>}
+ * @return {Array.<_XML.Content>}
  */
-_Xml.Document.prototype.cloneContent = function() {};
+_XML.Document.prototype.cloneContent = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Document.prototype.detachRootElement = function() {};
+_XML.Document.prototype.detachRootElement = function() {};
 
 /**
- * @return {Array.<_Xml.Content>}
+ * @return {Array.<_XML.Content>}
  */
-_Xml.Document.prototype.getAllContent = function() {};
+_XML.Document.prototype.getAllContent = function() {};
 
 /**
  * @param {number} index
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Document.prototype.getContent = function(index) {};
+_XML.Document.prototype.getContent = function(index) {};
 
 /**
  * @return {number}
  */
-_Xml.Document.prototype.getContentSize = function() {};
+_XML.Document.prototype.getContentSize = function() {};
 
 /**
- * @return {Array.<_Xml.Content>}
+ * @return {Array.<_XML.Content>}
  */
-_Xml.Document.prototype.getDescendants = function() {};
+_XML.Document.prototype.getDescendants = function() {};
 
 /**
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.Document.prototype.getDocType = function() {};
+_XML.Document.prototype.getDocType = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Document.prototype.getRootElement = function() {};
+_XML.Document.prototype.getRootElement = function() {};
 
 /**
  * @return {boolean}
  */
-_Xml.Document.prototype.hasRootElement = function() {};
+_XML.Document.prototype.hasRootElement = function() {};
 
 /**
- * @param {(_Xml.Content|number)=} arg1
- * @return {(Array.<_Xml.Content>|boolean|_Xml.Content)}
+ * @param {(_XML.Content|number)=} arg1
+ * @return {(Array.<_XML.Content>|boolean|_XML.Content)}
  */
-_Xml.Document.prototype.removeContent = function(arg1) {};
+_XML.Document.prototype.removeContent = function(arg1) {};
 
 /**
- * @param {_Xml.DocType} docType
- * @return {_Xml.Document}
+ * @param {_XML.DocType} docType
+ * @return {_XML.Document}
  */
-_Xml.Document.prototype.setDocType = function(docType) {};
+_XML.Document.prototype.setDocType = function(docType) {};
 
 /**
- * @param {_Xml.Element} element
- * @return {_Xml.Document}
+ * @param {_XML.Element} element
+ * @return {_XML.Document}
  */
-_Xml.Document.prototype.setRootElement = function(element) {};
+_XML.Document.prototype.setRootElement = function(element) {};
 
 /**
  * Class Element
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Element = function() {};
+_XML.Element = function() {};
 
 /**
- * @param {(_Xml.Content|number)} arg1
- * @param {_Xml.Content=} content
- * @return {_Xml.Element}
+ * @param {(_XML.Content|number)} arg1
+ * @param {_XML.Content=} content
+ * @return {_XML.Element}
  */
-_Xml.Element.prototype.addContent = function(arg1, content) {};
+_XML.Element.prototype.addContent = function(arg1, content) {};
 
 /**
- * @return {Array.<_Xml.Content>}
+ * @return {Array.<_XML.Content>}
  */
-_Xml.Element.prototype.cloneContent = function() {};
+_XML.Element.prototype.cloneContent = function() {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Element.prototype.detach = function() {};
+_XML.Element.prototype.detach = function() {};
 
 /**
- * @return {Array.<_Xml.Content>}
+ * @return {Array.<_XML.Content>}
  */
-_Xml.Element.prototype.getAllContent = function() {};
+_XML.Element.prototype.getAllContent = function() {};
 
 /**
  * @param {string} name
- * @param {_Xml.Namespace=} namespace
- * @return {_Xml.Attribute}
+ * @param {_XML.Namespace=} namespace
+ * @return {_XML.Attribute}
  */
-_Xml.Element.prototype.getAttribute = function(name, namespace) {};
+_XML.Element.prototype.getAttribute = function(name, namespace) {};
 
 /**
- * @return {Array.<_Xml.Attribute>}
+ * @return {Array.<_XML.Attribute>}
  */
-_Xml.Element.prototype.getAttributes = function() {};
-
-/**
- * @param {string} name
- * @param {_Xml.Namespace=} namespace
- * @return {_Xml.Element}
- */
-_Xml.Element.prototype.getChild = function(name, namespace) {};
+_XML.Element.prototype.getAttributes = function() {};
 
 /**
  * @param {string} name
- * @param {_Xml.Namespace=} namespace
+ * @param {_XML.Namespace=} namespace
+ * @return {_XML.Element}
+ */
+_XML.Element.prototype.getChild = function(name, namespace) {};
+
+/**
+ * @param {string} name
+ * @param {_XML.Namespace=} namespace
  * @return {string}
  */
-_Xml.Element.prototype.getChildText = function(name, namespace) {};
+_XML.Element.prototype.getChildText = function(name, namespace) {};
 
 /**
  * @param {string=} name
- * @param {_Xml.Namespace=} namespace
- * @return {Array.<_Xml.Element>}
+ * @param {_XML.Namespace=} namespace
+ * @return {Array.<_XML.Element>}
  */
-_Xml.Element.prototype.getChildren = function(name, namespace) {};
+_XML.Element.prototype.getChildren = function(name, namespace) {};
 
 /**
  * @param {number} index
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Element.prototype.getContent = function(index) {};
+_XML.Element.prototype.getContent = function(index) {};
 
 /**
  * @return {number}
  */
-_Xml.Element.prototype.getContentSize = function() {};
+_XML.Element.prototype.getContentSize = function() {};
 
 /**
- * @return {Array.<_Xml.Content>}
+ * @return {Array.<_XML.Content>}
  */
-_Xml.Element.prototype.getDescendants = function() {};
+_XML.Element.prototype.getDescendants = function() {};
 
 /**
- * @return {_Xml.Document}
+ * @return {_XML.Document}
  */
-_Xml.Element.prototype.getDocument = function() {};
+_XML.Element.prototype.getDocument = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Element.prototype.getName = function() {};
+_XML.Element.prototype.getName = function() {};
 
 /**
  * @param {string=} prefix
- * @return {_Xml.Namespace}
+ * @return {_XML.Namespace}
  */
-_Xml.Element.prototype.getNamespace = function(prefix) {};
+_XML.Element.prototype.getNamespace = function(prefix) {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Element.prototype.getParentElement = function() {};
-
-/**
- * @return {string}
- */
-_Xml.Element.prototype.getQualifiedName = function() {};
+_XML.Element.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Element.prototype.getText = function() {};
+_XML.Element.prototype.getQualifiedName = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Element.prototype.getValue = function() {};
+_XML.Element.prototype.getText = function() {};
 
 /**
- * @param {_Xml.Element} other
+ * @return {string}
+ */
+_XML.Element.prototype.getValue = function() {};
+
+/**
+ * @param {_XML.Element} other
  * @return {boolean}
  */
-_Xml.Element.prototype.isAncestorOf = function(other) {};
+_XML.Element.prototype.isAncestorOf = function(other) {};
 
 /**
  * @return {boolean}
  */
-_Xml.Element.prototype.isRootElement = function() {};
+_XML.Element.prototype.isRootElement = function() {};
 
 /**
- * @param {(_Xml.Attribute|string)} arg1
- * @param {_Xml.Namespace=} namespace
+ * @param {(_XML.Attribute|string)} arg1
+ * @param {_XML.Namespace=} namespace
  * @return {boolean}
  */
-_Xml.Element.prototype.removeAttribute = function(arg1, namespace) {};
+_XML.Element.prototype.removeAttribute = function(arg1, namespace) {};
 
 /**
- * @param {(_Xml.Content|number)=} arg1
- * @return {(Array.<_Xml.Content>|boolean|_Xml.Content)}
+ * @param {(_XML.Content|number)=} arg1
+ * @return {(Array.<_XML.Content>|boolean|_XML.Content)}
  */
-_Xml.Element.prototype.removeContent = function(arg1) {};
+_XML.Element.prototype.removeContent = function(arg1) {};
 
 /**
- * @param {(_Xml.Attribute|string)} arg1
+ * @param {(_XML.Attribute|string)} arg1
  * @param {string=} value
- * @param {_Xml.Namespace=} namespace
- * @return {_Xml.Element}
+ * @param {_XML.Namespace=} namespace
+ * @return {_XML.Element}
  */
-_Xml.Element.prototype.setAttribute = function(arg1, value, namespace) {};
+_XML.Element.prototype.setAttribute = function(arg1, value, namespace) {};
 
 /**
  * @param {string} name
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Element.prototype.setName = function(name) {};
+_XML.Element.prototype.setName = function(name) {};
 
 /**
- * @param {_Xml.Namespace} namespace
- * @return {_Xml.Element}
+ * @param {_XML.Namespace} namespace
+ * @return {_XML.Element}
  */
-_Xml.Element.prototype.setNamespace = function(namespace) {};
+_XML.Element.prototype.setNamespace = function(namespace) {};
 
 /**
  * @param {string} text
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Element.prototype.setText = function(text) {};
+_XML.Element.prototype.setText = function(text) {};
 
 /**
  * Class EntityRef
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.EntityRef = function() {};
+_XML.EntityRef = function() {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.EntityRef.prototype.detach = function() {};
-
-/**
- * @return {string}
- */
-_Xml.EntityRef.prototype.getName = function() {};
-
-/**
- * @return {_Xml.Element}
- */
-_Xml.EntityRef.prototype.getParentElement = function() {};
+_XML.EntityRef.prototype.detach = function() {};
 
 /**
  * @return {string}
  */
-_Xml.EntityRef.prototype.getPublicId = function() {};
+_XML.EntityRef.prototype.getName = function() {};
+
+/**
+ * @return {_XML.Element}
+ */
+_XML.EntityRef.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.EntityRef.prototype.getSystemId = function() {};
+_XML.EntityRef.prototype.getPublicId = function() {};
 
 /**
  * @return {string}
  */
-_Xml.EntityRef.prototype.getValue = function() {};
+_XML.EntityRef.prototype.getSystemId = function() {};
+
+/**
+ * @return {string}
+ */
+_XML.EntityRef.prototype.getValue = function() {};
 
 /**
  * @param {string} name
- * @return {_Xml.EntityRef}
+ * @return {_XML.EntityRef}
  */
-_Xml.EntityRef.prototype.setName = function(name) {};
+_XML.EntityRef.prototype.setName = function(name) {};
 
 /**
  * @param {string} id
- * @return {_Xml.EntityRef}
+ * @return {_XML.EntityRef}
  */
-_Xml.EntityRef.prototype.setPublicId = function(id) {};
+_XML.EntityRef.prototype.setPublicId = function(id) {};
 
 /**
  * @param {string} id
- * @return {_Xml.EntityRef}
+ * @return {_XML.EntityRef}
  */
-_Xml.EntityRef.prototype.setSystemId = function(id) {};
+_XML.EntityRef.prototype.setSystemId = function(id) {};
 
 /**
  * Class Format
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Format = function() {};
+_XML.Format = function() {};
 
 /**
- * @param {(_Xml.Document|_Xml.Element)} arg1
+ * @param {(_XML.Document|_XML.Element)} arg1
  * @return {string}
  */
-_Xml.Format.prototype.format = function(arg1) {};
+_XML.Format.prototype.format = function(arg1) {};
 
 /**
  * @param {string} encoding
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.Format.prototype.setEncoding = function(encoding) {};
+_XML.Format.prototype.setEncoding = function(encoding) {};
 
 /**
  * @param {string} indent
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.Format.prototype.setIndent = function(indent) {};
+_XML.Format.prototype.setIndent = function(indent) {};
 
 /**
  * @param {string} separator
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.Format.prototype.setLineSeparator = function(separator) {};
+_XML.Format.prototype.setLineSeparator = function(separator) {};
 
 /**
  * @param {boolean} omitDeclaration
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.Format.prototype.setOmitDeclaration = function(omitDeclaration) {};
+_XML.Format.prototype.setOmitDeclaration = function(omitDeclaration) {};
 
 /**
  * @param {boolean} omitEncoding
- * @return {_Xml.Format}
+ * @return {_XML.Format}
  */
-_Xml.Format.prototype.setOmitEncoding = function(omitEncoding) {};
+_XML.Format.prototype.setOmitEncoding = function(omitEncoding) {};
 
 /**
  * Class Namespace
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Namespace = function() {};
+_XML.Namespace = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Namespace.prototype.getPrefix = function() {};
+_XML.Namespace.prototype.getPrefix = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Namespace.prototype.getURI = function() {};
+_XML.Namespace.prototype.getURI = function() {};
 
 /**
  * Class ProcessingInstruction
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.ProcessingInstruction = function() {};
+_XML.ProcessingInstruction = function() {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.ProcessingInstruction.prototype.detach = function() {};
-
-/**
- * @return {string}
- */
-_Xml.ProcessingInstruction.prototype.getData = function() {};
-
-/**
- * @return {_Xml.Element}
- */
-_Xml.ProcessingInstruction.prototype.getParentElement = function() {};
+_XML.ProcessingInstruction.prototype.detach = function() {};
 
 /**
  * @return {string}
  */
-_Xml.ProcessingInstruction.prototype.getTarget = function() {};
+_XML.ProcessingInstruction.prototype.getData = function() {};
+
+/**
+ * @return {_XML.Element}
+ */
+_XML.ProcessingInstruction.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.ProcessingInstruction.prototype.getValue = function() {};
+_XML.ProcessingInstruction.prototype.getTarget = function() {};
+
+/**
+ * @return {string}
+ */
+_XML.ProcessingInstruction.prototype.getValue = function() {};
 
 /**
  * Class Text
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Text = function() {};
+_XML.Text = function() {};
 
 /**
  * @param {string} text
- * @return {_Xml.Text}
+ * @return {_XML.Text}
  */
-_Xml.Text.prototype.append = function(text) {};
+_XML.Text.prototype.append = function(text) {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Text.prototype.detach = function() {};
+_XML.Text.prototype.detach = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Text.prototype.getParentElement = function() {};
+_XML.Text.prototype.getParentElement = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Text.prototype.getText = function() {};
+_XML.Text.prototype.getText = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Text.prototype.getValue = function() {};
+_XML.Text.prototype.getValue = function() {};
 
 /**
  * @param {string} text
- * @return {_Xml.Text}
+ * @return {_XML.Text}
  */
-_Xml.Text.prototype.setText = function(text) {};
+_XML.Text.prototype.setText = function(text) {};
 
 /**
  * Interface Content
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.Content = function() {};
+_XML.Content = function() {};
 
 /**
- * @return {_Xml.Cdata}
+ * @return {_XML.Cdata}
  */
-_Xml.Content.prototype.asCdata = function() {};
+_XML.Content.prototype.asCdata = function() {};
 
 /**
- * @return {_Xml.Comment}
+ * @return {_XML.Comment}
  */
-_Xml.Content.prototype.asComment = function() {};
+_XML.Content.prototype.asComment = function() {};
 
 /**
- * @return {_Xml.DocType}
+ * @return {_XML.DocType}
  */
-_Xml.Content.prototype.asDocType = function() {};
+_XML.Content.prototype.asDocType = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Content.prototype.asElement = function() {};
+_XML.Content.prototype.asElement = function() {};
 
 /**
- * @return {_Xml.EntityRef}
+ * @return {_XML.EntityRef}
  */
-_Xml.Content.prototype.asEntityRef = function() {};
+_XML.Content.prototype.asEntityRef = function() {};
 
 /**
- * @return {_Xml.ProcessingInstruction}
+ * @return {_XML.ProcessingInstruction}
  */
-_Xml.Content.prototype.asProcessingInstruction = function() {};
+_XML.Content.prototype.asProcessingInstruction = function() {};
 
 /**
- * @return {_Xml.Text}
+ * @return {_XML.Text}
  */
-_Xml.Content.prototype.asText = function() {};
+_XML.Content.prototype.asText = function() {};
 
 /**
- * @return {_Xml.Content}
+ * @return {_XML.Content}
  */
-_Xml.Content.prototype.detach = function() {};
+_XML.Content.prototype.detach = function() {};
 
 /**
- * @return {_Xml.Element}
+ * @return {_XML.Element}
  */
-_Xml.Content.prototype.getParentElement = function() {};
+_XML.Content.prototype.getParentElement = function() {};
 
 /**
- * @return {_Xml.ContentType}
+ * @return {_XML.ContentType}
  */
-_Xml.Content.prototype.getType = function() {};
+_XML.Content.prototype.getType = function() {};
 
 /**
  * @return {string}
  */
-_Xml.Content.prototype.getValue = function() {};
+_XML.Content.prototype.getValue = function() {};
 
 /**
  * Enum ContentType
- * Last updated July 11, 2013.
  * @constructor
  */
-_Xml.ContentType = function() {};
+_XML.ContentType = function() {};
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.CDATA;
+_XML.ContentType.prototype.CDATA;
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.COMMENT;
+_XML.ContentType.prototype.COMMENT;
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.DOCTYPE;
+_XML.ContentType.prototype.DOCTYPE;
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.ELEMENT;
+_XML.ContentType.prototype.ELEMENT;
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.ENTITYREF;
+_XML.ContentType.prototype.ENTITYREF;
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.PROCESSINGINSTRUCTION;
+_XML.ContentType.prototype.PROCESSINGINSTRUCTION;
 
 /**
- * @type {_Xml.ContentType}
+ * @type {_XML.ContentType}
  */
-_Xml.ContentType.prototype.TEXT;
+_XML.ContentType.prototype.TEXT;

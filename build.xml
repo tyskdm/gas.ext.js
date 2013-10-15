@@ -22,6 +22,12 @@ Copyright (c) 2013 Tsuyoshi Kodama
 	<property name="package.licenses.file"	value="MIT.LICENSE"/>
 
 
+	<!-- GAS environment information -->
+	<property name="gas.fileid.deploy"	value="10sDpB511nQ9XAFFOD4sZirdngIi0kYAEK1qfUsWnO_gJ3iramKCAp3Hx"/>
+	<property name="gas.fileid.debug"	value="10sDpB511nQ9XAFFOD4sZirdngIi0kYAEK1qfUsWnO_gJ3iramKCAp3Hx"/>
+	<property name="gas.credential" 	location="${basedir}/../.gas-manager/gmail.com.json"/>
+
+
 	<!-- directories -->
 	<property name="spec_dir"	location="${basedir}/spec"/>
 	<property name="src_dir"	location="${basedir}/src"/>
@@ -272,17 +278,22 @@ Copyright (c) 2013 Tsuyoshi Kodama
 
 
 	<!-- GAS-Uploader
-		config file: filename = gas.config
-		error file: filename = gas.error
-		target environment: gas.environment
+		config file: filename = gas-upload.config
+		error file: filename = gas-upload.error
+		target file: GAS file ID = gas-upload.target
+		source files: filename = gas-upload.source
+		execute flag: exist file ID = gas-upload.exist
+
+		ex: gas upload -f {gas-project fileId} -S "code:./src/main/js/code.js index:./src/main/view/index.html"
 	-->
 	<target name="gas-upload">
 		<mkdir dir="${err_dir}"/>
 
-		<exec executable="gas" failonerror="true" output="${err_dir}/${gas.error}">
-			<arg line="-c ${gas.config}"/>
-			<arg line="-e ${gas.environment}"/>
+		<exec executable="gas" failonerror="true" output="${err_dir}/${gas-upload.error}">
 			<arg line="upload"/>
+			<arg line="-c ${gas-upload.config}"/>
+			<arg line="-S '${gas-upload.source}'"/>
+			<arg line="-f ${gas-upload.target}"/>
 		</exec>
 	</target>
 
@@ -357,9 +368,10 @@ Copyright (c) 2013 Tsuyoshi Kodama
 		</antcall>
 
 		<antcall target="gas-upload">
-			<param name="gas.config" value="${gas-manager.config}"/>
-			<param name="gas.error" value="utest.gas.txt"/>
-			<param name="gas.environment" value="utest"/>
+			<param name="gas-upload.config" value="${gas.credential}"/>
+			<param name="gas-upload.error" value="utest.gas.txt"/>
+			<param name="gas-upload.target" value="${gas.fileid.debug}"/>
+			<param name="gas-upload.source" value="Code:${out_dir}/utest.js"/>
 		</antcall>
 	</target>
 
